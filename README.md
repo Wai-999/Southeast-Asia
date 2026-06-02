@@ -1,4 +1,4 @@
-# Southeast Asia Economic & Political Change Dashboard
+# Southeast Asia Economic & Political Changes Dashboard
 
 Track economic indicators, news signals, pattern alerts, and AI-generated explanations
 for 10 ASEAN countries across 5 dashboard views.
