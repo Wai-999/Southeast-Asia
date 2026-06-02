@@ -17,6 +17,7 @@
 
 import { useState, useMemo } from "react";
 import { NEWS_EVENTS, type NewsEvent } from "@/data/sample-data";
+import WorldBankNote from "@/components/ui/WorldBankNote";
 import CountryFilter, { type FilterMode } from "@/components/ui/CountryFilter";
 import { getIso3ForMode } from "@/data/countries";
 import {
@@ -165,6 +166,9 @@ export default function NewsPage() {
           )}
         </div>
       </div>
+
+      {/* ── Data note ──────────────────────────────────────────────────────── */}
+      <WorldBankNote className="mb-5" />
 
       {/* ── Source toggle ──────────────────────────────────────────────────── */}
       <div className="flex items-center gap-2 mb-5">

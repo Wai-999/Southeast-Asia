@@ -10,6 +10,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import AlertCard from "@/components/cards/AlertCard";
+import WorldBankNote from "@/components/ui/WorldBankNote";
 import { PATTERN_ALERTS, type PatternAlert } from "@/data/sample-data";
 import CountryFilter, { type FilterMode } from "@/components/ui/CountryFilter";
 import { getIso3ForMode, ALL_COUNTRIES } from "@/data/countries";
@@ -85,6 +86,9 @@ export default function AlertsPage() {
           View full indicator comparison →
         </Link>
       </div>
+
+      {/* ── Data note ─────────────────────────────────────────── */}
+      <WorldBankNote className="mb-5" />
 
       {/* ── Summary stat cards ────────────────────────────────── */}
       <div className="grid grid-cols-4 gap-4 mb-6">

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T10:03:49",
+    "generated_at": "2026-06-02T15:25:10",
     "source": "World Bank Open Data API",
     "api_base": "https://api.worldbank.org/v2",
     "annual_data_note": "World Bank publishes ANNUAL data only — no quarterly breakdown available. Data typically has a 1–2 year publication lag (in 2026, the most recent confirmed year for most countries is 2023 or 2022). For quarterly GDP / CPI, use national statistics offices: Thailand → NESDC, Vietnam → GSO, Singapore → SingStat, Indonesia → BPS, Malaysia → DOSM.",

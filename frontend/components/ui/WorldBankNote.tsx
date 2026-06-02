@@ -74,7 +74,8 @@ export default function WorldBankNote({
           {isLive ? (
             <span>
               <span className="font-semibold">World Bank Open Data</span>
-              {" · "}Annual data only — not real-time or quarterly
+              {" · "}Official economic indicators may be annual and delayed,
+              {" "}while news signals update faster.
               {ts !== "placeholder" && (
                 <span className="text-sky-500 ml-1">· fetched {dateLabel}</span>
               )}

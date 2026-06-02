@@ -47,3 +47,6 @@ Thumbs.db
 # ---- Logs ----
 *.log
 logs/
+# Exception: pipeline run logs are structured JSON (not text logs) and should be tracked
+!pipeline/data/logs/
+!pipeline/data/logs/*.json

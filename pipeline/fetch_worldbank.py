@@ -106,6 +106,7 @@ END_YEAR    = 2024
 SCRIPT_DIR  = Path(__file__).parent
 RAW_DIR     = SCRIPT_DIR / "data" / "raw" / "worldbank"
 PROC_DIR    = SCRIPT_DIR / "data" / "processed"
+LOGS_DIR    = SCRIPT_DIR / "data" / "logs"
 
 # Polite delay between API calls (seconds). WB has no hard rate limit.
 REQUEST_DELAY = 0.8
@@ -826,6 +827,143 @@ def save_missing_report(grid: dict) -> None:
 #  SECTION 13 — CONSOLE SUMMARY
 # ══════════════════════════════════════════════════════════════════════════════
 
+def save_log_json(
+    grid: dict,
+    url_map: dict[str, str],
+    errors: list[str],
+    start_ts: str,
+    used_cache: bool,
+) -> None:
+    """
+    Write a structured run log to data/logs/worldbank_log.json.
+
+    Records metadata about this specific pipeline run:
+      - When it ran and how long
+      - How many records were fetched
+      - Per-country and per-indicator coverage stats
+      - Any errors that occurred
+      - Whether cache was used
+
+    The log file keeps the last 30 runs as a history array so you can
+    track data freshness and diagnose recurring gaps over time.
+    """
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = LOGS_DIR / "worldbank_log.json"
+
+    ts_now = datetime.now().isoformat(timespec="seconds")
+
+    # ── Per-indicator counts ──────────────────────────────────────────────────
+    by_indicator: dict[str, dict] = {}
+    for ind_key in INDICATORS:
+        available_n  = 0
+        estimated_n  = 0
+        old_data_n   = 0
+        missing_n    = 0
+        for iso3 in grid:
+            for yr, cell in grid[iso3][ind_key].items():
+                q = cell.get("data_quality", "missing")
+                if q == "available":   available_n  += 1
+                elif q == "estimated": estimated_n  += 1
+                elif q == "old_data":  old_data_n   += 1
+                else:                  missing_n    += 1
+        by_indicator[ind_key] = {
+            "wb_code":     INDICATORS[ind_key]["wb_code"],
+            "label":       INDICATORS[ind_key]["label"],
+            "available":   available_n,
+            "estimated":   estimated_n,
+            "old_data":    old_data_n,
+            "missing":     missing_n,
+            "source_url":  url_map.get(ind_key, ""),
+        }
+
+    # ── Per-country counts ────────────────────────────────────────────────────
+    by_country: dict[str, dict] = {}
+    for iso3 in sorted(grid):
+        meta = ISO3_META[iso3]
+        available_n  = 0
+        estimated_n  = 0
+        old_data_n   = 0
+        missing_n    = 0
+        for ind_key in grid[iso3]:
+            for yr, cell in grid[iso3][ind_key].items():
+                q = cell.get("data_quality", "missing")
+                if q == "available":   available_n  += 1
+                elif q == "estimated": estimated_n  += 1
+                elif q == "old_data":  old_data_n   += 1
+                else:                  missing_n    += 1
+        total = available_n + estimated_n + old_data_n + missing_n
+        by_country[iso3] = {
+            "name":       meta["name"],
+            "flag":       meta["flag"],
+            "region":     meta["region"],
+            "available":  available_n,
+            "estimated":  estimated_n,
+            "old_data":   old_data_n,
+            "missing":    missing_n,
+            "coverage_pct": round(100 * available_n / total, 1) if total else 0,
+        }
+
+    # ── Totals across all cells ───────────────────────────────────────────────
+    total_cells   = len(COUNTRIES) * len(INDICATORS) * (END_YEAR - START_YEAR + 1)
+    all_available = sum(v["available"] for v in by_country.values())
+    all_estimated = sum(v["estimated"] for v in by_country.values())
+    all_old_data  = sum(v["old_data"]  for v in by_country.values())
+    all_missing   = sum(v["missing"]   for v in by_country.values())
+
+    # ── Build the run entry ───────────────────────────────────────────────────
+    run_entry = {
+        "run_id":          ts_now,
+        "fetched_at":      ts_now,
+        "started_at":      start_ts,
+        "status":          "success" if not errors else "partial",
+        "used_cache":      used_cache,
+        "countries":       len(COUNTRIES),
+        "indicators":      len(INDICATORS),
+        "year_range":      [START_YEAR, END_YEAR],
+        "total_cells":     total_cells,
+        "available":       all_available,
+        "estimated":       all_estimated,
+        "old_data":        all_old_data,
+        "missing":         all_missing,
+        "coverage_pct":    round(100 * all_available / total_cells, 1),
+        "errors":          errors,
+        "by_indicator":    by_indicator,
+        "by_country":      by_country,
+        "note": (
+            "Official economic indicators may be annual and delayed, "
+            "while news signals update faster. "
+            "World Bank data has a 1–2 year publication lag."
+        ),
+    }
+
+    # ── Append to history (keep last 30 runs) ────────────────────────────────
+    history: list[dict] = []
+    if log_path.exists():
+        try:
+            existing = json.loads(log_path.read_text(encoding="utf-8"))
+            history  = existing.get("runs", [])
+        except Exception:
+            history  = []
+
+    history.append(run_entry)
+    if len(history) > 30:
+        history = history[-30:]
+
+    log_output = {
+        "_meta": {
+            "description": "World Bank fetch run log — SEA Change Intelligence Dashboard",
+            "script":      "pipeline/fetch_worldbank.py",
+            "log_version": "1.0",
+            "max_history": 30,
+        },
+        "last_run": run_entry,
+        "runs":     history,
+    }
+
+    log_path.write_text(json.dumps(log_output, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  ✓  Run log      → {log_path.relative_to(SCRIPT_DIR)}")
+
+
 def print_limitations() -> None:
     """Print the key limitations that should be communicated to dashboard users."""
     W = 72
@@ -911,6 +1049,8 @@ def main() -> None:
     args = parser.parse_args()
 
     use_cached = not args.refresh
+    start_ts   = datetime.now().isoformat(timespec="seconds")
+    errors: list[str] = []
 
     print()
     print("╔══════════════════════════════════════════════════════════════╗")
@@ -934,8 +1074,14 @@ def main() -> None:
 
     total_raw = sum(len(v) for v in raw_data.values())
     if total_raw == 0:
+        errors.append("No data fetched — possible network failure")
         print("\n✗  No data fetched at all. Check your internet connection and retry.")
         sys.exit(1)
+
+    # Track any indicators that came back empty
+    for ind_key, rows in raw_data.items():
+        if not rows:
+            errors.append(f"Indicator '{ind_key}' returned 0 rows from API")
 
     # ── STEP 2: Build grid ────────────────────────────────────────────────────
     print("\n[ STEP 2 ] Building data grid …")
@@ -966,17 +1112,28 @@ def main() -> None:
     print("\n[ STEP 8 ] Generating missing data report …")
     save_missing_report(grid)
 
+    # ── STEP 9: Write run log ─────────────────────────────────────────────────
+    print("\n[ STEP 9 ] Writing run log …")
+    save_log_json(grid, url_map, errors, start_ts, use_cached)
+
     # ── Summary ───────────────────────────────────────────────────────────────
     print_limitations()
 
     print("╔══════════════════════════════════════════════════════════════╗")
     print("║  ✓  Done!                                                    ║")
     print("║                                                               ║")
-    print("║  Frontend reads from:                                         ║")
-    print("║    pipeline/data/processed/worldbank_indicators.json          ║")
+    print("║  Output files:                                                ║")
+    print("║    data/processed/worldbank_indicators.json  ← frontend reads ║")
+    print("║    data/raw/worldbank/raw_*.json              ← raw per-ind   ║")
+    print("║    data/raw/worldbank/raw_all_*.csv           ← audit trail   ║")
+    print("║    data/logs/worldbank_log.json               ← run history   ║")
+    print("║                                                               ║")
+    print("║  Note:                                                        ║")
+    print("║    Official economic indicators may be annual and delayed,    ║")
+    print("║    while news signals update faster.                          ║")
     print("║                                                               ║")
     print("║  Next steps:                                                  ║")
-    print("║  1. Review missing_report_*.csv for remaining gaps            ║")
+    print("║  1. Review data/raw/worldbank/missing_report_*.csv            ║")
     print("║  2. Rebuild the frontend (next build / next dev restart)      ║")
     print("║  3. Run again weekly — WB updates data on a rolling basis     ║")
     print("║  4. Add --refresh flag to bypass today's cache                ║")
