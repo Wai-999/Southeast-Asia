@@ -17,6 +17,11 @@ const _raw = require("../../pipeline/data/processed/pattern_alerts.json") as Pat
 
 import type { PatternAlert } from "@/data/sample-data";
 import type { Severity } from "@/lib/utils";
+import {
+  ALERT_SOURCE_BASE,
+  type SourceMeta,
+  type SourceConfidence,
+} from "@/lib/source-meta";
 
 // ── Raw JSON types ────────────────────────────────────────────────────────────
 
@@ -248,6 +253,46 @@ export const PATTERN_ALERTS_META = {
   confidenceMethodology: _raw.meta.confidence_methodology,
   refreshNote:       _raw.meta.refresh_note,
 };
+
+// ── Source metadata ───────────────────────────────────────────────────────────
+
+/**
+ * Build a SourceMeta object for a single EnrichedAlert.
+ * Confidence is taken from the alert's own confidence field.
+ * The limitation note describes which sources did/didn't agree.
+ */
+export function getAlertSourceMeta(alert: EnrichedAlert): SourceMeta {
+  const conf = alert.confidence as SourceConfidence;
+
+  const sourcesAgreed: string[] = [];
+  const sourcesMissed: string[] = [];
+
+  if (alert.sourceSignals.officialData) sourcesAgreed.push("World Bank");
+  else sourcesMissed.push("World Bank");
+
+  if (alert.sourceSignals.newsSignal) sourcesAgreed.push("GDELT");
+  else sourcesMissed.push("GDELT");
+
+  if (alert.sourceSignals.tradeSignal) sourcesAgreed.push("Comtrade");
+  else sourcesMissed.push("Comtrade");
+
+  const limitNote =
+    sourcesAgreed.length === 3
+      ? "All 3 sources agree: " + sourcesAgreed.join(", ") + "."
+      : sourcesAgreed.length > 0
+      ? `Supported by: ${sourcesAgreed.join(", ")}. ` +
+        `Not corroborated by: ${sourcesMissed.join(", ")}.`
+      : "No source has independently confirmed this risk signal.";
+
+  return {
+    ...ALERT_SOURCE_BASE,
+    fetched_at:      alert.dataSourcesUsed?.[0]
+      ? _raw.meta.generated_at
+      : _raw.meta.generated_at,
+    confidence:      conf,
+    limitation_note: limitNote,
+  };
+}
 
 // ── Formatting helpers ────────────────────────────────────────────────────────
 

@@ -36,6 +36,7 @@
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const _raw = require("../../pipeline/data/processed/trade_flows.json") as TfJson;
+import { COMTRADE_SOURCE_BASE, type SourceMeta } from "@/lib/source-meta";
 
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -136,6 +137,30 @@ export const TF_DATA_STATUS: "live" | "placeholder" =
   _raw.meta.data_status === "live" ? "live" : "placeholder";
 
 export const TF_LATEST_YEAR: number = Math.max(...(_raw.meta.years ?? [2023]));
+
+// ── Source metadata ───────────────────────────────────────────────────────────
+
+/**
+ * Global Comtrade source metadata — applies to all trade flow records.
+ */
+export const TF_SOURCE_META: SourceMeta = {
+  ...COMTRADE_SOURCE_BASE,
+  fetched_at: _raw.meta.generated_at,
+};
+
+/**
+ * Per-flow source metadata — uses the flow record's own source_url and last_updated.
+ */
+export function getFlowSourceMeta(flow: TfFlow): SourceMeta {
+  return {
+    ...COMTRADE_SOURCE_BASE,
+    fetched_at:  flow.last_updated ?? _raw.meta.generated_at,
+    source_url:  flow.source_url   ?? COMTRADE_SOURCE_BASE.source_url,
+    source:      flow.source === "comtrade_wto_stats"
+      ? "UN Comtrade / WTO Statistics"
+      : flow.source ?? COMTRADE_SOURCE_BASE.source,
+  };
+}
 
 
 // ── Reporter / Partner registry ───────────────────────────────────────────────

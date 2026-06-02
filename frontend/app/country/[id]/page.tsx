@@ -26,8 +26,9 @@ import {
   WB_INDICATOR_KEYS, WB_INDICATORS, WB_INDICATOR_LABELS, WB_INDICATOR_UNITS,
   WB_COUNTRY_SUMMARIES, WB_DATA_STATUS,
   QUALITY_LABEL, QUALITY_COLOR, QUALITY_DOT,
-  getWbHistory,
+  getWbHistory, WB_SOURCE_META, getWbIndicatorSourceMeta,
 } from "@/data/worldbank-data";
+import { NS_SOURCE_META } from "@/data/news-signals";
 import { cn } from "@/lib/utils";
 
 // ── Chart tabs definition ──────────────────────────────────────────
@@ -258,6 +259,7 @@ export default function CountryPage() {
           trend={hist.gdpGrowth}
           positive={true}
           alert={alerts.some(a => a.indicatorCode === "gdpGrowth")}
+          source={getWbIndicatorSourceMeta(countryId, "gdpGrowth")}
         />
         <IndicatorCard
           title="Inflation Rate (CPI)"
@@ -267,6 +269,7 @@ export default function CountryPage() {
           trend={hist.inflation}
           positive={false}
           alert={alerts.some(a => a.indicatorCode === "inflation")}
+          source={getWbIndicatorSourceMeta(countryId, "inflation")}
         />
         <IndicatorCard
           title="Total Exports"
@@ -276,6 +279,7 @@ export default function CountryPage() {
           trend={hist.exports}
           positive={true}
           alert={alerts.some(a => a.indicatorCode === "exports")}
+          source={getWbIndicatorSourceMeta(countryId, "exports")}
         />
         <IndicatorCard
           title="Total Imports"
@@ -285,6 +289,7 @@ export default function CountryPage() {
           trend={hist.imports}
           positive={false}
           alert={alerts.some(a => a.indicatorCode === "imports")}
+          source={getWbIndicatorSourceMeta(countryId, "imports")}
         />
         <IndicatorCard
           title="Exchange Rate"
@@ -298,6 +303,7 @@ export default function CountryPage() {
           trend={hist.exchangeRate}
           positive={false}
           alert={alerts.some(a => a.indicatorCode === "exchangeRate")}
+          source={WB_SOURCE_META}
         />
         <IndicatorCard
           title="FDI Net Inflows"
@@ -307,6 +313,7 @@ export default function CountryPage() {
           trend={hist.fdi}
           positive={true}
           alert={alerts.some(a => a.indicatorCode === "fdi")}
+          source={getWbIndicatorSourceMeta(countryId, "fdiPctGdp")}
         />
         <IndicatorCard
           title="Political Risk News"
@@ -316,6 +323,7 @@ export default function CountryPage() {
           trend={hist.politicalRiskNews}
           positive={false}
           alert={alerts.some(a => a.indicatorCode === "politicalRiskNews")}
+          source={NS_SOURCE_META}
         />
         <IndicatorCard
           title="Trade News Count"
@@ -324,6 +332,7 @@ export default function CountryPage() {
           change={getYoYChange(countryId, "tradeNewsCount")}
           trend={hist.tradeNewsCount}
           positive={true}
+          source={NS_SOURCE_META}
         />
       </div>
 

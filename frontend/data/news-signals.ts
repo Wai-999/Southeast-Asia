@@ -39,6 +39,7 @@ const _raw = require("../../pipeline/data/processed/news_signals.json") as NsJso
 
 import type { NewsEvent } from "@/data/sample-data";
 import { ALL_COUNTRIES }   from "@/data/countries";
+import { GDELT_SOURCE_BASE, type SourceMeta } from "@/lib/source-meta";
 
 
 // ── Types ─────────────────────────────────────────────────────────────────────
@@ -114,6 +115,34 @@ export const NS_NEWS_COUNTS:      Record<string, NsNewsCount>        = _raw.news
 /** "live" after fetch_gdelt_news.py runs; "placeholder" before */
 export const NS_DATA_STATUS: "live" | "placeholder" =
   _raw.meta.data_status === "live" ? "live" : "placeholder";
+
+// ── Source metadata ───────────────────────────────────────────────────────────
+
+/**
+ * Global GDELT source metadata for all news signal articles.
+ */
+export const NS_SOURCE_META: SourceMeta = {
+  ...GDELT_SOURCE_BASE,
+  fetched_at: _raw.meta.generated_at,
+};
+
+/**
+ * Per-article source metadata.
+ * Adds the article's own URL and date into the source meta.
+ */
+export function getArticleSourceMeta(article: NsArticle): SourceMeta {
+  return {
+    ...GDELT_SOURCE_BASE,
+    fetched_at:      _raw.meta.generated_at,
+    source_url:      article.url ?? GDELT_SOURCE_BASE.source_url,
+    source:          article.source_domain
+      ? `GDELT 2.0 (via ${article.source_domain})`
+      : "GDELT 2.0 Document API",
+    limitation_note:
+      `Automated media monitoring from ${article.source_domain ?? "unknown source"}. ` +
+      "Sentiment score is keyword-based. Article may not represent ground truth.",
+  };
+}
 
 /** Formatted last-fetch string for UI display */
 export function fmtNsGeneratedAt(): string {

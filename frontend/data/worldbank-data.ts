@@ -110,6 +110,8 @@ export interface WbYearPoint {
 }
 
 
+import { WB_SOURCE_BASE, type SourceMeta, type SourceConfidence } from "@/lib/source-meta";
+
 // ── Core exports ─────────────────────────────────────────────────────────────
 
 export const WB_META:        WbMeta                          = _raw.meta;
@@ -127,6 +129,55 @@ export const ANNUAL_DATA_NOTE =
 
 /** Long note for detail panels */
 export const ANNUAL_DATA_NOTE_FULL: string = _raw.meta.annual_data_note;
+
+// ── Source metadata ───────────────────────────────────────────────────────────
+
+/**
+ * Global World Bank source metadata (applies to all WB indicator records).
+ * Confidence is "high" for officially measured data; use getWbRecordSourceMeta()
+ * to get a per-record SourceMeta that reflects the actual data_quality flag.
+ */
+export const WB_SOURCE_META: SourceMeta = {
+  ...WB_SOURCE_BASE,
+  fetched_at: _raw.meta.generated_at,
+};
+
+/**
+ * Per-record source metadata — downgrades confidence for estimated / old data.
+ * Pass to IndicatorCard's `source` prop for accurate quality signalling.
+ */
+export function getWbRecordSourceMeta(record: WbRecord): SourceMeta {
+  const conf: SourceConfidence =
+    record.data_quality === "available" ? "high"
+    : record.data_quality === "estimated" ? "medium"
+    : "low";
+
+  return {
+    ...WB_SOURCE_BASE,
+    fetched_at:      record.last_updated ?? _raw.meta.generated_at,
+    source_url:      record.source_url ?? WB_SOURCE_BASE.source_url,
+    confidence:      conf,
+    limitation_note:
+      record.data_quality === "estimated"
+        ? "This value is a World Bank estimate, not an official measured figure. " +
+          "Treat with wider uncertainty margin."
+        : record.data_quality === "old_data"
+        ? "This indicator has not been updated recently. The value may be 3+ years old."
+        : WB_SOURCE_BASE.limitation_note,
+  };
+}
+
+/**
+ * Get source metadata for a specific country-indicator, using the latest record.
+ */
+export function getWbIndicatorSourceMeta(iso3: string, indicatorKey: string): SourceMeta {
+  const rec = WB_RECORDS
+    .filter(r => r.country_code === iso3 && r.indicator_key === indicatorKey && r.value !== null)
+    .sort((a, b) => b.year - a.year)[0];
+
+  if (!rec) return WB_SOURCE_META;
+  return getWbRecordSourceMeta(rec);
+}
 
 
 // ── Lookup helpers ────────────────────────────────────────────────────────────

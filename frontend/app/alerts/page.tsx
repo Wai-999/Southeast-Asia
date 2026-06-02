@@ -20,6 +20,10 @@ import {
   CRITICAL_SIGNALS, NS_META, getHighRiskCountries, getHighTradeCountries,
   NS_CATEGORY_META, fmtNsGeneratedAt,
 } from "@/data/news-signals";
+import {
+  ENRICHED_ALERTS, getAlertSourceMeta, PATTERN_ALERTS_META,
+  type EnrichedAlert,
+} from "@/data/pattern-alerts";
 
 // ── Alert rule definitions (for the reference panel) ─────────────
 const ALERT_RULES = [
@@ -42,24 +46,25 @@ export default function AlertsPage() {
   // Derive the set of ISO3 codes currently active in the filter
   const activeCountryIds = getIso3ForMode(filterMode, customIds);
 
-  const activeAlerts   = PATTERN_ALERTS.filter(a => a.isActive);
-  const resolvedAlerts = PATTERN_ALERTS.filter(a => !a.isActive);
-  const criticalCount  = activeAlerts.filter(a => a.severity === "critical").length;
-  const warningCount   = activeAlerts.filter(a => a.severity === "warning").length;
-  const infoCount      = activeAlerts.filter(a => a.severity === "info").length;
+  // Use real enriched alerts where available; fall back to sample for countries not in real data
+  const liveAlerts    = ENRICHED_ALERTS;
+  const activeAlerts  = liveAlerts.filter(a => a.isActive);
+  const resolvedAlerts = liveAlerts.filter(a => !a.isActive);
+  const criticalCount = activeAlerts.filter(a => a.severity === "critical").length;
+  const warningCount  = activeAlerts.filter(a => a.severity === "warning").length;
+  const infoCount     = activeAlerts.filter(a => a.severity === "info").length;
 
-  const filtered = useMemo<PatternAlert[]>(() => {
-    let list = showResolved ? PATTERN_ALERTS : activeAlerts;
-    // Country filter — only show alerts for countries in the active set
+  const filtered = useMemo<EnrichedAlert[]>(() => {
+    let list = showResolved ? liveAlerts : activeAlerts;
     list = list.filter(a => activeCountryIds.has(a.countryId));
     if (severity !== "all") list = list.filter(a => a.severity === severity);
-    // Sort: critical → warning → info → by date
     return [...list].sort((a, b) => {
       const order = { critical: 0, warning: 1, info: 2 };
       if (order[a.severity] !== order[b.severity])
         return order[a.severity] - order[b.severity];
       return b.triggeredAt.localeCompare(a.triggeredAt);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeCountryIds, severity, showResolved]);
 
   return (
@@ -202,17 +207,31 @@ export default function AlertsPage() {
       {/* ── GDELT Live News Signal Panel ─────────────────────── */}
       <GdeltSignalPanel activeCountryIds={activeCountryIds} />
 
-      {/* ── Results count ─────────────────────────────────────── */}
-      <p className="text-xs text-slate-400 mb-4">
-        {filtered.length} alert{filtered.length !== 1 ? "s" : ""} ·
-        sorted critical → warning → info → date
-      </p>
+      {/* ── Results count + confidence summary ───────────────── */}
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-xs text-slate-400">
+          {filtered.length} alert{filtered.length !== 1 ? "s" : ""} ·
+          sorted critical → warning → info → score
+        </p>
+        <p className="text-[10px] text-slate-400">
+          <span className="text-emerald-600 font-medium">{PATTERN_ALERTS_META.highConfidence}</span> high ·
+          <span className="text-amber-600 font-medium ml-1">{PATTERN_ALERTS_META.mediumConfidence}</span> medium ·
+          <span className="ml-1">{PATTERN_ALERTS_META.lowConfidence}</span> low confidence
+        </p>
+      </div>
 
       {/* ── Alert list ───────────────────────────────────────── */}
       {filtered.length > 0 ? (
         <div className="grid grid-cols-2 gap-4">
           {filtered.map(a => (
-            <AlertCard key={a.id} alert={a} />
+            <AlertCard
+              key={a.id}
+              alert={a}
+              source={getAlertSourceMeta(a)}
+              conditions={a.conditionsMet}
+              confidence={a.confidence}
+              sourcesCount={a.sourceSignals.sourcesCount}
+            />
           ))}
         </div>
       ) : (
