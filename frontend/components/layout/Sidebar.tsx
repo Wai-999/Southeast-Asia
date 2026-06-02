@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { CURRENT_INDICATORS, PATTERN_ALERTS } from "@/data/sample-data";
 import { SEA_COUNTRIES, PARTNER_COUNTRIES, type DashboardCountry } from "@/data/countries";
+import DataFreshnessBar from "@/components/ui/DataFreshnessBar";
 
 // ── Navigation items ──────────────────────────────────────────────
 const NAV = [
@@ -149,13 +150,10 @@ export default function Sidebar() {
         ))}
       </div>
 
-      {/* ── Footer ────────────────────────────────────────────────── */}
-      <div className="px-5 py-3.5" style={{ borderTop: "1px solid #1e293b" }}>
-        <div className="flex items-center gap-2 mb-1">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-          <p className="text-slate-400 text-[10px] font-medium">Sample Data Mode</p>
-        </div>
-        <p className="text-slate-600 text-[9px] leading-relaxed">
+      {/* ── Footer — data freshness badge ────────────────────────── */}
+      <div className="px-4 py-3.5" style={{ borderTop: "1px solid #1e293b" }}>
+        <DataFreshnessBar />
+        <p className="text-slate-700 text-[8px] mt-2 leading-relaxed">
           {activeSea.length} active · {SEA_COUNTRIES.length} SEA · {PARTNER_COUNTRIES.length} partners · 8 indicators
         </p>
       </div>

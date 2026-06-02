@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-02T14:38:51",
+  "sources": {
+    "gdelt": {
+      "label": "News Feed",
+      "last_success_at": "2026-06-02T10:00:00",
+      "last_attempt_at": "2026-06-02T10:00:00",
+      "status": "success",
+      "record_count": 72,
+      "error": null,
+      "refresh_interval_h": 6
+    },
+    "worldbank": {
+      "label": "Official Data",
+      "last_success_at": "2026-06-02T10:03:49",
+      "last_attempt_at": "2026-06-02T10:03:49",
+      "status": "success",
+      "record_count": 1360,
+      "error": null,
+      "refresh_interval_h": 168
+    },
+    "comtrade": {
+      "label": "Trade Data",
+      "last_success_at": "2026-06-02T10:52:35",
+      "last_attempt_at": "2026-06-02T10:52:35",
+      "status": "success",
+      "record_count": 420,
+      "error": null,
+      "refresh_interval_h": 168
+    }
+  },
+  "pipeline": {
+    "last_full_run_at": null,
+    "last_process_run_at": "2026-06-02T14:38:51",
+    "last_news_run_at": null,
+    "last_data_run_at": null,
+    "alerts_generated": 10,
+    "alerts_critical": 2
+  }
+}

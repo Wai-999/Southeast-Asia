@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T14:28:38",
+    "generated_at": "2026-06-02T14:38:51",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
     "fetched_at": "2026-06-02T10:03:49",
