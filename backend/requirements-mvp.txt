@@ -1,0 +1,10 @@
+# MVP backend — server.py only
+# No database required. Works out of the box.
+#
+# Install:  pip install -r requirements-mvp.txt
+# Run:      uvicorn server:app --reload --port 8000
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+python-dotenv>=1.0.1
+anthropic>=0.29.0

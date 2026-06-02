@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply bg-white text-slate-900 font-sans antialiased; }
+  * { @apply box-border; }
+}
+
+@layer components {
+  /* ── Card system ─────────────────────────────────────── */
+  .card   { @apply bg-white rounded-xl border border-slate-200/80 shadow-sm; }
+  .card-p { @apply bg-white rounded-xl border border-slate-200/80 shadow-sm p-5; }
+  .card-hover { @apply card transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 cursor-pointer; }
+
+  /* ── Section / page chrome ───────────────────────────── */
+  .page-wrapper  { @apply p-7 max-w-7xl mx-auto; }
+  .section-title { @apply text-[10px] font-semibold uppercase tracking-widest text-slate-400 mb-3; }
+  .page-title    { @apply text-2xl font-bold text-slate-900 tracking-tight; }
+  .page-sub      { @apply text-sm text-slate-500 mt-0.5; }
+
+  /* ── Stat / KPI number ───────────────────────────────── */
+  .kpi-number { @apply text-3xl font-bold tabular-nums tracking-tight; }
+  .kpi-label  { @apply text-xs font-medium text-slate-500 uppercase tracking-wide; }
+
+  /* ── Risk level colours ──────────────────────────────── */
+  .risk-low      { @apply bg-emerald-50 text-emerald-700 border border-emerald-200; }
+  .risk-medium   { @apply bg-amber-50   text-amber-700   border border-amber-200; }
+  .risk-high     { @apply bg-orange-50  text-orange-700  border border-orange-200; }
+  .risk-critical { @apply bg-red-50     text-red-700     border border-red-200; }
+
+  .risk-dot-low      { @apply bg-emerald-500; }
+  .risk-dot-medium   { @apply bg-amber-500; }
+  .risk-dot-high     { @apply bg-orange-500; }
+  .risk-dot-critical { @apply bg-red-500; }
+
+  /* ── Alert severity ──────────────────────────────────── */
+  .sev-info     { @apply bg-sky-50    text-sky-700    border border-sky-200; }
+  .sev-warning  { @apply bg-amber-50  text-amber-700  border border-amber-200; }
+  .sev-critical { @apply bg-red-50    text-red-700    border border-red-200; }
+
+  /* ── Sentiment ───────────────────────────────────────── */
+  .sent-positive { @apply bg-emerald-50 text-emerald-700; }
+  .sent-neutral  { @apply bg-slate-100  text-slate-600; }
+  .sent-negative { @apply bg-red-50     text-red-700; }
+
+  /* ── Filter pill button ──────────────────────────────── */
+  .pill {
+    @apply text-xs px-3 py-1.5 rounded-lg border transition-colors cursor-pointer;
+  }
+  .pill-active  { @apply bg-navy text-white border-navy; }
+  .pill-default { @apply border-slate-200 text-slate-600 bg-white hover:bg-slate-50 hover:border-slate-300; }
+
+  /* ── Intelligence alert ticker ───────────────────────── */
+  .alert-ticker {
+    @apply flex items-center gap-3 rounded-xl px-4 py-3 mb-6
+           border border-red-200 bg-red-50;
+  }
+
+  /* ── Metric value colours ────────────────────────────── */
+  .val-good { @apply text-emerald-600; }
+  .val-bad  { @apply text-red-500; }
+  .val-warn { @apply text-amber-600; }
+}
+
+@layer utilities {
+  .bg-navy      { background-color: #0f172a; }
+  .text-navy    { color: #0f172a; }
+  .border-navy  { border-color: #0f172a; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .tabular { @apply tabular-nums; }
+}
