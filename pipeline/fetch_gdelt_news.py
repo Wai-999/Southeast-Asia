@@ -87,6 +87,7 @@ except ImportError:
 SCRIPT_DIR  = Path(__file__).parent
 RAW_DIR     = SCRIPT_DIR / "data" / "raw" / "gdelt"
 PROC_DIR    = SCRIPT_DIR / "data" / "processed"
+LOGS_DIR    = SCRIPT_DIR / "data" / "logs"
 
 GDELT_API   = "https://api.gdeltproject.org/api/v2/doc/doc"
 DAYS_BACK   = 7          # default look-back window
@@ -181,7 +182,7 @@ ISO3_META: dict[str, dict] = {v["iso3"]: {**v, "iso2": k} for k, v in COUNTRIES.
 # ══════════════════════════════════════════════════════════════════════════════
 
 # Ordered list of categories — more specific ones checked FIRST
-# so "tariff" beats "trade" when both match
+# so "tariff" beats "trade" when both match, and "central_bank" beats "policy"
 CATEGORY_PRIORITY: list[str] = [
     "tariff",
     "conflict",
@@ -189,6 +190,7 @@ CATEGORY_PRIORITY: list[str] = [
     "border",
     "protest",
     "election",
+    "central_bank",    # ← before "policy" — central bank decisions are a specific subset
     "policy",
     "trade",
     "technology",
@@ -232,11 +234,19 @@ CATEGORY_PATTERNS: dict[str, list[str]] = {
         "ballot", "polling", "campaign", "candidate", "referendum",
         "electoral", "voter turnout", "election results", "inauguration",
     ],
+    "central_bank": [
+        "central bank", "rate hike", "rate cut", "interest rate decision",
+        "monetary policy decision", "fed rate", "federal reserve",
+        "bank of thailand", "bank indonesia", "bangko sentral",
+        "bank negara", "monetary authority", "mas rate", "bsp rate",
+        "reserve bank", "rate hold", "quantitative easing", "qe taper",
+        "inflation target", "currency intervention", "fx intervention",
+        "exchange rate policy", "capital controls",
+    ],
     "policy": [
         "policy", "regulation", "law passed", "legislation", "new law",
         "executive order", "decree", "reform", "budget", "fiscal policy",
-        "monetary policy", "interest rate", "central bank", "rate hike",
-        "rate cut", "policy change",
+        "monetary policy", "policy change",
     ],
     "trade": [
         "trade deal", "trade agreement", "trade deficit", "trade surplus",
@@ -284,6 +294,7 @@ CATEGORY_INDICATORS: dict[str, list[str]] = {
     "border":         ["exports", "imports", "politicalRiskNews"],
     "protest":        ["politicalRiskNews", "fdi", "exchangeRate"],
     "election":       ["politicalRiskNews", "fdi"],
+    "central_bank":   ["inflation", "exchangeRate", "gdpGrowth"],  # ← new
     "policy":         ["gdpGrowth", "fdi", "inflation"],
     "trade":          ["exports", "imports", "tradeNewsCount"],
     "technology":     ["fdi", "tradeNewsCount", "gdpGrowth"],
@@ -305,6 +316,7 @@ CATEGORY_BASE_SCORE: dict[str, int] = {
     "border":         3,
     "protest":        3,
     "election":       2,
+    "central_bank":   3,   # ← rate decisions have immediate market impact
     "policy":         2,
     "trade":          2,
     "technology":     2,
@@ -824,7 +836,123 @@ def save_processed_json(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-#  SECTION 12 — MAIN ORCHESTRATION
+#  SECTION 12 — RUN LOG
+# ══════════════════════════════════════════════════════════════════════════════
+
+def save_log_json(
+    articles:       list[dict],
+    log_rows:       list[dict],
+    start_ts:       str,
+    days_back:      int,
+    storm_detected: bool,
+    errors:         list[str],
+) -> None:
+    """
+    Write a structured run log to data/logs/gdelt_log.json.
+
+    Captures:
+      - When the fetch ran and how long it took
+      - Total articles, duplicates removed, unique articles
+      - Per-country article count and status
+      - Per-category breakdown
+      - Political risk count, trade count, high-impact count
+        (the 3 dashboard summary cards)
+      - Any rate-limit or error events
+
+    Keeps up to 30 runs in history so you can track coverage trends.
+    Labelled as "real-time signal data" — not official economic statistics.
+    """
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = LOGS_DIR / "gdelt_log.json"
+    ts_now   = datetime.now().isoformat(timespec="seconds")
+
+    # ── Per-category count ────────────────────────────────────────────────────
+    cat_totals: dict[str, int] = {}
+    for art in articles:
+        cat = art.get("category", "politics")
+        cat_totals[cat] = cat_totals.get(cat, 0) + 1
+
+    # ── Summary signal counts (used by dashboard stat cards) ─────────────────
+    POLITICAL_CATS = {"politics", "protest", "conflict", "election", "border"}
+    TRADE_CATS     = {"trade", "tariff"}
+    CENTRAL_BANK_CATS = {"central_bank", "policy"}
+
+    political_total = sum(n for c, n in cat_totals.items() if c in POLITICAL_CATS)
+    trade_total     = sum(n for c, n in cat_totals.items() if c in TRADE_CATS)
+    cb_total        = sum(n for c, n in cat_totals.items() if c in CENTRAL_BANK_CATS)
+    high_impact     = sum(1 for a in articles if a.get("impact_score", 0) >= 4)
+    critical_impact = sum(1 for a in articles if a.get("impact_score", 0) >= 5)
+
+    # ── Per-country summary ───────────────────────────────────────────────────
+    by_country: dict[str, dict] = {}
+    for row in log_rows:
+        iso3 = row["iso3"]
+        pol  = sum(1 for a in articles if a["country_code"] == iso3 and a["category"] in POLITICAL_CATS)
+        trd  = sum(1 for a in articles if a["country_code"] == iso3 and a["category"] in TRADE_CATS)
+        by_country[iso3] = {
+            "name":                 row["country"],
+            "status":               row["status"],
+            "articles":             row.get("enriched", 0),
+            "political_risk_count": pol,
+            "trade_news_count":     trd,
+        }
+
+    run_entry = {
+        "run_id":             ts_now,
+        "fetched_at":         ts_now,
+        "started_at":         start_ts,
+        "status":             "rate_limited" if storm_detected else ("partial" if errors else "success"),
+        "days_back":          days_back,
+        "countries":          len(log_rows),
+        "categories":         len(CATEGORY_PRIORITY),
+        "total_articles":     len(articles),
+        "high_impact_count":  high_impact,
+        "critical_count":     critical_impact,
+        "political_risk_total": political_total,
+        "trade_news_total":   trade_total,
+        "central_bank_total": cb_total,
+        "storm_detected":     storm_detected,
+        "errors":             errors,
+        "by_category":        cat_totals,
+        "by_country":         by_country,
+        "data_label": (
+            "REAL-TIME SIGNAL DATA — not official economic statistics. "
+            "GDELT monitors English-language media. "
+            "Treat as an early-warning signal, not a confirmed economic event."
+        ),
+    }
+
+    # ── Append to history (keep last 30 runs) ────────────────────────────────
+    history: list[dict] = []
+    if log_path.exists():
+        try:
+            existing = json.loads(log_path.read_text(encoding="utf-8"))
+            history  = existing.get("runs", [])
+        except Exception:
+            history  = []
+
+    history.append(run_entry)
+    if len(history) > 30:
+        history = history[-30:]
+
+    log_output = {
+        "_meta": {
+            "description": "GDELT news signal fetch run log — SEA Change Intelligence Dashboard",
+            "script":      "pipeline/fetch_gdelt_news.py",
+            "log_version": "1.0",
+            "max_history": 30,
+            "data_label":  "Real-time signal — not official economic data",
+        },
+        "last_run": run_entry,
+        "runs":     history,
+    }
+
+    log_path.write_text(json.dumps(log_output, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  ✓  Run log → {log_path.relative_to(SCRIPT_DIR)}")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  SECTION 13 — MAIN ORCHESTRATION
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main() -> None:
@@ -848,6 +976,8 @@ def main() -> None:
     use_cached  = not args.refresh
     days_back   = args.days
     only_iso3   = args.country.upper() if args.country else None
+    start_ts    = datetime.now().isoformat(timespec="seconds")
+    run_errors: list[str] = []
 
     # ── Banner ──────────────────────────────────────────────────────────────
     print()
@@ -918,8 +1048,10 @@ def main() -> None:
         # Track consecutive live failures (cached hits reset the counter)
         if not raw:
             consecutive_fails += 1
+            run_errors.append(f"{country['name']} ({iso3}): 0 articles returned")
             if consecutive_fails >= STORM_THRESHOLD and not storm_detected:
                 storm_detected = True
+                run_errors.append(f"Rate-limit storm detected after {STORM_THRESHOLD} failures")
                 print(
                     f"\n  ⚡ Rate-limit storm detected after {STORM_THRESHOLD} "
                     f"consecutive failures — skipping remaining countries."
@@ -1034,6 +1166,10 @@ def main() -> None:
         days_back, removed,
     )
 
+    # ── Run log ───────────────────────────────────────────────────────────────
+    print(f"\n[ STEP 6 ] Writing run log …")
+    save_log_json(unique, log_rows, start_ts, days_back, storm_detected, run_errors)
+
     # ── Final summary ─────────────────────────────────────────────────────────
     impact_dist = {i: sum(1 for a in unique if a["impact_score"] == i) for i in range(1, 6)}
     cat_total   = {}
@@ -1061,8 +1197,13 @@ def main() -> None:
     print("╔══════════════════════════════════════════════════════════════╗")
     print("║  ✓  Done!                                                    ║")
     print("║                                                               ║")
-    print("║  Frontend reads from:                                         ║")
-    print("║    pipeline/data/processed/news_signals.json                  ║")
+    print("║  ⚡ REAL-TIME SIGNAL DATA — not official economic data.       ║")
+    print("║     Treat as early-warning indicators only.                   ║")
+    print("║                                                               ║")
+    print("║  Output files:                                                ║")
+    print("║    data/processed/news_signals.json   ← frontend reads        ║")
+    print("║    data/raw/gdelt/raw_*.json           ← raw per-country      ║")
+    print("║    data/logs/gdelt_log.json            ← run history          ║")
     print("║                                                               ║")
     print("║  Next steps:                                                  ║")
     print("║  1. Restart or rebuild the Next.js dev server                 ║")

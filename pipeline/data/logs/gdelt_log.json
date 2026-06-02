@@ -1,0 +1,315 @@
+{
+  "_meta": {
+    "description": "GDELT news signal fetch run log — SEA Change Intelligence Dashboard",
+    "script": "pipeline/fetch_gdelt_news.py",
+    "log_version": "1.0",
+    "max_history": 30,
+    "data_label": "Real-time signal — not official economic data"
+  },
+  "last_run": {
+    "run_id": "2026-06-02T10:00:00",
+    "fetched_at": "2026-06-02T10:00:00",
+    "started_at": "2026-06-02T10:00:00",
+    "status": "success",
+    "days_back": 7,
+    "countries": 17,
+    "categories": 13,
+    "total_articles": 72,
+    "high_impact_count": 21,
+    "critical_count": 7,
+    "political_risk_total": 9,
+    "trade_news_total": 25,
+    "central_bank_total": 9,
+    "storm_detected": false,
+    "errors": [],
+    "by_category": {
+      "tariff": 13,
+      "economy": 16,
+      "trade": 12,
+      "politics": 3,
+      "infrastructure": 3,
+      "election": 2,
+      "technology": 7,
+      "policy": 9,
+      "conflict": 2,
+      "disaster": 3,
+      "border": 2
+    },
+    "by_country": {
+      "THA": {
+        "name": "THA",
+        "status": "ok",
+        "articles": 6,
+        "political_risk_count": 2,
+        "trade_news_count": 2
+      },
+      "VNM": {
+        "name": "VNM",
+        "status": "ok",
+        "articles": 5,
+        "political_risk_count": 0,
+        "trade_news_count": 2
+      },
+      "MMR": {
+        "name": "MMR",
+        "status": "ok",
+        "articles": 5,
+        "political_risk_count": 3,
+        "trade_news_count": 0
+      },
+      "KHM": {
+        "name": "KHM",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 2,
+        "trade_news_count": 1
+      },
+      "LAO": {
+        "name": "LAO",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 1
+      },
+      "MYS": {
+        "name": "MYS",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 1
+      },
+      "SGP": {
+        "name": "SGP",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 1
+      },
+      "IDN": {
+        "name": "IDN",
+        "status": "ok",
+        "articles": 5,
+        "political_risk_count": 0,
+        "trade_news_count": 2
+      },
+      "PHL": {
+        "name": "PHL",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 1,
+        "trade_news_count": 1
+      },
+      "BRN": {
+        "name": "BRN",
+        "status": "ok",
+        "articles": 2,
+        "political_risk_count": 0,
+        "trade_news_count": 1
+      },
+      "TLS": {
+        "name": "TLS",
+        "status": "ok",
+        "articles": 2,
+        "political_risk_count": 0,
+        "trade_news_count": 0
+      },
+      "CHN": {
+        "name": "CHN",
+        "status": "ok",
+        "articles": 6,
+        "political_risk_count": 0,
+        "trade_news_count": 3
+      },
+      "USA": {
+        "name": "USA",
+        "status": "ok",
+        "articles": 5,
+        "political_risk_count": 0,
+        "trade_news_count": 3
+      },
+      "JPN": {
+        "name": "JPN",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 2
+      },
+      "IND": {
+        "name": "IND",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 2
+      },
+      "KOR": {
+        "name": "KOR",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 1,
+        "trade_news_count": 1
+      },
+      "AUS": {
+        "name": "AUS",
+        "status": "ok",
+        "articles": 4,
+        "political_risk_count": 0,
+        "trade_news_count": 2
+      }
+    },
+    "data_label": "REAL-TIME SIGNAL DATA — not official economic statistics. GDELT monitors English-language media. Treat as an early-warning signal, not a confirmed economic event."
+  },
+  "runs": [
+    {
+      "run_id": "2026-06-02T10:00:00",
+      "fetched_at": "2026-06-02T10:00:00",
+      "started_at": "2026-06-02T10:00:00",
+      "status": "success",
+      "days_back": 7,
+      "countries": 17,
+      "categories": 13,
+      "total_articles": 72,
+      "high_impact_count": 21,
+      "critical_count": 7,
+      "political_risk_total": 9,
+      "trade_news_total": 25,
+      "central_bank_total": 9,
+      "storm_detected": false,
+      "errors": [],
+      "by_category": {
+        "tariff": 13,
+        "economy": 16,
+        "trade": 12,
+        "politics": 3,
+        "infrastructure": 3,
+        "election": 2,
+        "technology": 7,
+        "policy": 9,
+        "conflict": 2,
+        "disaster": 3,
+        "border": 2
+      },
+      "by_country": {
+        "THA": {
+          "name": "THA",
+          "status": "ok",
+          "articles": 6,
+          "political_risk_count": 2,
+          "trade_news_count": 2
+        },
+        "VNM": {
+          "name": "VNM",
+          "status": "ok",
+          "articles": 5,
+          "political_risk_count": 0,
+          "trade_news_count": 2
+        },
+        "MMR": {
+          "name": "MMR",
+          "status": "ok",
+          "articles": 5,
+          "political_risk_count": 3,
+          "trade_news_count": 0
+        },
+        "KHM": {
+          "name": "KHM",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 2,
+          "trade_news_count": 1
+        },
+        "LAO": {
+          "name": "LAO",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 1
+        },
+        "MYS": {
+          "name": "MYS",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 1
+        },
+        "SGP": {
+          "name": "SGP",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 1
+        },
+        "IDN": {
+          "name": "IDN",
+          "status": "ok",
+          "articles": 5,
+          "political_risk_count": 0,
+          "trade_news_count": 2
+        },
+        "PHL": {
+          "name": "PHL",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 1,
+          "trade_news_count": 1
+        },
+        "BRN": {
+          "name": "BRN",
+          "status": "ok",
+          "articles": 2,
+          "political_risk_count": 0,
+          "trade_news_count": 1
+        },
+        "TLS": {
+          "name": "TLS",
+          "status": "ok",
+          "articles": 2,
+          "political_risk_count": 0,
+          "trade_news_count": 0
+        },
+        "CHN": {
+          "name": "CHN",
+          "status": "ok",
+          "articles": 6,
+          "political_risk_count": 0,
+          "trade_news_count": 3
+        },
+        "USA": {
+          "name": "USA",
+          "status": "ok",
+          "articles": 5,
+          "political_risk_count": 0,
+          "trade_news_count": 3
+        },
+        "JPN": {
+          "name": "JPN",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 2
+        },
+        "IND": {
+          "name": "IND",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 2
+        },
+        "KOR": {
+          "name": "KOR",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 1,
+          "trade_news_count": 1
+        },
+        "AUS": {
+          "name": "AUS",
+          "status": "ok",
+          "articles": 4,
+          "political_risk_count": 0,
+          "trade_news_count": 2
+        }
+      },
+      "data_label": "REAL-TIME SIGNAL DATA — not official economic statistics. GDELT monitors English-language media. Treat as an early-warning signal, not a confirmed economic event."
+    }
+  ]
+}

@@ -81,6 +81,7 @@ export interface NsArticle {
 
 export type NsCategory =
   | "tariff" | "conflict" | "disaster" | "border" | "protest" | "election"
+  | "central_bank"
   | "policy" | "trade" | "technology" | "infrastructure" | "economy" | "politics";
 
 export interface NsSourceInfo {
@@ -272,6 +273,7 @@ export const NS_CATEGORY_META: Record<
   border:         { label: "Border",         icon: "🚧", color: "bg-rose-100 text-rose-700"      },
   protest:        { label: "Protest",        icon: "✊", color: "bg-fuchsia-100 text-fuchsia-700"},
   election:       { label: "Election",       icon: "🗳️", color: "bg-violet-100 text-violet-700"  },
+  central_bank:   { label: "Central Bank",   icon: "🏦", color: "bg-sky-100 text-sky-700"        },
   policy:         { label: "Policy",         icon: "⚖️", color: "bg-indigo-100 text-indigo-700"  },
   trade:          { label: "Trade",          icon: "🤝", color: "bg-yellow-100 text-yellow-700"  },
   technology:     { label: "Technology",     icon: "💡", color: "bg-cyan-100 text-cyan-700"      },
@@ -283,6 +285,7 @@ export const NS_CATEGORY_META: Record<
 /** All categories in priority order (most specific first) */
 export const NS_CATEGORY_ORDER: NsCategory[] = [
   "tariff", "conflict", "disaster", "border", "protest", "election",
+  "central_bank",
   "policy", "trade", "technology", "infrastructure", "economy", "politics",
 ];
 

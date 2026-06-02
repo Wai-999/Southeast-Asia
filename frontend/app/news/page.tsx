@@ -23,8 +23,10 @@ import { getIso3ForMode } from "@/data/countries";
 import {
   NS_AS_NEWS_EVENTS, NS_META, NS_DATA_STATUS,
   NS_CATEGORY_META, NS_CATEGORY_ORDER, fmtNsGeneratedAt,
+  POLITICAL_RISK_COUNTS, TRADE_NEWS_COUNTS,
   type NsCategory,
 } from "@/data/news-signals";
+import { SEA_COUNTRIES } from "@/data/countries";
 import type { Sentiment } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
@@ -113,6 +115,16 @@ export default function NewsPage() {
   const hasActiveFilters = filterMode !== "sea" || category !== "all" || sentiment !== "all";
   const generatedAt = fmtNsGeneratedAt();
 
+  // ── Dashboard stat card values (SEA countries only) ──────────────────────
+  const SEA_ISO3S = new Set(SEA_COUNTRIES.map(c => c.iso3));
+  const seaPoliticalRisk = Object.entries(POLITICAL_RISK_COUNTS)
+    .filter(([iso3]) => SEA_ISO3S.has(iso3))
+    .reduce((sum, [, n]) => sum + n, 0);
+  const seaTradeSignals = Object.entries(TRADE_NEWS_COUNTS)
+    .filter(([iso3]) => SEA_ISO3S.has(iso3))
+    .reduce((sum, [, n]) => sum + n, 0);
+  const highImpactCount = GDELT_TAGGED.filter(n => n.impactLevel >= 4).length;
+
   return (
     <div className="p-7 max-w-7xl mx-auto">
 
@@ -166,6 +178,69 @@ export default function NewsPage() {
           )}
         </div>
       </div>
+
+      {/* ── Real-time signal stat cards ────────────────────────────────────── */}
+      {isLive && (
+        <div className="grid grid-cols-4 gap-4 mb-5">
+
+          {/* Political Risk */}
+          <div className="card-p border-t-4 border-t-red-400">
+            <p className="text-[10px] font-semibold uppercase tracking-wide text-red-600 mb-2">
+              Political Risk
+            </p>
+            <p className="text-3xl font-bold text-slate-900 tabular-nums">{seaPoliticalRisk}</p>
+            <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+              signals across SEA · {NS_META.days_back}d
+            </p>
+            <p className="text-[10px] text-red-400 mt-2 font-medium">
+              ⚡ Real-time signal
+            </p>
+          </div>
+
+          {/* Trade Signals */}
+          <div className="card-p border-t-4 border-t-amber-400">
+            <p className="text-[10px] font-semibold uppercase tracking-wide text-amber-600 mb-2">
+              Trade Signals
+            </p>
+            <p className="text-3xl font-bold text-slate-900 tabular-nums">{seaTradeSignals}</p>
+            <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+              tariff + trade articles · SEA
+            </p>
+            <p className="text-[10px] text-amber-500 mt-2 font-medium">
+              ⚡ Real-time signal
+            </p>
+          </div>
+
+          {/* High-Impact */}
+          <div className="card-p border-t-4 border-t-orange-500">
+            <p className="text-[10px] font-semibold uppercase tracking-wide text-orange-600 mb-2">
+              High-Impact
+            </p>
+            <p className="text-3xl font-bold text-slate-900 tabular-nums">{highImpactCount}</p>
+            <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+              impact score 4–5 · all countries
+            </p>
+            <p className="text-[10px] text-orange-500 mt-2 font-medium">
+              ⚡ Needs analyst review
+            </p>
+          </div>
+
+          {/* Total Signals */}
+          <div className="card-p border-t-4 border-t-slate-300">
+            <p className="text-[10px] font-semibold uppercase tracking-wide text-slate-500 mb-2">
+              Total Signals
+            </p>
+            <p className="text-3xl font-bold text-slate-900 tabular-nums">{GDELT_TAGGED.length}</p>
+            <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+              across {NS_META.countries_fetched} countries · {NS_META.days_back}d
+            </p>
+            <p className="text-[10px] text-slate-400 mt-2 font-medium">
+              Not official economic data
+            </p>
+          </div>
+
+        </div>
+      )}
 
       {/* ── Data note ──────────────────────────────────────────────────────── */}
       <WorldBankNote className="mb-5" />
