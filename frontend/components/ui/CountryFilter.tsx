@@ -72,14 +72,14 @@ const MODE_BUTTONS: Array<{
 }> = [
   {
     mode: "sea",
-    label: "SEA Only",
+    label: "Southeast Asia",
     icon: "🌏",
     count: SEA_COUNTRIES.length,
     description: "All 11 Southeast Asian countries",
   },
   {
     mode: "partners",
-    label: "Partners",
+    label: "Partner Countries",
     icon: "🤝",
     count: PARTNER_COUNTRIES.length,
     description: "China, US, Japan, India, South Korea, Australia, EU",
@@ -89,14 +89,14 @@ const MODE_BUTTONS: Array<{
     label: "All Countries",
     icon: "◎",
     count: ALL_COUNTRIES.length,
-    description: "Full 18-country + partner registry",
+    description: "All 18 — Southeast Asia + partner countries",
   },
   {
     mode: "custom",
-    label: "Custom",
+    label: "Compare",
     icon: "⊞",
     count: 0,   // set dynamically from customSelection.length
-    description: "Pick any combination",
+    description: "Custom country comparison — pick any combination",
   },
 ];
 

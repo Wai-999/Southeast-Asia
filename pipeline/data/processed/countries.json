@@ -1,0 +1,245 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "generated": "2026-06-02",
+    "description": "SEA Change Intelligence Dashboard — processed country registry for pipeline and frontend",
+    "total_sea": 11,
+    "total_partners": 7,
+    "total": 18,
+    "fields": {
+      "id":                 "Primary key — ISO 3166-1 alpha-3",
+      "name":               "Official English name",
+      "iso2":               "ISO 3166-1 alpha-2",
+      "iso3":               "ISO 3166-1 alpha-3 (same as id)",
+      "world_bank_code":    "World Bank API country code — use in /v2/country/{code}/indicator/...",
+      "region_group":       "'Southeast Asia' | 'Partner'",
+      "dashboard_priority": "'high' | 'medium' | 'low' — controls default visibility and chart order",
+      "default_selected":   "true = included in default dashboard view on first load",
+      "notes":              "Analyst context relevant to the dashboard"
+    },
+    "priority_logic": {
+      "high":   "Core SEA countries with full indicator data, or top-2 partner economies (China, US)",
+      "medium":  "Large SEA economies or countries with active alerts, or mid-tier partners",
+      "low":    "Small/data-sparse SEA countries, or lower-impact partners"
+    }
+  },
+  "countries": [
+
+    {
+      "id":                 "THA",
+      "name":               "Thailand",
+      "iso2":               "TH",
+      "iso3":               "THA",
+      "world_bank_code":    "TH",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "high",
+      "default_selected":   true,
+      "notes":              "Upper-middle income. Key auto hub. EEC FDI zone. Political risk from recurring military interventions. Tourism-reliant services sector."
+    },
+
+    {
+      "id":                 "VNM",
+      "name":               "Vietnam",
+      "iso2":               "VN",
+      "iso3":               "VNM",
+      "world_bank_code":    "VN",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "high",
+      "default_selected":   true,
+      "notes":              "Fast-growing FDI magnet for electronics supply chains. Large US trade surplus creates tariff risk. EVFTA with EU in force."
+    },
+
+    {
+      "id":                 "SGP",
+      "name":               "Singapore",
+      "iso2":               "SG",
+      "iso3":               "SGP",
+      "world_bank_code":    "SG",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "high",
+      "default_selected":   true,
+      "notes":              "City-state hub. World's largest FDI per capita. Re-export centre distorts trade statistics. MAS uses exchange rate band as primary monetary tool."
+    },
+
+    {
+      "id":                 "IDN",
+      "name":               "Indonesia",
+      "iso2":               "ID",
+      "iso3":               "IDN",
+      "world_bank_code":    "ID",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Largest ASEAN economy. Commodity-export dependent. Capital relocation to Nusantara ongoing. Key nickel and palm oil producer."
+    },
+
+    {
+      "id":                 "MYS",
+      "name":               "Malaysia",
+      "iso2":               "MY",
+      "iso3":               "MYS",
+      "world_bank_code":    "MY",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Semiconductor cluster in Penang attracting major US chip investment. Ringgit volatility tied to commodity prices. ASEAN Chair 2025."
+    },
+
+    {
+      "id":                 "PHL",
+      "name":               "Philippines",
+      "iso2":               "PH",
+      "iso3":               "PHL",
+      "world_bank_code":    "PH",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Large diaspora remittance inflows support consumption. Growing BPO sector. Typhoon risk creates periodic GDP shocks. South China Sea tensions."
+    },
+
+    {
+      "id":                 "MMR",
+      "name":               "Myanmar",
+      "iso2":               "MM",
+      "iso3":               "MMR",
+      "world_bank_code":    "MM",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "medium",
+      "default_selected":   true,
+      "notes":              "POST-COUP CRISIS (Feb 2021). GDP contracted. Hyperinflation, currency collapse, FDI exit. Post-2021 statistics from IMF estimates only."
+    },
+
+    {
+      "id":                 "KHM",
+      "name":               "Cambodia",
+      "iso2":               "KH",
+      "iso3":               "KHM",
+      "world_bank_code":    "KH",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "medium",
+      "default_selected":   true,
+      "notes":              "Garment-dependent economy. EU GSP preference pressure. High current-account deficit. Highly dollarised — limited independent monetary policy."
+    },
+
+    {
+      "id":                 "LAO",
+      "name":               "Laos",
+      "iso2":               "LA",
+      "iso3":               "LAO",
+      "world_bank_code":    "LA",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "low",
+      "default_selected":   false,
+      "notes":              "DEBT DISTRESS: Government debt >100% GDP. Kip lost >50% vs USD since 2021. IMF-flagged for restructuring. China-Laos Railway opened 2021."
+    },
+
+    {
+      "id":                 "BRN",
+      "name":               "Brunei",
+      "iso2":               "BN",
+      "iso3":               "BRN",
+      "world_bank_code":    "BN",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "low",
+      "default_selected":   false,
+      "notes":              "Micro oil-state. High GDP per capita. Economy entirely dependent on hydrocarbons. BND pegged 1:1 to SGD. Very limited World Bank data."
+    },
+
+    {
+      "id":                 "TLS",
+      "name":               "Timor-Leste",
+      "iso2":               "TL",
+      "iso3":               "TLS",
+      "world_bank_code":    "TP",
+      "region_group":       "Southeast Asia",
+      "dashboard_priority": "low",
+      "default_selected":   false,
+      "notes":              "ASEAN candidate. Uses USD — no independent monetary policy. Petroleum Fund is primary fiscal resource. WB code TP (legacy East Timor identifier)."
+    },
+
+    {
+      "id":                 "CHN",
+      "name":               "China",
+      "iso2":               "CN",
+      "iso3":               "CHN",
+      "world_bank_code":    "CN",
+      "region_group":       "Partner",
+      "dashboard_priority": "high",
+      "default_selected":   false,
+      "notes":              "Largest trade partner for all SEA countries. BRI funder. Property crisis ongoing. US-China tech decoupling driving supply chain shifts to SEA."
+    },
+
+    {
+      "id":                 "USA",
+      "name":               "United States",
+      "iso2":               "US",
+      "iso3":               "USA",
+      "world_bank_code":    "US",
+      "region_group":       "Partner",
+      "dashboard_priority": "high",
+      "default_selected":   false,
+      "notes":              "Key export destination for VNM, THA, MYS. Primary source of tariff risk. Fed rate decisions affect SEA currency pressure."
+    },
+
+    {
+      "id":                 "JPN",
+      "name":               "Japan",
+      "iso2":               "JP",
+      "iso3":               "JPN",
+      "world_bank_code":    "JP",
+      "region_group":       "Partner",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Major FDI source for THA (auto), VNM (electronics). Yen weakness reduces FDI purchasing power. CPTPP founding member."
+    },
+
+    {
+      "id":                 "IND",
+      "name":               "India",
+      "iso2":               "IN",
+      "iso3":               "IND",
+      "world_bank_code":    "IN",
+      "region_group":       "Partner",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Rising regional power. Act East policy deepens ASEAN ties. Competing manufacturing FDI destination vs SEA."
+    },
+
+    {
+      "id":                 "KOR",
+      "name":               "South Korea",
+      "iso2":               "KR",
+      "iso3":               "KOR",
+      "world_bank_code":    "KR",
+      "region_group":       "Partner",
+      "dashboard_priority": "medium",
+      "default_selected":   false,
+      "notes":              "Major FDI source for VNM (Samsung ~20% of Vietnam exports), IDN, THA. Korea-ASEAN FTA active."
+    },
+
+    {
+      "id":                 "AUS",
+      "name":               "Australia",
+      "iso2":               "AU",
+      "iso3":               "AUS",
+      "world_bank_code":    "AU",
+      "region_group":       "Partner",
+      "dashboard_priority": "low",
+      "default_selected":   false,
+      "notes":              "Key ASEAN dialogue partner. CPTPP and RCEP member. Commodity exports relevant to SEA industrialisation. Australia-ASEAN Comprehensive Strategic Partnership."
+    },
+
+    {
+      "id":                 "EUU",
+      "name":               "European Union",
+      "iso2":               "EU",
+      "iso3":               "EUU",
+      "world_bank_code":    "EU",
+      "region_group":       "Partner",
+      "dashboard_priority": "low",
+      "default_selected":   false,
+      "notes":              "BLOC (27 member states). GSP/EBA preferences critical for KHM, MMR, LAO garment exports. EVFTA with VNM active. CBAM affects IDN, MYS commodity exporters."
+    }
+
+  ]
+}

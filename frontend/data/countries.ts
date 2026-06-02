@@ -44,6 +44,9 @@ export type AseanStatus = "full" | "candidate" | "observer" | "none";
 
 export type DataQuality = "excellent" | "good" | "fair" | "poor";
 
+/** Three-tier priority controlling default visibility and chart sort order */
+export type DashboardPriority = "high" | "medium" | "low";
+
 export interface DashboardCountry {
   /** ISO 3166-1 alpha-3 — dashboard primary key */
   iso3: string;
@@ -79,6 +82,10 @@ export interface DashboardCountry {
   aseanStatus: AseanStatus;
   /** Sort order (1 = highest priority, shown first) */
   defaultPriority: number;
+  /** Three-tier priority for dashboard visibility: high | medium | low */
+  dashboardPriority: DashboardPriority;
+  /** Included in the default dashboard view on first load */
+  defaultSelected: boolean;
   /** Appears in main indicator charts by default */
   dashboardActive: boolean;
   /** Full 8-indicator sample data exists in sample-data.ts */
@@ -115,7 +122,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Mainland SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 1, dashboardActive: true, indicatorDataAvailable: true,
+    defaultPriority: 1, dashboardPriority: "high", defaultSelected: true,
+    dashboardActive: true, indicatorDataAvailable: true,
     dataQuality: "good", populationMillions: 70.8, gdpNominalUsdB: 514.9,
     riskLevel: "medium",
     mainExports: ["Vehicles & parts", "Electronics", "Rubber products"],
@@ -130,7 +138,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Mainland SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 2, dashboardActive: true, indicatorDataAvailable: true,
+    defaultPriority: 2, dashboardPriority: "high", defaultSelected: true,
+    dashboardActive: true, indicatorDataAvailable: true,
     dataQuality: "good", populationMillions: 97.3, gdpNominalUsdB: 433.2,
     riskLevel: "low",
     mainExports: ["Electronics & components", "Textiles & footwear", "Machinery"],
@@ -145,7 +154,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Mainland SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 7, dashboardActive: true, indicatorDataAvailable: true,
+    defaultPriority: 7, dashboardPriority: "medium", defaultSelected: true,
+    dashboardActive: true, indicatorDataAvailable: true,
     dataQuality: "poor", populationMillions: 54.4, gdpNominalUsdB: 65.0,
     riskLevel: "critical",
     mainExports: ["Natural gas", "Jade & gems", "Rice"],
@@ -160,7 +170,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Mainland SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 8, dashboardActive: true, indicatorDataAvailable: true,
+    defaultPriority: 8, dashboardPriority: "medium", defaultSelected: true,
+    dashboardActive: true, indicatorDataAvailable: true,
     dataQuality: "fair", populationMillions: 16.7, gdpNominalUsdB: 30.1,
     riskLevel: "high",
     mainExports: ["Garments & textiles", "Footwear", "Rice"],
@@ -175,7 +186,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Mainland SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 9, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 9, dashboardPriority: "low", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "fair", populationMillions: 7.4, gdpNominalUsdB: 14.0,
     riskLevel: "critical",
     mainExports: ["Hydropower electricity", "Copper", "Gold"],
@@ -192,7 +204,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 3, dashboardActive: true, indicatorDataAvailable: true,
+    defaultPriority: 3, dashboardPriority: "high", defaultSelected: true,
+    dashboardActive: true, indicatorDataAvailable: true,
     dataQuality: "excellent", populationMillions: 5.9, gdpNominalUsdB: 501.4,
     riskLevel: "low",
     mainExports: ["Electronics", "Financial services", "Petroleum products"],
@@ -207,7 +220,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 4, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 4, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "good", populationMillions: 275.5, gdpNominalUsdB: 1371.2,
     riskLevel: "medium",
     mainExports: ["Coal", "Palm oil", "Nickel ore"],
@@ -222,7 +236,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 5, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 5, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "good", populationMillions: 33.0, gdpNominalUsdB: 416.6,
     riskLevel: "low",
     mainExports: ["Electronics & semiconductors", "Palm oil", "LNG"],
@@ -237,7 +252,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 6, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 6, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "good", populationMillions: 114.2, gdpNominalUsdB: 435.0,
     riskLevel: "medium",
     mainExports: ["Electronics", "Remittances (services)", "Coconut products"],
@@ -252,7 +268,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: true, aseanStatus: "full",
-    defaultPriority: 10, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 10, dashboardPriority: "low", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "fair", populationMillions: 0.45, gdpNominalUsdB: 14.1,
     riskLevel: "low",
     mainExports: ["Crude oil", "Natural gas", "Methanol"],
@@ -267,7 +284,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Southeast Asia", subRegion: "Maritime SEA",
     isSea: true, isPartner: false, isBloc: false,
     aseanMember: false, aseanStatus: "candidate",
-    defaultPriority: 11, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 11, dashboardPriority: "low", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "poor", populationMillions: 1.3, gdpNominalUsdB: 2.0,
     riskLevel: "high",
     mainExports: ["Petroleum (offshore)", "Coffee"],
@@ -284,7 +302,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "East Asia", subRegion: "East Asia",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 12, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 12, dashboardPriority: "high", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "fair", populationMillions: 1411.0, gdpNominalUsdB: 17963.2,
     mainExports: ["Electronics", "Machinery", "Textiles"],
     mainImportPartners: ["United States", "Japan", "South Korea"],
@@ -298,7 +317,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Americas", subRegion: "North America",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 13, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 13, dashboardPriority: "high", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "excellent", populationMillions: 331.0, gdpNominalUsdB: 25462.4,
     mainExports: ["Services", "Aircraft", "Petroleum"],
     mainImportPartners: ["China", "Mexico", "Canada"],
@@ -312,7 +332,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "East Asia", subRegion: "East Asia",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 14, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 14, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "excellent", populationMillions: 125.7, gdpNominalUsdB: 4409.7,
     mainExports: ["Vehicles", "Machinery", "Electronics"],
     mainImportPartners: ["China", "United States", "Australia"],
@@ -326,7 +347,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "South Asia", subRegion: "South Asia",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 15, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 15, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "good", populationMillions: 1407.6, gdpNominalUsdB: 3386.4,
     mainExports: ["Petroleum products", "Pharmaceuticals", "Vehicles"],
     mainImportPartners: ["China", "United States", "UAE"],
@@ -340,7 +362,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "East Asia", subRegion: "East Asia",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 16, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 16, dashboardPriority: "medium", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "excellent", populationMillions: 51.7, gdpNominalUsdB: 1665.2,
     mainExports: ["Semiconductors", "Vehicles", "Ships"],
     mainImportPartners: ["China", "United States", "Australia"],
@@ -354,7 +377,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Oceania", subRegion: "Oceania",
     isSea: false, isPartner: true, isBloc: false,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 17, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 17, dashboardPriority: "low", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "excellent", populationMillions: 25.9, gdpNominalUsdB: 1702.7,
     mainExports: ["Iron ore", "Coal", "Natural gas"],
     mainImportPartners: ["China", "United States", "South Korea"],
@@ -368,7 +392,8 @@ export const ALL_COUNTRIES: DashboardCountry[] = [
     regionGroup: "Europe", subRegion: "Europe",
     isSea: false, isPartner: true, isBloc: true,
     aseanMember: false, aseanStatus: "none",
-    defaultPriority: 18, dashboardActive: false, indicatorDataAvailable: false,
+    defaultPriority: 18, dashboardPriority: "low", defaultSelected: false,
+    dashboardActive: false, indicatorDataAvailable: false,
     dataQuality: "good", populationMillions: 447.0, gdpNominalUsdB: 16642.3,
     mainExports: ["Machinery", "Vehicles", "Pharmaceuticals"],
     mainImportPartners: ["China", "United States", "United Kingdom"],
@@ -394,6 +419,16 @@ export const PARTNER_COUNTRIES: DashboardCountry[] = ALL_COUNTRIES
 /** The 5 countries with full indicator data in sample-data.ts */
 export const ACTIVE_COUNTRIES: DashboardCountry[] = ALL_COUNTRIES
   .filter(c => c.indicatorDataAvailable)
+  .sort((a, b) => a.defaultPriority - b.defaultPriority);
+
+/** Countries included in the default dashboard view on first load */
+export const DEFAULT_SELECTED_COUNTRIES: DashboardCountry[] = ALL_COUNTRIES
+  .filter(c => c.defaultSelected)
+  .sort((a, b) => a.defaultPriority - b.defaultPriority);
+
+/** High-priority countries only (high dashboardPriority) */
+export const HIGH_PRIORITY_COUNTRIES: DashboardCountry[] = ALL_COUNTRIES
+  .filter(c => c.dashboardPriority === "high")
   .sort((a, b) => a.defaultPriority - b.defaultPriority);
 
 /** Countries grouped by region_group */
@@ -441,32 +476,40 @@ export function getShortName(iso3: string): string {
 /**
  * Filter countries by a filter mode.
  *
- * @param mode     - "sea" | "partners" | "all" | "active"
+ * @param mode      - "sea" | "partners" | "all" | "active" | "default" | "custom"
  * @param customIds - for mode "custom", the explicit ISO3 list
  */
 export function getCountriesForMode(
-  mode: "sea" | "partners" | "all" | "active" | "custom",
+  mode: "sea" | "partners" | "all" | "active" | "default" | "custom",
   customIds?: string[],
 ): DashboardCountry[] {
   switch (mode) {
-    case "sea":     return SEA_COUNTRIES;
-    case "partners":return PARTNER_COUNTRIES;
-    case "all":     return ALL_COUNTRIES;
-    case "active":  return ACTIVE_COUNTRIES;
-    case "custom":  return (customIds ?? [])
+    case "sea":      return SEA_COUNTRIES;
+    case "partners": return PARTNER_COUNTRIES;
+    case "all":      return ALL_COUNTRIES;
+    case "active":   return ACTIVE_COUNTRIES;
+    case "default":  return DEFAULT_SELECTED_COUNTRIES;
+    case "custom":   return (customIds ?? [])
       .map(id => getCountry(id))
       .filter((c): c is DashboardCountry => c !== undefined);
-    default:        return SEA_COUNTRIES;
+    default:         return SEA_COUNTRIES;
   }
 }
 
 /** ISO3 codes for a filter mode (convenient for filter comparisons) */
 export function getIso3ForMode(
-  mode: "sea" | "partners" | "all" | "active" | "custom",
+  mode: "sea" | "partners" | "all" | "active" | "default" | "custom",
   customIds?: string[],
 ): Set<string> {
   return new Set(getCountriesForMode(mode, customIds).map(c => c.iso3));
 }
+
+/** Dashboard priority label for display */
+export const DASHBOARD_PRIORITY_LABEL: Record<DashboardPriority, string> = {
+  high:   "Core",
+  medium: "Extended",
+  low:    "Peripheral",
+};
 
 /** Data quality label for display */
 export const DATA_QUALITY_LABEL: Record<DataQuality, string> = {
