@@ -1,0 +1,3471 @@
+{
+  "meta": {
+    "generated_at": "2026-06-02T14:56:32",
+    "script": "generate_pattern_alerts.py",
+    "data_sources": {
+      "official_data": "World Bank Open Data  (worldbank_indicators.json)",
+      "news_signal": "GDELT 2.0 Document API  (news_signals.json)",
+      "trade_signal": "UN Comtrade / WTO Statistics  (trade_flows.json)"
+    },
+    "total_checks": 80,
+    "triggered_alerts": 11,
+    "critical": 2,
+    "warnings": 4,
+    "info_count": 5,
+    "high_confidence": 2,
+    "medium_confidence": 4,
+    "low_confidence": 5,
+    "countries_checked": 10,
+    "regional_avg_growth": 4.3,
+    "min_score_filter": 20.0,
+    "news_window_days": 7,
+    "alert_types": [
+      "export_stress",
+      "import_shock",
+      "inflation_pressure",
+      "political_risk_rising",
+      "trade_dependency_risk",
+      "regional_spillover",
+      "fdi_weakness",
+      "growth_slowdown"
+    ],
+    "confidence_methodology": "Each alert is independently verified against 3 data sources: World Bank (official_data), GDELT (news_signal), UN Comtrade (trade_signal). high = all 3 agree, medium = 2 agree, low = 1 agrees.",
+    "refresh_note": "Run 'python run_pipeline.py' to refresh all data and regenerate alerts."
+  },
+  "alerts": [
+    {
+      "alert_id": "trade_dependency_risk_LAO_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 73.2,
+      "severity": "critical",
+      "conditions_met": [
+        "47% of exports go to CHN (over-reliance threshold: 30%)",
+        "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 46.9,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 51.3
+      },
+      "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#DC2626",
+      "bg_color": "#FEF2F2",
+      "icon": "🔗",
+      "severity_class": "sev-critical",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "high",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 3
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "fdi_weakness_LAO_2024",
+      "alert_type": "fdi_weakness",
+      "alert_label": "FDI Weakness",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 66.4,
+      "severity": "critical",
+      "conditions_met": [
+        "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 5.989589,
+        "fdi_prev_usd_b": 11.242563,
+        "fdi_yoy_pct": -46.7,
+        "total_risk_news_count": 0
+      },
+      "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#DC2626",
+      "bg_color": "#FEF2F2",
+      "icon": "📊",
+      "severity_class": "sev-critical",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+      "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "fdi_weakness_MMR_2024",
+      "alert_type": "fdi_weakness",
+      "alert_label": "FDI Weakness",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 53.4,
+      "severity": "warning",
+      "conditions_met": [
+        "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 1.478792,
+        "fdi_prev_usd_b": 2.277151,
+        "fdi_yoy_pct": -35.1,
+        "total_risk_news_count": 6
+      },
+      "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "📊",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+      "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_MMR_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 50.2,
+      "severity": "warning",
+      "conditions_met": [
+        "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 28.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 47.1
+      },
+      "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔗",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "inflation_pressure_LAO_2024",
+      "alert_type": "inflation_pressure",
+      "alert_label": "Inflation Pressure",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 47.2,
+      "severity": "warning",
+      "conditions_met": [
+        "Inflation at 23.1% (target band: 2–4%)",
+        "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+      ],
+      "values_used": {
+        "inflation_pct": 23.1,
+        "inflation_change_pp": -8.1,
+        "real_gdp_growth_pct": -19.0
+      },
+      "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+      "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔥",
+      "severity_class": "sev-warning",
+      "chart_hint": "line",
+      "metric_to_highlight": "inflation_pct",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+      "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "growth_slowdown_MMR_2024",
+      "alert_type": "growth_slowdown",
+      "alert_label": "Growth Slowdown",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 41.7,
+      "severity": "warning",
+      "conditions_met": [
+        "GDP contracted -1.0% — economy in recession",
+        "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+      ],
+      "values_used": {
+        "gdp_growth_pct": -0.97,
+        "regional_avg_growth_pct": 4.3,
+        "gdp_growth_prev_pct": 0.96,
+        "gdp_deceleration_pp": 1.93,
+        "economy_news_7d": 5,
+        "economy_news_tone": -0.372
+      },
+      "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+      "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "📉",
+      "severity_class": "sev-warning",
+      "chart_hint": "line",
+      "metric_to_highlight": "gdp_growth_pct",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+      "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_IDN_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "IDN",
+      "country_name": "Indonesia",
+      "year": 2024,
+      "triggered": true,
+      "score": 26.5,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 21.3,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 30.2
+      },
+      "explanation": "Trade concentration for Indonesia is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "political_risk_rising_MMR_2024",
+      "alert_type": "political_risk_rising",
+      "alert_label": "Political Risk Rising",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 23.0,
+      "severity": "info",
+      "conditions_met": [
+        "Economic contraction (-1.0% GDP) amplifies instability risk"
+      ],
+      "values_used": {
+        "conflict_protest_news": 3,
+        "political_risk_news": 3,
+        "conflict_baseline": 18.0,
+        "gdp_growth_pct": -0.972046
+      },
+      "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+      "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "⚡",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "conflict_protest_news_count",
+      "confidence": "high",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 3
+      },
+      "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+      "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_VNM_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "VNM",
+      "country_name": "Vietnam",
+      "year": 2024,
+      "triggered": true,
+      "score": 22.0,
+      "severity": "info",
+      "conditions_met": [
+        "31% of exports go to USA (over-reliance threshold: 30%)",
+        "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 30.9,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 36.1
+      },
+      "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_KHM_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "KHM",
+      "country_name": "Cambodia",
+      "year": 2024,
+      "triggered": true,
+      "score": 20.1,
+      "severity": "info",
+      "conditions_met": [
+        "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 28.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 37.0
+      },
+      "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_MYS_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "MYS",
+      "country_name": "Malaysia",
+      "year": 2024,
+      "triggered": true,
+      "score": 20.0,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 16.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 22.4
+      },
+      "explanation": "Trade concentration for Malaysia is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 0
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    }
+  ],
+  "all_results": [
+    {
+      "alert_id": "export_stress_BRN_2024",
+      "alert_type": "export_stress",
+      "alert_label": "Export Stress",
+      "country_iso3": "BRN",
+      "country_name": "Brunei",
+      "year": 2024,
+      "triggered": false,
+      "score": 7.5,
+      "severity": "none",
+      "conditions_met": [],
+      "values_used": {
+        "export_yoy_pct": -1.6,
+        "trade_balance_usd_b": 2.4,
+        "prev_trade_balance_usd_b": 2.5,
+        "exports_current": 11.393732,
+        "exports_prev": 11.578413
+      },
+      "explanation": "Brunei's exports declined 1.6% year-over-year from $11.6B to $11.4B, consistent with weakening external demand.",
+      "recommendation": "Track Q1 forward export orders and shipping volumes. Check whether key export partners (especially China/USA) have reduced import demand.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "📉",
+      "severity_class": "sev-none",
+      "chart_hint": "line",
+      "metric_to_highlight": "exports_usd_b",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB exports YoY: -1.6%. ✗ News signal (GDELT): Trade news 7d: 2 articles (tone 0.34). ✓ Trade data (Comtrade): Comtrade: exports declining.",
+      "ai_explanation": "**Export Stress — Brunei**\n\nBrunei's exports declined 1.6% year-over-year from $11.6B to $11.4B, consistent with weakening external demand.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB exports YoY: -1.6%. ✗ News signal (GDELT): Trade news 7d: 2 articles (tone 0.34). ✓ Trade data (Comtrade): Comtrade: exports declining.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_BRN_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "BRN",
+      "country_name": "Brunei",
+      "year": 2024,
+      "triggered": false,
+      "score": 10.4,
+      "severity": "none",
+      "conditions_met": [
+        "30% of exports go to JPN (over-reliance threshold: 30%)"
+      ],
+      "values_used": {
+        "top_export_partner": "JPN",
+        "top_export_partner_share": 30.4,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 16.7
+      },
+      "explanation": "Brunei shows high trade concentration: 30% of Brunei's exports go to JPN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🔗",
+      "severity_class": "sev-none",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 151.1% YoY. ✓ News signal (GDELT): Trade news 7d: 2 articles. ✓ Trade data (Comtrade): Comtrade: exports 30% to JPN, imports 17% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Brunei**\n\nBrunei shows high trade concentration: 30% of Brunei's exports go to JPN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 151.1% YoY. ✓ News signal (GDELT): Trade news 7d: 2 articles. ✓ Trade data (Comtrade): Comtrade: exports 30% to JPN, imports 17% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_IDN_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "IDN",
+      "country_name": "Indonesia",
+      "year": 2024,
+      "triggered": true,
+      "score": 26.5,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 21.3,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 30.2
+      },
+      "explanation": "Trade concentration for Indonesia is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "import_shock_KHM_2024",
+      "alert_type": "import_shock",
+      "alert_label": "Import Shock",
+      "country_iso3": "KHM",
+      "country_name": "Cambodia",
+      "year": 2024,
+      "triggered": false,
+      "score": 5.2,
+      "severity": "none",
+      "conditions_met": [
+        "Imports surged 17.2% YoY — rising faster than domestic production",
+        "37% of imports sourced from CHN — supply chain concentration risk"
+      ],
+      "values_used": {
+        "imports_current_b": 33.4,
+        "imports_prev_b": 28.5,
+        "imports_yoy_pct": 17.2,
+        "import_export_divergence_pp": 0.4,
+        "trade_balance_b": -4.4,
+        "prev_trade_balance_b": -4.5,
+        "balance_change_b": 0.1,
+        "top_import_partner": "CHN",
+        "top_import_share_pct": 37.0,
+        "trade_news_7d": 1,
+        "trade_news_tone": 0.44
+      },
+      "explanation": "Cambodia's imports jumped 17.2% year-over-year to $33.4B, outpacing export growth (+16.8% exports). This surge is widening the trade deficit and increasing foreign exchange demand. With 37% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.",
+      "recommendation": "Track monthly trade statistics for early signs of balance deterioration. Monitor tariff announcements and FX reserve levels — a widening deficit requires more foreign currency to finance.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "📦",
+      "severity_class": "sev-none",
+      "chart_hint": "bar",
+      "metric_to_highlight": "imports_usd_b",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB imports YoY: 17.2%. ✗ News signal (GDELT): Trade news 7d: 1 articles (tone 0.44). ✓ Trade data (Comtrade): Import concentration: 37% from CHN.",
+      "ai_explanation": "**Import Shock — Cambodia**\n\nCambodia's imports jumped 17.2% year-over-year to $33.4B, outpacing export growth (+16.8% exports). This surge is widening the trade deficit and increasing foreign exchange demand. With 37% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB imports YoY: 17.2%. ✗ News signal (GDELT): Trade news 7d: 1 articles (tone 0.44). ✓ Trade data (Comtrade): Import concentration: 37% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_KHM_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "KHM",
+      "country_name": "Cambodia",
+      "year": 2024,
+      "triggered": true,
+      "score": 20.1,
+      "severity": "info",
+      "conditions_met": [
+        "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 28.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 37.0
+      },
+      "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "regional_spillover_KHM_2024",
+      "alert_type": "regional_spillover",
+      "alert_label": "Regional Spillover Risk",
+      "country_iso3": "KHM",
+      "country_name": "Cambodia",
+      "year": 2024,
+      "triggered": false,
+      "score": 7.0,
+      "severity": "none",
+      "conditions_met": [
+        "Laos is under moderate stress (30/100)"
+      ],
+      "values_used": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_VNM_stress": 0.0,
+        "neighbour_LAO_stress": 30.0
+      },
+      "explanation": "Cambodia faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.",
+      "recommendation": "Monitor cross-border trade volumes and migration statistics. Watch for capital flow reversals if regional sentiment deteriorates.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🌏",
+      "severity_class": "sev-none",
+      "chart_hint": "heatmap",
+      "metric_to_highlight": "neighbour_stress",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB GDP growth (own): 6.0%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "ai_explanation": "**Regional Spillover Risk — Cambodia**\n\nCambodia faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB GDP growth (own): 6.0%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "import_shock_LAO_2024",
+      "alert_type": "import_shock",
+      "alert_label": "Import Shock",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": false,
+      "score": 13.0,
+      "severity": "none",
+      "conditions_met": [
+        "51% of imports sourced from CHN — supply chain concentration risk"
+      ],
+      "values_used": {
+        "imports_current_b": 6.7,
+        "imports_prev_b": 6.7,
+        "imports_yoy_pct": 0.0,
+        "import_export_divergence_pp": 0.0,
+        "trade_balance_b": 0.5,
+        "prev_trade_balance_b": 0.5,
+        "balance_change_b": -0.0,
+        "top_import_partner": "CHN",
+        "top_import_share_pct": 51.3,
+        "trade_news_7d": 3,
+        "trade_news_tone": 0.463
+      },
+      "explanation": "Import trends in Laos warrant monitoring for trade balance pressure. With 51% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.",
+      "recommendation": "Track monthly trade statistics for early signs of balance deterioration. Monitor tariff announcements and FX reserve levels — a widening deficit requires more foreign currency to finance.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "📦",
+      "severity_class": "sev-none",
+      "chart_hint": "bar",
+      "metric_to_highlight": "imports_usd_b",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB imports YoY: 0.0%. ✗ News signal (GDELT): Trade news 7d: 3 articles (tone 0.46). ✓ Trade data (Comtrade): Import concentration: 51% from CHN.",
+      "ai_explanation": "**Import Shock — Laos**\n\nImport trends in Laos warrant monitoring for trade balance pressure. With 51% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB imports YoY: 0.0%. ✗ News signal (GDELT): Trade news 7d: 3 articles (tone 0.46). ✓ Trade data (Comtrade): Import concentration: 51% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "inflation_pressure_LAO_2024",
+      "alert_type": "inflation_pressure",
+      "alert_label": "Inflation Pressure",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 47.2,
+      "severity": "warning",
+      "conditions_met": [
+        "Inflation at 23.1% (target band: 2–4%)",
+        "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+      ],
+      "values_used": {
+        "inflation_pct": 23.1,
+        "inflation_change_pp": -8.1,
+        "real_gdp_growth_pct": -19.0
+      },
+      "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+      "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔥",
+      "severity_class": "sev-warning",
+      "chart_hint": "line",
+      "metric_to_highlight": "inflation_pct",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+      "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "fdi_weakness_LAO_2024",
+      "alert_type": "fdi_weakness",
+      "alert_label": "FDI Weakness",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 66.4,
+      "severity": "critical",
+      "conditions_met": [
+        "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 5.989589,
+        "fdi_prev_usd_b": 11.242563,
+        "fdi_yoy_pct": -46.7,
+        "total_risk_news_count": 0
+      },
+      "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#DC2626",
+      "bg_color": "#FEF2F2",
+      "icon": "📊",
+      "severity_class": "sev-critical",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+      "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_LAO_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": true,
+      "score": 73.2,
+      "severity": "critical",
+      "conditions_met": [
+        "47% of exports go to CHN (over-reliance threshold: 30%)",
+        "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 46.9,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 51.3
+      },
+      "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#DC2626",
+      "bg_color": "#FEF2F2",
+      "icon": "🔗",
+      "severity_class": "sev-critical",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "high",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 3
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "regional_spillover_LAO_2024",
+      "alert_type": "regional_spillover",
+      "alert_label": "Regional Spillover Risk",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2024,
+      "triggered": false,
+      "score": 7.0,
+      "severity": "none",
+      "conditions_met": [
+        "Myanmar is under moderate stress (28/100)"
+      ],
+      "values_used": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_VNM_stress": 0.0,
+        "neighbour_KHM_stress": 0.0,
+        "neighbour_MMR_stress": 28.0
+      },
+      "explanation": "Laos faces elevated spillover risk from concurrent stress in neighbouring economies: Myanmar. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.",
+      "recommendation": "Monitor cross-border trade volumes and migration statistics. Watch for capital flow reversals if regional sentiment deteriorates.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🌏",
+      "severity_class": "sev-none",
+      "chart_hint": "heatmap",
+      "metric_to_highlight": "neighbour_stress",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✗ Official data (WB): WB GDP growth (own): 4.1%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✓ Trade data (Comtrade): Comtrade: 1 high-dependency partner(s).",
+      "ai_explanation": "**Regional Spillover Risk — Laos**\n\nLaos faces elevated spillover risk from concurrent stress in neighbouring economies: Myanmar. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB GDP growth (own): 4.1%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✓ Trade data (Comtrade): Comtrade: 1 high-dependency partner(s).",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "import_shock_MMR_2024",
+      "alert_type": "import_shock",
+      "alert_label": "Import Shock",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": false,
+      "score": 19.7,
+      "severity": "none",
+      "conditions_met": [
+        "47% of imports sourced from CHN — supply chain concentration risk"
+      ],
+      "values_used": {
+        "trade_balance_b": 0.8,
+        "prev_trade_balance_b": 0.8,
+        "balance_change_b": -0.0,
+        "top_import_partner": "CHN",
+        "top_import_share_pct": 47.1,
+        "trade_news_7d": 1,
+        "trade_news_tone": -0.55
+      },
+      "explanation": "Import trends in Myanmar warrant monitoring for trade balance pressure. With 47% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.",
+      "recommendation": "Track monthly trade statistics for early signs of balance deterioration. Monitor tariff announcements and FX reserve levels — a widening deficit requires more foreign currency to finance.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "📦",
+      "severity_class": "sev-none",
+      "chart_hint": "bar",
+      "metric_to_highlight": "imports_usd_b",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✗ Official data (WB): WB: no import data. ✓ News signal (GDELT): Trade news 7d: 1 articles (tone -0.55). ✓ Trade data (Comtrade): Import concentration: 47% from CHN.",
+      "ai_explanation": "**Import Shock — Myanmar**\n\nImport trends in Myanmar warrant monitoring for trade balance pressure. With 47% of imports sourced from CHN, any disruption to this relationship could create acute supply shortages.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB: no import data. ✓ News signal (GDELT): Trade news 7d: 1 articles (tone -0.55). ✓ Trade data (Comtrade): Import concentration: 47% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "inflation_pressure_MMR_2024",
+      "alert_type": "inflation_pressure",
+      "alert_label": "Inflation Pressure",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": false,
+      "score": 18.9,
+      "severity": "none",
+      "conditions_met": [
+        "Inflation at 8.8% (target band: 2–4%)",
+        "Real GDP growth negative (-1.0% − 8.8% = -9.8%)"
+      ],
+      "values_used": {
+        "inflation_pct": 8.8,
+        "inflation_change_pp": 0.0,
+        "real_gdp_growth_pct": -9.8
+      },
+      "explanation": "Myanmar is experiencing high inflation at 8.8%. With nominal GDP growth of -1.0%, real purchasing power is contracting by -9.8pp, squeezing households and businesses. ",
+      "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🔥",
+      "severity_class": "sev-none",
+      "chart_hint": "line",
+      "metric_to_highlight": "inflation_pct",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB inflation: 8.8%. ✓ News signal (GDELT): News avg tone 7d: -0.37  (total: 5 articles). ✗ Trade data (Comtrade): Comtrade: no data.",
+      "ai_explanation": "**Inflation Pressure — Myanmar**\n\nMyanmar is experiencing high inflation at 8.8%. With nominal GDP growth of -1.0%, real purchasing power is contracting by -9.8pp, squeezing households and businesses. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 8.8%. ✓ News signal (GDELT): News avg tone 7d: -0.37  (total: 5 articles). ✗ Trade data (Comtrade): Comtrade: no data.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "political_risk_rising_MMR_2024",
+      "alert_type": "political_risk_rising",
+      "alert_label": "Political Risk Rising",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 23.0,
+      "severity": "info",
+      "conditions_met": [
+        "Economic contraction (-1.0% GDP) amplifies instability risk"
+      ],
+      "values_used": {
+        "conflict_protest_news": 3,
+        "political_risk_news": 3,
+        "conflict_baseline": 18.0,
+        "gdp_growth_pct": -0.972046
+      },
+      "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+      "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "⚡",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "conflict_protest_news_count",
+      "confidence": "high",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 3
+      },
+      "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+      "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "fdi_weakness_MMR_2024",
+      "alert_type": "fdi_weakness",
+      "alert_label": "FDI Weakness",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 53.4,
+      "severity": "warning",
+      "conditions_met": [
+        "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 1.478792,
+        "fdi_prev_usd_b": 2.277151,
+        "fdi_yoy_pct": -35.1,
+        "total_risk_news_count": 6
+      },
+      "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "📊",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+      "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_MMR_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 50.2,
+      "severity": "warning",
+      "conditions_met": [
+        "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 28.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 47.1
+      },
+      "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔗",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": false,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "regional_spillover_MMR_2024",
+      "alert_type": "regional_spillover",
+      "alert_label": "Regional Spillover Risk",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": false,
+      "score": 7.0,
+      "severity": "none",
+      "conditions_met": [
+        "Laos is under moderate stress (30/100)"
+      ],
+      "values_used": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_LAO_stress": 30.0
+      },
+      "explanation": "Myanmar faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.",
+      "recommendation": "Monitor cross-border trade volumes and migration statistics. Watch for capital flow reversals if regional sentiment deteriorates.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🌏",
+      "severity_class": "sev-none",
+      "chart_hint": "heatmap",
+      "metric_to_highlight": "neighbour_stress",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB GDP growth (own): -1.0%. ✓ News signal (GDELT): Regional news activity 7d: 4 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "ai_explanation": "**Regional Spillover Risk — Myanmar**\n\nMyanmar faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth (own): -1.0%. ✓ News signal (GDELT): Regional news activity 7d: 4 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "growth_slowdown_MMR_2024",
+      "alert_type": "growth_slowdown",
+      "alert_label": "Growth Slowdown",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2024,
+      "triggered": true,
+      "score": 41.7,
+      "severity": "warning",
+      "conditions_met": [
+        "GDP contracted -1.0% — economy in recession",
+        "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+      ],
+      "values_used": {
+        "gdp_growth_pct": -0.97,
+        "regional_avg_growth_pct": 4.3,
+        "gdp_growth_prev_pct": 0.96,
+        "gdp_deceleration_pp": 1.93,
+        "economy_news_7d": 5,
+        "economy_news_tone": -0.372
+      },
+      "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+      "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "📉",
+      "severity_class": "sev-warning",
+      "chart_hint": "line",
+      "metric_to_highlight": "gdp_growth_pct",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": true,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+      "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_MYS_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "MYS",
+      "country_name": "Malaysia",
+      "year": 2024,
+      "triggered": true,
+      "score": 20.0,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 16.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 22.4
+      },
+      "explanation": "Trade concentration for Malaysia is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": false,
+        "trade_signal": false,
+        "sources_count": 0
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "regional_spillover_THA_2024",
+      "alert_type": "regional_spillover",
+      "alert_label": "Regional Spillover Risk",
+      "country_iso3": "THA",
+      "country_name": "Thailand",
+      "year": 2024,
+      "triggered": false,
+      "score": 14.0,
+      "severity": "none",
+      "conditions_met": [
+        "Myanmar is under moderate stress (28/100)",
+        "Laos is under moderate stress (30/100)"
+      ],
+      "values_used": {
+        "neighbour_MMR_stress": 28.0,
+        "neighbour_LAO_stress": 30.0,
+        "neighbour_KHM_stress": 0.0,
+        "neighbour_MYS_stress": 0.0
+      },
+      "explanation": "Thailand faces elevated spillover risk from concurrent stress in neighbouring economies: Myanmar, Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.",
+      "recommendation": "Monitor cross-border trade volumes and migration statistics. Watch for capital flow reversals if regional sentiment deteriorates.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🌏",
+      "severity_class": "sev-none",
+      "chart_hint": "heatmap",
+      "metric_to_highlight": "neighbour_stress",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB GDP growth (own): 2.5%. ✓ News signal (GDELT): Regional news activity 7d: 6 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "ai_explanation": "**Regional Spillover Risk — Thailand**\n\nThailand faces elevated spillover risk from concurrent stress in neighbouring economies: Myanmar, Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB GDP growth (own): 2.5%. ✓ News signal (GDELT): Regional news activity 7d: 6 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "trade_dependency_risk_VNM_2024",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "VNM",
+      "country_name": "Vietnam",
+      "year": 2024,
+      "triggered": true,
+      "score": 22.0,
+      "severity": "info",
+      "conditions_met": [
+        "31% of exports go to USA (over-reliance threshold: 30%)",
+        "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 30.9,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 36.1
+      },
+      "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "confidence": "medium",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": true,
+        "sources_count": 2
+      },
+      "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+      "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    },
+    {
+      "alert_id": "regional_spillover_VNM_2024",
+      "alert_type": "regional_spillover",
+      "alert_label": "Regional Spillover Risk",
+      "country_iso3": "VNM",
+      "country_name": "Vietnam",
+      "year": 2024,
+      "triggered": false,
+      "score": 7.0,
+      "severity": "none",
+      "conditions_met": [
+        "Laos is under moderate stress (30/100)"
+      ],
+      "values_used": {
+        "neighbour_LAO_stress": 30.0,
+        "neighbour_KHM_stress": 0.0
+      },
+      "explanation": "Vietnam faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.",
+      "recommendation": "Monitor cross-border trade volumes and migration statistics. Watch for capital flow reversals if regional sentiment deteriorates.",
+      "color": "#6B7280",
+      "bg_color": "#F9FAFB",
+      "icon": "🌏",
+      "severity_class": "sev-none",
+      "chart_hint": "heatmap",
+      "metric_to_highlight": "neighbour_stress",
+      "confidence": "low",
+      "source_signals": {
+        "official_data": false,
+        "news_signal": true,
+        "trade_signal": false,
+        "sources_count": 1
+      },
+      "confidence_rationale": "✗ Official data (WB): WB GDP growth (own): 7.1%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "ai_explanation": "**Regional Spillover Risk — Vietnam**\n\nVietnam faces elevated spillover risk from concurrent stress in neighbouring economies: Laos. Channels include: refugee/migration pressure, regional trade disruption, investor contagion, and cross-border conflict escalation.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB GDP growth (own): 7.1%. ✓ News signal (GDELT): Regional news activity 7d: 3 risk articles. ✗ Trade data (Comtrade): Comtrade: 0 high-dependency partner(s).",
+      "data_sources_used": [
+        "World Bank 2024",
+        "GDELT 7-day (as of 2026-06-02)",
+        "UN Comtrade 2023"
+      ],
+      "generated_at": "2026-06-02T14:56:32"
+    }
+  ],
+  "by_country": {
+    "LAO": [
+      {
+        "alert_id": "trade_dependency_risk_LAO_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 73.2,
+        "severity": "critical",
+        "conditions_met": [
+          "47% of exports go to CHN (over-reliance threshold: 30%)",
+          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 51.3
+        },
+        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "🔗",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "fdi_weakness_LAO_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_type": "inflation_pressure",
+        "alert_label": "Inflation Pressure",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 47.2,
+        "severity": "warning",
+        "conditions_met": [
+          "Inflation at 23.1% (target band: 2–4%)",
+          "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+        ],
+        "values_used": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+        "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔥",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "inflation_pct",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "MMR": [
+      {
+        "alert_id": "fdi_weakness_MMR_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 50.2,
+        "severity": "warning",
+        "conditions_met": [
+          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 47.1
+        },
+        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "growth_slowdown_MMR_2024",
+        "alert_type": "growth_slowdown",
+        "alert_label": "Growth Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 41.7,
+        "severity": "warning",
+        "conditions_met": [
+          "GDP contracted -1.0% — economy in recession",
+          "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+        ],
+        "values_used": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+        "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📉",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "gdp_growth_pct",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "political_risk_rising_MMR_2024",
+        "alert_type": "political_risk_rising",
+        "alert_label": "Political Risk Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-1.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "IDN": [
+      {
+        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2024,
+        "triggered": true,
+        "score": 26.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 21.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 30.2
+        },
+        "explanation": "Trade concentration for Indonesia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "VNM": [
+      {
+        "alert_id": "trade_dependency_risk_VNM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "VNM",
+        "country_name": "Vietnam",
+        "year": 2024,
+        "triggered": true,
+        "score": 22.0,
+        "severity": "info",
+        "conditions_met": [
+          "31% of exports go to USA (over-reliance threshold: 30%)",
+          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 30.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 36.1
+        },
+        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "KHM": [
+      {
+        "alert_id": "trade_dependency_risk_KHM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.1,
+        "severity": "info",
+        "conditions_met": [
+          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 37.0
+        },
+        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "MYS": [
+      {
+        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MYS",
+        "country_name": "Malaysia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 16.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 22.4
+        },
+        "explanation": "Trade concentration for Malaysia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 0
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ]
+  },
+  "by_type": {
+    "trade_dependency_risk": [
+      {
+        "alert_id": "trade_dependency_risk_LAO_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 73.2,
+        "severity": "critical",
+        "conditions_met": [
+          "47% of exports go to CHN (over-reliance threshold: 30%)",
+          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 51.3
+        },
+        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "🔗",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 50.2,
+        "severity": "warning",
+        "conditions_met": [
+          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 47.1
+        },
+        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2024,
+        "triggered": true,
+        "score": 26.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 21.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 30.2
+        },
+        "explanation": "Trade concentration for Indonesia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_VNM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "VNM",
+        "country_name": "Vietnam",
+        "year": 2024,
+        "triggered": true,
+        "score": 22.0,
+        "severity": "info",
+        "conditions_met": [
+          "31% of exports go to USA (over-reliance threshold: 30%)",
+          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 30.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 36.1
+        },
+        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_KHM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.1,
+        "severity": "info",
+        "conditions_met": [
+          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 37.0
+        },
+        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MYS",
+        "country_name": "Malaysia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 16.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 22.4
+        },
+        "explanation": "Trade concentration for Malaysia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 0
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "fdi_weakness": [
+      {
+        "alert_id": "fdi_weakness_LAO_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "fdi_weakness_MMR_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "inflation_pressure": [
+      {
+        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_type": "inflation_pressure",
+        "alert_label": "Inflation Pressure",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 47.2,
+        "severity": "warning",
+        "conditions_met": [
+          "Inflation at 23.1% (target band: 2–4%)",
+          "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+        ],
+        "values_used": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+        "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔥",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "inflation_pct",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "growth_slowdown": [
+      {
+        "alert_id": "growth_slowdown_MMR_2024",
+        "alert_type": "growth_slowdown",
+        "alert_label": "Growth Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 41.7,
+        "severity": "warning",
+        "conditions_met": [
+          "GDP contracted -1.0% — economy in recession",
+          "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+        ],
+        "values_used": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+        "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📉",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "gdp_growth_pct",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "political_risk_rising": [
+      {
+        "alert_id": "political_risk_rising_MMR_2024",
+        "alert_type": "political_risk_rising",
+        "alert_label": "Political Risk Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-1.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ]
+  },
+  "by_severity": {
+    "critical": [
+      {
+        "alert_id": "trade_dependency_risk_LAO_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 73.2,
+        "severity": "critical",
+        "conditions_met": [
+          "47% of exports go to CHN (over-reliance threshold: 30%)",
+          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 51.3
+        },
+        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "🔗",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "fdi_weakness_LAO_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "warning": [
+      {
+        "alert_id": "fdi_weakness_MMR_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 50.2,
+        "severity": "warning",
+        "conditions_met": [
+          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 47.1
+        },
+        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_type": "inflation_pressure",
+        "alert_label": "Inflation Pressure",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 47.2,
+        "severity": "warning",
+        "conditions_met": [
+          "Inflation at 23.1% (target band: 2–4%)",
+          "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+        ],
+        "values_used": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+        "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔥",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "inflation_pct",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "growth_slowdown_MMR_2024",
+        "alert_type": "growth_slowdown",
+        "alert_label": "Growth Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 41.7,
+        "severity": "warning",
+        "conditions_met": [
+          "GDP contracted -1.0% — economy in recession",
+          "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+        ],
+        "values_used": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+        "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📉",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "gdp_growth_pct",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "info": [
+      {
+        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2024,
+        "triggered": true,
+        "score": 26.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 21.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 30.2
+        },
+        "explanation": "Trade concentration for Indonesia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "political_risk_rising_MMR_2024",
+        "alert_type": "political_risk_rising",
+        "alert_label": "Political Risk Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-1.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_VNM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "VNM",
+        "country_name": "Vietnam",
+        "year": 2024,
+        "triggered": true,
+        "score": 22.0,
+        "severity": "info",
+        "conditions_met": [
+          "31% of exports go to USA (over-reliance threshold: 30%)",
+          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 30.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 36.1
+        },
+        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_KHM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.1,
+        "severity": "info",
+        "conditions_met": [
+          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 37.0
+        },
+        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MYS",
+        "country_name": "Malaysia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 16.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 22.4
+        },
+        "explanation": "Trade concentration for Malaysia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 0
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ]
+  },
+  "by_confidence": {
+    "high": [
+      {
+        "alert_id": "trade_dependency_risk_LAO_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 73.2,
+        "severity": "critical",
+        "conditions_met": [
+          "47% of exports go to CHN (over-reliance threshold: 30%)",
+          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 51.3
+        },
+        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "🔗",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Laos**\n\nLaos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -46.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 47% to CHN, imports 51% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "political_risk_rising_MMR_2024",
+        "alert_type": "political_risk_rising",
+        "alert_label": "Political Risk Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-1.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "confidence": "high",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 3
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "ai_explanation": "**Political Risk Rising — Myanmar**\n\nMyanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -1.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.\n\n**Confidence: HIGH CONFIDENCE — all three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals, UN Comtrade flows. \n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0% (political amplifier: low growth). ✓ News signal (GDELT): Political/conflict news 7d: 3 political, 3 conflict. ✓ Trade data (Comtrade): WB FDI trend: -35.1% YoY.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "medium": [
+      {
+        "alert_id": "fdi_weakness_MMR_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "ai_explanation": "**FDI Weakness — Myanmar**\n\nFDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -35.1% YoY. ✓ News signal (GDELT): Political news 7d: 3 articles (tone -0.27). ✗ Trade data (Comtrade): Trade balance: $0.8B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 50.2,
+        "severity": "warning",
+        "conditions_met": [
+          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 47.1
+        },
+        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Myanmar**\n\nMyanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, UN Comtrade flows. Not corroborated by: GDELT news signals.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI trend: -35.1% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to CHN, imports 47% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "growth_slowdown_MMR_2024",
+        "alert_type": "growth_slowdown",
+        "alert_label": "Growth Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2024,
+        "triggered": true,
+        "score": 41.7,
+        "severity": "warning",
+        "conditions_met": [
+          "GDP contracted -1.0% — economy in recession",
+          "Growth slowing: decelerated 1.9pp (1.0% → -1.0%)"
+        ],
+        "values_used": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "explanation": "Myanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.",
+        "recommendation": "Track high-frequency indicators: PMI, retail sales, industrial output. Watch for fiscal stimulus announcements — a government may attempt to offset private sector weakness through public spending.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📉",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "gdp_growth_pct",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "ai_explanation": "**Growth Slowdown — Myanmar**\n\nMyanmar's economy is contracting at -1.0%, placing it in recession. Falling output reduces government revenue, business investment, and employment, creating a self-reinforcing cycle of declining demand.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: World Bank data, GDELT news signals. Not corroborated by: UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB GDP growth: -1.0%. ✓ News signal (GDELT): News avg tone: -0.37. ✗ Trade data (Comtrade): Comtrade: no export data.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_VNM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "VNM",
+        "country_name": "Vietnam",
+        "year": 2024,
+        "triggered": true,
+        "score": 22.0,
+        "severity": "info",
+        "conditions_met": [
+          "31% of exports go to USA (over-reliance threshold: 30%)",
+          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 30.9,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 36.1
+        },
+        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "medium",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": true,
+          "sources_count": 2
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Vietnam**\n\nVietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: MEDIUM CONFIDENCE — two of three data sources agree.**\nSupporting sources: GDELT news signals, UN Comtrade flows. Not corroborated by: World Bank data.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: -0.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✓ Trade data (Comtrade): Comtrade: exports 31% to USA, imports 36% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ],
+    "low": [
+      {
+        "alert_id": "fdi_weakness_LAO_2024",
+        "alert_type": "fdi_weakness",
+        "alert_label": "FDI Weakness",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "ai_explanation": "**FDI Weakness — Laos**\n\nFDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB FDI % GDP trend: -46.7% YoY. ✗ News signal (GDELT): Political news 7d: 0 articles (tone 0.00). ✗ Trade data (Comtrade): Trade balance: $0.5B.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_type": "inflation_pressure",
+        "alert_label": "Inflation Pressure",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2024,
+        "triggered": true,
+        "score": 47.2,
+        "severity": "warning",
+        "conditions_met": [
+          "Inflation at 23.1% (target band: 2–4%)",
+          "Real GDP growth negative (4.1% − 23.1% = -19.0%)"
+        ],
+        "values_used": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "explanation": "Laos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. ",
+        "recommendation": "Monitor central bank policy rate decisions and currency reserves. Check food/fuel price components — these are most likely driving the spike in SEA context.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔥",
+        "severity_class": "sev-warning",
+        "chart_hint": "line",
+        "metric_to_highlight": "inflation_pct",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": true,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "ai_explanation": "**Inflation Pressure — Laos**\n\nLaos is experiencing severely elevated inflation at 23.1%. With nominal GDP growth of 4.1%, real purchasing power is contracting by -19.0pp, squeezing households and businesses. \n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: World Bank data. Not corroborated by: GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✓ Official data (WB): WB inflation: 23.1%. ✗ News signal (GDELT): News avg tone 7d: 0.36  (total: 4 articles). ✗ Trade data (Comtrade): Comtrade imports YoY: 0.0%.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2024,
+        "triggered": true,
+        "score": 26.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 21.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 30.2
+        },
+        "explanation": "Trade concentration for Indonesia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": true,
+          "trade_signal": false,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Indonesia**\n\nTrade concentration for Indonesia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: GDELT news signals. Not corroborated by: World Bank data, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 10.7% YoY. ✓ News signal (GDELT): Trade news 7d: 3 articles. ✗ Trade data (Comtrade): Comtrade: exports 21% to CHN, imports 30% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_KHM_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.1,
+        "severity": "info",
+        "conditions_met": [
+          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 28.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 37.0
+        },
+        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": true,
+          "sources_count": 1
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Cambodia**\n\nCambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nSupporting sources: UN Comtrade flows. Not corroborated by: World Bank data, GDELT news signals.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 1.4% YoY. ✗ News signal (GDELT): Trade news 7d: 1 articles. ✓ Trade data (Comtrade): Comtrade: exports 28% to USA, imports 37% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MYS",
+        "country_name": "Malaysia",
+        "year": 2024,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 16.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 22.4
+        },
+        "explanation": "Trade concentration for Malaysia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "confidence": "low",
+        "source_signals": {
+          "official_data": false,
+          "news_signal": false,
+          "trade_signal": false,
+          "sources_count": 0
+        },
+        "confidence_rationale": "✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "ai_explanation": "**Trade Dependency Risk — Malaysia**\n\nTrade concentration for Malaysia is within normal bounds.\n\n**Confidence: LOW CONFIDENCE — only one data source indicates this risk.**\nNot corroborated by: World Bank data, GDELT news signals, UN Comtrade flows.\n\n*Data cross-check:* ✗ Official data (WB): WB FDI trend: 86.5% YoY. ✗ News signal (GDELT): Trade news 7d: 2 articles. ✗ Trade data (Comtrade): Comtrade: exports 16% to CHN, imports 22% from CHN.",
+        "data_sources_used": [
+          "World Bank 2024",
+          "GDELT 7-day (as of 2026-06-02)",
+          "UN Comtrade 2023"
+        ],
+        "generated_at": "2026-06-02T14:56:32"
+      }
+    ]
+  }
+}

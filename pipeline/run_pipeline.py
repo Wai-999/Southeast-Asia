@@ -10,12 +10,13 @@ own schedule without running the entire pipeline every time.
 
 PIPELINE STEPS
 ──────────────
-  [1/6] fetch_worldbank.py      World Bank annual indicators (17 countries)
-  [2/6] fetch_gdelt_news.py     GDELT news signals (17 countries, 12 categories)
-  [3/6] fetch_comtrade.py       UN Comtrade trade flows (10 SEA × 7 partners)
-  [4/6] process_indicators.py   Merge & reshape indicators for dashboard
-  [5/6] process_news.py         Reshape news feed, compute risk scores
-  [6/6] generate_alerts.py      Run pattern engine, produce alerts.json
+  [1/7] fetch_worldbank.py           World Bank annual indicators (17 countries)
+  [2/7] fetch_gdelt_news.py          GDELT news signals (17 countries, 12 categories)
+  [3/7] fetch_comtrade.py            UN Comtrade trade flows (10 SEA × 7 partners)
+  [4/7] process_indicators.py        Merge & reshape indicators for dashboard
+  [5/7] process_news.py              Reshape news feed, compute risk scores
+  [6/7] generate_alerts.py           Run pattern engine, produce alerts.json
+  [7/7] generate_pattern_alerts.py   8-type alerts with confidence scoring, pattern_alerts.json
 
 REFRESH MODES  (use --mode to run only what changed)
 ──────────────────────────────────────────────────────
@@ -130,11 +131,20 @@ STEPS: list[dict] = [
     {
         "n":         6,
         "name":      "generate_alerts.py",
-        "label":     "Alert generation",
+        "label":     "Alert generation (indicators + news)",
         "is_fetch":  False,
         "log_source": "alerts",
         "output":    "data/processed/alerts.json",
         "depends_on": ["process_indicators.py", "process_news.py"],
+    },
+    {
+        "n":         7,
+        "name":      "generate_pattern_alerts.py",
+        "label":     "Pattern alerts with confidence scoring",
+        "is_fetch":  False,
+        "log_source": "pattern_alerts",
+        "output":    "data/processed/pattern_alerts.json",
+        "depends_on": ["fetch_worldbank.py", "fetch_gdelt_news.py", "fetch_comtrade.py"],
     },
 ]
 
@@ -143,20 +153,20 @@ TOTAL = len(STEPS)
 # ── Mode → step numbers ──────────────────────────────────────────────────────
 # Each mode specifies which steps to run for frequency-based scheduling.
 MODE_STEPS: dict[str, list[int]] = {
-    "all":       [1, 2, 3, 4, 5, 6],   # full pipeline
-    "news":      [2, 5, 6],             # GDELT every 6 h
-    "data":      [1, 3, 4, 6],          # WB + Comtrade weekly
-    "worldbank": [1, 4, 6],             # World Bank only
-    "comtrade":  [3, 4, 6],             # Comtrade only
-    "process":   [4, 5, 6],             # reprocess without API calls
+    "all":       [1, 2, 3, 4, 5, 6, 7],   # full pipeline
+    "news":      [2, 5, 6, 7],             # GDELT every 6 h
+    "data":      [1, 3, 4, 6, 7],          # WB + Comtrade weekly
+    "worldbank": [1, 4, 6, 7],             # World Bank only
+    "comtrade":  [3, 4, 6, 7],             # Comtrade only
+    "process":   [4, 5, 6, 7],             # reprocess without API calls
 }
 
 MODE_DESCRIPTIONS: dict[str, str] = {
-    "all":       "full pipeline (fetch + process)",
+    "all":       "full pipeline (fetch + process + pattern alerts)",
     "news":      "GDELT news → process → alerts  (recommended: every 6 h)",
     "data":      "WB + Comtrade → process → alerts  (recommended: weekly)",
-    "worldbank": "World Bank only → process → alerts",
-    "comtrade":  "Comtrade only → process → alerts",
+    "worldbank": "World Bank only → process → pattern alerts",
+    "comtrade":  "Comtrade only → process → pattern alerts",
     "process":   "reprocess only — no API calls",
 }
 
