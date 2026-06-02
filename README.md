@@ -216,7 +216,26 @@ pip install fastapi uvicorn python-dotenv anthropic
 1. **Real data** — run `pipeline/fetch_worldbank.py`, replace sample-data.ts
 2. **Live AI** — add `ANTHROPIC_API_KEY` to `backend/.env`
 3. **Database** — set up PostgreSQL, run `database/schema.sql`, switch to full backend
-4. **Deploy** — Vercel (frontend) + Railway (backend) + Supabase (database)
+4. **Deploy** — Render Blueprint (`render.yaml`) for frontend + MVP backend
+
+---
+
+## Deploy on Render
+
+This repo now includes a root-level `render.yaml` Blueprint for a two-service deploy:
+
+1. `sea-change-api` — FastAPI MVP backend from `backend/server.py`
+2. `sea-change-web` — Next.js frontend from `frontend/`
+
+Render setup:
+
+1. Connect the GitHub repo in Render
+2. Choose **New > Blueprint**
+3. Select this repository
+4. Approve creation of both services from `render.yaml`
+5. If you want live AI explanations, set `ANTHROPIC_API_KEY` when Render prompts for it
+
+The frontend proxies all API requests through `/api/*`, so it does not need a hardcoded public backend URL.
 
 ---
 
@@ -441,7 +460,7 @@ python pipeline/run_daily.py
 7. **Build the news feed component** — with sentiment badge and category filter
 8. **Test the alert engine** — `python -c "from backend.app.services.alert_engine import run_alert_check; ..."`
 9. **Add the AI explanation button** — calls POST `/explain`, shows text in a modal
-10. **Deploy to Vercel (frontend) + Railway (backend)**
+10. **Deploy with Render Blueprint (`render.yaml`)**
 
 ---
 

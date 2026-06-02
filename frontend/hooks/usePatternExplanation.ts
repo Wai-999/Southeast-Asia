@@ -18,6 +18,8 @@
  *
  * BACKEND REQUIRED
  * ----------------
+ * Requests go through the Next.js proxy at /api/*.
+ * In local dev, start the backend with:
  *   cd backend && uvicorn server:app --reload --port 8000
  *
  * If the backend is unreachable, the hook returns an error message.
@@ -181,8 +183,6 @@ function cacheKey(countryId: string, alertType: string, quarter: string): string
 
 // ── The hook ──────────────────────────────────────────────────────────────────
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:8000";
-
 interface UsePatternExplanationReturn {
   explanation:  PatternExplanation | null;
   loading:      boolean;
@@ -218,7 +218,7 @@ export function usePatternExplanation(): UsePatternExplanationReturn {
     setError(null);
 
     try {
-      const response = await fetch(`${BACKEND_URL}/explain/pattern`, {
+      const response = await fetch("/api/explain/pattern", {
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body:    JSON.stringify(requestBody),
