@@ -115,6 +115,7 @@ except ImportError:
 SCRIPT_DIR   = Path(__file__).parent
 RAW_DIR      = SCRIPT_DIR / "data" / "raw" / "comtrade"
 PROC_DIR     = SCRIPT_DIR / "data" / "processed"
+LOGS_DIR     = SCRIPT_DIR / "data" / "logs"
 
 REQUEST_DELAY = 1.5   # seconds between requests
 MAX_RETRIES   = 3
@@ -1029,6 +1030,120 @@ def save_processed_json(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+#  SECTION 7B — LOGGING
+# ══════════════════════════════════════════════════════════════════════════════
+
+def save_log_json(
+    dep_matrix:   dict,
+    all_rows:     list[dict],
+    api_mode:     str,
+    years:        list[int],
+    monthly_rows: list[dict],
+    start_ts:     datetime,
+    errors:       list[str],
+) -> None:
+    """
+    Write data/logs/comtrade_log.json with metadata about the last pipeline run.
+
+    Structure mirrors worldbank_log.json and gdelt_log.json:
+        { "_meta": {...}, "last_run": {...}, "runs": [...] }   (last 30 runs kept)
+
+    Usage: called at the end of main() so the file reflects the current output.
+    """
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = LOGS_DIR / "comtrade_log.json"
+
+    now_ts   = datetime.utcnow().isoformat(timespec="seconds")
+    start_s  = start_ts.isoformat(timespec="seconds")
+    elapsed  = round((datetime.utcnow() - start_ts).total_seconds(), 1)
+    latest_yr = max(years) if years else 2023
+
+    # --- per-reporter summary for latest year ---
+    by_reporter: dict[str, dict] = {}
+    for iso3, meta in REPORTERS.items():
+        yr_dep = dep_matrix.get(iso3, {}).get(str(latest_yr), {})
+        bp     = yr_dep.get("by_partner", {})
+        by_reporter[iso3] = {
+            "name":                 meta["name"],
+            "total_exports_usd_b":  yr_dep.get("total_exports_usd_b"),
+            "total_imports_usd_b":  yr_dep.get("total_imports_usd_b"),
+            "trade_balance_usd_b":  yr_dep.get("trade_balance_usd_b"),
+            "top_export_partner":   yr_dep.get("top_export_partner"),
+            "top_import_partner":   yr_dep.get("top_import_partner"),
+            "china_overall_risk":   bp.get("CHN", {}).get("dependency_risk"),
+            "china_partner_share_pct": bp.get("CHN", {}).get("partner_share_pct"),
+        }
+
+    # --- aggregate stats ---
+    high_dep_pairs: list[dict] = []
+    for iso3 in REPORTERS:
+        yr_dep = dep_matrix.get(iso3, {}).get(str(latest_yr), {})
+        for partner, prisk in yr_dep.get("by_partner", {}).items():
+            if prisk.get("dependency_risk") == "high":
+                high_dep_pairs.append({
+                    "reporter": iso3,
+                    "partner":  partner,
+                    "share_pct": prisk.get("partner_share_pct"),
+                })
+
+    run_entry = {
+        "run_id":           now_ts.replace(":", "").replace("-", "")[:15],
+        "started_at":       start_s,
+        "finished_at":      now_ts,
+        "elapsed_seconds":  elapsed,
+        "status":           "success" if not errors else "partial",
+        "api_mode":         api_mode,
+        "reporters":        len(REPORTERS),
+        "partners":         len([k for k in PARTNERS if k != "WLD"]),
+        "years":            years,
+        "latest_year":      latest_yr,
+        "annual_flow_rows": len(all_rows),
+        "monthly_rows":     len(monthly_rows),
+        "high_dependency_pairs": len(high_dep_pairs),
+        "high_dependency_list":  sorted(high_dep_pairs, key=lambda x: -(x["share_pct"] or 0))[:15],
+        "errors":           errors,
+        "by_reporter":      by_reporter,
+        "data_label": (
+            "OFFICIAL TRADE STATISTICS — bilateral goods trade, annual. "
+            "Source: UN Comtrade / IMF DOTS. "
+            "Data lag: 1–2 years. Not real-time."
+        ),
+        "note": (
+            "Annual trade data. Monthly available via UN Comtrade Plus API "
+            "(set COMTRADE_SUBSCRIPTION_KEY in .env). "
+            "Dependency risk: partner_share = bilateral_trade / total_trade. "
+            ">40% = high, 20-40% = medium, <20% = low."
+        ),
+    }
+
+    # --- load or initialise log file ---
+    existing: dict = {}
+    if log_path.exists():
+        try:
+            existing = json.loads(log_path.read_text(encoding="utf-8"))
+        except Exception:
+            existing = {}
+
+    runs: list[dict] = existing.get("runs", [])
+    runs.append(run_entry)
+    runs = runs[-30:]   # keep last 30 runs
+
+    log_out = {
+        "_meta": {
+            "description":   "UN Comtrade / IMF DOTS trade pipeline run log — SEA Dashboard",
+            "generated_at":  now_ts,
+            "pipeline":      "pipeline/fetch_comtrade.py",
+            "format":        "last_run mirrors runs[-1]; runs keeps last 30 entries",
+        },
+        "last_run": run_entry,
+        "runs":     runs,
+    }
+
+    log_path.write_text(json.dumps(log_out, indent=2), encoding="utf-8")
+    print(f"  ✓ comtrade_log.json  → {log_path.relative_to(SCRIPT_DIR)}")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 #  SECTION 8 — MAIN ORCHESTRATION
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -1062,6 +1177,8 @@ def main() -> None:
             sys.exit(1)
 
     use_cache = not args.refresh
+    start_ts  = datetime.utcnow()
+    errors:    list[str] = []
 
     # ── Detect API mode ───────────────────────────────────────────────────
     if args.mode == "comtrade":
@@ -1160,13 +1277,18 @@ def main() -> None:
     save_raw_csv(all_rows)
     save_processed_json(all_rows, dep_matrix, api_mode, years, monthly_rows)
 
+    # ── Write run log ──────────────────────────────────────────────────────
+    print(f"\n[ STEP 5 ] Writing run log …")
+    save_log_json(dep_matrix, all_rows, api_mode, years, monthly_rows, start_ts, errors)
+
     # ── Done ───────────────────────────────────────────────────────────────
     print()
     print("╔══════════════════════════════════════════════════════════════╗")
     print("║  ✓  Done!                                                    ║")
     print("║                                                               ║")
-    print("║  Frontend reads from:                                         ║")
+    print("║  Output files:                                                ║")
     print("║    pipeline/data/processed/trade_flows.json                   ║")
+    print("║    pipeline/data/logs/comtrade_log.json                       ║")
     print("║                                                               ║")
     print("║  To use UN Comtrade Plus API:                                 ║")
     print("║    1. Register free at https://comtradeplus.un.org            ║")

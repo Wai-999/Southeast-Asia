@@ -17,6 +17,7 @@
 
 import { useState, useMemo } from "react";
 import CompareBarChart from "@/components/charts/CompareBarChart";
+import WorldBankNote from "@/components/ui/WorldBankNote";
 import {
   TF_META, TF_REPORTERS, TF_PARTNERS, TF_DATA_STATUS, TF_LATEST_YEAR,
   DEPENDENCY_RISK_MATRIX,
@@ -181,6 +182,9 @@ export default function TradePage() {
           </button>
         ))}
       </div>
+
+      {/* ── Data provenance note ──────────────────────────────────────── */}
+      <WorldBankNote className="mb-5" />
 
       {/* ══════════════════════════════════════════════════════════════════════
           TAB 1 — DEPENDENCY RISK HEATMAP
