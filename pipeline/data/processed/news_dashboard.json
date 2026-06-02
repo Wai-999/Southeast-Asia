@@ -1,0 +1,5078 @@
+{
+  "meta": {
+    "generated_at": "2026-06-02T14:28:38",
+    "script": "process_news.py",
+    "source_url": "data/processed/news_signals.json",
+    "fetched_at": "2026-06-02T10:00:00",
+    "gdelt_window_start": "2026-05-26",
+    "gdelt_window_end": "2026-06-02",
+    "total_articles": 72,
+    "critical_articles": 21,
+    "data_status": "live",
+    "refresh_note": "Run 'python fetch_gdelt_news.py && python process_news.py' to refresh with the latest GDELT news data."
+  },
+  "feed": {
+    "latest_20": [
+      {
+        "id": 47,
+        "title": "China Adds Rare Earth Export Controls Targeting US Tech Supply Chain",
+        "url": "https://ft.com/article/0047",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.23,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "00000000002f"
+      },
+      {
+        "id": 53,
+        "title": "US Tariffs on Southeast Asia Suppliers Prompt Emergency Trade Talks",
+        "url": "https://ft.com/article/0053",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.51,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000035"
+      },
+      {
+        "id": 36,
+        "title": "Flash Floods Hit Sulawesi: 15,000 Families Evacuated",
+        "url": "https://reuters.com/article/0036",
+        "source_domain": "reuters.com",
+        "date": "2026-06-02",
+        "country_code": "IDN",
+        "country_name": "Indonesia",
+        "category": "disaster",
+        "all_categories": [
+          "disaster"
+        ],
+        "tone": -0.43,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "exports",
+          "inflation"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000024"
+      },
+      {
+        "id": 38,
+        "title": "Philippines Challenges China Tariffs on Agri Exports at WTO",
+        "url": "https://reuters.com/article/0038",
+        "source_domain": "reuters.com",
+        "date": "2026-06-02",
+        "country_code": "PHL",
+        "country_name": "Philippines",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.39,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000026"
+      },
+      {
+        "id": 60,
+        "title": "Japan–US Chip Alliance to Invest $10B in Advanced Packaging in SEA",
+        "url": "https://nikkei.com/article/0060",
+        "source_domain": "nikkei.com",
+        "date": "2026-06-02",
+        "country_code": "JPN",
+        "country_name": "Japan",
+        "category": "technology",
+        "all_categories": [
+          "technology"
+        ],
+        "tone": 0.69,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "fdi",
+          "tradeNewsCount",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "00000000003c"
+      },
+      {
+        "id": 64,
+        "title": "India Opens New Fab Incentive Round for Semiconductor Ecosystem",
+        "url": "https://nikkei.com/article/0064",
+        "source_domain": "nikkei.com",
+        "date": "2026-06-02",
+        "country_code": "IND",
+        "country_name": "India",
+        "category": "technology",
+        "all_categories": [
+          "technology"
+        ],
+        "tone": 0.56,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "fdi",
+          "tradeNewsCount",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000040"
+      },
+      {
+        "id": 3,
+        "title": "Thailand Expands Trade Deal Talks with Gulf Countries",
+        "url": "https://nikkei.com/article/0003",
+        "source_domain": "nikkei.com",
+        "date": "2026-06-02",
+        "country_code": "THA",
+        "country_name": "Thailand",
+        "category": "trade",
+        "all_categories": [
+          "trade"
+        ],
+        "tone": 0.47,
+        "language": "English",
+        "impact_score": 2,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000003"
+      },
+      {
+        "id": 45,
+        "title": "Timor-Leste Deepwater Port Project Secures Asian Development Bank Funding",
+        "url": "https://apnews.com/article/0045",
+        "source_domain": "apnews.com",
+        "date": "2026-06-02",
+        "country_code": "TLS",
+        "country_name": "Timor-Leste",
+        "category": "infrastructure",
+        "all_categories": [
+          "infrastructure"
+        ],
+        "tone": 0.34,
+        "language": "English",
+        "impact_score": 2,
+        "connected_indicators": [
+          "fdi",
+          "gdpGrowth",
+          "exports"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "00000000002d"
+      },
+      {
+        "id": 13,
+        "title": "Myanmar Junta Loses Strategic Town to Coalition Forces",
+        "url": "https://apnews.com/article/0013",
+        "source_domain": "apnews.com",
+        "date": "2026-06-01",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "conflict",
+        "all_categories": [
+          "conflict"
+        ],
+        "tone": -0.16,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000000d"
+      },
+      {
+        "id": 46,
+        "title": "China Retaliates with 84% Tariffs on US Agricultural Goods",
+        "url": "https://reuters.com/article/0046",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.31,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000002e"
+      },
+      {
+        "id": 33,
+        "title": "Indonesia Slaps 200% Tariff on Chinese Steel as Dumping Cases Surge",
+        "url": "https://reuters.com/article/0033",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "IDN",
+        "country_name": "Indonesia",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.64,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000021"
+      },
+      {
+        "id": 48,
+        "title": "China PMI Contracts for Third Month as Trade War Weighs on Factories",
+        "url": "https://reuters.com/article/0048",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": -0.43,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000030"
+      },
+      {
+        "id": 2,
+        "title": "Thai GDP Growth Revised Down Amid Export Headwinds",
+        "url": "https://bangkokpost.com/article/0002",
+        "source_domain": "bangkokpost.com",
+        "date": "2026-06-01",
+        "country_code": "THA",
+        "country_name": "Thailand",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": -0.33,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000002"
+      },
+      {
+        "id": 17,
+        "title": "Cambodia Garment Exports Recover as EU GSP Status Retained",
+        "url": "https://reuters.com/article/0017",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "KHM",
+        "country_name": "Cambodia",
+        "category": "trade",
+        "all_categories": [
+          "trade"
+        ],
+        "tone": 0.44,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000011"
+      },
+      {
+        "id": 54,
+        "title": "US Fed Holds Rates Amid Tariff Uncertainty and Inflation Concerns",
+        "url": "https://apnews.com/article/0054",
+        "source_domain": "apnews.com",
+        "date": "2026-06-01",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": -0.06,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000036"
+      },
+      {
+        "id": 55,
+        "title": "US Trade Deficit Widens to $89B as Pre-Tariff Import Surge Continues",
+        "url": "https://wsj.com/article/0055",
+        "source_domain": "wsj.com",
+        "date": "2026-06-01",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "trade",
+        "all_categories": [
+          "trade"
+        ],
+        "tone": -0.56,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000037"
+      },
+      {
+        "id": 59,
+        "title": "Japan Deepens Supply Chain Ties with Vietnam, Indonesia in Pivot from China",
+        "url": "https://reuters.com/article/0059",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "JPN",
+        "country_name": "Japan",
+        "category": "trade",
+        "all_categories": [
+          "trade"
+        ],
+        "tone": 0.63,
+        "language": "English",
+        "impact_score": 3,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000003b"
+      },
+      {
+        "id": 4,
+        "title": "Thai PM Tables Constitutional Reform Bill in Parliament",
+        "url": "https://reuters.com/article/0004",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "THA",
+        "country_name": "Thailand",
+        "category": "politics",
+        "all_categories": [
+          "politics"
+        ],
+        "tone": -0.05,
+        "language": "English",
+        "impact_score": 2,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000004"
+      },
+      {
+        "id": 21,
+        "title": "Laos Inflation Falls for Third Consecutive Month on Kip Stabilisation",
+        "url": "https://rfa.org/article/0021",
+        "source_domain": "rfa.org",
+        "date": "2026-06-01",
+        "country_code": "LAO",
+        "country_name": "Laos",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": 0.65,
+        "language": "English",
+        "impact_score": 2,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000015"
+      },
+      {
+        "id": 22,
+        "title": "Laos-China Railway Freight Volume Reaches New Monthly Record",
+        "url": "https://xinhuanet.com/article/0022",
+        "source_domain": "xinhuanet.com",
+        "date": "2026-06-01",
+        "country_code": "LAO",
+        "country_name": "Laos",
+        "category": "infrastructure",
+        "all_categories": [
+          "infrastructure"
+        ],
+        "tone": 0.51,
+        "language": "English",
+        "impact_score": 2,
+        "connected_indicators": [
+          "fdi",
+          "gdpGrowth",
+          "exports"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000016"
+      }
+    ],
+    "critical": [
+      {
+        "id": 47,
+        "title": "China Adds Rare Earth Export Controls Targeting US Tech Supply Chain",
+        "url": "https://ft.com/article/0047",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.23,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "00000000002f"
+      },
+      {
+        "id": 53,
+        "title": "US Tariffs on Southeast Asia Suppliers Prompt Emergency Trade Talks",
+        "url": "https://ft.com/article/0053",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.51,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000035"
+      },
+      {
+        "id": 36,
+        "title": "Flash Floods Hit Sulawesi: 15,000 Families Evacuated",
+        "url": "https://reuters.com/article/0036",
+        "source_domain": "reuters.com",
+        "date": "2026-06-02",
+        "country_code": "IDN",
+        "country_name": "Indonesia",
+        "category": "disaster",
+        "all_categories": [
+          "disaster"
+        ],
+        "tone": -0.43,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "exports",
+          "inflation"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000024"
+      },
+      {
+        "id": 13,
+        "title": "Myanmar Junta Loses Strategic Town to Coalition Forces",
+        "url": "https://apnews.com/article/0013",
+        "source_domain": "apnews.com",
+        "date": "2026-06-01",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "conflict",
+        "all_categories": [
+          "conflict"
+        ],
+        "tone": -0.16,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000000d"
+      },
+      {
+        "id": 46,
+        "title": "China Retaliates with 84% Tariffs on US Agricultural Goods",
+        "url": "https://reuters.com/article/0046",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.31,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000002e"
+      },
+      {
+        "id": 33,
+        "title": "Indonesia Slaps 200% Tariff on Chinese Steel as Dumping Cases Surge",
+        "url": "https://reuters.com/article/0033",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "IDN",
+        "country_name": "Indonesia",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.64,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000021"
+      },
+      {
+        "id": 48,
+        "title": "China PMI Contracts for Third Month as Trade War Weighs on Factories",
+        "url": "https://reuters.com/article/0048",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": -0.43,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "000000000030"
+      },
+      {
+        "id": 12,
+        "title": "Myanmar Military Launches Airstrikes on Shan State as Resistance Advances",
+        "url": "https://reuters.com/article/0012",
+        "source_domain": "reuters.com",
+        "date": "2026-05-31",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "conflict",
+        "all_categories": [
+          "conflict"
+        ],
+        "tone": -0.31,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260531T120000Z",
+        "url_hash": "00000000000c"
+      },
+      {
+        "id": 15,
+        "title": "Cyclone Damages Coastal Myanmar: 200,000 Displaced",
+        "url": "https://reliefweb.int/article/0015",
+        "source_domain": "reliefweb.int",
+        "date": "2026-05-31",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "disaster",
+        "all_categories": [
+          "disaster"
+        ],
+        "tone": -0.5,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "exports",
+          "inflation"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260531T120000Z",
+        "url_hash": "00000000000f"
+      },
+      {
+        "id": 25,
+        "title": "Malaysia Launches Semiconductor Diplomacy to Avoid US Tariff Exposure",
+        "url": "https://reuters.com/article/0025",
+        "source_domain": "reuters.com",
+        "date": "2026-05-30",
+        "country_code": "MYS",
+        "country_name": "Malaysia",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.15,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260530T120000Z",
+        "url_hash": "000000000019"
+      },
+      {
+        "id": 65,
+        "title": "South Korea Proposes Tariff Deal Framework as US Trade Talks Begin",
+        "url": "https://reuters.com/article/0065",
+        "source_domain": "reuters.com",
+        "date": "2026-05-29",
+        "country_code": "KOR",
+        "country_name": "South Korea",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.07,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260529T120000Z",
+        "url_hash": "000000000041"
+      },
+      {
+        "id": 66,
+        "title": "Samsung Accelerates 3nm Chip Output as US Customers Diversify from TSMC",
+        "url": "https://koreaherald.com/article/0066",
+        "source_domain": "koreaherald.com",
+        "date": "2026-05-29",
+        "country_code": "KOR",
+        "country_name": "South Korea",
+        "category": "technology",
+        "all_categories": [
+          "technology"
+        ],
+        "tone": 0.19,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "fdi",
+          "tradeNewsCount",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260529T120000Z",
+        "url_hash": "000000000042"
+      },
+      {
+        "id": 39,
+        "title": "Philippines Warns China Over Water Cannon Incident at Scarborough Shoal",
+        "url": "https://apnews.com/article/0039",
+        "source_domain": "apnews.com",
+        "date": "2026-05-28",
+        "country_code": "PHL",
+        "country_name": "Philippines",
+        "category": "border",
+        "all_categories": [
+          "border"
+        ],
+        "tone": -0.66,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "politicalRiskNews"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000027"
+      },
+      {
+        "id": 52,
+        "title": "Trump Administration Announces 10% Baseline Tariff on All Imports",
+        "url": "https://reuters.com/article/0052",
+        "source_domain": "reuters.com",
+        "date": "2026-05-28",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.34,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000034"
+      },
+      {
+        "id": 1,
+        "title": "Thailand Faces New US Tariff Probe on Electronic Exports",
+        "url": "https://reuters.com/article/0001",
+        "source_domain": "reuters.com",
+        "date": "2026-05-28",
+        "country_code": "THA",
+        "country_name": "Thailand",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.29,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000001"
+      },
+      {
+        "id": 16,
+        "title": "Thailand Closes Border Crossing Amid Myanmar Fighting Near Mae Sot",
+        "url": "https://reuters.com/article/0016",
+        "source_domain": "reuters.com",
+        "date": "2026-05-28",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "border",
+        "all_categories": [
+          "border"
+        ],
+        "tone": -0.34,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "politicalRiskNews"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000010"
+      },
+      {
+        "id": 57,
+        "title": "Japan Seeks Tariff Exemption as Auto Sector Faces 25% US Levy",
+        "url": "https://reuters.com/article/0057",
+        "source_domain": "reuters.com",
+        "date": "2026-05-28",
+        "country_code": "JPN",
+        "country_name": "Japan",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.24,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000039"
+      },
+      {
+        "id": 8,
+        "title": "Vietnam Warned Over Trade Surplus with US as Tariff Review Looms",
+        "url": "https://apnews.com/article/0008",
+        "source_domain": "apnews.com",
+        "date": "2026-05-27",
+        "country_code": "VNM",
+        "country_name": "Vietnam",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.65,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260527T120000Z",
+        "url_hash": "000000000008"
+      },
+      {
+        "id": 14,
+        "title": "Myanmar Economy Contracts 3% as Sanctions Bite and Conflict Persists",
+        "url": "https://reuters.com/article/0014",
+        "source_domain": "reuters.com",
+        "date": "2026-05-27",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "economy",
+        "all_categories": [
+          "economy"
+        ],
+        "tone": -0.55,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "inflation",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260527T120000Z",
+        "url_hash": "00000000000e"
+      },
+      {
+        "id": 40,
+        "title": "Typhoon Carina Kills 18, Disrupts Luzon Supply Chains",
+        "url": "https://reuters.com/article/0040",
+        "source_domain": "reuters.com",
+        "date": "2026-05-27",
+        "country_code": "PHL",
+        "country_name": "Philippines",
+        "category": "disaster",
+        "all_categories": [
+          "disaster"
+        ],
+        "tone": -0.34,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "gdpGrowth",
+          "exports",
+          "inflation"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260527T120000Z",
+        "url_hash": "000000000028"
+      },
+      {
+        "id": 62,
+        "title": "India Seizes China Market Share in Electronics as US Tariffs Redirect Orders",
+        "url": "https://economictimes.indiatimes.com/article/0062",
+        "source_domain": "economictimes.indiatimes.com",
+        "date": "2026-05-27",
+        "country_code": "IND",
+        "country_name": "India",
+        "category": "trade",
+        "all_categories": [
+          "trade"
+        ],
+        "tone": 0.46,
+        "language": "English",
+        "impact_score": 4,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260527T120000Z",
+        "url_hash": "00000000003e"
+      }
+    ],
+    "impact_5": [
+      {
+        "id": 47,
+        "title": "China Adds Rare Earth Export Controls Targeting US Tech Supply Chain",
+        "url": "https://ft.com/article/0047",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.23,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "00000000002f"
+      },
+      {
+        "id": 53,
+        "title": "US Tariffs on Southeast Asia Suppliers Prompt Emergency Trade Talks",
+        "url": "https://ft.com/article/0053",
+        "source_domain": "ft.com",
+        "date": "2026-06-02",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.51,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260602T120000Z",
+        "url_hash": "000000000035"
+      },
+      {
+        "id": 13,
+        "title": "Myanmar Junta Loses Strategic Town to Coalition Forces",
+        "url": "https://apnews.com/article/0013",
+        "source_domain": "apnews.com",
+        "date": "2026-06-01",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "conflict",
+        "all_categories": [
+          "conflict"
+        ],
+        "tone": -0.16,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000000d"
+      },
+      {
+        "id": 46,
+        "title": "China Retaliates with 84% Tariffs on US Agricultural Goods",
+        "url": "https://reuters.com/article/0046",
+        "source_domain": "reuters.com",
+        "date": "2026-06-01",
+        "country_code": "CHN",
+        "country_name": "China",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.31,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260601T120000Z",
+        "url_hash": "00000000002e"
+      },
+      {
+        "id": 12,
+        "title": "Myanmar Military Launches Airstrikes on Shan State as Resistance Advances",
+        "url": "https://reuters.com/article/0012",
+        "source_domain": "reuters.com",
+        "date": "2026-05-31",
+        "country_code": "MMR",
+        "country_name": "Myanmar",
+        "category": "conflict",
+        "all_categories": [
+          "conflict"
+        ],
+        "tone": -0.31,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "politicalRiskNews",
+          "fdi",
+          "gdpGrowth"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260531T120000Z",
+        "url_hash": "00000000000c"
+      },
+      {
+        "id": 39,
+        "title": "Philippines Warns China Over Water Cannon Incident at Scarborough Shoal",
+        "url": "https://apnews.com/article/0039",
+        "source_domain": "apnews.com",
+        "date": "2026-05-28",
+        "country_code": "PHL",
+        "country_name": "Philippines",
+        "category": "border",
+        "all_categories": [
+          "border"
+        ],
+        "tone": -0.66,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "politicalRiskNews"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000027"
+      },
+      {
+        "id": 52,
+        "title": "Trump Administration Announces 10% Baseline Tariff on All Imports",
+        "url": "https://reuters.com/article/0052",
+        "source_domain": "reuters.com",
+        "date": "2026-05-28",
+        "country_code": "USA",
+        "country_name": "United States",
+        "category": "tariff",
+        "all_categories": [
+          "tariff"
+        ],
+        "tone": -0.34,
+        "language": "English",
+        "impact_score": 5,
+        "connected_indicators": [
+          "exports",
+          "imports",
+          "tradeNewsCount",
+          "fdi"
+        ],
+        "source": "gdelt",
+        "gdelt_seendate": "20260528T120000Z",
+        "url_hash": "000000000034"
+      }
+    ]
+  },
+  "by_country": {
+    "CHN": {
+      "articles": [
+        {
+          "id": 47,
+          "title": "China Adds Rare Earth Export Controls Targeting US Tech Supply Chain",
+          "url": "https://ft.com/article/0047",
+          "source_domain": "ft.com",
+          "date": "2026-06-02",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.23,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000002f"
+        },
+        {
+          "id": 46,
+          "title": "China Retaliates with 84% Tariffs on US Agricultural Goods",
+          "url": "https://reuters.com/article/0046",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000002e"
+        },
+        {
+          "id": 48,
+          "title": "China PMI Contracts for Third Month as Trade War Weighs on Factories",
+          "url": "https://reuters.com/article/0048",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.43,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000030"
+        },
+        {
+          "id": 49,
+          "title": "China Redirects Exports to ASEAN as US Market Access Tightens",
+          "url": "https://apnews.com/article/0049",
+          "source_domain": "apnews.com",
+          "date": "2026-05-28",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": -0.0,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000031"
+        },
+        {
+          "id": 51,
+          "title": "China PBOC Cuts Reserve Requirement Ratio for Third Time This Year",
+          "url": "https://reuters.com/article/0051",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.39,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000033"
+        },
+        {
+          "id": 50,
+          "title": "Huawei Ships 7nm AI Chip to Domestic Cloud Firms Despite US Curbs",
+          "url": "https://nikkei.com/article/0050",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000032"
+        }
+      ],
+      "count": 6,
+      "has_critical": true
+    },
+    "USA": {
+      "articles": [
+        {
+          "id": 53,
+          "title": "US Tariffs on Southeast Asia Suppliers Prompt Emergency Trade Talks",
+          "url": "https://ft.com/article/0053",
+          "source_domain": "ft.com",
+          "date": "2026-06-02",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.51,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000035"
+        },
+        {
+          "id": 54,
+          "title": "US Fed Holds Rates Amid Tariff Uncertainty and Inflation Concerns",
+          "url": "https://apnews.com/article/0054",
+          "source_domain": "apnews.com",
+          "date": "2026-06-01",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000036"
+        },
+        {
+          "id": 55,
+          "title": "US Trade Deficit Widens to $89B as Pre-Tariff Import Surge Continues",
+          "url": "https://wsj.com/article/0055",
+          "source_domain": "wsj.com",
+          "date": "2026-06-01",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": -0.56,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000037"
+        },
+        {
+          "id": 56,
+          "title": "White House Considers Tariff Exemptions for Allies in South East Asia",
+          "url": "https://reuters.com/article/0056",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000038"
+        },
+        {
+          "id": 52,
+          "title": "Trump Administration Announces 10% Baseline Tariff on All Imports",
+          "url": "https://reuters.com/article/0052",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000034"
+        }
+      ],
+      "count": 5,
+      "has_critical": true
+    },
+    "IDN": {
+      "articles": [
+        {
+          "id": 36,
+          "title": "Flash Floods Hit Sulawesi: 15,000 Families Evacuated",
+          "url": "https://reuters.com/article/0036",
+          "source_domain": "reuters.com",
+          "date": "2026-06-02",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.43,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000024"
+        },
+        {
+          "id": 33,
+          "title": "Indonesia Slaps 200% Tariff on Chinese Steel as Dumping Cases Surge",
+          "url": "https://reuters.com/article/0033",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.64,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000021"
+        },
+        {
+          "id": 37,
+          "title": "Indonesia-India Free Trade Agreement Talks Resume After Two-Year Pause",
+          "url": "https://nikkei.com/article/0037",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-31",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.63,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000025"
+        },
+        {
+          "id": 34,
+          "title": "Indonesia Raises Nickel Export Tax to Push EV Battery Localisation",
+          "url": "https://thejakartapost.com/article/0034",
+          "source_domain": "thejakartapost.com",
+          "date": "2026-05-27",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000022"
+        },
+        {
+          "id": 35,
+          "title": "Indonesia Q1 GDP Growth Beats Forecast at 5.1%",
+          "url": "https://reuters.com/article/0035",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.24,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000023"
+        }
+      ],
+      "count": 5,
+      "has_critical": true
+    },
+    "PHL": {
+      "articles": [
+        {
+          "id": 38,
+          "title": "Philippines Challenges China Tariffs on Agri Exports at WTO",
+          "url": "https://reuters.com/article/0038",
+          "source_domain": "reuters.com",
+          "date": "2026-06-02",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.39,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000026"
+        },
+        {
+          "id": 41,
+          "title": "Philippines Inflation Edges Down to 3.8% on Easing Food Prices",
+          "url": "https://inquirer.net/article/0041",
+          "source_domain": "inquirer.net",
+          "date": "2026-06-01",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.3,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000029"
+        },
+        {
+          "id": 39,
+          "title": "Philippines Warns China Over Water Cannon Incident at Scarborough Shoal",
+          "url": "https://apnews.com/article/0039",
+          "source_domain": "apnews.com",
+          "date": "2026-05-28",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "border",
+          "all_categories": [
+            "border"
+          ],
+          "tone": -0.66,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "politicalRiskNews"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000027"
+        },
+        {
+          "id": 40,
+          "title": "Typhoon Carina Kills 18, Disrupts Luzon Supply Chains",
+          "url": "https://reuters.com/article/0040",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000028"
+        }
+      ],
+      "count": 4,
+      "has_critical": true
+    },
+    "JPN": {
+      "articles": [
+        {
+          "id": 60,
+          "title": "Japan–US Chip Alliance to Invest $10B in Advanced Packaging in SEA",
+          "url": "https://nikkei.com/article/0060",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.69,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000003c"
+        },
+        {
+          "id": 59,
+          "title": "Japan Deepens Supply Chain Ties with Vietnam, Indonesia in Pivot from China",
+          "url": "https://reuters.com/article/0059",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.63,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000003b"
+        },
+        {
+          "id": 57,
+          "title": "Japan Seeks Tariff Exemption as Auto Sector Faces 25% US Levy",
+          "url": "https://reuters.com/article/0057",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.24,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000039"
+        },
+        {
+          "id": 58,
+          "title": "Japan Industrial Output Falls for Second Month on US Trade Shock",
+          "url": "https://nikkei.com/article/0058",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.61,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000003a"
+        }
+      ],
+      "count": 4,
+      "has_critical": true
+    },
+    "IND": {
+      "articles": [
+        {
+          "id": 64,
+          "title": "India Opens New Fab Incentive Round for Semiconductor Ecosystem",
+          "url": "https://nikkei.com/article/0064",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.56,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000040"
+        },
+        {
+          "id": 63,
+          "title": "India Raises Import Duties on Chinese Steel and Solar Panels",
+          "url": "https://reuters.com/article/0063",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.67,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000003f"
+        },
+        {
+          "id": 61,
+          "title": "India GDP Growth at 7.1% Leads G20 as Trade Diversion Benefits Sector",
+          "url": "https://reuters.com/article/0061",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.31,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000003d"
+        },
+        {
+          "id": 62,
+          "title": "India Seizes China Market Share in Electronics as US Tariffs Redirect Orders",
+          "url": "https://economictimes.indiatimes.com/article/0062",
+          "source_domain": "economictimes.indiatimes.com",
+          "date": "2026-05-27",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.46,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000003e"
+        }
+      ],
+      "count": 4,
+      "has_critical": true
+    },
+    "THA": {
+      "articles": [
+        {
+          "id": 3,
+          "title": "Thailand Expands Trade Deal Talks with Gulf Countries",
+          "url": "https://nikkei.com/article/0003",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.47,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000003"
+        },
+        {
+          "id": 2,
+          "title": "Thai GDP Growth Revised Down Amid Export Headwinds",
+          "url": "https://bangkokpost.com/article/0002",
+          "source_domain": "bangkokpost.com",
+          "date": "2026-06-01",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.33,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000002"
+        },
+        {
+          "id": 4,
+          "title": "Thai PM Tables Constitutional Reform Bill in Parliament",
+          "url": "https://reuters.com/article/0004",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": -0.05,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000004"
+        },
+        {
+          "id": 6,
+          "title": "Thai Opposition Files Petition Against Electoral Commission",
+          "url": "https://thairath.com/article/0006",
+          "source_domain": "thairath.com",
+          "date": "2026-05-31",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "election",
+          "all_categories": [
+            "election"
+          ],
+          "tone": -0.7,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000006"
+        },
+        {
+          "id": 1,
+          "title": "Thailand Faces New US Tariff Probe on Electronic Exports",
+          "url": "https://reuters.com/article/0001",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.29,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000001"
+        },
+        {
+          "id": 5,
+          "title": "High-Speed Rail Link Bangkok–Chiang Mai Breaks Ground",
+          "url": "https://bangkokpost.com/article/0005",
+          "source_domain": "bangkokpost.com",
+          "date": "2026-05-28",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.54,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000005"
+        }
+      ],
+      "count": 6,
+      "has_critical": true
+    },
+    "TLS": {
+      "articles": [
+        {
+          "id": 45,
+          "title": "Timor-Leste Deepwater Port Project Secures Asian Development Bank Funding",
+          "url": "https://apnews.com/article/0045",
+          "source_domain": "apnews.com",
+          "date": "2026-06-02",
+          "country_code": "TLS",
+          "country_name": "Timor-Leste",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.34,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000002d"
+        },
+        {
+          "id": 44,
+          "title": "Timor-Leste Joins ASEAN: Economic Integration Boosts Investor Interest",
+          "url": "https://reuters.com/article/0044",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "TLS",
+          "country_name": "Timor-Leste",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.64,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000002c"
+        }
+      ],
+      "count": 2,
+      "has_critical": false
+    },
+    "MMR": {
+      "articles": [
+        {
+          "id": 13,
+          "title": "Myanmar Junta Loses Strategic Town to Coalition Forces",
+          "url": "https://apnews.com/article/0013",
+          "source_domain": "apnews.com",
+          "date": "2026-06-01",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "conflict",
+          "all_categories": [
+            "conflict"
+          ],
+          "tone": -0.16,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000000d"
+        },
+        {
+          "id": 12,
+          "title": "Myanmar Military Launches Airstrikes on Shan State as Resistance Advances",
+          "url": "https://reuters.com/article/0012",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "conflict",
+          "all_categories": [
+            "conflict"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000000c"
+        },
+        {
+          "id": 15,
+          "title": "Cyclone Damages Coastal Myanmar: 200,000 Displaced",
+          "url": "https://reliefweb.int/article/0015",
+          "source_domain": "reliefweb.int",
+          "date": "2026-05-31",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.5,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000000f"
+        },
+        {
+          "id": 16,
+          "title": "Thailand Closes Border Crossing Amid Myanmar Fighting Near Mae Sot",
+          "url": "https://reuters.com/article/0016",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "border",
+          "all_categories": [
+            "border"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "politicalRiskNews"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000010"
+        },
+        {
+          "id": 14,
+          "title": "Myanmar Economy Contracts 3% as Sanctions Bite and Conflict Persists",
+          "url": "https://reuters.com/article/0014",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.55,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000000e"
+        }
+      ],
+      "count": 5,
+      "has_critical": true
+    },
+    "KHM": {
+      "articles": [
+        {
+          "id": 17,
+          "title": "Cambodia Garment Exports Recover as EU GSP Status Retained",
+          "url": "https://reuters.com/article/0017",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.44,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000011"
+        },
+        {
+          "id": 18,
+          "title": "Cambodia PM Meets Chinese Officials to Deepen Belt and Road Cooperation",
+          "url": "https://apnews.com/article/0018",
+          "source_domain": "apnews.com",
+          "date": "2026-05-31",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": 0.01,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000012"
+        },
+        {
+          "id": 19,
+          "title": "Cambodia Cuts Corporate Tax Rate to Attract Foreign Investment",
+          "url": "https://phnompenhpost.com/article/0019",
+          "source_domain": "phnompenhpost.com",
+          "date": "2026-05-28",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.33,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000013"
+        },
+        {
+          "id": 20,
+          "title": "Cambodia Opposition Launches Campaign Amid Curbs on Press Freedom",
+          "url": "https://aljazeera.com/article/0020",
+          "source_domain": "aljazeera.com",
+          "date": "2026-05-27",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "election",
+          "all_categories": [
+            "election"
+          ],
+          "tone": -0.53,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000014"
+        }
+      ],
+      "count": 4,
+      "has_critical": false
+    },
+    "LAO": {
+      "articles": [
+        {
+          "id": 21,
+          "title": "Laos Inflation Falls for Third Consecutive Month on Kip Stabilisation",
+          "url": "https://rfa.org/article/0021",
+          "source_domain": "rfa.org",
+          "date": "2026-06-01",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.65,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000015"
+        },
+        {
+          "id": 22,
+          "title": "Laos-China Railway Freight Volume Reaches New Monthly Record",
+          "url": "https://xinhuanet.com/article/0022",
+          "source_domain": "xinhuanet.com",
+          "date": "2026-06-01",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.51,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000016"
+        },
+        {
+          "id": 23,
+          "title": "Laos Deepens Energy Trade with Thailand via New Power Deal",
+          "url": "https://reuters.com/article/0023",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.23,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000017"
+        },
+        {
+          "id": 24,
+          "title": "Laos IMF Program Review: Progress on Debt but Risks Remain",
+          "url": "https://rfa.org/article/0024",
+          "source_domain": "rfa.org",
+          "date": "2026-05-29",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000018"
+        }
+      ],
+      "count": 4,
+      "has_critical": false
+    },
+    "BRN": {
+      "articles": [
+        {
+          "id": 42,
+          "title": "Brunei Energy Revenue Supports Stable Growth Outlook for 2025",
+          "url": "https://brudirect.com/article/0042",
+          "source_domain": "brudirect.com",
+          "date": "2026-06-01",
+          "country_code": "BRN",
+          "country_name": "Brunei",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.66,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000002a"
+        },
+        {
+          "id": 43,
+          "title": "Brunei Deepens Trade Ties with China on Halal Products",
+          "url": "https://brudirect.com/article/0043",
+          "source_domain": "brudirect.com",
+          "date": "2026-05-28",
+          "country_code": "BRN",
+          "country_name": "Brunei",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000002b"
+        }
+      ],
+      "count": 2,
+      "has_critical": false
+    },
+    "SGP": {
+      "articles": [
+        {
+          "id": 31,
+          "title": "Singapore AI Research Hub Attracts $2.5B in Global Investment",
+          "url": "https://straitstimes.com/article/0031",
+          "source_domain": "straitstimes.com",
+          "date": "2026-05-31",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.21,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000001f"
+        },
+        {
+          "id": 29,
+          "title": "Singapore Non-Oil Exports Rise 4.2% on Electronics Demand",
+          "url": "https://straitstimes.com/article/0029",
+          "source_domain": "straitstimes.com",
+          "date": "2026-05-29",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.62,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "00000000001d"
+        },
+        {
+          "id": 30,
+          "title": "MAS Holds Policy Steady as Inflation Moderates Towards Target",
+          "url": "https://channelnewsasia.com/article/0030",
+          "source_domain": "channelnewsasia.com",
+          "date": "2026-05-28",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.04,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000001e"
+        },
+        {
+          "id": 32,
+          "title": "Singapore Tightens AML Rules for Digital Asset Platforms",
+          "url": "https://businesstimes.com.sg/article/0032",
+          "source_domain": "businesstimes.com.sg",
+          "date": "2026-05-28",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.0,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000020"
+        }
+      ],
+      "count": 4,
+      "has_critical": false
+    },
+    "AUS": {
+      "articles": [
+        {
+          "id": 70,
+          "title": "Australia Lobbies US for Tariff Carveout as Iron Ore Levy Looms",
+          "url": "https://reuters.com/article/0070",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000046"
+        },
+        {
+          "id": 69,
+          "title": "Australia LNG Exports Reach Record High Amid Asia Energy Demand",
+          "url": "https://smh.com.au/article/0069",
+          "source_domain": "smh.com.au",
+          "date": "2026-05-30",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.51,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000045"
+        },
+        {
+          "id": 71,
+          "title": "RBA Cuts Cash Rate to 3.85% as Inflation Falls Within Target Band",
+          "url": "https://afr.com/article/0071",
+          "source_domain": "afr.com",
+          "date": "2026-05-30",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.22,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000047"
+        },
+        {
+          "id": 72,
+          "title": "Australia Tightens Foreign Investment Rules for Critical Minerals",
+          "url": "https://reuters.com/article/0072",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000048"
+        }
+      ],
+      "count": 4,
+      "has_critical": false
+    },
+    "MYS": {
+      "articles": [
+        {
+          "id": 25,
+          "title": "Malaysia Launches Semiconductor Diplomacy to Avoid US Tariff Exposure",
+          "url": "https://reuters.com/article/0025",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.15,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000019"
+        },
+        {
+          "id": 26,
+          "title": "Malaysia GDP Growth Accelerates on Strong Manufacturing Base",
+          "url": "https://thestar.com.my/article/0026",
+          "source_domain": "thestar.com.my",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.2,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000001a"
+        },
+        {
+          "id": 28,
+          "title": "Malaysia Budget 2025 Targets Fiscal Consolidation While Protecting Growth",
+          "url": "https://bernama.com/article/0028",
+          "source_domain": "bernama.com",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.0,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000001c"
+        },
+        {
+          "id": 27,
+          "title": "Intel Expands Malaysia Chip Packaging Plant with $7B Investment",
+          "url": "https://nikkei.com/article/0027",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-28",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.24,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000001b"
+        }
+      ],
+      "count": 4,
+      "has_critical": true
+    },
+    "VNM": {
+      "articles": [
+        {
+          "id": 10,
+          "title": "Vietnam FDI Inflows Hit 3-Year High on Manufacturing Pivot",
+          "url": "https://reuters.com/article/0010",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.44,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000000a"
+        },
+        {
+          "id": 11,
+          "title": "Vietnam Central Bank Cuts Reserve Ratio to Boost Credit Growth",
+          "url": "https://vovworld.vn/article/0011",
+          "source_domain": "vovworld.vn",
+          "date": "2026-05-29",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.31,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "00000000000b"
+        },
+        {
+          "id": 7,
+          "title": "Vietnam Surpasses $200B in Exports for Record Quarter",
+          "url": "https://reuters.com/article/0007",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.38,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000007"
+        },
+        {
+          "id": 8,
+          "title": "Vietnam Warned Over Trade Surplus with US as Tariff Review Looms",
+          "url": "https://apnews.com/article/0008",
+          "source_domain": "apnews.com",
+          "date": "2026-05-27",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.65,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000008"
+        },
+        {
+          "id": 9,
+          "title": "Samsung Expands Semiconductor Plant in Vietnam's North",
+          "url": "https://nikkei.com/article/0009",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.34,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000009"
+        }
+      ],
+      "count": 5,
+      "has_critical": true
+    },
+    "KOR": {
+      "articles": [
+        {
+          "id": 65,
+          "title": "South Korea Proposes Tariff Deal Framework as US Trade Talks Begin",
+          "url": "https://reuters.com/article/0065",
+          "source_domain": "reuters.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.07,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000041"
+        },
+        {
+          "id": 66,
+          "title": "Samsung Accelerates 3nm Chip Output as US Customers Diversify from TSMC",
+          "url": "https://koreaherald.com/article/0066",
+          "source_domain": "koreaherald.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.19,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000042"
+        },
+        {
+          "id": 68,
+          "title": "South Korea Constitutional Court Rules on Post-Martial Law Political Crisis",
+          "url": "https://apnews.com/article/0068",
+          "source_domain": "apnews.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000044"
+        },
+        {
+          "id": 67,
+          "title": "South Korea Exports Rise 3.7% on Chip Recovery Despite Auto Headwinds",
+          "url": "https://reuters.com/article/0067",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.62,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000043"
+        }
+      ],
+      "count": 4,
+      "has_critical": true
+    }
+  },
+  "by_category": {
+    "economy": {
+      "articles": [
+        {
+          "id": 48,
+          "title": "China PMI Contracts for Third Month as Trade War Weighs on Factories",
+          "url": "https://reuters.com/article/0048",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.43,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000030"
+        },
+        {
+          "id": 2,
+          "title": "Thai GDP Growth Revised Down Amid Export Headwinds",
+          "url": "https://bangkokpost.com/article/0002",
+          "source_domain": "bangkokpost.com",
+          "date": "2026-06-01",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.33,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000002"
+        },
+        {
+          "id": 54,
+          "title": "US Fed Holds Rates Amid Tariff Uncertainty and Inflation Concerns",
+          "url": "https://apnews.com/article/0054",
+          "source_domain": "apnews.com",
+          "date": "2026-06-01",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000036"
+        },
+        {
+          "id": 21,
+          "title": "Laos Inflation Falls for Third Consecutive Month on Kip Stabilisation",
+          "url": "https://rfa.org/article/0021",
+          "source_domain": "rfa.org",
+          "date": "2026-06-01",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.65,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000015"
+        },
+        {
+          "id": 41,
+          "title": "Philippines Inflation Edges Down to 3.8% on Easing Food Prices",
+          "url": "https://inquirer.net/article/0041",
+          "source_domain": "inquirer.net",
+          "date": "2026-06-01",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.3,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000029"
+        },
+        {
+          "id": 42,
+          "title": "Brunei Energy Revenue Supports Stable Growth Outlook for 2025",
+          "url": "https://brudirect.com/article/0042",
+          "source_domain": "brudirect.com",
+          "date": "2026-06-01",
+          "country_code": "BRN",
+          "country_name": "Brunei",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.66,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000002a"
+        },
+        {
+          "id": 10,
+          "title": "Vietnam FDI Inflows Hit 3-Year High on Manufacturing Pivot",
+          "url": "https://reuters.com/article/0010",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.44,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000000a"
+        },
+        {
+          "id": 26,
+          "title": "Malaysia GDP Growth Accelerates on Strong Manufacturing Base",
+          "url": "https://thestar.com.my/article/0026",
+          "source_domain": "thestar.com.my",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.2,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000001a"
+        },
+        {
+          "id": 44,
+          "title": "Timor-Leste Joins ASEAN: Economic Integration Boosts Investor Interest",
+          "url": "https://reuters.com/article/0044",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "TLS",
+          "country_name": "Timor-Leste",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.64,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000002c"
+        },
+        {
+          "id": 61,
+          "title": "India GDP Growth at 7.1% Leads G20 as Trade Diversion Benefits Sector",
+          "url": "https://reuters.com/article/0061",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.31,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000003d"
+        },
+        {
+          "id": 71,
+          "title": "RBA Cuts Cash Rate to 3.85% as Inflation Falls Within Target Band",
+          "url": "https://afr.com/article/0071",
+          "source_domain": "afr.com",
+          "date": "2026-05-30",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.22,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000047"
+        },
+        {
+          "id": 67,
+          "title": "South Korea Exports Rise 3.7% on Chip Recovery Despite Auto Headwinds",
+          "url": "https://reuters.com/article/0067",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.62,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000043"
+        },
+        {
+          "id": 30,
+          "title": "MAS Holds Policy Steady as Inflation Moderates Towards Target",
+          "url": "https://channelnewsasia.com/article/0030",
+          "source_domain": "channelnewsasia.com",
+          "date": "2026-05-28",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.04,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000001e"
+        },
+        {
+          "id": 14,
+          "title": "Myanmar Economy Contracts 3% as Sanctions Bite and Conflict Persists",
+          "url": "https://reuters.com/article/0014",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.55,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000000e"
+        },
+        {
+          "id": 35,
+          "title": "Indonesia Q1 GDP Growth Beats Forecast at 5.1%",
+          "url": "https://reuters.com/article/0035",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": 0.24,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000023"
+        },
+        {
+          "id": 58,
+          "title": "Japan Industrial Output Falls for Second Month on US Trade Shock",
+          "url": "https://nikkei.com/article/0058",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "economy",
+          "all_categories": [
+            "economy"
+          ],
+          "tone": -0.61,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "inflation",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000003a"
+        }
+      ],
+      "count": 16
+    },
+    "tariff": {
+      "articles": [
+        {
+          "id": 47,
+          "title": "China Adds Rare Earth Export Controls Targeting US Tech Supply Chain",
+          "url": "https://ft.com/article/0047",
+          "source_domain": "ft.com",
+          "date": "2026-06-02",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.23,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000002f"
+        },
+        {
+          "id": 53,
+          "title": "US Tariffs on Southeast Asia Suppliers Prompt Emergency Trade Talks",
+          "url": "https://ft.com/article/0053",
+          "source_domain": "ft.com",
+          "date": "2026-06-02",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.51,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000035"
+        },
+        {
+          "id": 38,
+          "title": "Philippines Challenges China Tariffs on Agri Exports at WTO",
+          "url": "https://reuters.com/article/0038",
+          "source_domain": "reuters.com",
+          "date": "2026-06-02",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.39,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000026"
+        },
+        {
+          "id": 46,
+          "title": "China Retaliates with 84% Tariffs on US Agricultural Goods",
+          "url": "https://reuters.com/article/0046",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000002e"
+        },
+        {
+          "id": 33,
+          "title": "Indonesia Slaps 200% Tariff on Chinese Steel as Dumping Cases Surge",
+          "url": "https://reuters.com/article/0033",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.64,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000021"
+        },
+        {
+          "id": 63,
+          "title": "India Raises Import Duties on Chinese Steel and Solar Panels",
+          "url": "https://reuters.com/article/0063",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.67,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000003f"
+        },
+        {
+          "id": 70,
+          "title": "Australia Lobbies US for Tariff Carveout as Iron Ore Levy Looms",
+          "url": "https://reuters.com/article/0070",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000046"
+        },
+        {
+          "id": 25,
+          "title": "Malaysia Launches Semiconductor Diplomacy to Avoid US Tariff Exposure",
+          "url": "https://reuters.com/article/0025",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.15,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000019"
+        },
+        {
+          "id": 65,
+          "title": "South Korea Proposes Tariff Deal Framework as US Trade Talks Begin",
+          "url": "https://reuters.com/article/0065",
+          "source_domain": "reuters.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.07,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000041"
+        },
+        {
+          "id": 52,
+          "title": "Trump Administration Announces 10% Baseline Tariff on All Imports",
+          "url": "https://reuters.com/article/0052",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000034"
+        },
+        {
+          "id": 1,
+          "title": "Thailand Faces New US Tariff Probe on Electronic Exports",
+          "url": "https://reuters.com/article/0001",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.29,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000001"
+        },
+        {
+          "id": 57,
+          "title": "Japan Seeks Tariff Exemption as Auto Sector Faces 25% US Levy",
+          "url": "https://reuters.com/article/0057",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.24,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000039"
+        },
+        {
+          "id": 8,
+          "title": "Vietnam Warned Over Trade Surplus with US as Tariff Review Looms",
+          "url": "https://apnews.com/article/0008",
+          "source_domain": "apnews.com",
+          "date": "2026-05-27",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "tariff",
+          "all_categories": [
+            "tariff"
+          ],
+          "tone": -0.65,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000008"
+        }
+      ],
+      "count": 13
+    },
+    "trade": {
+      "articles": [
+        {
+          "id": 3,
+          "title": "Thailand Expands Trade Deal Talks with Gulf Countries",
+          "url": "https://nikkei.com/article/0003",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.47,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000003"
+        },
+        {
+          "id": 17,
+          "title": "Cambodia Garment Exports Recover as EU GSP Status Retained",
+          "url": "https://reuters.com/article/0017",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.44,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000011"
+        },
+        {
+          "id": 55,
+          "title": "US Trade Deficit Widens to $89B as Pre-Tariff Import Surge Continues",
+          "url": "https://wsj.com/article/0055",
+          "source_domain": "wsj.com",
+          "date": "2026-06-01",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": -0.56,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000037"
+        },
+        {
+          "id": 59,
+          "title": "Japan Deepens Supply Chain Ties with Vietnam, Indonesia in Pivot from China",
+          "url": "https://reuters.com/article/0059",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.63,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000003b"
+        },
+        {
+          "id": 37,
+          "title": "Indonesia-India Free Trade Agreement Talks Resume After Two-Year Pause",
+          "url": "https://nikkei.com/article/0037",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-31",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.63,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000025"
+        },
+        {
+          "id": 69,
+          "title": "Australia LNG Exports Reach Record High Amid Asia Energy Demand",
+          "url": "https://smh.com.au/article/0069",
+          "source_domain": "smh.com.au",
+          "date": "2026-05-30",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.51,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000045"
+        },
+        {
+          "id": 23,
+          "title": "Laos Deepens Energy Trade with Thailand via New Power Deal",
+          "url": "https://reuters.com/article/0023",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.23,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000017"
+        },
+        {
+          "id": 29,
+          "title": "Singapore Non-Oil Exports Rise 4.2% on Electronics Demand",
+          "url": "https://straitstimes.com/article/0029",
+          "source_domain": "straitstimes.com",
+          "date": "2026-05-29",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.62,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "00000000001d"
+        },
+        {
+          "id": 7,
+          "title": "Vietnam Surpasses $200B in Exports for Record Quarter",
+          "url": "https://reuters.com/article/0007",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.38,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000007"
+        },
+        {
+          "id": 49,
+          "title": "China Redirects Exports to ASEAN as US Market Access Tightens",
+          "url": "https://apnews.com/article/0049",
+          "source_domain": "apnews.com",
+          "date": "2026-05-28",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": -0.0,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000031"
+        },
+        {
+          "id": 43,
+          "title": "Brunei Deepens Trade Ties with China on Halal Products",
+          "url": "https://brudirect.com/article/0043",
+          "source_domain": "brudirect.com",
+          "date": "2026-05-28",
+          "country_code": "BRN",
+          "country_name": "Brunei",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000002b"
+        },
+        {
+          "id": 62,
+          "title": "India Seizes China Market Share in Electronics as US Tariffs Redirect Orders",
+          "url": "https://economictimes.indiatimes.com/article/0062",
+          "source_domain": "economictimes.indiatimes.com",
+          "date": "2026-05-27",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "trade",
+          "all_categories": [
+            "trade"
+          ],
+          "tone": 0.46,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "tradeNewsCount"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "00000000003e"
+        }
+      ],
+      "count": 12
+    },
+    "policy": {
+      "articles": [
+        {
+          "id": 56,
+          "title": "White House Considers Tariff Exemptions for Allies in South East Asia",
+          "url": "https://reuters.com/article/0056",
+          "source_domain": "reuters.com",
+          "date": "2026-05-30",
+          "country_code": "USA",
+          "country_name": "United States",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "000000000038"
+        },
+        {
+          "id": 28,
+          "title": "Malaysia Budget 2025 Targets Fiscal Consolidation While Protecting Growth",
+          "url": "https://bernama.com/article/0028",
+          "source_domain": "bernama.com",
+          "date": "2026-05-30",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.0,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260530T120000Z",
+          "url_hash": "00000000001c"
+        },
+        {
+          "id": 24,
+          "title": "Laos IMF Program Review: Progress on Debt but Risks Remain",
+          "url": "https://rfa.org/article/0024",
+          "source_domain": "rfa.org",
+          "date": "2026-05-29",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000018"
+        },
+        {
+          "id": 11,
+          "title": "Vietnam Central Bank Cuts Reserve Ratio to Boost Credit Growth",
+          "url": "https://vovworld.vn/article/0011",
+          "source_domain": "vovworld.vn",
+          "date": "2026-05-29",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.31,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "00000000000b"
+        },
+        {
+          "id": 51,
+          "title": "China PBOC Cuts Reserve Requirement Ratio for Third Time This Year",
+          "url": "https://reuters.com/article/0051",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.39,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000033"
+        },
+        {
+          "id": 19,
+          "title": "Cambodia Cuts Corporate Tax Rate to Attract Foreign Investment",
+          "url": "https://phnompenhpost.com/article/0019",
+          "source_domain": "phnompenhpost.com",
+          "date": "2026-05-28",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.33,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000013"
+        },
+        {
+          "id": 32,
+          "title": "Singapore Tightens AML Rules for Digital Asset Platforms",
+          "url": "https://businesstimes.com.sg/article/0032",
+          "source_domain": "businesstimes.com.sg",
+          "date": "2026-05-28",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.0,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000020"
+        },
+        {
+          "id": 34,
+          "title": "Indonesia Raises Nickel Export Tax to Push EV Battery Localisation",
+          "url": "https://thejakartapost.com/article/0034",
+          "source_domain": "thejakartapost.com",
+          "date": "2026-05-27",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000022"
+        },
+        {
+          "id": 72,
+          "title": "Australia Tightens Foreign Investment Rules for Critical Minerals",
+          "url": "https://reuters.com/article/0072",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "AUS",
+          "country_name": "Australia",
+          "category": "policy",
+          "all_categories": [
+            "policy"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "gdpGrowth",
+            "fdi",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000048"
+        }
+      ],
+      "count": 9
+    },
+    "technology": {
+      "articles": [
+        {
+          "id": 60,
+          "title": "Japan–US Chip Alliance to Invest $10B in Advanced Packaging in SEA",
+          "url": "https://nikkei.com/article/0060",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "JPN",
+          "country_name": "Japan",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.69,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000003c"
+        },
+        {
+          "id": 64,
+          "title": "India Opens New Fab Incentive Round for Semiconductor Ecosystem",
+          "url": "https://nikkei.com/article/0064",
+          "source_domain": "nikkei.com",
+          "date": "2026-06-02",
+          "country_code": "IND",
+          "country_name": "India",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.56,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000040"
+        },
+        {
+          "id": 31,
+          "title": "Singapore AI Research Hub Attracts $2.5B in Global Investment",
+          "url": "https://straitstimes.com/article/0031",
+          "source_domain": "straitstimes.com",
+          "date": "2026-05-31",
+          "country_code": "SGP",
+          "country_name": "Singapore",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.21,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000001f"
+        },
+        {
+          "id": 66,
+          "title": "Samsung Accelerates 3nm Chip Output as US Customers Diversify from TSMC",
+          "url": "https://koreaherald.com/article/0066",
+          "source_domain": "koreaherald.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.19,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000042"
+        },
+        {
+          "id": 27,
+          "title": "Intel Expands Malaysia Chip Packaging Plant with $7B Investment",
+          "url": "https://nikkei.com/article/0027",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-28",
+          "country_code": "MYS",
+          "country_name": "Malaysia",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.24,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "00000000001b"
+        },
+        {
+          "id": 9,
+          "title": "Samsung Expands Semiconductor Plant in Vietnam's North",
+          "url": "https://nikkei.com/article/0009",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "VNM",
+          "country_name": "Vietnam",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": 0.34,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000009"
+        },
+        {
+          "id": 50,
+          "title": "Huawei Ships 7nm AI Chip to Domestic Cloud Firms Despite US Curbs",
+          "url": "https://nikkei.com/article/0050",
+          "source_domain": "nikkei.com",
+          "date": "2026-05-27",
+          "country_code": "CHN",
+          "country_name": "China",
+          "category": "technology",
+          "all_categories": [
+            "technology"
+          ],
+          "tone": -0.06,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "fdi",
+            "tradeNewsCount",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000032"
+        }
+      ],
+      "count": 7
+    },
+    "disaster": {
+      "articles": [
+        {
+          "id": 36,
+          "title": "Flash Floods Hit Sulawesi: 15,000 Families Evacuated",
+          "url": "https://reuters.com/article/0036",
+          "source_domain": "reuters.com",
+          "date": "2026-06-02",
+          "country_code": "IDN",
+          "country_name": "Indonesia",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.43,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "000000000024"
+        },
+        {
+          "id": 15,
+          "title": "Cyclone Damages Coastal Myanmar: 200,000 Displaced",
+          "url": "https://reliefweb.int/article/0015",
+          "source_domain": "reliefweb.int",
+          "date": "2026-05-31",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.5,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000000f"
+        },
+        {
+          "id": 40,
+          "title": "Typhoon Carina Kills 18, Disrupts Luzon Supply Chains",
+          "url": "https://reuters.com/article/0040",
+          "source_domain": "reuters.com",
+          "date": "2026-05-27",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "disaster",
+          "all_categories": [
+            "disaster"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "gdpGrowth",
+            "exports",
+            "inflation"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000028"
+        }
+      ],
+      "count": 3
+    },
+    "infrastructure": {
+      "articles": [
+        {
+          "id": 45,
+          "title": "Timor-Leste Deepwater Port Project Secures Asian Development Bank Funding",
+          "url": "https://apnews.com/article/0045",
+          "source_domain": "apnews.com",
+          "date": "2026-06-02",
+          "country_code": "TLS",
+          "country_name": "Timor-Leste",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.34,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260602T120000Z",
+          "url_hash": "00000000002d"
+        },
+        {
+          "id": 22,
+          "title": "Laos-China Railway Freight Volume Reaches New Monthly Record",
+          "url": "https://xinhuanet.com/article/0022",
+          "source_domain": "xinhuanet.com",
+          "date": "2026-06-01",
+          "country_code": "LAO",
+          "country_name": "Laos",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.51,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000016"
+        },
+        {
+          "id": 5,
+          "title": "High-Speed Rail Link Bangkok–Chiang Mai Breaks Ground",
+          "url": "https://bangkokpost.com/article/0005",
+          "source_domain": "bangkokpost.com",
+          "date": "2026-05-28",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "infrastructure",
+          "all_categories": [
+            "infrastructure"
+          ],
+          "tone": 0.54,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "fdi",
+            "gdpGrowth",
+            "exports"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000005"
+        }
+      ],
+      "count": 3
+    },
+    "politics": {
+      "articles": [
+        {
+          "id": 4,
+          "title": "Thai PM Tables Constitutional Reform Bill in Parliament",
+          "url": "https://reuters.com/article/0004",
+          "source_domain": "reuters.com",
+          "date": "2026-06-01",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": -0.05,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "000000000004"
+        },
+        {
+          "id": 18,
+          "title": "Cambodia PM Meets Chinese Officials to Deepen Belt and Road Cooperation",
+          "url": "https://apnews.com/article/0018",
+          "source_domain": "apnews.com",
+          "date": "2026-05-31",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": 0.01,
+          "language": "English",
+          "impact_score": 2,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000012"
+        },
+        {
+          "id": 68,
+          "title": "South Korea Constitutional Court Rules on Post-Martial Law Political Crisis",
+          "url": "https://apnews.com/article/0068",
+          "source_domain": "apnews.com",
+          "date": "2026-05-29",
+          "country_code": "KOR",
+          "country_name": "South Korea",
+          "category": "politics",
+          "all_categories": [
+            "politics"
+          ],
+          "tone": 0.02,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260529T120000Z",
+          "url_hash": "000000000044"
+        }
+      ],
+      "count": 3
+    },
+    "conflict": {
+      "articles": [
+        {
+          "id": 13,
+          "title": "Myanmar Junta Loses Strategic Town to Coalition Forces",
+          "url": "https://apnews.com/article/0013",
+          "source_domain": "apnews.com",
+          "date": "2026-06-01",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "conflict",
+          "all_categories": [
+            "conflict"
+          ],
+          "tone": -0.16,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260601T120000Z",
+          "url_hash": "00000000000d"
+        },
+        {
+          "id": 12,
+          "title": "Myanmar Military Launches Airstrikes on Shan State as Resistance Advances",
+          "url": "https://reuters.com/article/0012",
+          "source_domain": "reuters.com",
+          "date": "2026-05-31",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "conflict",
+          "all_categories": [
+            "conflict"
+          ],
+          "tone": -0.31,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi",
+            "gdpGrowth"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "00000000000c"
+        }
+      ],
+      "count": 2
+    },
+    "election": {
+      "articles": [
+        {
+          "id": 6,
+          "title": "Thai Opposition Files Petition Against Electoral Commission",
+          "url": "https://thairath.com/article/0006",
+          "source_domain": "thairath.com",
+          "date": "2026-05-31",
+          "country_code": "THA",
+          "country_name": "Thailand",
+          "category": "election",
+          "all_categories": [
+            "election"
+          ],
+          "tone": -0.7,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260531T120000Z",
+          "url_hash": "000000000006"
+        },
+        {
+          "id": 20,
+          "title": "Cambodia Opposition Launches Campaign Amid Curbs on Press Freedom",
+          "url": "https://aljazeera.com/article/0020",
+          "source_domain": "aljazeera.com",
+          "date": "2026-05-27",
+          "country_code": "KHM",
+          "country_name": "Cambodia",
+          "category": "election",
+          "all_categories": [
+            "election"
+          ],
+          "tone": -0.53,
+          "language": "English",
+          "impact_score": 3,
+          "connected_indicators": [
+            "politicalRiskNews",
+            "fdi"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260527T120000Z",
+          "url_hash": "000000000014"
+        }
+      ],
+      "count": 2
+    },
+    "border": {
+      "articles": [
+        {
+          "id": 39,
+          "title": "Philippines Warns China Over Water Cannon Incident at Scarborough Shoal",
+          "url": "https://apnews.com/article/0039",
+          "source_domain": "apnews.com",
+          "date": "2026-05-28",
+          "country_code": "PHL",
+          "country_name": "Philippines",
+          "category": "border",
+          "all_categories": [
+            "border"
+          ],
+          "tone": -0.66,
+          "language": "English",
+          "impact_score": 5,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "politicalRiskNews"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000027"
+        },
+        {
+          "id": 16,
+          "title": "Thailand Closes Border Crossing Amid Myanmar Fighting Near Mae Sot",
+          "url": "https://reuters.com/article/0016",
+          "source_domain": "reuters.com",
+          "date": "2026-05-28",
+          "country_code": "MMR",
+          "country_name": "Myanmar",
+          "category": "border",
+          "all_categories": [
+            "border"
+          ],
+          "tone": -0.34,
+          "language": "English",
+          "impact_score": 4,
+          "connected_indicators": [
+            "exports",
+            "imports",
+            "politicalRiskNews"
+          ],
+          "source": "gdelt",
+          "gdelt_seendate": "20260528T120000Z",
+          "url_hash": "000000000010"
+        }
+      ],
+      "count": 2
+    }
+  },
+  "risk_scores": {
+    "THA": {
+      "political_risk_count": 2,
+      "trade_news_count": 2,
+      "total_articles": 6,
+      "risk_signal": "medium",
+      "top_categories": [
+        "trade",
+        "economy",
+        "politics"
+      ],
+      "has_critical": true
+    },
+    "VNM": {
+      "political_risk_count": 0,
+      "trade_news_count": 2,
+      "total_articles": 5,
+      "risk_signal": "medium",
+      "top_categories": [
+        "economy",
+        "policy",
+        "trade"
+      ],
+      "has_critical": true
+    },
+    "MMR": {
+      "political_risk_count": 3,
+      "trade_news_count": 0,
+      "total_articles": 5,
+      "risk_signal": "medium",
+      "top_categories": [
+        "conflict",
+        "disaster",
+        "border"
+      ],
+      "has_critical": true
+    },
+    "KHM": {
+      "political_risk_count": 2,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "medium",
+      "top_categories": [
+        "trade",
+        "politics",
+        "policy"
+      ],
+      "has_critical": false
+    },
+    "LAO": {
+      "political_risk_count": 0,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "low",
+      "top_categories": [
+        "economy",
+        "infrastructure",
+        "trade"
+      ],
+      "has_critical": false
+    },
+    "MYS": {
+      "political_risk_count": 0,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "low",
+      "top_categories": [
+        "tariff",
+        "economy",
+        "policy"
+      ],
+      "has_critical": true
+    },
+    "SGP": {
+      "political_risk_count": 0,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "low",
+      "top_categories": [
+        "technology",
+        "trade",
+        "economy"
+      ],
+      "has_critical": false
+    },
+    "IDN": {
+      "political_risk_count": 0,
+      "trade_news_count": 2,
+      "total_articles": 5,
+      "risk_signal": "medium",
+      "top_categories": [
+        "disaster",
+        "tariff",
+        "trade"
+      ],
+      "has_critical": true
+    },
+    "PHL": {
+      "political_risk_count": 1,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "low",
+      "top_categories": [
+        "tariff",
+        "economy",
+        "border"
+      ],
+      "has_critical": true
+    },
+    "BRN": {
+      "political_risk_count": 0,
+      "trade_news_count": 1,
+      "total_articles": 2,
+      "risk_signal": "low",
+      "top_categories": [
+        "economy",
+        "trade"
+      ],
+      "has_critical": false
+    },
+    "TLS": {
+      "political_risk_count": 0,
+      "trade_news_count": 0,
+      "total_articles": 2,
+      "risk_signal": "low",
+      "top_categories": [
+        "infrastructure",
+        "economy"
+      ],
+      "has_critical": false
+    },
+    "CHN": {
+      "political_risk_count": 0,
+      "trade_news_count": 3,
+      "total_articles": 6,
+      "risk_signal": "medium",
+      "top_categories": [
+        "tariff",
+        "economy",
+        "trade"
+      ],
+      "has_critical": true
+    },
+    "USA": {
+      "political_risk_count": 0,
+      "trade_news_count": 3,
+      "total_articles": 5,
+      "risk_signal": "medium",
+      "top_categories": [
+        "tariff",
+        "economy",
+        "trade"
+      ],
+      "has_critical": true
+    },
+    "JPN": {
+      "political_risk_count": 0,
+      "trade_news_count": 2,
+      "total_articles": 4,
+      "risk_signal": "medium",
+      "top_categories": [
+        "technology",
+        "trade",
+        "tariff"
+      ],
+      "has_critical": true
+    },
+    "IND": {
+      "political_risk_count": 0,
+      "trade_news_count": 2,
+      "total_articles": 4,
+      "risk_signal": "medium",
+      "top_categories": [
+        "technology",
+        "tariff",
+        "economy"
+      ],
+      "has_critical": true
+    },
+    "KOR": {
+      "political_risk_count": 1,
+      "trade_news_count": 1,
+      "total_articles": 4,
+      "risk_signal": "low",
+      "top_categories": [
+        "tariff",
+        "technology",
+        "politics"
+      ],
+      "has_critical": true
+    },
+    "AUS": {
+      "political_risk_count": 0,
+      "trade_news_count": 2,
+      "total_articles": 4,
+      "risk_signal": "medium",
+      "top_categories": [
+        "tariff",
+        "trade",
+        "economy"
+      ],
+      "has_critical": false
+    }
+  },
+  "stats": {
+    "total": 72,
+    "critical_count": 21,
+    "impact_5_count": 7,
+    "by_impact": {
+      "1": 0,
+      "2": 18,
+      "3": 33,
+      "4": 14,
+      "5": 7
+    },
+    "by_category": {
+      "economy": 16,
+      "tariff": 13,
+      "trade": 12,
+      "policy": 9,
+      "technology": 7,
+      "disaster": 3,
+      "infrastructure": 3,
+      "politics": 3,
+      "conflict": 2,
+      "election": 2,
+      "border": 2
+    },
+    "by_country": {
+      "CHN": 6,
+      "THA": 6,
+      "USA": 5,
+      "IDN": 5,
+      "MMR": 5,
+      "VNM": 5,
+      "PHL": 4,
+      "JPN": 4,
+      "IND": 4,
+      "KHM": 4,
+      "LAO": 4,
+      "SGP": 4,
+      "AUS": 4,
+      "MYS": 4,
+      "KOR": 4,
+      "TLS": 2,
+      "BRN": 2
+    },
+    "sentiment": {
+      "positive": 31,
+      "negative": 26,
+      "neutral": 15
+    }
+  }
+}
