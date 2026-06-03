@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T16:37:43.863286Z",
-  "total_conflicts": 968,
+  "generated_at": "2026-06-03T21:04:59.601437Z",
+  "total_conflicts": 896,
   "entries": [
     {
       "key": "AUS|GDP_GROWTH|2019",
@@ -829,318 +829,6 @@
           "value": null,
           "priority": [
             15,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 336.477594,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 336.477594,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 336.478,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 319.174581,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 319.174581,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 319.175,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 343.364165,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 343.364165,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 343.364,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 431.732711,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 431.732711,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 431.733,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 463.117016,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 463.117016,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 463.117,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 432.605706,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 432.605706,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 432.606,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 306.786754,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 306.786754,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 306.787,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 274.154333,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 274.154333,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 274.154,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 284.038962,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 284.038962,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 284.039,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 343.078219,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 343.078219,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 343.078,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 387.533148,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 387.533148,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 387.533,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "AUS|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 395.749225,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 395.749225,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 395.749,
-          "priority": [
-            1,
             5
           ]
         }
@@ -2249,7 +1937,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 7.805,
+          "value": 7.039,
           "priority": [
             1,
             5
@@ -2284,7 +1972,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 6.886,
+          "value": 6.608,
           "priority": [
             1,
             5
@@ -2319,7 +2007,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 11.229,
+          "value": 11.058,
           "priority": [
             1,
             5
@@ -2354,7 +2042,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 14.411,
+          "value": 14.23,
           "priority": [
             1,
             5
@@ -2389,7 +2077,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 11.578,
+          "value": 11.241,
           "priority": [
             1,
             5
@@ -2424,7 +2112,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 11.394,
+          "value": 11.244,
           "priority": [
             1,
             5
@@ -2511,7 +2199,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 6.811,
+          "value": 5.103,
           "priority": [
             1,
             5
@@ -2546,7 +2234,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 6.355,
+          "value": 5.343,
           "priority": [
             1,
             5
@@ -2581,7 +2269,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 9.378,
+          "value": 8.575,
           "priority": [
             1,
             5
@@ -2616,7 +2304,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 10.106,
+          "value": 9.184,
           "priority": [
             1,
             5
@@ -2651,7 +2339,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 9.081,
+          "value": 7.484,
           "priority": [
             1,
             5
@@ -2686,7 +2374,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 8.946,
+          "value": 7.294,
           "priority": [
             1,
             5
@@ -3609,318 +3297,6 @@
           "value": null,
           "priority": [
             15,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2628.941105,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2628.941105,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2628.941,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2729.884575,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2729.884575,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2729.885,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3554.107781,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3554.107781,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3554.108,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3717.887819,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3717.887819,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3717.888,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3490.089712,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3490.089712,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3490.09,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3753.056083,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3753.056083,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3753.056,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2496.153306,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2496.153306,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2496.153,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2374.737463,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2374.737463,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2374.737,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3093.278397,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3093.278397,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3093.278,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3140.040864,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3140.040864,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3140.041,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3106.457704,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3106.457704,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3106.458,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "CHN|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3219.34257,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3219.34257,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3219.343,
-          "priority": [
-            1,
             5
           ]
         }
@@ -5029,7 +4405,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 208.058,
+          "value": 167.683,
           "priority": [
             1,
             5
@@ -5064,7 +4440,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 183.547,
+          "value": 163.306,
           "priority": [
             1,
             5
@@ -5099,7 +4475,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 254.11,
+          "value": 231.506,
           "priority": [
             1,
             5
@@ -5134,7 +4510,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 323.218,
+          "value": 291.979,
           "priority": [
             1,
             5
@@ -5169,7 +4545,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 298.282,
+          "value": 258.857,
           "priority": [
             1,
             5
@@ -5204,7 +4580,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 309.746,
+          "value": 264.706,
           "priority": [
             1,
             5
@@ -5291,7 +4667,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 213.035,
+          "value": 171.276,
           "priority": [
             1,
             5
@@ -5326,7 +4702,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 165.647,
+          "value": 141.622,
           "priority": [
             1,
             5
@@ -5361,7 +4737,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 222.924,
+          "value": 196.19,
           "priority": [
             1,
             5
@@ -5396,7 +4772,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 276.507,
+          "value": 237.447,
           "priority": [
             1,
             5
@@ -5431,7 +4807,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 268.508,
+          "value": 221.886,
           "priority": [
             1,
             5
@@ -5466,7 +4842,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 284.696,
+          "value": 233.659,
           "priority": [
             1,
             5
@@ -6395,318 +5771,6 @@
       ]
     },
     {
-      "key": "IND|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 529.245063,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 529.245063,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 529.245,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 499.728529,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 499.728529,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 499.729,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 677.769255,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 677.769255,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 677.769,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 778.021515,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 778.021515,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 778.022,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 780.40853,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 780.40853,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 780.409,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 827.405227,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 827.405227,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 827.405,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 602.315056,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 602.315056,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 602.315,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 510.244747,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 510.244747,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 510.245,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 760.902892,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 760.902892,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 760.903,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 897.550749,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 897.550749,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 897.551,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 856.651131,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 856.651131,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 856.651,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "IND|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 918.33372,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 918.33372,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 918.334,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
       "key": "JPN|GDP_GROWTH|2019",
       "winner": "World Bank Open Data API",
       "winner_value_type": "official_actual",
@@ -7533,318 +6597,6 @@
           "value": null,
           "priority": [
             15,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 893.782209,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 893.782209,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 893.782,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 785.057625,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 785.057625,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 785.058,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 912.549014,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 912.549014,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 912.549,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 918.408425,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 918.408425,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 918.408,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 920.644083,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 920.644083,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 920.644,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 917.043675,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 917.043675,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 917.044,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 908.591905,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 908.591905,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 908.592,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 798.645129,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 798.645129,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 798.645,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 938.755726,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 938.755726,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 938.756,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 1076.977967,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 1076.977967,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 1076.978,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 981.637982,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 981.637982,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 981.638,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "JPN|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 952.041559,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 952.041559,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 952.042,
-          "priority": [
-            1,
             5
           ]
         }
@@ -8953,7 +7705,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 20.341,
+          "value": 14.825,
           "priority": [
             1,
             5
@@ -8988,7 +7740,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 20.864,
+          "value": 17.716,
           "priority": [
             1,
             5
@@ -9023,7 +7775,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 26.622,
+          "value": 19.307,
           "priority": [
             1,
             5
@@ -9058,7 +7810,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 28.879,
+          "value": 22.472,
           "priority": [
             1,
             5
@@ -9093,7 +7845,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 28.319,
+          "value": 23.47,
           "priority": [
             1,
             5
@@ -9128,7 +7880,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 33.079,
+          "value": 26.661,
           "priority": [
             1,
             5
@@ -9215,7 +7967,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 22.118,
+          "value": 20.279,
           "priority": [
             1,
             5
@@ -9250,7 +8002,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 21.651,
+          "value": 19.114,
           "priority": [
             1,
             5
@@ -9285,7 +8037,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 27.158,
+          "value": 28.583,
           "priority": [
             1,
             5
@@ -9320,7 +8072,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 29.463,
+          "value": 29.805,
           "priority": [
             1,
             5
@@ -9355,7 +8107,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 28.498,
+          "value": 24.386,
           "priority": [
             1,
             5
@@ -9390,7 +8142,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 33.413,
+          "value": 28.699,
           "priority": [
             1,
             5
@@ -10313,318 +9065,6 @@
           "value": null,
           "priority": [
             15,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 648.610577,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 648.610577,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 648.611,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 603.713418,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 603.713418,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 603.713,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 764.083221,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 764.083221,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 764.083,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 815.019022,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 815.019022,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 815.019,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 762.299063,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 762.299063,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 762.299,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 831.889172,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 831.889172,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 831.889,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 602.460189,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 602.460189,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 602.46,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 539.43671,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 539.43671,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 539.437,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 698.601348,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 698.601348,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 698.601,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 814.936712,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 814.936712,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 814.937,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 755.197457,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 755.197457,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 755.197,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "KOR|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 755.486202,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 755.486202,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 755.486,
-          "priority": [
-            1,
             5
           ]
         }
@@ -11708,10 +10148,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2019",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 5.806,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 5.806,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11734,10 +10183,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2020",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 6.115,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 6.115,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11760,10 +10218,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2021",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 7.695,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 7.695,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11786,10 +10253,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2022",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 8.198,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 8.198,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11812,10 +10288,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2023",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 8.37,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 8.37,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11838,10 +10323,19 @@
     },
     {
       "key": "LAO|EXPORTS_USD|2024",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 9.386,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 9.386,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11916,10 +10410,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2019",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 6.272,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 6.272,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11942,10 +10445,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2020",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 5.37,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 5.37,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11968,10 +10480,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2021",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 6.275,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 6.275,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -11994,10 +10515,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2022",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 7.244,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 7.244,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -12020,10 +10550,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2023",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 7.649,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 7.649,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -12046,10 +10585,19 @@
     },
     {
       "key": "LAO|IMPORTS_USD|2024",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 8.663,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 8.663,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13200,10 +11748,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2019",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 17.997,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 17.997,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13226,10 +11783,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2020",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 16.692,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 16.692,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13252,10 +11818,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2021",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 15.154,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 15.154,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13278,10 +11853,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2022",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 17.085,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 17.085,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13304,10 +11888,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2023",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 14.753,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 14.753,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13330,10 +11923,19 @@
     },
     {
       "key": "MMR|EXPORTS_USD|2024",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 14.924,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 14.924,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13408,10 +12010,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2019",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 18.588,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 18.588,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13434,10 +12045,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2020",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 17.947,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 17.947,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13460,10 +12080,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2021",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 14.327,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 14.327,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13486,10 +12115,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2022",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 17.403,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 17.403,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13512,10 +12150,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2023",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 16.44,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 16.44,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -13538,10 +12185,19 @@
     },
     {
       "key": "MMR|IMPORTS_USD|2024",
-      "winner": "ASEANstats (via World Bank API)",
-      "winner_value_type": "missing_official",
-      "winner_value": null,
+      "winner": "World Bank WDI",
+      "winner_value_type": "official_actual",
+      "winner_value": 12.452,
       "candidates": [
+        {
+          "source": "World Bank WDI",
+          "value_type": "official_actual",
+          "value": 12.452,
+          "priority": [
+            1,
+            5
+          ]
+        },
         {
           "source": "ASEANstats (via World Bank API)",
           "value_type": "missing_official",
@@ -14717,7 +13373,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 238.38,
+          "value": 238.195,
           "priority": [
             1,
             5
@@ -14752,7 +13408,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 207.799,
+          "value": 234.766,
           "priority": [
             1,
             5
@@ -14787,7 +13443,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 264.015,
+          "value": 299.425,
           "priority": [
             1,
             5
@@ -14822,7 +13478,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 313.246,
+          "value": 352.094,
           "priority": [
             1,
             5
@@ -14857,7 +13513,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 274.681,
+          "value": 312.965,
           "priority": [
             1,
             5
@@ -14892,7 +13548,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 301.221,
+          "value": 330.419,
           "priority": [
             1,
             5
@@ -14979,7 +13635,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 210.893,
+          "value": 204.998,
           "priority": [
             1,
             5
@@ -15014,7 +13670,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 186.31,
+          "value": 190.86,
           "priority": [
             1,
             5
@@ -15049,7 +13705,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 236.99,
+          "value": 238.24,
           "priority": [
             1,
             5
@@ -15084,7 +13740,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 283.919,
+          "value": 293.797,
           "priority": [
             1,
             5
@@ -15119,7 +13775,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 255.626,
+          "value": 265.667,
           "priority": [
             1,
             5
@@ -15154,7 +13810,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 278.761,
+          "value": 300.355,
           "priority": [
             1,
             5
@@ -16317,7 +14973,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 106.953,
+          "value": 70.334,
           "priority": [
             1,
             5
@@ -16352,7 +15008,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 91.172,
+          "value": 63.879,
           "priority": [
             1,
             5
@@ -16387,7 +15043,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 101.486,
+          "value": 74.618,
           "priority": [
             1,
             5
@@ -16422,7 +15078,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 114.785,
+          "value": 78.93,
           "priority": [
             1,
             5
@@ -16457,7 +15113,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 116.418,
+          "value": 73.527,
           "priority": [
             1,
             5
@@ -16492,7 +15148,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 118.975,
+          "value": 72.984,
           "priority": [
             1,
             5
@@ -16579,7 +15235,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 152.459,
+          "value": 112.909,
           "priority": [
             1,
             5
@@ -16614,7 +15270,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 119.257,
+          "value": 90.751,
           "priority": [
             1,
             5
@@ -16649,7 +15305,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 148.699,
+          "value": 124.367,
           "priority": [
             1,
             5
@@ -16684,7 +15340,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 178.086,
+          "value": 145.867,
           "priority": [
             1,
             5
@@ -16719,7 +15375,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 178.245,
+          "value": 133.806,
           "priority": [
             1,
             5
@@ -16754,7 +15410,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 185.164,
+          "value": 134.882,
           "priority": [
             1,
             5
@@ -17917,7 +16573,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 665.398,
+          "value": 390.763,
           "priority": [
             1,
             5
@@ -17952,7 +16608,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 634.721,
+          "value": 362.534,
           "priority": [
             1,
             5
@@ -17987,7 +16643,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 797.7,
+          "value": 457.357,
           "priority": [
             1,
             5
@@ -18022,7 +16678,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 947.355,
+          "value": 515.802,
           "priority": [
             1,
             5
@@ -18057,7 +16713,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 917.683,
+          "value": 476.252,
           "priority": [
             1,
             5
@@ -18092,7 +16748,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 978.598,
+          "value": 505.658,
           "priority": [
             1,
             5
@@ -18179,7 +16835,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 554.853,
+          "value": 359.266,
           "priority": [
             1,
             5
@@ -18214,7 +16870,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 524.652,
+          "value": 329.83,
           "priority": [
             1,
             5
@@ -18249,7 +16905,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 639.391,
+          "value": 406.226,
           "priority": [
             1,
             5
@@ -18284,7 +16940,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 744.364,
+          "value": 475.578,
           "priority": [
             1,
             5
@@ -18319,7 +16975,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 728.5,
+          "value": 423.448,
           "priority": [
             1,
             5
@@ -18354,7 +17010,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 786.021,
+          "value": 458.686,
           "priority": [
             1,
             5
@@ -19517,7 +18173,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 323.769,
+          "value": 246.269,
           "priority": [
             1,
             5
@@ -19552,7 +18208,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 257.71,
+          "value": 231.634,
           "priority": [
             1,
             5
@@ -19587,7 +18243,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 296.425,
+          "value": 272.006,
           "priority": [
             1,
             5
@@ -19622,7 +18278,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 324.017,
+          "value": 287.425,
           "priority": [
             1,
             5
@@ -19657,7 +18313,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 337.633,
+          "value": 285.074,
           "priority": [
             1,
             5
@@ -19692,7 +18348,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 368.824,
+          "value": 300.529,
           "priority": [
             1,
             5
@@ -19779,7 +18435,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 272.917,
+          "value": 236.26,
           "priority": [
             1,
             5
@@ -19814,7 +18470,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 231.745,
+          "value": 206.156,
           "priority": [
             1,
             5
@@ -19849,7 +18505,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 297.104,
+          "value": 267.343,
           "priority": [
             1,
             5
@@ -19884,7 +18540,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 334.491,
+          "value": 301.03,
           "priority": [
             1,
             5
@@ -19919,7 +18575,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 326.979,
+          "value": 288.509,
           "priority": [
             1,
             5
@@ -19954,7 +18610,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 351.173,
+          "value": 306.81,
           "priority": [
             1,
             5
@@ -21108,7 +19764,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 0.431,
+          "value": 0.154,
           "priority": [
             1,
             5
@@ -21143,7 +19799,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 0.793,
+          "value": 0.264,
           "priority": [
             1,
             5
@@ -21178,7 +19834,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 2.302,
+          "value": 0.615,
           "priority": [
             1,
             5
@@ -21213,7 +19869,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.784,
+          "value": 0.373,
           "priority": [
             1,
             5
@@ -21248,7 +19904,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 0.477,
+          "value": 0.164,
           "priority": [
             1,
             5
@@ -21283,7 +19939,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 0.197,
+          "value": 0.085,
           "priority": [
             1,
             5
@@ -21370,7 +20026,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.004,
+          "value": 0.591,
           "priority": [
             1,
             5
@@ -21405,7 +20061,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.04,
+          "value": 0.625,
           "priority": [
             1,
             5
@@ -21440,7 +20096,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.318,
+          "value": 0.873,
           "priority": [
             1,
             5
@@ -21475,7 +20131,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.348,
+          "value": 0.933,
           "priority": [
             1,
             5
@@ -21510,7 +20166,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.381,
+          "value": 0.91,
           "priority": [
             1,
             5
@@ -21545,7 +20201,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 1.584,
+          "value": 0.968,
           "priority": [
             1,
             5
@@ -22441,318 +21097,6 @@
           "value": null,
           "priority": [
             15,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2539.391,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2539.391,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2539.391,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2151.139,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2151.139,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2151.139,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2555.43,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2555.43,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2555.43,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3017.379,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3017.379,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3017.379,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3052.469,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3052.469,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3052.469,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|EXPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3193.5,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3193.5,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3193.5,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2019",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3116.681,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3116.681,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3116.681,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2020",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 2777.341,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 2777.341,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 2777.341,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2021",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3415.459,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3415.459,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3415.459,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2022",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3976.314,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3976.314,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3976.314,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2023",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 3849.811,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 3849.811,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 3849.811,
-          "priority": [
-            1,
-            5
-          ]
-        }
-      ]
-    },
-    {
-      "key": "USA|IMPORTS_USD|2024",
-      "winner": "World Bank Open Data API",
-      "winner_value_type": "official_actual",
-      "winner_value": 4103.1,
-      "candidates": [
-        {
-          "source": "World Bank Open Data API",
-          "value_type": "official_actual",
-          "value": 4103.1,
-          "priority": [
-            1,
-            5
-          ]
-        },
-        {
-          "source": "World Bank WDI",
-          "value_type": "official_actual",
-          "value": 4103.1,
-          "priority": [
-            1,
             5
           ]
         }
@@ -23861,7 +22205,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 284.737,
+          "value": 264.268,
           "priority": [
             1,
             5
@@ -23896,7 +22240,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 292.48,
+          "value": 282.629,
           "priority": [
             1,
             5
@@ -23931,7 +22275,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 343.937,
+          "value": 335.978,
           "priority": [
             1,
             5
@@ -23966,7 +22310,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 386.241,
+          "value": 371.288,
           "priority": [
             1,
             5
@@ -24001,7 +22345,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 375.146,
+          "value": 353.782,
           "priority": [
             1,
             5
@@ -24036,7 +22380,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 429.484,
+          "value": 404.824,
           "priority": [
             1,
             5
@@ -24123,7 +22467,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 265.976,
+          "value": 253.393,
           "priority": [
             1,
             5
@@ -24158,7 +22502,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 273.356,
+          "value": 262.701,
           "priority": [
             1,
             5
@@ -24193,7 +22537,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 340.182,
+          "value": 332.455,
           "priority": [
             1,
             5
@@ -24228,7 +22572,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 370.999,
+          "value": 359.148,
           "priority": [
             1,
             5
@@ -24263,7 +22607,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 339.93,
+          "value": 325.776,
           "priority": [
             1,
             5
@@ -24298,7 +22642,7 @@
         {
           "source": "World Bank WDI",
           "value_type": "official_actual",
-          "value": 398.774,
+          "value": 380.515,
           "priority": [
             1,
             5
