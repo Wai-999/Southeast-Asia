@@ -12,9 +12,9 @@ Steps (run in order, each isolated — one failure never stops the rest):
 
     [1/4]  fetch_worldbank.py           World Bank annual indicators
     [2/4]  fetch_gdelt_news.py          GDELT news signals (last 7 days)
-    [3/4]  fetch_comtrade.py            UN Comtrade / IMF DOTS trade flows
+    [3/4]  generate_pattern_alerts.py   9-type pattern alerts with confidence
+    [4/4]  fetch_comtrade.py            UN Comtrade / IMF DOTS trade flows
                                          (skipped if --no-comtrade is passed)
-    [4/4]  generate_pattern_alerts.py   9-type pattern alerts with confidence
 
 Output files written to pipeline/data/processed/:
     worldbank_indicators.json
@@ -91,21 +91,23 @@ STEPS: list[dict] = [
     },
     {
         "n":         3,
-        "key":       "comtrade",
-        "script":    "fetch_comtrade.py",
-        "label":     "UN Comtrade trade flows",
-        "output":    PROC_DIR / "trade_flows.json",
-        "can_skip":  True,    # skipped with --no-comtrade
-        "timeout":   600,     # 10 min — Comtrade free preview is paginated
-    },
-    {
-        "n":         4,
         "key":       "alerts",
         "script":    "generate_pattern_alerts.py",
         "label":     "Pattern alert generation",
         "output":    PROC_DIR / "pattern_alerts.json",
         "can_skip":  False,
         "timeout":   120,     # 2 min — pure computation, no network calls
+        # Runs after WB + GDELT so alerts always reflect the freshest data.
+        # Runs BEFORE Comtrade so alerts are ready even if Comtrade is skipped/fails.
+    },
+    {
+        "n":         4,
+        "key":       "comtrade",
+        "script":    "fetch_comtrade.py",
+        "label":     "UN Comtrade trade flows",
+        "output":    PROC_DIR / "trade_flows.json",
+        "can_skip":  True,    # skipped with --no-comtrade
+        "timeout":   600,     # 10 min — Comtrade free preview is paginated
     },
 ]
 
@@ -425,13 +427,14 @@ def _print_summary(
 
     wb_detail    = _detail("worldbank", f"{wb_stats['countries']} countries, {wb_stats['records']} records")
     news_detail  = _detail("gdelt",     f"{news_stats['articles']} articles, {news_stats['countries']} countries")
-    trade_detail = _detail("comtrade",  f"{trade_stats['reporters']} reporters, {trade_stats['flows']} flows")
     alert_detail = _detail("alerts",    f"{alert_stats['total']} alerts — {alert_stats['critical']} critical, {alert_stats['warnings']} warnings")
+    trade_detail = _detail("comtrade",  f"{trade_stats['reporters']} reporters, {trade_stats['flows']} flows")
 
     # Total counts
-    total_countries = max(wb_stats["countries"], news_stats["countries"])
-    total_news      = news_stats["articles"]
-    total_alerts    = alert_stats["total"]
+    total_countries  = max(wb_stats["countries"], news_stats["countries"])
+    total_news       = news_stats["articles"]
+    total_alerts     = alert_stats["total"]
+    total_trade_flows = trade_stats["flows"]
 
     m, s   = divmod(int(wall_secs), 60)
     wall_str = f"{m}m {s}s" if m else f"{s}s"
@@ -442,14 +445,16 @@ def _print_summary(
     _rule("═")
     print(f"  {'PIPELINE SUMMARY' + (' (DRY RUN)' if dry_run else '')}")
     _rule()
+    # Summary order matches step execution order: WB → GDELT → Alerts → Comtrade
     print(f"  {'World Bank updated':<22}: {_yn('worldbank'):<12}  {wb_detail}")
     print(f"  {'GDELT updated':<22}: {_yn('gdelt'):<12}  {news_detail}")
-    print(f"  {'Comtrade updated':<22}: {_yn('comtrade'):<12}  {trade_detail}")
     print(f"  {'Alerts generated':<22}: {_yn('alerts'):<12}  {alert_detail}")
+    print(f"  {'Comtrade updated':<22}: {_yn('comtrade'):<12}  {trade_detail}")
     _rule()
     print(f"  {'Total countries updated':<22}: {total_countries}")
     print(f"  {'Total news items':<22}: {total_news}")
     print(f"  {'Total alerts':<22}: {total_alerts}")
+    print(f"  {'Total trade flows':<22}: {total_trade_flows}")
     _rule()
     print(f"  Wall clock: {wall_str}")
     _rule("═")
