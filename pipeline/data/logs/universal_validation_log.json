@@ -1,0 +1,101 @@
+{
+  "validated_at": "2026-06-03T15:47:26.312206Z",
+  "row_count": 3279,
+  "checks_total": 15,
+  "checks_passed": 15,
+  "checks_failed": 0,
+  "all_passed": true,
+  "passed_checks": [
+    {
+      "check_id": "C01_REQUIRED_FIELDS",
+      "status": "PASS",
+      "message": "All required fields present in rows",
+      "detail": ""
+    },
+    {
+      "check_id": "C02_VALUE_TYPES",
+      "status": "PASS",
+      "message": "All value_type values are valid (8 allowed)",
+      "detail": ""
+    },
+    {
+      "check_id": "C03_DATA_QUALITY",
+      "status": "PASS",
+      "message": "All data_quality values are valid",
+      "detail": ""
+    },
+    {
+      "check_id": "C04_NO_SAMPLE",
+      "status": "PASS",
+      "message": "No sample data in production output",
+      "detail": ""
+    },
+    {
+      "check_id": "C05_WB_NO_FORECASTS",
+      "status": "PASS",
+      "message": "worldbank_indicators.json contains no forecast_estimate rows",
+      "detail": ""
+    },
+    {
+      "check_id": "C06_NO_2025_FILL",
+      "status": "PASS",
+      "message": "No 2025 rows are forward-filled from 2024 (data_quality='estimated' + official_actual)",
+      "detail": ""
+    },
+    {
+      "check_id": "C07_COUNTRIES",
+      "status": "PASS",
+      "message": "All 17 expected countries present",
+      "detail": ""
+    },
+    {
+      "check_id": "C08_SECTORS",
+      "status": "PASS",
+      "message": "At least 10 sectors represented (found 11)",
+      "detail": ""
+    },
+    {
+      "check_id": "C09_NO_DUPLICATES",
+      "status": "PASS",
+      "message": "No duplicate (country, indicator, period) keys",
+      "detail": ""
+    },
+    {
+      "check_id": "C10_PLAUSIBILITY",
+      "status": "PASS",
+      "message": "All values within plausible ranges",
+      "detail": ""
+    },
+    {
+      "check_id": "C11_MISSING_LABELED",
+      "status": "PASS",
+      "message": "Null-value rows are labeled missing_official / official_policy",
+      "detail": ""
+    },
+    {
+      "check_id": "C12_SOURCE_PRESENT",
+      "status": "PASS",
+      "message": "All official_actual rows have a source",
+      "detail": ""
+    },
+    {
+      "check_id": "C13_FORECAST_NOTES",
+      "status": "PASS",
+      "message": "All forecast_estimate rows have limitation_note",
+      "detail": ""
+    },
+    {
+      "check_id": "C14_YEAR_RANGE",
+      "status": "PASS",
+      "message": "Annual rows all have years 2015-2026",
+      "detail": ""
+    },
+    {
+      "check_id": "C15_WB_2025_REALISTIC",
+      "status": "PASS",
+      "message": "WB 2025 official_actual count is realistic (< 50 rows)",
+      "detail": "Found 16 WB 2025 official_actual rows"
+    }
+  ],
+  "failed_checks": []
+}

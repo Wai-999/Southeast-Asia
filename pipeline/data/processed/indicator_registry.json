@@ -1,0 +1,693 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-03",
+  "description": "Registry of all indicators across 17 sectors for the SEA Universal Data Intelligence Pipeline.",
+  "value_type_definitions": {
+    "official_actual": "Published by official national/international body as final/revised data",
+    "official_preliminary": "Published as preliminary or advance estimate by official body",
+    "official_partial_2026": "Official data for 2026 but covers only part of the year",
+    "forecast_estimate": "IMF, WB, ADB or other multilateral forecast — clearly labeled",
+    "missing_official": "Official source checked; data not yet published",
+    "realtime_signal": "News/event counts as proxy signal — not official statistical data",
+    "sample": "Development placeholder — not real data"
+  },
+  "sectors": {
+
+    "macro_economy": {
+      "sector_name": "Macro Economy",
+      "sector_code": "MACRO",
+      "description": "GDP, growth rates, national accounts, economic structure",
+      "indicators": {
+        "GDP_GROWTH": {
+          "code": "GDP_GROWTH", "name": "Real GDP Growth Rate", "unit": "% YoY",
+          "frequency": "quarterly", "annual_ok": true,
+          "wb_code": "NY.GDP.MKTP.KD.ZG", "imf_code": "NGDP_RPCH",
+          "adb_code": "GDP_GROWTH", "ilo_code": null,
+          "sources_priority": ["NSO_national","WB_API","IMF_WEO","ADB_ADO"],
+          "plausible_range": [-30, 20],
+          "description": "Real GDP growth year over year"
+        },
+        "GDP_NOMINAL_USD": {
+          "code": "GDP_NOMINAL_USD", "name": "GDP Nominal (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NY.GDP.MKTP.CD", "imf_code": "NGDPD",
+          "sources_priority": ["WB_API","IMF_WEO"],
+          "plausible_range": [0.5, 30000],
+          "description": "Nominal GDP in USD billions (WB: current USD, divided by 1e9)"
+        },
+        "GDP_PER_CAPITA_USD": {
+          "code": "GDP_PER_CAPITA_USD", "name": "GDP Per Capita (USD)", "unit": "USD",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NY.GDP.PCAP.CD", "imf_code": "NGDPDPC",
+          "sources_priority": ["WB_API","IMF_WEO"],
+          "plausible_range": [400, 90000],
+          "description": "GDP per capita in current USD"
+        },
+        "GDP_PPP": {
+          "code": "GDP_PPP", "name": "GDP PPP (International $)", "unit": "Int$ billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NY.GDP.MKTP.PP.CD", "imf_code": "PPPGDP",
+          "sources_priority": ["WB_API","IMF_WEO"],
+          "plausible_range": [1, 35000],
+          "description": "GDP at purchasing power parity"
+        },
+        "GDP_QUARTERLY": {
+          "code": "GDP_QUARTERLY", "name": "GDP Quarterly Growth", "unit": "% QoQ or YoY",
+          "frequency": "quarterly", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["NSO_national"],
+          "plausible_range": [-15, 15],
+          "description": "Quarterly GDP growth from national statistics offices"
+        },
+        "CURRENT_ACCOUNT_GDP": {
+          "code": "CURRENT_ACCOUNT_GDP", "name": "Current Account Balance (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "BN.CAB.XOKA.GD.ZS", "imf_code": "BCA_NGDPD",
+          "sources_priority": ["WB_API","IMF_WEO","CB_national"],
+          "plausible_range": [-30, 30],
+          "description": "Current account balance as percent of GDP"
+        }
+      }
+    },
+
+    "prices_inflation": {
+      "sector_name": "Prices & Inflation",
+      "sector_code": "PRICES",
+      "description": "Consumer prices, producer prices, food prices, exchange rates",
+      "indicators": {
+        "CPI_INFLATION": {
+          "code": "CPI_INFLATION", "name": "CPI Inflation Rate", "unit": "% YoY",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "FP.CPI.TOTL.ZG", "imf_code": "PCPIPCH",
+          "sources_priority": ["NSO_national","WB_API","IMF_WEO"],
+          "plausible_range": [-5, 100],
+          "description": "Consumer price index annual inflation rate"
+        },
+        "CPI_MONTHLY": {
+          "code": "CPI_MONTHLY", "name": "CPI Monthly Change", "unit": "% MoM",
+          "frequency": "monthly", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["NSO_national"],
+          "plausible_range": [-5, 20],
+          "description": "Monthly CPI change from national statistics offices"
+        },
+        "FOOD_PRICE_INDEX": {
+          "code": "FOOD_PRICE_INDEX", "name": "Food Price Index", "unit": "Index 2015=100",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["FAO_AGRICULTURE"],
+          "plausible_range": [50, 300],
+          "description": "FAO Food Price Index"
+        },
+        "PPI": {
+          "code": "PPI", "name": "Producer Price Index Change", "unit": "% YoY",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["NSO_national","CB_national"],
+          "plausible_range": [-20, 50],
+          "description": "Producer/wholesale price index change"
+        }
+      }
+    },
+
+    "labor": {
+      "sector_name": "Labor & Employment",
+      "sector_code": "LABOR",
+      "description": "Unemployment, employment, wages, labor force participation",
+      "indicators": {
+        "UNEMPLOYMENT_RATE": {
+          "code": "UNEMPLOYMENT_RATE", "name": "Unemployment Rate", "unit": "% of labor force",
+          "frequency": "quarterly", "annual_ok": true,
+          "wb_code": "SL.UEM.TOTL.ZS", "imf_code": "LUR", "ilo_code": "UNE_DEAP_SEX_AGE_EDU_RT",
+          "sources_priority": ["NSO_national","ILO","WB_API","IMF_WEO"],
+          "plausible_range": [0.1, 40],
+          "description": "Unemployment rate as percent of total labor force"
+        },
+        "LABOR_FORCE_PARTICIPATION": {
+          "code": "LABOR_FORCE_PARTICIPATION", "name": "Labor Force Participation Rate", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SL.TLF.CACT.ZS", "imf_code": null, "ilo_code": "EAP_DWAP_SEX_AGE_RT",
+          "sources_priority": ["NSO_national","ILO","WB_API"],
+          "plausible_range": [30, 90],
+          "description": "Labor force participation rate"
+        },
+        "EMPLOYMENT_AGRICULTURE": {
+          "code": "EMPLOYMENT_AGRICULTURE", "name": "Employment in Agriculture (%)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SL.AGR.EMPL.ZS", "imf_code": null,
+          "sources_priority": ["ILO","WB_API"],
+          "plausible_range": [1, 80],
+          "description": "Share of employment in agriculture sector"
+        },
+        "MINIMUM_WAGE": {
+          "code": "MINIMUM_WAGE", "name": "Minimum Wage (national currency)", "unit": "national currency/month",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["NSO_national","MIN_national"],
+          "plausible_range": null,
+          "description": "Monthly minimum wage in national currency"
+        }
+      }
+    },
+
+    "trade": {
+      "sector_name": "Trade",
+      "sector_code": "TRADE",
+      "description": "Exports, imports, trade balance, trade by partner, trade by product",
+      "indicators": {
+        "EXPORTS_USD": {
+          "code": "EXPORTS_USD", "name": "Total Exports (USD Billion)", "unit": "USD billion",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "NE.EXP.GNFS.CD", "imf_code": null,
+          "comtrade_flow": "X",
+          "sources_priority": ["MIN_customs","NSO_national","WB_API","UN_COMTRADE"],
+          "plausible_range": [0.1, 4000],
+          "description": "Total merchandise and services exports"
+        },
+        "IMPORTS_USD": {
+          "code": "IMPORTS_USD", "name": "Total Imports (USD Billion)", "unit": "USD billion",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "NE.IMP.GNFS.CD", "imf_code": null,
+          "comtrade_flow": "M",
+          "sources_priority": ["MIN_customs","NSO_national","WB_API","UN_COMTRADE"],
+          "plausible_range": [0.1, 4000],
+          "description": "Total merchandise and services imports"
+        },
+        "TRADE_BALANCE_USD": {
+          "code": "TRADE_BALANCE_USD", "name": "Trade Balance (USD Billion)", "unit": "USD billion",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["computed"],
+          "plausible_range": [-500, 500],
+          "description": "Exports minus imports; computed from EXPORTS_USD and IMPORTS_USD"
+        },
+        "EXPORTS_TO_CHINA": {
+          "code": "EXPORTS_TO_CHINA", "name": "Exports to China (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "comtrade_partner": "156",
+          "sources_priority": ["UN_COMTRADE","MIN_customs"],
+          "plausible_range": [0, 1000],
+          "description": "Annual bilateral exports to China"
+        },
+        "EXPORTS_TO_USA": {
+          "code": "EXPORTS_TO_USA", "name": "Exports to USA (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "comtrade_partner": "842",
+          "sources_priority": ["UN_COMTRADE","MIN_customs"],
+          "plausible_range": [0, 1000],
+          "description": "Annual bilateral exports to USA"
+        },
+        "TRADE_DEPENDENCY_CHINA": {
+          "code": "TRADE_DEPENDENCY_CHINA", "name": "China Trade Dependency", "unit": "% of total trade",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["computed"],
+          "plausible_range": [0, 80],
+          "description": "Computed: trade with China / total trade × 100. >40% = high dependency; 20-40% = medium; <20% = low"
+        }
+      }
+    },
+
+    "investment": {
+      "sector_name": "Investment & FDI",
+      "sector_code": "INVEST",
+      "description": "Foreign direct investment, domestic investment, capital formation",
+      "indicators": {
+        "FDI_INFLOWS_USD": {
+          "code": "FDI_INFLOWS_USD", "name": "FDI Net Inflows (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "BX.KLT.DINV.CD.WD", "imf_code": null,
+          "sources_priority": ["CB_national","NSO_national","WB_API"],
+          "plausible_range": [-10, 200],
+          "description": "Net FDI inflows in USD billions"
+        },
+        "FDI_PCT_GDP": {
+          "code": "FDI_PCT_GDP", "name": "FDI Net Inflows (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "BX.KLT.DINV.WD.GD.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","CB_national"],
+          "plausible_range": [-10, 30],
+          "description": "Net FDI inflows as percent of GDP"
+        },
+        "GROSS_FIXED_CAPITAL": {
+          "code": "GROSS_FIXED_CAPITAL", "name": "Gross Fixed Capital Formation (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NE.GDI.FTOT.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","NSO_national"],
+          "plausible_range": [5, 60],
+          "description": "Gross fixed capital formation as share of GDP"
+        }
+      }
+    },
+
+    "finance_monetary": {
+      "sector_name": "Finance & Monetary",
+      "sector_code": "FINANCE",
+      "description": "Interest rates, exchange rates, money supply, banking sector",
+      "indicators": {
+        "EXCHANGE_RATE_USD": {
+          "code": "EXCHANGE_RATE_USD", "name": "Exchange Rate vs USD (LCU per USD)", "unit": "LCU per USD",
+          "frequency": "daily", "annual_ok": true,
+          "wb_code": "PA.NUS.FCRF", "imf_code": null,
+          "sources_priority": ["CB_national","WB_API","IMF_DATA_API"],
+          "plausible_range": [0.0001, 100000],
+          "description": "Official exchange rate, local currency units per USD"
+        },
+        "POLICY_INTEREST_RATE": {
+          "code": "POLICY_INTEREST_RATE", "name": "Central Bank Policy Rate", "unit": "%",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["CB_national","IMF_DATA_API"],
+          "plausible_range": [-2, 30],
+          "description": "Central bank benchmark/policy interest rate"
+        },
+        "MONEY_SUPPLY_M2": {
+          "code": "MONEY_SUPPLY_M2", "name": "Broad Money Growth (M2)", "unit": "% YoY",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "FM.LBL.BMNY.ZG", "imf_code": null,
+          "sources_priority": ["CB_national","WB_API"],
+          "plausible_range": [-10, 50],
+          "description": "Broad money (M2) annual growth rate"
+        },
+        "FOREIGN_RESERVES": {
+          "code": "FOREIGN_RESERVES", "name": "Foreign Exchange Reserves (USD Billion)", "unit": "USD billion",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "FI.RES.TOTL.CD", "imf_code": null,
+          "sources_priority": ["CB_national","WB_API","IMF_DATA_API"],
+          "plausible_range": [0.1, 4000],
+          "description": "Total foreign exchange and gold reserves in USD billions"
+        },
+        "STOCK_MARKET_INDEX": {
+          "code": "STOCK_MARKET_INDEX", "name": "Stock Market Index Level", "unit": "Index points",
+          "frequency": "daily", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["CB_national","exchange_official"],
+          "plausible_range": null,
+          "description": "Primary national stock market index (SET, VN-Index, PSEi, etc.)"
+        }
+      }
+    },
+
+    "fiscal": {
+      "sector_name": "Fiscal & Government Finance",
+      "sector_code": "FISCAL",
+      "description": "Government revenue, expenditure, fiscal balance, public debt",
+      "indicators": {
+        "FISCAL_BALANCE_GDP": {
+          "code": "FISCAL_BALANCE_GDP", "name": "Fiscal Balance (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GC.BAL.CASH.GD.ZS", "imf_code": "GGXCNL_NGDP",
+          "sources_priority": ["MOF_national","WB_API","IMF_WEO"],
+          "plausible_range": [-30, 10],
+          "description": "Government net lending/borrowing as share of GDP"
+        },
+        "PUBLIC_DEBT_GDP": {
+          "code": "PUBLIC_DEBT_GDP", "name": "Government Gross Debt (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GC.DOD.TOTL.GD.ZS", "imf_code": "GGXWDG_NGDP",
+          "sources_priority": ["MOF_national","WB_API","IMF_WEO"],
+          "plausible_range": [0, 300],
+          "description": "Government gross debt as percent of GDP"
+        },
+        "GOVT_REVENUE_GDP": {
+          "code": "GOVT_REVENUE_GDP", "name": "Government Revenue (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GC.REV.TOTL.GD.ZS", "imf_code": "GGR_NGDP",
+          "sources_priority": ["MOF_national","WB_API","IMF_WEO"],
+          "plausible_range": [5, 60],
+          "description": "Government revenue as percent of GDP"
+        },
+        "GOVT_EXPENDITURE_GDP": {
+          "code": "GOVT_EXPENDITURE_GDP", "name": "Government Expenditure (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GC.XPN.TOTL.GD.ZS", "imf_code": "GGX_NGDP",
+          "sources_priority": ["MOF_national","WB_API","IMF_WEO"],
+          "plausible_range": [5, 70],
+          "description": "Government expenditure as percent of GDP"
+        }
+      }
+    },
+
+    "tourism": {
+      "sector_name": "Tourism",
+      "sector_code": "TOURISM",
+      "description": "Tourist arrivals, tourism receipts, hotel occupancy",
+      "indicators": {
+        "TOURIST_ARRIVALS": {
+          "code": "TOURIST_ARRIVALS", "name": "International Tourist Arrivals", "unit": "millions",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": "ST.INT.ARVL", "imf_code": null,
+          "sources_priority": ["TOUR_national","WB_API","UNWTO"],
+          "plausible_range": [0, 50],
+          "description": "International tourist arrivals in millions"
+        },
+        "TOURISM_RECEIPTS_USD": {
+          "code": "TOURISM_RECEIPTS_USD", "name": "International Tourism Receipts (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "ST.INT.RCPT.CD", "imf_code": null,
+          "sources_priority": ["TOUR_national","WB_API","UNWTO"],
+          "plausible_range": [0.01, 100],
+          "description": "International tourism receipts in USD billions"
+        },
+        "TOURISM_PCT_GDP": {
+          "code": "TOURISM_PCT_GDP", "name": "Tourism Revenue (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["computed","TOUR_national","WB_API"],
+          "plausible_range": [0.1, 40],
+          "description": "Tourism receipts as share of GDP; computed if not available directly"
+        }
+      }
+    },
+
+    "industry_production": {
+      "sector_name": "Industry & Production",
+      "sector_code": "INDUSTRY",
+      "description": "Industrial production, manufacturing output, PMI",
+      "indicators": {
+        "INDUSTRIAL_PRODUCTION": {
+          "code": "INDUSTRIAL_PRODUCTION", "name": "Industrial Production Index Change", "unit": "% YoY",
+          "frequency": "monthly", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["NSO_national"],
+          "plausible_range": [-40, 40],
+          "description": "Industrial/manufacturing production index year-on-year change"
+        },
+        "MANUFACTURING_PCT_GDP": {
+          "code": "MANUFACTURING_PCT_GDP", "name": "Manufacturing Value Added (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NV.IND.MANF.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","NSO_national"],
+          "plausible_range": [2, 50],
+          "description": "Manufacturing value added as share of GDP"
+        },
+        "PMI_MANUFACTURING": {
+          "code": "PMI_MANUFACTURING", "name": "Manufacturing PMI", "unit": "Index (50=neutral)",
+          "frequency": "monthly", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["SPGlobal_ASEAN_PMI"],
+          "plausible_range": [20, 65],
+          "description": "S&P Global/IHS Markit Purchasing Managers Index; above 50 = expansion"
+        },
+        "EXPORTS_HIGH_TECH": {
+          "code": "EXPORTS_HIGH_TECH", "name": "High-Tech Exports (% mfg exports)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "TX.VAL.TECH.MF.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","NSO_national"],
+          "plausible_range": [0, 80],
+          "description": "High-technology exports as percent of manufactured exports"
+        }
+      }
+    },
+
+    "agriculture": {
+      "sector_name": "Agriculture & Food",
+      "sector_code": "AGRI",
+      "description": "Agricultural output, crop production, food security",
+      "indicators": {
+        "AGRICULTURE_PCT_GDP": {
+          "code": "AGRICULTURE_PCT_GDP", "name": "Agriculture Value Added (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "NV.AGR.TOTL.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","NSO_national"],
+          "plausible_range": [0.5, 50],
+          "description": "Agriculture, forestry, and fishing value added as share of GDP"
+        },
+        "RICE_PRODUCTION": {
+          "code": "RICE_PRODUCTION", "name": "Rice Production (thousand tonnes)", "unit": "thousand tonnes",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null, "fao_code": "QCL",
+          "sources_priority": ["FAO_AGRICULTURE","NSO_national"],
+          "plausible_range": [0, 50000],
+          "description": "Annual milled rice production in thousand tonnes"
+        },
+        "FOOD_EXPORTS_USD": {
+          "code": "FOOD_EXPORTS_USD", "name": "Food Exports (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "TX.VAL.FOOD.ZS.UN", "imf_code": null,
+          "sources_priority": ["WB_API","FAO_AGRICULTURE"],
+          "plausible_range": [0, 100],
+          "description": "Food exports value"
+        }
+      }
+    },
+
+    "energy": {
+      "sector_name": "Energy",
+      "sector_code": "ENERGY",
+      "description": "Energy production, consumption, renewables, electricity access",
+      "indicators": {
+        "RENEWABLE_ENERGY_SHARE": {
+          "code": "RENEWABLE_ENERGY_SHARE", "name": "Renewable Energy Share", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "EG.FEC.RNEW.ZS", "imf_code": null,
+          "sources_priority": ["ENERGY_WB","ENERGY_IEA"],
+          "plausible_range": [0, 100],
+          "description": "Renewable energy consumption as share of total final energy"
+        },
+        "ELECTRICITY_ACCESS": {
+          "code": "ELECTRICITY_ACCESS", "name": "Access to Electricity (%)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "EG.ELC.ACCS.ZS", "imf_code": null,
+          "sources_priority": ["ENERGY_WB","ENERGY_IEA"],
+          "plausible_range": [0, 100],
+          "description": "Population with access to electricity"
+        },
+        "CO2_PER_CAPITA": {
+          "code": "CO2_PER_CAPITA", "name": "CO2 Emissions Per Capita (tonnes)", "unit": "tonnes CO2/person",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "EN.ATM.CO2E.PC", "imf_code": null,
+          "sources_priority": ["ENV_WB_CLIMATE","ENERGY_IEA"],
+          "plausible_range": [0.1, 30],
+          "description": "CO2 emissions per capita"
+        },
+        "ENERGY_INTENSITY": {
+          "code": "ENERGY_INTENSITY", "name": "Energy Intensity (MJ per $ GDP)", "unit": "MJ/$2017 PPP GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "EG.EGY.PRIM.PP.KD", "imf_code": null,
+          "sources_priority": ["ENERGY_WB","ENERGY_IEA"],
+          "plausible_range": [1, 20],
+          "description": "Energy consumption per unit of GDP"
+        }
+      }
+    },
+
+    "technology_digital": {
+      "sector_name": "Technology & Digital Economy",
+      "sector_code": "TECH",
+      "description": "Internet penetration, mobile, digital economy, R&D",
+      "indicators": {
+        "INTERNET_PENETRATION": {
+          "code": "INTERNET_PENETRATION", "name": "Internet Users (% population)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "IT.NET.USER.ZS", "imf_code": null, "itu_code": "i99H",
+          "sources_priority": ["TECH_ITU","TECH_WB_DIGITAL"],
+          "plausible_range": [0, 100],
+          "description": "Individuals using the internet as percent of population"
+        },
+        "MOBILE_SUBSCRIPTIONS": {
+          "code": "MOBILE_SUBSCRIPTIONS", "name": "Mobile Cellular Subscriptions per 100 people", "unit": "per 100",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "IT.CEL.SETS.P2", "imf_code": null, "itu_code": "mobileSubscriptions",
+          "sources_priority": ["TECH_ITU","TECH_WB_DIGITAL"],
+          "plausible_range": [0, 250],
+          "description": "Mobile cellular subscriptions per 100 people"
+        },
+        "ECOMMERCE_MARKET": {
+          "code": "ECOMMERCE_MARKET", "name": "E-commerce Market Size (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["MIN_national","TECH_WB_DIGITAL"],
+          "plausible_range": [0.01, 1000],
+          "description": "E-commerce/digital economy market size; Google-Temasek SEA economy report where available"
+        },
+        "RD_EXPENDITURE": {
+          "code": "RD_EXPENDITURE", "name": "R&D Expenditure (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GB.XPD.RSDV.GD.ZS", "imf_code": null,
+          "sources_priority": ["WB_API","TECH_ITU"],
+          "plausible_range": [0, 5],
+          "description": "Research and development expenditure as percent of GDP"
+        }
+      }
+    },
+
+    "infrastructure": {
+      "sector_name": "Infrastructure & Projects",
+      "sector_code": "INFRA",
+      "description": "Infrastructure investment, connectivity, major projects",
+      "indicators": {
+        "LOGISTICS_PERFORMANCE": {
+          "code": "LOGISTICS_PERFORMANCE", "name": "Logistics Performance Index", "unit": "Score 1-5",
+          "frequency": "biennial", "annual_ok": false,
+          "wb_code": "LP.LPI.OVRL.XQ", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [1, 5],
+          "description": "World Bank Logistics Performance Index overall score"
+        },
+        "ACTIVE_WB_PROJECTS": {
+          "code": "ACTIVE_WB_PROJECTS", "name": "Active World Bank Projects (count)", "unit": "count",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["INFRA_WB_PROJECTS"],
+          "plausible_range": [0, 100],
+          "description": "Number of active World Bank-funded infrastructure projects"
+        },
+        "ACTIVE_WB_COMMITMENT": {
+          "code": "ACTIVE_WB_COMMITMENT", "name": "World Bank Project Commitment (USD Billion)", "unit": "USD billion",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["INFRA_WB_PROJECTS"],
+          "plausible_range": [0, 20],
+          "description": "Total World Bank project commitment value"
+        }
+      }
+    },
+
+    "environment": {
+      "sector_name": "Environment & Geography",
+      "sector_code": "ENVIRON",
+      "description": "Emissions, forest cover, air quality, disaster risk, climate",
+      "indicators": {
+        "FOREST_AREA_PCT": {
+          "code": "FOREST_AREA_PCT", "name": "Forest Area (% land area)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "AG.LND.FRST.ZS", "imf_code": null,
+          "sources_priority": ["ENV_WB_CLIMATE"],
+          "plausible_range": [0, 100],
+          "description": "Forest area as percent of total land area"
+        },
+        "CO2_TOTAL": {
+          "code": "CO2_TOTAL", "name": "Total CO2 Emissions (million tonnes)", "unit": "Mt CO2",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "EN.ATM.CO2E.KT", "imf_code": null,
+          "sources_priority": ["ENV_WB_CLIMATE","ENERGY_IEA"],
+          "plausible_range": [0.1, 15000],
+          "description": "Total CO2 emissions in thousand kilotonnes (Mt)"
+        },
+        "NATURAL_DISASTER_RISK": {
+          "code": "NATURAL_DISASTER_RISK", "name": "Disaster Risk Index", "unit": "Score",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["ENV_WB_CLIMATE"],
+          "plausible_range": [0, 100],
+          "description": "Natural disaster risk score from UNDRR/WB"
+        }
+      }
+    },
+
+    "politics_policy": {
+      "sector_name": "Politics & Policy",
+      "sector_code": "POLITICS",
+      "description": "Government effectiveness, policy changes, political stability",
+      "indicators": {
+        "GOVERNANCE_EFFECTIVENESS": {
+          "code": "GOVERNANCE_EFFECTIVENESS", "name": "Government Effectiveness (WGI)", "unit": "Score -2.5 to 2.5",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "GE.EST", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [-2.5, 2.5],
+          "description": "World Bank Worldwide Governance Indicators - Government Effectiveness"
+        },
+        "RULE_OF_LAW": {
+          "code": "RULE_OF_LAW", "name": "Rule of Law (WGI)", "unit": "Score -2.5 to 2.5",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "RL.EST", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [-2.5, 2.5],
+          "description": "World Bank Worldwide Governance Indicators - Rule of Law"
+        },
+        "POLITICAL_STABILITY": {
+          "code": "POLITICAL_STABILITY", "name": "Political Stability (WGI)", "unit": "Score -2.5 to 2.5",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "PV.EST", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [-2.5, 2.5],
+          "description": "World Bank Worldwide Governance Indicators - Political Stability"
+        },
+        "POLITICAL_RISK_NEWS": {
+          "code": "POLITICAL_RISK_NEWS", "name": "Political Risk News Count (GDELT)", "unit": "article count",
+          "frequency": "realtime", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["GDELT_NEWS"],
+          "plausible_range": [0, 10000],
+          "description": "REAL-TIME SIGNAL ONLY: Count of political risk articles from GDELT — not official data"
+        }
+      }
+    },
+
+    "security_conflict": {
+      "sector_name": "Security & Conflict",
+      "sector_code": "SECURITY",
+      "description": "Conflict events, security incidents, news signals",
+      "indicators": {
+        "CONFLICT_NEWS_COUNT": {
+          "code": "CONFLICT_NEWS_COUNT", "name": "Conflict News Count (GDELT)", "unit": "article count",
+          "frequency": "realtime", "annual_ok": false,
+          "wb_code": null, "imf_code": null,
+          "sources_priority": ["GDELT_NEWS"],
+          "plausible_range": [0, 5000],
+          "description": "REAL-TIME SIGNAL: Count of conflict/security articles from GDELT — NOT official statistics"
+        },
+        "CORRUPTION_PERCEPTION": {
+          "code": "CORRUPTION_PERCEPTION", "name": "Control of Corruption (WGI)", "unit": "Score -2.5 to 2.5",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "CC.EST", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [-2.5, 2.5],
+          "description": "World Bank Worldwide Governance Indicators - Control of Corruption"
+        }
+      }
+    },
+
+    "social_indicators": {
+      "sector_name": "Social Indicators",
+      "sector_code": "SOCIAL",
+      "description": "Population, poverty, health, education, human development",
+      "indicators": {
+        "POPULATION": {
+          "code": "POPULATION", "name": "Total Population (millions)", "unit": "millions",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SP.POP.TOTL", "imf_code": null,
+          "sources_priority": ["WB_API","NSO_national"],
+          "plausible_range": [0.1, 1500],
+          "description": "Total population in millions"
+        },
+        "POVERTY_RATE_USD365": {
+          "code": "POVERTY_RATE_USD365", "name": "Poverty Rate ($3.65/day)", "unit": "%",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SI.POV.LMIC", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [0, 80],
+          "description": "Population living on less than $3.65/day (2017 PPP)"
+        },
+        "LIFE_EXPECTANCY": {
+          "code": "LIFE_EXPECTANCY", "name": "Life Expectancy at Birth (years)", "unit": "years",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SP.DYN.LE00.IN", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [40, 90],
+          "description": "Life expectancy at birth"
+        },
+        "EDUCATION_EXPENDITURE": {
+          "code": "EDUCATION_EXPENDITURE", "name": "Education Expenditure (% GDP)", "unit": "% of GDP",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SE.XPD.TOTL.GD.ZS", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [0, 15],
+          "description": "Government expenditure on education as percent of GDP"
+        },
+        "GINI_INDEX": {
+          "code": "GINI_INDEX", "name": "Gini Index (Income Inequality)", "unit": "0-100",
+          "frequency": "annual", "annual_ok": true,
+          "wb_code": "SI.POV.GINI", "imf_code": null,
+          "sources_priority": ["WB_API"],
+          "plausible_range": [20, 70],
+          "description": "Gini coefficient of income inequality (higher = more unequal)"
+        }
+      }
+    }
+  }
+}

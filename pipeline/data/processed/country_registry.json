@@ -1,0 +1,169 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-03",
+  "description": "Country metadata registry for SEA Change Intelligence Dashboard. Covers 11 SEA countries and 6 partner nations.",
+  "countries": {
+    "THA": {
+      "iso3": "THA", "iso2": "TH", "wb_code": "TH",
+      "name": "Thailand", "short_name": "Thailand",
+      "flag": "🇹🇭", "region": "Southeast Asia",
+      "subregion": "Mainland SEA", "asean_member": true,
+      "capital": "Bangkok", "currency": "THB",
+      "statistical_capacity": "high",
+      "notes": "Strong statistical system; NESDC publishes quarterly GDP; data generally 1-2 quarter lag"
+    },
+    "VNM": {
+      "iso3": "VNM", "iso2": "VN", "wb_code": "VN",
+      "name": "Vietnam", "short_name": "Vietnam",
+      "flag": "🇻🇳", "region": "Southeast Asia",
+      "subregion": "Mainland SEA", "asean_member": true,
+      "capital": "Hanoi", "currency": "VND",
+      "statistical_capacity": "high",
+      "notes": "GSO publishes quarterly GDP and monthly CPI; data quality improving"
+    },
+    "MMR": {
+      "iso3": "MMR", "iso2": "MM", "wb_code": "MM",
+      "name": "Myanmar", "short_name": "Myanmar",
+      "flag": "🇲🇲", "region": "Southeast Asia",
+      "subregion": "Mainland SEA", "asean_member": true,
+      "capital": "Naypyidaw", "currency": "MMK",
+      "statistical_capacity": "low",
+      "notes": "Post-coup (Feb 2021): CSO operations disrupted; World Bank suspended data collection 2022+; official data severely limited"
+    },
+    "KHM": {
+      "iso3": "KHM", "iso2": "KH", "wb_code": "KH",
+      "name": "Cambodia", "short_name": "Cambodia",
+      "flag": "🇰🇭", "region": "Southeast Asia",
+      "subregion": "Mainland SEA", "asean_member": true,
+      "capital": "Phnom Penh", "currency": "KHR",
+      "statistical_capacity": "medium",
+      "notes": "NIS Cambodia publishes annual data; NBC releases monetary data; some quarterly estimates available"
+    },
+    "LAO": {
+      "iso3": "LAO", "iso2": "LA", "wb_code": "LA",
+      "name": "Laos", "short_name": "Laos",
+      "flag": "🇱🇦", "region": "Southeast Asia",
+      "subregion": "Mainland SEA", "asean_member": true,
+      "capital": "Vientiane", "currency": "LAK",
+      "statistical_capacity": "medium",
+      "notes": "Lao Statistics Bureau; data may be 2-3 years behind; serious debt sustainability concerns post-2020"
+    },
+    "MYS": {
+      "iso3": "MYS", "iso2": "MY", "wb_code": "MY",
+      "name": "Malaysia", "short_name": "Malaysia",
+      "flag": "🇲🇾", "region": "Southeast Asia",
+      "subregion": "Maritime SEA", "asean_member": true,
+      "capital": "Kuala Lumpur", "currency": "MYR",
+      "statistical_capacity": "high",
+      "notes": "DOSM publishes comprehensive data including quarterly GDP, monthly CPI, external trade; BNM has strong API"
+    },
+    "SGP": {
+      "iso3": "SGP", "iso2": "SG", "wb_code": "SG",
+      "name": "Singapore", "short_name": "Singapore",
+      "flag": "🇸🇬", "region": "Southeast Asia",
+      "subregion": "Maritime SEA", "asean_member": true,
+      "capital": "Singapore", "currency": "SGD",
+      "statistical_capacity": "very_high",
+      "notes": "SingStat has excellent open API; MTI publishes advance GDP estimates; MAS comprehensive financial data"
+    },
+    "IDN": {
+      "iso3": "IDN", "iso2": "ID", "wb_code": "ID",
+      "name": "Indonesia", "short_name": "Indonesia",
+      "flag": "🇮🇩", "region": "Southeast Asia",
+      "subregion": "Maritime SEA", "asean_member": true,
+      "capital": "Jakarta", "currency": "IDR",
+      "statistical_capacity": "high",
+      "notes": "BPS publishes quarterly GDP and monthly indicators; Bank Indonesia has comprehensive portal"
+    },
+    "PHL": {
+      "iso3": "PHL", "iso2": "PH", "wb_code": "PH",
+      "name": "Philippines", "short_name": "Philippines",
+      "flag": "🇵🇭", "region": "Southeast Asia",
+      "subregion": "Maritime SEA", "asean_member": true,
+      "capital": "Manila", "currency": "PHP",
+      "statistical_capacity": "high",
+      "notes": "PSA publishes quarterly GDP (PSNA), monthly CPI; BOC publishes monthly trade data"
+    },
+    "BRN": {
+      "iso3": "BRN", "iso2": "BN", "wb_code": "BN",
+      "name": "Brunei", "short_name": "Brunei",
+      "flag": "🇧🇳", "region": "Southeast Asia",
+      "subregion": "Maritime SEA", "asean_member": true,
+      "capital": "Bandar Seri Begawan", "currency": "BND",
+      "statistical_capacity": "medium",
+      "notes": "DEPS Brunei; partial World Bank coverage; some indicators missing or heavily delayed"
+    },
+    "TLS": {
+      "iso3": "TLS", "iso2": "TL", "wb_code": "TP",
+      "name": "Timor-Leste", "short_name": "Timor-Leste",
+      "flag": "🇹🇱", "region": "Southeast Asia",
+      "subregion": "Timor", "asean_member": false,
+      "capital": "Dili", "currency": "USD",
+      "statistical_capacity": "low",
+      "notes": "Limited statistical capacity; data primarily from World Bank and IMF; significant publication lag"
+    },
+    "CHN": {
+      "iso3": "CHN", "iso2": "CN", "wb_code": "CN",
+      "name": "China", "short_name": "China",
+      "flag": "🇨🇳", "region": "East Asia",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Beijing", "currency": "CNY",
+      "statistical_capacity": "high",
+      "notes": "NBS China (stats.gov.cn) publishes comprehensive data; some revisions and methodological differences with international standards"
+    },
+    "USA": {
+      "iso3": "USA", "iso2": "US", "wb_code": "US",
+      "name": "United States", "short_name": "United States",
+      "flag": "🇺🇸", "region": "Americas",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Washington D.C.", "currency": "USD",
+      "statistical_capacity": "very_high",
+      "notes": "BEA, BLS, Fed, Census Bureau; excellent data availability and timeliness"
+    },
+    "JPN": {
+      "iso3": "JPN", "iso2": "JP", "wb_code": "JP",
+      "name": "Japan", "short_name": "Japan",
+      "flag": "🇯🇵", "region": "East Asia",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Tokyo", "currency": "JPY",
+      "statistical_capacity": "very_high",
+      "notes": "Statistics Japan, BOJ, MOF; very comprehensive; data often available in English"
+    },
+    "IND": {
+      "iso3": "IND", "iso2": "IN", "wb_code": "IN",
+      "name": "India", "short_name": "India",
+      "flag": "🇮🇳", "region": "South Asia",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "New Delhi", "currency": "INR",
+      "statistical_capacity": "high",
+      "notes": "MoSPI, RBI, DGCI&S; good coverage though some revision patterns"
+    },
+    "KOR": {
+      "iso3": "KOR", "iso2": "KR", "wb_code": "KR",
+      "name": "South Korea", "short_name": "South Korea",
+      "flag": "🇰🇷", "region": "East Asia",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Seoul", "currency": "KRW",
+      "statistical_capacity": "very_high",
+      "notes": "KOSTAT, BOK; OECD member; excellent data quality and timeliness"
+    },
+    "AUS": {
+      "iso3": "AUS", "iso2": "AU", "wb_code": "AU",
+      "name": "Australia", "short_name": "Australia",
+      "flag": "🇦🇺", "region": "Oceania",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Canberra", "currency": "AUD",
+      "statistical_capacity": "very_high",
+      "notes": "ABS, RBA; OECD member; excellent data quality"
+    },
+    "EUU": {
+      "iso3": "EUU", "iso2": "EU", "wb_code": "EU",
+      "name": "European Union", "short_name": "EU",
+      "flag": "🇪🇺", "region": "Europe",
+      "subregion": "Partner", "asean_member": false,
+      "capital": "Brussels", "currency": "EUR",
+      "statistical_capacity": "very_high",
+      "notes": "Eurostat; EU is a bloc not a single country; aggregate figures used for trade partnership analysis"
+    }
+  }
+}

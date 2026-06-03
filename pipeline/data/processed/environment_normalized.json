@@ -1,0 +1,18 @@
+{
+  "source": "Environment, Agriculture & Social (World Bank)",
+  "source_id": "ENV_AGRI_SOCIAL",
+  "fetched_at": "2026-06-03T15:43:20.131916Z",
+  "total_rows": 0,
+  "non_null": 0,
+  "errors": [
+    "NV.AGR.TOTL.ZS: failed",
+    "SL.AGR.EMPL.ZS: failed",
+    "AG.LND.ARBL.ZS: failed",
+    "SL.TLF.CACT.ZS: failed",
+    "SL.TLF.TOTL.IN: failed",
+    "BN.CAB.XOKA.GD.ZS: failed",
+    "GC.BAL.CASH.GD.ZS: failed",
+    "NY.GDP.PCAP.PP.CD: failed"
+  ],
+  "records": []
+}

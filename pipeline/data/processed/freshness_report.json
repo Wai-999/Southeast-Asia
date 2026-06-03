@@ -1,0 +1,4113 @@
+{
+  "generated_at": "2026-06-03T15:47:31.119084Z",
+  "total_rows_input": 3279,
+  "countries_covered": 17,
+  "sectors_covered": 17,
+  "overall_coverage_pct": 38.9,
+  "warning_note": "Latest 2025/2026 data availability differs by country and sector. Official actuals, forecasts, preliminary values, and real-time signals are labeled separately. Check the source badge before comparing values across countries or time periods.",
+  "countries": {
+    "THA": {
+      "country_name": "Thailand",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 3,
+            "missing_official": 13
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "VNM": {
+      "country_name": "Vietnam",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "MMR": {
+      "country_name": "Myanmar",
+      "overall_coverage": 36.3,
+      "sectors_with_data": 9,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "missing_official": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXPORTS_USD",
+            "IMPORTS_USD",
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 3,
+            "missing_official": 13
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "KHM": {
+      "country_name": "Cambodia",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "missing_official": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "LAO": {
+      "country_name": "Laos",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "missing_official": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2018,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 16
+          },
+          "status": "stale"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 9,
+            "missing_official": 7
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "MYS": {
+      "country_name": "Malaysia",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "SGP": {
+      "country_name": "Singapore",
+      "overall_coverage": 37.3,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "TOURISM_RECEIPTS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 2,
+            "missing_official": 14
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "IDN": {
+      "country_name": "Indonesia",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "PHL": {
+      "country_name": "Philippines",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "BRN": {
+      "country_name": "Brunei",
+      "overall_coverage": 35.3,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "TOURISM_RECEIPTS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 2,
+            "missing_official": 14
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "RENEWABLE_ENERGY_SHARE",
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "missing_official": 11,
+            "official_actual": 5
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "TLS": {
+      "country_name": "Timor-Leste",
+      "overall_coverage": 32.4,
+      "sectors_with_data": 8,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "missing_official": 8,
+            "official_actual": 18,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "missing_official": 4,
+            "official_actual": 6,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "UNEMPLOYMENT_RATE",
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "missing_official": 12,
+            "official_actual": 12
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "missing_official": 6,
+            "official_actual": 6
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2019,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "ASEANstats (via World Bank API)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "TOURISM_RECEIPTS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 1,
+            "missing_official": 15
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 9,
+            "missing_official": 7
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POPULATION",
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        }
+      }
+    },
+    "CHN": {
+      "country_name": "China",
+      "overall_coverage": 37.3,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "TOURISM_RECEIPTS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 2,
+            "missing_official": 14
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "USA": {
+      "country_name": "United States",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "JPN": {
+      "country_name": "Japan",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "IND": {
+      "country_name": "India",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 3,
+            "missing_official": 13
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "KOR": {
+      "country_name": "South Korea",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    },
+    "AUS": {
+      "country_name": "Australia",
+      "overall_coverage": 40.2,
+      "sectors_with_data": 10,
+      "total_sectors": 17,
+      "sectors": {
+        "macro_economy": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 26,
+            "forecast_estimate": 6
+          },
+          "status": "lagging"
+        },
+        "prices_inflation": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 10,
+            "forecast_estimate": 2
+          },
+          "status": "lagging"
+        },
+        "labor": {
+          "latest_year": 2025,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "LABOR_FORCE_PARTICIPATION"
+          ],
+          "value_type_summary": {
+            "official_actual": 11,
+            "forecast_estimate": 1
+          },
+          "status": "recent"
+        },
+        "trade": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "TRADE_BALANCE_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 20,
+            "missing_official": 4
+          },
+          "status": "lagging"
+        },
+        "investment": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "FDI_INFLOWS_USD"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        },
+        "finance_monetary": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "EXCHANGE_RATE_USD",
+            "FOREIGN_RESERVES"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "fiscal": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "IMF World Economic Outlook DataMapper",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "GOVT_REVENUE_GDP"
+          ],
+          "value_type_summary": {
+            "official_actual": 12,
+            "forecast_estimate": 4
+          },
+          "status": "lagging"
+        },
+        "tourism": {
+          "latest_year": 2020,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Tourism)",
+          "coverage_score": 100.0,
+          "missing_indicators": [],
+          "value_type_summary": {
+            "official_actual": 4,
+            "missing_official": 12
+          },
+          "status": "stale"
+        },
+        "industry_production": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "MANUFACTURING_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "agriculture": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "AGRICULTURE_PCT_GDP"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "energy": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 66.7,
+          "missing_indicators": [
+            "CO2_PER_CAPITA"
+          ],
+          "value_type_summary": {
+            "official_actual": 8,
+            "missing_official": 8
+          },
+          "status": "stale"
+        },
+        "technology_digital": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "INTERNET_PENETRATION",
+            "MOBILE_SUBSCRIPTIONS"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "infrastructure": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "LOGISTICS_PERFORMANCE"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "environment": {
+          "latest_year": 2023,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API (Energy/Environment)",
+          "coverage_score": 50.0,
+          "missing_indicators": [
+            "CO2_TOTAL"
+          ],
+          "value_type_summary": {
+            "official_actual": 5,
+            "missing_official": 3
+          },
+          "status": "stale"
+        },
+        "politics_policy": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "GOVERNANCE_EFFECTIVENESS",
+            "RULE_OF_LAW"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "security_conflict": {
+          "latest_year": null,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": null,
+          "coverage_score": 0,
+          "missing_indicators": [
+            "POLITICAL_STABILITY",
+            "CORRUPTION_PERCEPTION"
+          ],
+          "value_type_summary": {},
+          "status": "missing"
+        },
+        "social_indicators": {
+          "latest_year": 2024,
+          "latest_quarter": null,
+          "latest_month": null,
+          "source": "World Bank Open Data API",
+          "coverage_score": 33.3,
+          "missing_indicators": [
+            "LIFE_EXPECTANCY",
+            "POVERTY_RATE_USD365"
+          ],
+          "value_type_summary": {
+            "official_actual": 10,
+            "missing_official": 2
+          },
+          "status": "lagging"
+        }
+      }
+    }
+  }
+}
