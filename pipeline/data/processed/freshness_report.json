@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T15:47:31.119084Z",
-  "total_rows_input": 3279,
+  "generated_at": "2026-06-03T16:12:07.460606Z",
+  "total_rows_input": 3551,
   "countries_covered": 17,
   "sectors_covered": 17,
   "overall_coverage_pct": 38.9,
@@ -107,7 +107,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -348,7 +349,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -588,7 +590,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -829,7 +832,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -1070,7 +1074,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -1311,7 +1316,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -1552,7 +1558,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -1795,7 +1802,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -2036,7 +2044,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -2277,7 +2286,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -2521,7 +2531,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -2762,7 +2773,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -3005,7 +3017,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -3246,7 +3259,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -3487,7 +3501,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -3728,7 +3743,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },
@@ -3969,7 +3985,8 @@
           ],
           "value_type_summary": {
             "official_actual": 12,
-            "forecast_estimate": 4
+            "forecast_estimate": 4,
+            "missing_official": 8
           },
           "status": "lagging"
         },

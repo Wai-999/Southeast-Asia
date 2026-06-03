@@ -1,0 +1,56 @@
+{
+  "run_at": "2026-06-03T16:12:07.464876Z",
+  "mode": "api_only",
+  "dry_run": false,
+  "rows_fetched": 4447,
+  "merge_stats": {
+    "added": 272,
+    "updated": 546,
+    "skipped": 3616,
+    "protected": 13
+  },
+  "before_rows": 3279,
+  "after_rows": 3551,
+  "fetch_log": [
+    {
+      "source": "WB core cache",
+      "rows": 1632,
+      "non_null": 1261
+    },
+    {
+      "source": "WB technology/governance",
+      "rows": 0,
+      "non_null": 0
+    },
+    {
+      "source": "WB energy/environment",
+      "rows": 680,
+      "non_null": 362
+    },
+    {
+      "source": "WB tourism",
+      "rows": 272,
+      "non_null": 56
+    },
+    {
+      "source": "ASEANstats",
+      "rows": 352,
+      "non_null": 194
+    },
+    {
+      "source": "WB infrastructure",
+      "rows": 15,
+      "non_null": 15
+    },
+    {
+      "source": "WB agriculture/social",
+      "rows": 0,
+      "non_null": 0
+    },
+    {
+      "source": "IMF WEO",
+      "rows": 1496,
+      "non_null": 1056
+    }
+  ]
+}

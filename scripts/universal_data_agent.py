@@ -293,57 +293,149 @@ WB_INDICATOR_MAP = {
 }
 
 
-MAX_WB_RETRIES = 4
+MAX_WB_RETRIES = 2   # Fast failure — 2 attempts then give up
 
-def _wb_fetch_with_retry(url: str) -> list:
-    """Fetch WB URL with exponential backoff. Returns raw record list."""
+def _wb_fetch_one(wb_code: str, start: int, end: int) -> list:
+    """
+    Fetch one WB indicator for all 17 countries.
+    Uses 2 attempts with short backoff. Returns raw record list.
+    Falls back to the existing worldbank_indicators.json cache if available.
+    """
+    per_page = max(1000, len(WB2_ISO3) * (end - start + 2))
+    url = (f"{WB_BASE}/country/{WB_CODES}/indicator/{wb_code}"
+           f"?format=json&per_page={per_page}&date={start}:{end}")
     headers = {"User-Agent": "SEA-Dashboard/2.0", "Accept": "application/json"}
+
     for attempt in range(MAX_WB_RETRIES):
         try:
-            r = _get(url, timeout=40, headers=headers)
+            r = _get(url, timeout=35, headers=headers)
             if r.status_code == 200:
                 text = getattr(r, "text", "")
                 if not text or not text.strip():
-                    raise ValueError("Empty response body")
+                    raise ValueError("empty body")
                 d = r.json()
                 if isinstance(d, list) and len(d) >= 2:
                     return d[1] or []
                 return []
             elif r.status_code == 429:
-                wait = 30 * (attempt + 1)
-                print(f"      ⏸ Rate limited (429) — waiting {wait}s", flush=True)
-                time.sleep(wait)
+                print(f"      ⏸ 429 rate-limit — waiting 20s", flush=True)
+                time.sleep(20)
             else:
                 print(f"      ⚠ HTTP {r.status_code}", flush=True)
                 break
-        except ValueError as e:
-            # Empty body — likely rate limit; back off
-            wait = 15 * (attempt + 1)
-            print(f"      ⏸ Empty response (attempt {attempt+1}) — waiting {wait}s", flush=True)
-            time.sleep(wait)
-        except Exception as e:
-            if attempt < MAX_WB_RETRIES - 1:
-                time.sleep(5 * (attempt + 1))
+        except ValueError:
+            if attempt == 0:
+                print(f"      ⏸ Empty body on attempt 1 — retrying in 8s", flush=True)
+                time.sleep(8)
             else:
-                print(f"      ✗ Failed after {MAX_WB_RETRIES} attempts: {e}", flush=True)
+                print(f"      ✗ Empty body on attempt 2 — giving up", flush=True)
+        except Exception as e:
+            if attempt == 0:
+                time.sleep(5)
+            else:
+                print(f"      ✗ {e}", flush=True)
     return []
 
 
+# WB indicators already fetched by the main pipeline (core 8)
+# The agent reads from the existing file for these rather than re-fetching
+WB_CORE_KEYS = {
+    "NY.GDP.MKTP.KD.ZG": "gdpGrowth",
+    "NY.GDP.MKTP.CD":    "gdpNominal",
+    "FP.CPI.TOTL.ZG":    "inflation",
+    "SL.UEM.TOTL.ZS":    "unemployment",
+    "BX.KLT.DINV.WD.GD.ZS": "fdiPctGdp",
+    "NE.EXP.GNFS.CD":    "exports",
+    "NE.IMP.GNFS.CD":    "imports",
+    "SP.POP.TOTL":       "population",
+}
+
+# Map indicator_key from worldbank_indicators.json → standard indicator_code
+WB_KEY_TO_CODE = {
+    "gdpGrowth":    "GDP_GROWTH",
+    "gdpNominal":   "GDP_NOMINAL_USD",
+    "inflation":    "CPI_INFLATION",
+    "unemployment": "UNEMPLOYMENT_RATE",
+    "fdiPctGdp":    "FDI_PCT_GDP",
+    "exports":      "EXPORTS_USD",
+    "imports":      "IMPORTS_USD",
+    "population":   "POPULATION",
+}
+WB_KEY_TO_SECTOR = {
+    "gdpGrowth":    "macro_economy",
+    "gdpNominal":   "macro_economy",
+    "inflation":    "prices_inflation",
+    "unemployment": "labor",
+    "fdiPctGdp":    "investment",
+    "exports":      "trade",
+    "imports":      "trade",
+    "population":   "social_indicators",
+}
+
+
+def load_wb_core_from_cache() -> list[dict]:
+    """
+    Load the 8 core WB indicators from the existing pipeline cache file.
+    This avoids re-fetching data that's already up-to-date.
+    """
+    cache_path = PROC_DIR / "worldbank_indicators.json"
+    if not cache_path.exists():
+        return []
+    try:
+        data    = json.loads(cache_path.read_text())
+        records = data.get("records", [])
+        out     = []
+        for rec in records:
+            ik   = rec.get("indicator_key", "")
+            iso3 = rec.get("country_code", "")
+            yr   = rec.get("year")
+            val  = rec.get("value")
+            if not (ik and iso3 and yr):
+                continue
+            sector   = WB_KEY_TO_SECTOR.get(ik, "macro_economy")
+            ind_code = WB_KEY_TO_CODE.get(ik, ik.upper())
+            meta     = next((m for wb, m in WB_INDICATOR_MAP.items()
+                             if m[1] == ind_code), None)
+            unit     = meta[3] if meta else rec.get("unit", "")
+            out.append(make_row(
+                iso3, sector, ind_code,
+                rec.get("indicator_name", ind_code), yr,
+                None, None, val, unit, "annual",
+                rec.get("source", "World Bank Open Data API"),
+                "multilateral",
+                rec.get("source_url", ""),
+                value_type = rec.get("value_type", "official_actual"),
+                note       = rec.get("limitation_note", ""),
+            ))
+        return out
+    except Exception as e:
+        print(f"  ⚠ Could not load WB cache: {e}", flush=True)
+        return []
+
+
 def fetch_wb_batch(wb_codes_subset: list[str], start: int = 2015,
-                   end: int = 2026, delay: float = 1.2) -> list[dict]:
-    """Fetch a batch of WB indicators and return normalized rows."""
+                   end: int = 2026, delay: float = 1.0,
+                   skip_cached: bool = True) -> list[dict]:
+    """
+    Fetch a list of WB indicators.
+    If skip_cached=True (default), skips indicators already in WB_CORE_KEYS
+    since those are loaded from the existing pipeline cache instead.
+    """
     all_rows = []
-    per_page = max(1000, len(WB2_ISO3) * (end - start + 2))
 
     for wb_code in wb_codes_subset:
         meta = WB_INDICATOR_MAP.get(wb_code)
         if not meta:
             continue
         sector, ind_code, ind_name, unit, divisor = meta
-        url = f"{WB_BASE}/country/{WB_CODES}/indicator/{wb_code}?format=json&per_page={per_page}&date={start}:{end}"
-        raw = _wb_fetch_with_retry(url)
+
+        # Skip core indicators — loaded from cache
+        if skip_cached and wb_code in WB_CORE_KEYS:
+            continue
+
+        raw = _wb_fetch_one(wb_code, start, end)
         if not raw:
-            # Produce missing_official rows so gaps are tracked
+            # Produce missing_official rows so gaps are documented
             for iso3 in WB2_ISO3.values():
                 for year in range(start, end + 1):
                     all_rows.append(make_row(
@@ -368,6 +460,7 @@ def fetch_wb_batch(wb_codes_subset: list[str], start: int = 2015,
             except Exception:
                 continue
 
+        non_null = 0
         for wb2, iso3 in WB2_ISO3.items():
             for year in range(start, end + 1):
                 v_raw = idx.get((iso3, year)) or idx.get((wb2, year))
@@ -375,6 +468,8 @@ def fetch_wb_batch(wb_codes_subset: list[str], start: int = 2015,
                     val = round(float(v_raw) / divisor, 4) if v_raw is not None else None
                 except (TypeError, ValueError):
                     val = None
+                if val is not None:
+                    non_null += 1
                 all_rows.append(make_row(
                     iso3, sector, ind_code, ind_name, year,
                     None, None, val, unit, "annual",
@@ -662,37 +757,98 @@ def main():
     all_new_rows = []
     fetch_log    = []
 
-    # ── WORLD BANK — fetch all mapped indicators in batches ──────────────────
+    # ── WORLD BANK — always load from cache first ─────────────────────────────
     if args.mode in ("api_only", "full", "wb_only"):
-        print("  ── WORLD BANK INDICATORS ────────────────────────────", flush=True)
-        wb_codes = list(WB_INDICATOR_MAP.keys())
+        print("  ── WORLD BANK: CORE (cache) ─────────────────────────", flush=True)
+        core_rows = load_wb_core_from_cache()
+        if core_rows:
+            non_null_core = sum(1 for r in core_rows if r.get("value") is not None)
+            all_new_rows.extend(core_rows)
+            print(f"  ✓ {len(core_rows):,} rows ({non_null_core:,} non-null) — worldbank_indicators.json")
+            fetch_log.append({"source": "WB core cache", "rows": len(core_rows),
+                              "non_null": non_null_core})
+        else:
+            print("  ⚠ WB cache missing — run pipeline/fetch_worldbank.py first")
 
-        # Filter by sector if requested
-        if args.sectors:
-            wb_codes = [c for c, meta in WB_INDICATOR_MAP.items()
-                       if meta[0] in args.sectors]
+        # Load any other normalized WB files produced by specialist scripts
+        extended_files = [
+            ("technology_normalized.json",  "WB technology/governance"),
+            ("energy_normalized.json",       "WB energy/environment"),
+            ("tourism_normalized.json",      "WB tourism"),
+            ("aseanstats_normalized.json",   "ASEANstats"),
+            ("infrastructure_normalized.json","WB infrastructure"),
+            ("environment_normalized.json",  "WB agriculture/social"),
+        ]
+        print(f"\n  ── WORLD BANK: EXTENDED (from specialist caches) ────", flush=True)
+        for fname, label in extended_files:
+            fpath = PROC_DIR / fname
+            if fpath.exists():
+                try:
+                    d = json.loads(fpath.read_text())
+                    recs = d.get("records", [])
+                    nn = sum(1 for r in recs if r.get("value") is not None)
+                    all_new_rows.extend(recs)
+                    print(f"  ✓ {fname:45s} {len(recs):6,} rows ({nn:,} non-null)")
+                    fetch_log.append({"source": label, "rows": len(recs), "non_null": nn})
+                except Exception as e:
+                    print(f"  ⚠ {fname}: {e}")
+            else:
+                print(f"  – {fname:45s} not found (run specialist fetcher first)")
 
-        batch_size = args.wb_batch_size
-        batches = [wb_codes[i:i+batch_size] for i in range(0, len(wb_codes), batch_size)]
-        total_fetched = 0
+        # Try fetching any EXTENDED indicators that aren't yet in any cache file
+        # Only attempt if WB API probe succeeds (avoids long rate-limit waits)
+        print(f"\n  ── WORLD BANK: NEW EXTENDED (API probe) ─────────────", flush=True)
+        probe_url = f"{WB_BASE}/country/TH/indicator/NY.GDP.PCAP.PP.CD?format=json&per_page=5&date=2024:2024"
+        probe_ok  = False
+        try:
+            r_probe = _get(probe_url, timeout=10,
+                          headers={"User-Agent":"SEA-Dashboard/2.0","Accept":"application/json"})
+            if r_probe.status_code == 200 and getattr(r_probe, "text", "").strip():
+                r_probe.json()   # confirm parseable
+                probe_ok = True
+        except Exception:
+            pass
 
-        for i, batch in enumerate(batches):
-            batch_names = [WB_INDICATOR_MAP[c][2][:30] for c in batch]
-            print(f"  Batch {i+1}/{len(batches)}: {batch_names[0]}...", flush=True)
-            rows = fetch_wb_batch(batch, delay=0.6)
-            non_null = sum(1 for r in rows if r.get("value") is not None)
-            total_fetched += non_null
-            all_new_rows.extend(rows)
-            print(f"    → {non_null}/{len(rows)} non-null", flush=True)
-            fetch_log.append({
-                "source": "World Bank API",
-                "batch": i + 1,
-                "codes": batch,
-                "rows": len(rows),
-                "non_null": non_null,
-            })
+        if probe_ok:
+            print("  ✓ WB API reachable — fetching new extended indicators", flush=True)
+            # Only fetch indicators not already covered by specialist caches
+            cached_codes = set(WB_CORE_KEYS.keys()) | {
+                # technology_normalized covers these:
+                "IT.NET.USER.ZS","IT.CEL.SETS.P2","IT.NET.BBND.P2","GB.XPD.RSDV.GD.ZS",
+                "SP.POP.SCIE.RD.P6","GE.EST","RL.EST","VA.EST","RQ.EST","PV.EST","CC.EST",
+                "SP.POP.TOTL","SP.POP.GROW","SI.POV.LMIC","SI.POV.UMIC","SP.DYN.LE00.IN",
+                "SP.DYN.IMRT.IN","SH.STA.MMRT","SE.XPD.TOTL.GD.ZS","SE.SEC.ENRR",
+                "SE.TER.ENRR","SH.XPD.CHEX.GD.ZS","SI.POV.GINI","FX.OWN.SELF.IN",
+                "PA.NUS.FCRF","FM.LBL.BMNY.ZG","FM.LBL.BMNY.GD.ZS","FS.AST.PRVT.GD.ZS",
+                "FI.RES.TOTL.CD","FB.AST.NPER.ZS","CM.MKT.LCAP.GD.ZS","NV.IND.MANF.ZS",
+                "NV.IND.MANF.CD","TX.VAL.TECH.MF.ZS","TX.VAL.TECH.CD",
+                # energy_normalized covers these:
+                "EG.FEC.RNEW.ZS","EG.ELC.ACCS.ZS","EG.EGY.PRIM.PP.KD",
+                "EN.ATM.CO2E.PC","EN.ATM.CO2E.PP.GD","EG.IMP.CONS.ZS",
+                "AG.LND.FRST.ZS","EN.ATM.CO2E.KT","EN.ATM.METH.KT.CE",
+                "EN.ATM.PM25.MC.M3","SH.H2O.BASW.ZS","SH.STA.BASS.ZS",
+                # tourism covers:
+                "ST.INT.ARVL","ST.INT.RCPT.CD",
+            }
+            new_codes = [c for c in WB_INDICATOR_MAP.keys()
+                        if c not in cached_codes
+                        and (not args.sectors or WB_INDICATOR_MAP[c][0] in args.sectors)]
 
-        print(f"\n  WB total: {total_fetched:,} non-null values across {len(wb_codes)} indicators\n")
+            if new_codes:
+                print(f"  Fetching {len(new_codes)} new WB indicators:", flush=True)
+                for c in new_codes:
+                    print(f"    {c}", flush=True)
+                rows = fetch_wb_batch(new_codes, delay=1.2, skip_cached=False)
+                non_null = sum(1 for r in rows if r.get("value") is not None)
+                all_new_rows.extend(rows)
+                print(f"  ✓ New WB extended: {non_null:,} non-null values")
+                fetch_log.append({"source": "WB API (new extended)", "rows": len(rows),
+                                  "non_null": non_null})
+            else:
+                print("  ✓ All WB indicators already covered by caches")
+        else:
+            print("  ⚠ WB API not reachable right now — using cached data only", flush=True)
+        print()
 
     # ── IMF WEO — fetch all mapped indicators ───────────────────────────────
     if args.mode in ("api_only", "full", "imf_only", "forecasts_only"):
