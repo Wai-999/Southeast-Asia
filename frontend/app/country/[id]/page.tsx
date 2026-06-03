@@ -27,6 +27,7 @@ import {
   WB_COUNTRY_SUMMARIES, WB_DATA_STATUS,
   QUALITY_LABEL, QUALITY_COLOR, QUALITY_DOT,
   getWbHistory, WB_SOURCE_META, getWbIndicatorSourceMeta,
+  WB_LATEST_OFFICIAL_YEAR, WB_OFFICIAL_YEAR_RANGE,
 } from "@/data/worldbank-data";
 import { NS_SOURCE_META } from "@/data/news-signals";
 import { cn } from "@/lib/utils";
@@ -69,6 +70,9 @@ export default function CountryPage() {
     { countryId: "exports", countryName: "Exports", flagEmoji: "📤", value: ind.exports, riskLevel: "low"    as const },
     { countryId: "imports", countryName: "Imports", flagEmoji: "📥", value: ind.imports, riskLevel: "medium" as const },
   ];
+
+  // Dynamic period labels — derived from actual data, never hardcoded
+  const exportsLatestYear: number = wbSummary["exports"]?.year ?? WB_LATEST_OFFICIAL_YEAR;
 
   // Other countries for "switch" nav
   const otherCountries = COUNTRIES.filter(c => c.id !== countryId);
@@ -125,7 +129,7 @@ export default function CountryPage() {
                 <span>📊</span> World Bank Official Data — {countryId}
               </h3>
               <p className="text-xs text-slate-400 mt-0.5">
-                8 indicators · annual · 2015–2024 · source:{" "}
+                8 indicators · annual · {WB_OFFICIAL_YEAR_RANGE[0]}–{WB_LATEST_OFFICIAL_YEAR} · source:{" "}
                 <a
                   href="https://data.worldbank.org"
                   target="_blank"
@@ -343,7 +347,9 @@ export default function CountryPage() {
         <div className="col-span-3 card-p">
           <div className="flex items-start justify-between mb-3">
             <div>
-              <h3 className="font-semibold text-slate-900 text-sm">5-Year Trend (2020–2024)</h3>
+              <h3 className="font-semibold text-slate-900 text-sm">
+                Trend ({(hist[activeChart as keyof typeof hist] as {year:number}[])?.[0]?.year ?? WB_OFFICIAL_YEAR_RANGE[0]}–{WB_LATEST_OFFICIAL_YEAR})
+              </h3>
               <p className="text-xs text-slate-400 mt-0.5">{selectedTab.label}</p>
             </div>
           </div>
@@ -377,7 +383,7 @@ export default function CountryPage() {
         {/* Exports vs Imports */}
         <div className="col-span-2 card-p">
           <h3 className="font-semibold text-slate-900 text-sm mb-1">
-            Exports vs Imports — 2024
+            Exports vs Imports — Official annual {exportsLatestYear}
           </h3>
           <p className="text-xs text-slate-400 mb-4">
             Trade balance:{" "}

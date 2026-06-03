@@ -20,6 +20,7 @@ import CountryFilter, { type FilterMode } from "@/components/ui/CountryFilter";
 import { getIso3ForMode } from "@/data/countries";
 import WorldBankNote from "@/components/ui/WorldBankNote";
 import { cn } from "@/lib/utils";
+import { WB_LATEST_OFFICIAL_YEAR } from "@/data/worldbank-data";
 
 const ALL_METRICS: MetricKey[] = [
   "gdpGrowth", "inflation", "exports", "imports",
@@ -69,7 +70,7 @@ export default function ComparePage() {
             Country Comparison
           </h1>
           <p className="text-slate-500 text-sm mt-0.5">
-            Compare 8 economic indicators · {visibleIds.size} countr{visibleIds.size === 1 ? "y" : "ies"} shown · 2024 data
+            Compare 8 economic indicators · {visibleIds.size} countr{visibleIds.size === 1 ? "y" : "ies"} shown · Official annual {WB_LATEST_OFFICIAL_YEAR}
           </p>
         </div>
 
@@ -180,7 +181,7 @@ export default function ComparePage() {
           <div>
             <h2 className="font-semibold text-slate-900">{METRIC_LABELS[metric]}</h2>
             <p className="text-xs text-slate-400 mt-0.5">
-              Unit: {unit} · 5 ASEAN countries · 2024 data
+              Unit: {unit} · 5 ASEAN countries · Official annual {WB_LATEST_OFFICIAL_YEAR}
             </p>
           </div>
           <div className="flex items-center gap-4 text-xs text-slate-400">

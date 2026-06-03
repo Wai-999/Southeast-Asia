@@ -348,7 +348,7 @@ export const WB_COUNTRY_SUMMARIES: Record<string, Record<string, WbLatest | null
 // ── Quality badge helpers ──────────────────────────────────────────────────────
 
 export const QUALITY_LABEL: Record<WbDataQuality, string> = {
-  available:  "Live",
+  available:  "Official annual",
   estimated:  "Estimated",
   old_data:   "Old data",
   missing:    "No data",
@@ -436,6 +436,52 @@ export const WB_INDICATOR_LABELS: Record<string, string> = Object.fromEntries(
 export const WB_INDICATOR_UNITS: Record<string, string> = Object.fromEntries(
   Object.entries(WB_INDICATORS).map(([k, v]) => [k, v.unit]),
 );
+
+// ── Dynamic year helpers ──────────────────────────────────────────────────────
+
+/**
+ * The most recent year with official_actual data across the four primary
+ * economic indicators (gdpGrowth, inflation, exports, imports).
+ * Computed from data — never hardcoded.
+ */
+export const WB_LATEST_OFFICIAL_YEAR: number = (() => {
+  const PRIMARY = new Set(["gdpGrowth", "inflation", "exports", "imports"]);
+  const years = WB_RECORDS
+    .filter(r => PRIMARY.has(r.indicator_key) && r.value !== null && getValueType(r) === "official_actual")
+    .map(r => r.year);
+  return years.length > 0 ? Math.max(...years) : 2024;
+})();
+
+/**
+ * Year range of non-null official_actual records (for subtitle strings).
+ * [firstYear, latestOfficialYear]
+ */
+export const WB_OFFICIAL_YEAR_RANGE: [number, number] = (() => {
+  const years = WB_RECORDS
+    .filter(r => r.value !== null && getValueType(r) === "official_actual")
+    .map(r => r.year);
+  if (years.length === 0) return [2015, WB_LATEST_OFFICIAL_YEAR];
+  return [Math.min(...years), WB_LATEST_OFFICIAL_YEAR];
+})();
+
+/**
+ * Returns a human-readable period label for a given year + value_type.
+ *
+ *   official_actual, 2024  → "Official annual 2024"
+ *   forecast_estimate      → "Forecast estimate 2025"
+ *   official_partial_2026  → "Partial 2026"
+ *   missing_official       → "Missing official data"
+ *   year === 2026 (any)    → "Partial 2026"
+ */
+export function getPeriodLabel(
+  year: number,
+  valueType?: WbValueType | string,
+): string {
+  if (!valueType || valueType === "missing_official") return "Missing official data";
+  if (valueType === "forecast_estimate")  return `Forecast estimate ${year}`;
+  if (valueType === "official_partial_2026" || year === 2026) return "Partial 2026";
+  return `Official annual ${year}`;
+}
 
 /** Ordered list of indicator keys for display */
 export const WB_INDICATOR_KEYS = [

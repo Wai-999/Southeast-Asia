@@ -16,6 +16,7 @@ import {
   DATA_STATUS_LABEL, DATA_IS_LIVE,
 } from "@/data/live-data";
 import WorldBankNote from "@/components/ui/WorldBankNote";
+import { WB_LATEST_OFFICIAL_YEAR, WB_OFFICIAL_YEAR_RANGE } from "@/data/worldbank-data";
 
 export default function OverviewPage() {
   // ── Derived values ─────────────────────────────────────────────
@@ -48,7 +49,7 @@ export default function OverviewPage() {
             Regional Overview
           </h1>
           <p className="text-slate-500 text-sm mt-0.5">
-            SEA Change Intelligence Dashboard · 5 countries · 2015–2024
+            SEA Change Intelligence Dashboard · 5 countries · {WB_OFFICIAL_YEAR_RANGE[0]}–{WB_LATEST_OFFICIAL_YEAR}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -85,7 +86,7 @@ export default function OverviewPage() {
           emoji="📈"
           label="Fastest Growing"
           value={`${topGrowth.flagEmoji} ${topGrowth.shortName}`}
-          sub={`+${CURRENT_INDICATORS[topGrowth.id].gdpGrowth.toFixed(1)}% GDP 2024`}
+          sub={`+${CURRENT_INDICATORS[topGrowth.id].gdpGrowth.toFixed(1)}% GDP ${WB_LATEST_OFFICIAL_YEAR}`}
           accent="emerald"
         />
         <KpiCard
@@ -137,7 +138,7 @@ export default function OverviewPage() {
         <div className="col-span-3 card-p">
           <div className="flex items-start justify-between mb-4">
             <div>
-              <h3 className="font-semibold text-slate-900 text-sm">GDP Growth Rate — 2024</h3>
+              <h3 className="font-semibold text-slate-900 text-sm">GDP Growth Rate — Official annual {WB_LATEST_OFFICIAL_YEAR}</h3>
               <p className="text-xs text-slate-400 mt-0.5">
                 Bars coloured by country risk level · % year-over-year
               </p>
@@ -189,7 +190,7 @@ export default function OverviewPage() {
       <div className="card overflow-hidden mb-7">
         <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
           <h3 className="font-semibold text-slate-900 text-sm">
-            Indicator Snapshot — All Countries · 2024
+            Indicator Snapshot — All Countries · Official annual {WB_LATEST_OFFICIAL_YEAR}
           </h3>
           <span className="text-xs text-slate-400">Click a country name to drill down</span>
         </div>
