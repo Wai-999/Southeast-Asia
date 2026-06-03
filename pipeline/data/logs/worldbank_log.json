@@ -6,23 +6,23 @@
     "max_history": 30
   },
   "last_run": {
-    "run_id": "2026-06-02T19:47:13",
-    "fetched_at": "2026-06-02T19:47:13",
-    "started_at": "2026-06-02T19:47:13",
+    "run_id": "2026-06-02T21:44:43",
+    "fetched_at": "2026-06-02T21:44:43",
+    "started_at": "2026-06-02T21:44:42",
     "status": "success",
     "used_cache": true,
     "countries": 17,
     "indicators": 8,
     "year_range": [
       2015,
-      2024
+      2026
     ],
-    "total_cells": 1360,
-    "available": 1230,
+    "total_cells": 1632,
+    "available": 1246,
     "estimated": 6,
     "old_data": 9,
-    "missing": 115,
-    "coverage_pct": 90.4,
+    "missing": 371,
+    "coverage_pct": 76.3,
     "errors": [],
     "by_indicator": {
       "gdpGrowth": {
@@ -31,8 +31,8 @@
         "available": 160,
         "estimated": 0,
         "old_data": 0,
-        "missing": 10,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=500&date=2015:2024"
+        "missing": 44,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=1000&date=2015:2026"
       },
       "gdpNominal": {
         "wb_code": "NY.GDP.MKTP.CD",
@@ -40,8 +40,8 @@
         "available": 160,
         "estimated": 0,
         "old_data": 0,
-        "missing": 10,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=500&date=2015:2024"
+        "missing": 44,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=1000&date=2015:2026"
       },
       "inflation": {
         "wb_code": "FP.CPI.TOTL.ZG",
@@ -49,17 +49,17 @@
         "available": 150,
         "estimated": 2,
         "old_data": 5,
-        "missing": 13,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=500&date=2015:2024"
+        "missing": 47,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=1000&date=2015:2026"
       },
       "unemployment": {
         "wb_code": "SL.UEM.TOTL.ZS",
         "label": "Unemployment Rate",
-        "available": 160,
+        "available": 176,
         "estimated": 0,
         "old_data": 0,
-        "missing": 10,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=500&date=2015:2024"
+        "missing": 28,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=1000&date=2015:2026"
       },
       "fdiPctGdp": {
         "wb_code": "BX.KLT.DINV.WD.GD.ZS",
@@ -67,8 +67,8 @@
         "available": 160,
         "estimated": 0,
         "old_data": 0,
-        "missing": 10,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=500&date=2015:2024"
+        "missing": 44,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=1000&date=2015:2026"
       },
       "exports": {
         "wb_code": "NE.EXP.GNFS.CD",
@@ -76,8 +76,8 @@
         "available": 140,
         "estimated": 2,
         "old_data": 2,
-        "missing": 26,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=500&date=2015:2024"
+        "missing": 60,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
       },
       "imports": {
         "wb_code": "NE.IMP.GNFS.CD",
@@ -85,8 +85,8 @@
         "available": 140,
         "estimated": 2,
         "old_data": 2,
-        "missing": 26,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=500&date=2015:2024"
+        "missing": 60,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
       },
       "population": {
         "wb_code": "SP.POP.TOTL",
@@ -94,8 +94,8 @@
         "available": 160,
         "estimated": 0,
         "old_data": 0,
-        "missing": 10,
-        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=500&date=2015:2024"
+        "missing": 44,
+        "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=1000&date=2015:2026"
       }
     },
     "by_country": {
@@ -103,141 +103,141 @@
         "name": "Australia",
         "flag": "🇦🇺",
         "region": "Oceania",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "BRN": {
         "name": "Brunei",
         "flag": "🇧🇳",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "CHN": {
         "name": "China",
         "flag": "🇨🇳",
         "region": "East Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "IDN": {
         "name": "Indonesia",
         "flag": "🇮🇩",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "IND": {
         "name": "India",
         "flag": "🇮🇳",
         "region": "South Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "JPN": {
         "name": "Japan",
         "flag": "🇯🇵",
         "region": "East Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "KHM": {
         "name": "Cambodia",
         "flag": "🇰🇭",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "KOR": {
         "name": "South Korea",
         "flag": "🇰🇷",
         "region": "East Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "LAO": {
         "name": "Laos",
         "flag": "🇱🇦",
         "region": "Southeast Asia",
-        "available": 60,
+        "available": 61,
         "estimated": 4,
         "old_data": 4,
-        "missing": 12,
-        "coverage_pct": 75.0
+        "missing": 27,
+        "coverage_pct": 63.5
       },
       "MMR": {
         "name": "Myanmar",
         "flag": "🇲🇲",
         "region": "Southeast Asia",
-        "available": 50,
+        "available": 51,
         "estimated": 2,
         "old_data": 5,
-        "missing": 23,
-        "coverage_pct": 62.5
+        "missing": 38,
+        "coverage_pct": 53.1
       },
       "MYS": {
         "name": "Malaysia",
         "flag": "🇲🇾",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "PHL": {
         "name": "Philippines",
         "flag": "🇵🇭",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "SGP": {
         "name": "Singapore",
         "flag": "🇸🇬",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "THA": {
         "name": "Thailand",
         "flag": "🇹🇭",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "TLS": {
         "name": "Timor-Leste",
@@ -246,28 +246,28 @@
         "available": 0,
         "estimated": 0,
         "old_data": 0,
-        "missing": 80,
+        "missing": 96,
         "coverage_pct": 0.0
       },
       "USA": {
         "name": "United States",
         "flag": "🇺🇸",
         "region": "Americas",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       },
       "VNM": {
         "name": "Vietnam",
         "flag": "🇻🇳",
         "region": "Southeast Asia",
-        "available": 80,
+        "available": 81,
         "estimated": 0,
         "old_data": 0,
-        "missing": 0,
-        "coverage_pct": 100.0
+        "missing": 15,
+        "coverage_pct": 84.4
       }
     },
     "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."
@@ -1070,6 +1070,1074 @@
           "old_data": 0,
           "missing": 0,
           "coverage_pct": 100.0
+        }
+      },
+      "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."
+    },
+    {
+      "run_id": "2026-06-02T21:18:55",
+      "fetched_at": "2026-06-02T21:18:55",
+      "started_at": "2026-06-02T21:18:55",
+      "status": "success",
+      "used_cache": true,
+      "countries": 17,
+      "indicators": 8,
+      "year_range": [
+        2015,
+        2024
+      ],
+      "total_cells": 1360,
+      "available": 1230,
+      "estimated": 6,
+      "old_data": 9,
+      "missing": 115,
+      "coverage_pct": 90.4,
+      "errors": [],
+      "by_indicator": {
+        "gdpGrowth": {
+          "wb_code": "NY.GDP.MKTP.KD.ZG",
+          "label": "GDP Growth Rate",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 10,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=500&date=2015:2024"
+        },
+        "gdpNominal": {
+          "wb_code": "NY.GDP.MKTP.CD",
+          "label": "GDP (Current USD)",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 10,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=500&date=2015:2024"
+        },
+        "inflation": {
+          "wb_code": "FP.CPI.TOTL.ZG",
+          "label": "Inflation (CPI)",
+          "available": 150,
+          "estimated": 2,
+          "old_data": 5,
+          "missing": 13,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=500&date=2015:2024"
+        },
+        "unemployment": {
+          "wb_code": "SL.UEM.TOTL.ZS",
+          "label": "Unemployment Rate",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 10,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=500&date=2015:2024"
+        },
+        "fdiPctGdp": {
+          "wb_code": "BX.KLT.DINV.WD.GD.ZS",
+          "label": "FDI Net Inflows",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 10,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=500&date=2015:2024"
+        },
+        "exports": {
+          "wb_code": "NE.EXP.GNFS.CD",
+          "label": "Exports of Goods & Services",
+          "available": 140,
+          "estimated": 2,
+          "old_data": 2,
+          "missing": 26,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=500&date=2015:2024"
+        },
+        "imports": {
+          "wb_code": "NE.IMP.GNFS.CD",
+          "label": "Imports of Goods & Services",
+          "available": 140,
+          "estimated": 2,
+          "old_data": 2,
+          "missing": 26,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=500&date=2015:2024"
+        },
+        "population": {
+          "wb_code": "SP.POP.TOTL",
+          "label": "Total Population",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 10,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=500&date=2015:2024"
+        }
+      },
+      "by_country": {
+        "AUS": {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "region": "Oceania",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "BRN": {
+          "name": "Brunei",
+          "flag": "🇧🇳",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "CHN": {
+          "name": "China",
+          "flag": "🇨🇳",
+          "region": "East Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "IDN": {
+          "name": "Indonesia",
+          "flag": "🇮🇩",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "IND": {
+          "name": "India",
+          "flag": "🇮🇳",
+          "region": "South Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "JPN": {
+          "name": "Japan",
+          "flag": "🇯🇵",
+          "region": "East Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "KHM": {
+          "name": "Cambodia",
+          "flag": "🇰🇭",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "KOR": {
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "region": "East Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "LAO": {
+          "name": "Laos",
+          "flag": "🇱🇦",
+          "region": "Southeast Asia",
+          "available": 60,
+          "estimated": 4,
+          "old_data": 4,
+          "missing": 12,
+          "coverage_pct": 75.0
+        },
+        "MMR": {
+          "name": "Myanmar",
+          "flag": "🇲🇲",
+          "region": "Southeast Asia",
+          "available": 50,
+          "estimated": 2,
+          "old_data": 5,
+          "missing": 23,
+          "coverage_pct": 62.5
+        },
+        "MYS": {
+          "name": "Malaysia",
+          "flag": "🇲🇾",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "PHL": {
+          "name": "Philippines",
+          "flag": "🇵🇭",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "SGP": {
+          "name": "Singapore",
+          "flag": "🇸🇬",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "THA": {
+          "name": "Thailand",
+          "flag": "🇹🇭",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "TLS": {
+          "name": "Timor-Leste",
+          "flag": "🇹🇱",
+          "region": "Southeast Asia",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 80,
+          "coverage_pct": 0.0
+        },
+        "USA": {
+          "name": "United States",
+          "flag": "🇺🇸",
+          "region": "Americas",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        },
+        "VNM": {
+          "name": "Vietnam",
+          "flag": "🇻🇳",
+          "region": "Southeast Asia",
+          "available": 80,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 0,
+          "coverage_pct": 100.0
+        }
+      },
+      "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."
+    },
+    {
+      "run_id": "2026-06-02T21:38:04",
+      "fetched_at": "2026-06-02T21:38:04",
+      "started_at": "2026-06-02T21:37:05",
+      "status": "success",
+      "used_cache": false,
+      "countries": 17,
+      "indicators": 8,
+      "year_range": [
+        2015,
+        2026
+      ],
+      "total_cells": 1632,
+      "available": 176,
+      "estimated": 236,
+      "old_data": 1079,
+      "missing": 141,
+      "coverage_pct": 10.8,
+      "errors": [],
+      "by_indicator": {
+        "gdpGrowth": {
+          "wb_code": "NY.GDP.MKTP.KD.ZG",
+          "label": "GDP Growth Rate",
+          "available": 0,
+          "estimated": 32,
+          "old_data": 160,
+          "missing": 12,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "gdpNominal": {
+          "wb_code": "NY.GDP.MKTP.CD",
+          "label": "GDP (Current USD)",
+          "available": 0,
+          "estimated": 32,
+          "old_data": 160,
+          "missing": 12,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "inflation": {
+          "wb_code": "FP.CPI.TOTL.ZG",
+          "label": "Inflation (CPI)",
+          "available": 0,
+          "estimated": 32,
+          "old_data": 155,
+          "missing": 17,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "unemployment": {
+          "wb_code": "SL.UEM.TOTL.ZS",
+          "label": "Unemployment Rate",
+          "available": 176,
+          "estimated": 16,
+          "old_data": 0,
+          "missing": 12,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "fdiPctGdp": {
+          "wb_code": "BX.KLT.DINV.WD.GD.ZS",
+          "label": "FDI Net Inflows",
+          "available": 0,
+          "estimated": 32,
+          "old_data": 160,
+          "missing": 12,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "exports": {
+          "wb_code": "NE.EXP.GNFS.CD",
+          "label": "Exports of Goods & Services",
+          "available": 0,
+          "estimated": 30,
+          "old_data": 142,
+          "missing": 32,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "imports": {
+          "wb_code": "NE.IMP.GNFS.CD",
+          "label": "Imports of Goods & Services",
+          "available": 0,
+          "estimated": 30,
+          "old_data": 142,
+          "missing": 32,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "population": {
+          "wb_code": "SP.POP.TOTL",
+          "label": "Total Population",
+          "available": 0,
+          "estimated": 32,
+          "old_data": 160,
+          "missing": 12,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=1000&date=2015:2026"
+        }
+      },
+      "by_country": {
+        "AUS": {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "region": "Oceania",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "BRN": {
+          "name": "Brunei",
+          "flag": "🇧🇳",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "CHN": {
+          "name": "China",
+          "flag": "🇨🇳",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "IDN": {
+          "name": "Indonesia",
+          "flag": "🇮🇩",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "IND": {
+          "name": "India",
+          "flag": "🇮🇳",
+          "region": "South Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "JPN": {
+          "name": "Japan",
+          "flag": "🇯🇵",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "KHM": {
+          "name": "Cambodia",
+          "flag": "🇰🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "KOR": {
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "LAO": {
+          "name": "Laos",
+          "flag": "🇱🇦",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 54,
+          "missing": 16,
+          "coverage_pct": 11.5
+        },
+        "MMR": {
+          "name": "Myanmar",
+          "flag": "🇲🇲",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 11,
+          "old_data": 45,
+          "missing": 29,
+          "coverage_pct": 11.5
+        },
+        "MYS": {
+          "name": "Malaysia",
+          "flag": "🇲🇾",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "PHL": {
+          "name": "Philippines",
+          "flag": "🇵🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "SGP": {
+          "name": "Singapore",
+          "flag": "🇸🇬",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "THA": {
+          "name": "Thailand",
+          "flag": "🇹🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "TLS": {
+          "name": "Timor-Leste",
+          "flag": "🇹🇱",
+          "region": "Southeast Asia",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 96,
+          "coverage_pct": 0.0
+        },
+        "USA": {
+          "name": "United States",
+          "flag": "🇺🇸",
+          "region": "Americas",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        },
+        "VNM": {
+          "name": "Vietnam",
+          "flag": "🇻🇳",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 15,
+          "old_data": 70,
+          "missing": 0,
+          "coverage_pct": 11.5
+        }
+      },
+      "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."
+    },
+    {
+      "run_id": "2026-06-02T21:39:41",
+      "fetched_at": "2026-06-02T21:39:41",
+      "started_at": "2026-06-02T21:39:33",
+      "status": "success",
+      "used_cache": false,
+      "countries": 17,
+      "indicators": 8,
+      "year_range": [
+        2015,
+        2026
+      ],
+      "total_cells": 1632,
+      "available": 176,
+      "estimated": 6,
+      "old_data": 1079,
+      "missing": 371,
+      "coverage_pct": 10.8,
+      "errors": [],
+      "by_indicator": {
+        "gdpGrowth": {
+          "wb_code": "NY.GDP.MKTP.KD.ZG",
+          "label": "GDP Growth Rate",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 160,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "gdpNominal": {
+          "wb_code": "NY.GDP.MKTP.CD",
+          "label": "GDP (Current USD)",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 160,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "inflation": {
+          "wb_code": "FP.CPI.TOTL.ZG",
+          "label": "Inflation (CPI)",
+          "available": 0,
+          "estimated": 2,
+          "old_data": 155,
+          "missing": 47,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "unemployment": {
+          "wb_code": "SL.UEM.TOTL.ZS",
+          "label": "Unemployment Rate",
+          "available": 176,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 28,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "fdiPctGdp": {
+          "wb_code": "BX.KLT.DINV.WD.GD.ZS",
+          "label": "FDI Net Inflows",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 160,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "exports": {
+          "wb_code": "NE.EXP.GNFS.CD",
+          "label": "Exports of Goods & Services",
+          "available": 0,
+          "estimated": 2,
+          "old_data": 142,
+          "missing": 60,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "imports": {
+          "wb_code": "NE.IMP.GNFS.CD",
+          "label": "Imports of Goods & Services",
+          "available": 0,
+          "estimated": 2,
+          "old_data": 142,
+          "missing": 60,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "population": {
+          "wb_code": "SP.POP.TOTL",
+          "label": "Total Population",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 160,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=1000&date=2015:2026"
+        }
+      },
+      "by_country": {
+        "AUS": {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "region": "Oceania",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "BRN": {
+          "name": "Brunei",
+          "flag": "🇧🇳",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "CHN": {
+          "name": "China",
+          "flag": "🇨🇳",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "IDN": {
+          "name": "Indonesia",
+          "flag": "🇮🇩",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "IND": {
+          "name": "India",
+          "flag": "🇮🇳",
+          "region": "South Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "JPN": {
+          "name": "Japan",
+          "flag": "🇯🇵",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "KHM": {
+          "name": "Cambodia",
+          "flag": "🇰🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "KOR": {
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "region": "East Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "LAO": {
+          "name": "Laos",
+          "flag": "🇱🇦",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 4,
+          "old_data": 54,
+          "missing": 27,
+          "coverage_pct": 11.5
+        },
+        "MMR": {
+          "name": "Myanmar",
+          "flag": "🇲🇲",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 2,
+          "old_data": 45,
+          "missing": 38,
+          "coverage_pct": 11.5
+        },
+        "MYS": {
+          "name": "Malaysia",
+          "flag": "🇲🇾",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "PHL": {
+          "name": "Philippines",
+          "flag": "🇵🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "SGP": {
+          "name": "Singapore",
+          "flag": "🇸🇬",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "THA": {
+          "name": "Thailand",
+          "flag": "🇹🇭",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "TLS": {
+          "name": "Timor-Leste",
+          "flag": "🇹🇱",
+          "region": "Southeast Asia",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 96,
+          "coverage_pct": 0.0
+        },
+        "USA": {
+          "name": "United States",
+          "flag": "🇺🇸",
+          "region": "Americas",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        },
+        "VNM": {
+          "name": "Vietnam",
+          "flag": "🇻🇳",
+          "region": "Southeast Asia",
+          "available": 11,
+          "estimated": 0,
+          "old_data": 70,
+          "missing": 15,
+          "coverage_pct": 11.5
+        }
+      },
+      "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."
+    },
+    {
+      "run_id": "2026-06-02T21:44:43",
+      "fetched_at": "2026-06-02T21:44:43",
+      "started_at": "2026-06-02T21:44:42",
+      "status": "success",
+      "used_cache": true,
+      "countries": 17,
+      "indicators": 8,
+      "year_range": [
+        2015,
+        2026
+      ],
+      "total_cells": 1632,
+      "available": 1246,
+      "estimated": 6,
+      "old_data": 9,
+      "missing": 371,
+      "coverage_pct": 76.3,
+      "errors": [],
+      "by_indicator": {
+        "gdpGrowth": {
+          "wb_code": "NY.GDP.MKTP.KD.ZG",
+          "label": "GDP Growth Rate",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "gdpNominal": {
+          "wb_code": "NY.GDP.MKTP.CD",
+          "label": "GDP (Current USD)",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NY.GDP.MKTP.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "inflation": {
+          "wb_code": "FP.CPI.TOTL.ZG",
+          "label": "Inflation (CPI)",
+          "available": 150,
+          "estimated": 2,
+          "old_data": 5,
+          "missing": 47,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/FP.CPI.TOTL.ZG?format=json&per_page=1000&date=2015:2026"
+        },
+        "unemployment": {
+          "wb_code": "SL.UEM.TOTL.ZS",
+          "label": "Unemployment Rate",
+          "available": 176,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 28,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SL.UEM.TOTL.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "fdiPctGdp": {
+          "wb_code": "BX.KLT.DINV.WD.GD.ZS",
+          "label": "FDI Net Inflows",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/BX.KLT.DINV.WD.GD.ZS?format=json&per_page=1000&date=2015:2026"
+        },
+        "exports": {
+          "wb_code": "NE.EXP.GNFS.CD",
+          "label": "Exports of Goods & Services",
+          "available": 140,
+          "estimated": 2,
+          "old_data": 2,
+          "missing": 60,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.EXP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "imports": {
+          "wb_code": "NE.IMP.GNFS.CD",
+          "label": "Imports of Goods & Services",
+          "available": 140,
+          "estimated": 2,
+          "old_data": 2,
+          "missing": 60,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/NE.IMP.GNFS.CD?format=json&per_page=1000&date=2015:2026"
+        },
+        "population": {
+          "wb_code": "SP.POP.TOTL",
+          "label": "Total Population",
+          "available": 160,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 44,
+          "source_url": "https://api.worldbank.org/v2/country/TH;VN;MM;KH;LA;MY;SG;ID;PH;BN;TP;CN;US;JP;IN;KR;AU/indicator/SP.POP.TOTL?format=json&per_page=1000&date=2015:2026"
+        }
+      },
+      "by_country": {
+        "AUS": {
+          "name": "Australia",
+          "flag": "🇦🇺",
+          "region": "Oceania",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "BRN": {
+          "name": "Brunei",
+          "flag": "🇧🇳",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "CHN": {
+          "name": "China",
+          "flag": "🇨🇳",
+          "region": "East Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "IDN": {
+          "name": "Indonesia",
+          "flag": "🇮🇩",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "IND": {
+          "name": "India",
+          "flag": "🇮🇳",
+          "region": "South Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "JPN": {
+          "name": "Japan",
+          "flag": "🇯🇵",
+          "region": "East Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "KHM": {
+          "name": "Cambodia",
+          "flag": "🇰🇭",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "KOR": {
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "region": "East Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "LAO": {
+          "name": "Laos",
+          "flag": "🇱🇦",
+          "region": "Southeast Asia",
+          "available": 61,
+          "estimated": 4,
+          "old_data": 4,
+          "missing": 27,
+          "coverage_pct": 63.5
+        },
+        "MMR": {
+          "name": "Myanmar",
+          "flag": "🇲🇲",
+          "region": "Southeast Asia",
+          "available": 51,
+          "estimated": 2,
+          "old_data": 5,
+          "missing": 38,
+          "coverage_pct": 53.1
+        },
+        "MYS": {
+          "name": "Malaysia",
+          "flag": "🇲🇾",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "PHL": {
+          "name": "Philippines",
+          "flag": "🇵🇭",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "SGP": {
+          "name": "Singapore",
+          "flag": "🇸🇬",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "THA": {
+          "name": "Thailand",
+          "flag": "🇹🇭",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "TLS": {
+          "name": "Timor-Leste",
+          "flag": "🇹🇱",
+          "region": "Southeast Asia",
+          "available": 0,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 96,
+          "coverage_pct": 0.0
+        },
+        "USA": {
+          "name": "United States",
+          "flag": "🇺🇸",
+          "region": "Americas",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
+        },
+        "VNM": {
+          "name": "Vietnam",
+          "flag": "🇻🇳",
+          "region": "Southeast Asia",
+          "available": 81,
+          "estimated": 0,
+          "old_data": 0,
+          "missing": 15,
+          "coverage_pct": 84.4
         }
       },
       "note": "Official economic indicators may be annual and delayed, while news signals update faster. World Bank data has a 1–2 year publication lag."

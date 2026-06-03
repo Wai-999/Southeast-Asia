@@ -17,8 +17,12 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { WB_META, WB_DATA_STATUS, QUALITY_DOT, QUALITY_LABEL } from "@/data/worldbank-data";
-import type { WbDataQuality } from "@/data/worldbank-data";
+import {
+  WB_META, WB_DATA_STATUS,
+  QUALITY_DOT, QUALITY_LABEL,
+  VALUE_TYPE_COLOR, VALUE_TYPE_LABEL,
+} from "@/data/worldbank-data";
+import type { WbDataQuality, WbValueType } from "@/data/worldbank-data";
 
 interface WorldBankNoteProps {
   /** Show the full caveat list (default: false — compact one-liner) */
@@ -74,8 +78,8 @@ export default function WorldBankNote({
           {isLive ? (
             <span>
               <span className="font-semibold">World Bank Open Data</span>
-              {" · "}Official economic indicators may be annual and delayed,
-              {" "}while news signals update faster.
+              {" · "}Annual official data (2015–2024).
+              {" "}2025–2026 rows show IMF forecasts where WB has not yet published.
               {ts !== "placeholder" && (
                 <span className="text-sky-500 ml-1">· fetched {dateLabel}</span>
               )}
@@ -132,8 +136,30 @@ export default function WorldBankNote({
             ))}
           </div>
 
+          {/* Value-type (provenance) badge legend */}
+          <p className="font-semibold text-[11px] uppercase tracking-wide opacity-70 mb-1.5 mt-2.5">
+            Value Badges
+          </p>
+          {(
+            [
+              { vt: "official_actual"   as WbValueType, desc: "Confirmed World Bank annual figure" },
+              { vt: "forecast_estimate" as WbValueType, desc: "IMF/WB published forecast — not yet confirmed" },
+              { vt: "missing_official"  as WbValueType, desc: "No official or forecast data available" },
+            ] as const
+          ).map(({ vt, desc }) => (
+            <div key={vt} className="flex items-center gap-2 mb-0.5">
+              <span className={cn(
+                "text-[9px] font-semibold px-1.5 py-0.5 rounded border shrink-0",
+                VALUE_TYPE_COLOR[vt],
+              )}>
+                {VALUE_TYPE_LABEL[vt]}
+              </span>
+              <span className="text-[10px]">{desc}</span>
+            </div>
+          ))}
+
           {/* Quality flag legend */}
-          <p className="font-semibold text-[11px] uppercase tracking-wide opacity-70 mb-1.5">
+          <p className="font-semibold text-[11px] uppercase tracking-wide opacity-70 mb-1.5 mt-2.5">
             Data Quality Flags
           </p>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1">

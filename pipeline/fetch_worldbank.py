@@ -99,8 +99,9 @@ except ImportError:
 #  SECTION 1 — CONFIGURATION
 # ══════════════════════════════════════════════════════════════════════════════
 
-START_YEAR  = 2015
-END_YEAR    = 2024
+START_YEAR        = 2015
+END_YEAR          = 2026   # Request 2025/2026 — WB may return null (publication lag); we store them as missing_official
+FILL_ALLOWED_UNTIL = 2024   # Never forward/backward-fill years ≥ 2025 — they must be null or from WB directly
 
 # Script is in pipeline/; output dirs are relative to it
 SCRIPT_DIR  = Path(__file__).parent
@@ -265,7 +266,7 @@ def build_url(wb_code: str) -> str:
     """
     country_str = ";".join(COUNTRIES.keys())
     n_records   = len(COUNTRIES) * (END_YEAR - START_YEAR + 1)
-    per_page    = max(500, n_records + 50)
+    per_page    = max(1000, n_records + 50)  # 17 countries × 12 years = 204; use 1000 as safe ceiling
     return (
         f"https://api.worldbank.org/v2/country/{country_str}"
         f"/indicator/{wb_code}"
@@ -460,11 +461,13 @@ def fill_missing(grid: dict) -> tuple[dict, int]:
             last_known = None
             gap        = 0
             for yr in years:
+                # Never fill years beyond FILL_ALLOWED_UNTIL — 2025/2026
+                # must remain null (or real WB data) and never be forward-filled
                 cell = series[yr]
                 if cell is not None:
                     last_known = cell["value"]
                     gap = 0
-                elif last_known is not None and gap < MAX_FILL_GAP:
+                elif last_known is not None and gap < MAX_FILL_GAP and yr <= FILL_ALLOWED_UNTIL:
                     series[yr] = {
                         "value":      last_known,
                         "raw_value":  None,
@@ -477,14 +480,25 @@ def fill_missing(grid: dict) -> tuple[dict, int]:
                     gap += 1
 
             # ── Backward fill ───────────────────────────────────────────────
-            first_known = None
-            gap         = 0
+            # NOTE: backward fill from 2025+ real data into historical nulls is
+            # fine (e.g., 2015 missing but 2016 exists → fill 2015).
+            # Never backward-fill from a year > FILL_ALLOWED_UNTIL into earlier years.
+            first_known      = None
+            first_known_year = None
+            gap              = 0
             for yr in reversed(years):
                 cell = series[yr]
                 if cell is not None:
-                    first_known = cell["value"]
-                    gap = 0
-                elif first_known is not None and gap < MAX_FILL_GAP:
+                    # Only use as a backward anchor if it is from a reliable year
+                    if yr <= FILL_ALLOWED_UNTIL or cell.get("value") is not None:
+                        first_known      = cell["value"]
+                        first_known_year = yr
+                        gap = 0
+                elif (
+                    first_known is not None
+                    and gap < MAX_FILL_GAP
+                    and yr <= FILL_ALLOWED_UNTIL   # never fill into pre-history from 2025+ anchors
+                ):
                     series[yr] = {
                         "value":      first_known,
                         "raw_value":  None,
@@ -530,9 +544,13 @@ def assign_quality(grid: dict) -> dict:
                 if cell is not None and not cell.get("is_filled", False):
                     latest_real_yr = yr
 
+            # Staleness: compare against CALENDAR YEAR, not END_YEAR.
+            # Now that we request up to 2026, END_YEAR is a future boundary,
+            # not a "should be current" anchor.  A 2024 value in 2026 is fine.
+            # A 2022 value when today is 2026 is "old_data" (>2 year lag).
             is_stale = (
                 latest_real_yr is not None
-                and latest_real_yr <= END_YEAR - OLD_DATA_THRESHOLD
+                and latest_real_yr < date.today().year - OLD_DATA_THRESHOLD
             )
 
             for yr in years:
@@ -649,10 +667,100 @@ def save_raw_csv(raw_data: dict[str, list], url_map: dict[str, str]) -> None:
 ANNUAL_DATA_NOTE = (
     "World Bank publishes ANNUAL data only — no quarterly breakdown available. "
     "Data typically has a 1–2 year publication lag "
-    f"(in {date.today().year}, the most recent confirmed year for most countries is {END_YEAR - 1} or {END_YEAR - 2}). "
+    f"(in {date.today().year}, confirmed data for most countries runs to 2023 or 2024). "
+    "2025 and 2026 rows are included but will be marked 'missing_official' until WB publishes them. "
     "For quarterly GDP / CPI, use national statistics offices: "
-    "Thailand → NESDC, Vietnam → GSO, Singapore → SingStat, Indonesia → BPS, Malaysia → DOSM."
+    "Thailand → NESDC, Vietnam → GSO, Singapore → SingStat, Indonesia → BPS, Malaysia → DOSM. "
+    "Forecasts for 2025/2026 are stored separately in latest_estimates.json and labeled 'forecast_estimate'."
 )
+
+
+# ── Per-record helper functions ────────────────────────────────────────────────
+
+def _cell_value_type(cell: dict) -> str:
+    """
+    Return the value_type string for a processed grid cell.
+
+    Rules (never mix official and forecast in worldbank_indicators.json):
+      official_actual   — value is not None and comes from the WB API
+                          (both real values AND forward/backward-filled cells
+                          are still derived from official WB data)
+      missing_official  — WB returned null and no fill was possible
+    """
+    if cell is None or cell.get("value") is None:
+        return "missing_official"
+    return "official_actual"
+
+
+# Country-specific limitation notes (applied when data is non-null)
+_COUNTRY_LIMIT_NOTES: dict[str, str] = {
+    "MMR": "Post-coup (Feb 2021): World Bank data collection is disrupted. Post-2022 values may be IMF estimates incorporated by WB.",
+    "TLS": "Timor-Leste has limited statistical capacity. Many indicators are absent or have significant publication delays.",
+    "BRN": "Brunei has partial World Bank coverage for several indicators.",
+    "LAO": "Laos data may be sparse or delayed for some indicators.",
+}
+
+# Indicator-specific limitation notes
+_IND_LIMIT_NOTES: dict[str, str] = {
+    "unemployment": "ILO modelled estimates — may differ from nationally-reported figures.",
+    "fdiPctGdp":    "Negative values indicate net capital outflow. Singapore may show large swings from holding-company flows.",
+    "exports":      "Includes both goods and services. Singapore's figure legitimately exceeds $900 B due to re-export activity.",
+    "imports":      "Includes both goods and services.",
+}
+
+
+def _record_limitation_note(iso3: str, ind_key: str, yr: int, cell: dict) -> str:
+    """
+    Build a short, plain-English limitation note for a single record.
+
+    Priority:
+      1. 2025/2026 missing → explicit lag warning
+      2. Myanmar post-coup → specific disruption note
+      3. Filled/estimated → note that it's interpolated from adjacent WB data
+      4. Country-specific note (if any)
+      5. Indicator-specific note (if any)
+      6. Empty string if nothing unusual
+    """
+    parts: list[str] = []
+
+    # Missing 2025/2026 — publication lag
+    if cell.get("value") is None and yr >= 2025:
+        parts.append(
+            f"{yr} data has not yet been published by the World Bank "
+            "(typical 1–2 year publication lag). "
+            "Check latest_estimates.json for IMF/WB forecasts labeled 'forecast_estimate'."
+        )
+        return " ".join(parts)
+
+    # Myanmar post-coup
+    if iso3 == "MMR" and yr >= 2022 and cell.get("value") is not None:
+        parts.append(
+            "Post-coup (2021+): values may reflect IMF estimates incorporated by the World Bank "
+            "rather than direct national statistics."
+        )
+
+    # Forward/backward filled
+    if cell.get("is_filled"):
+        parts.append(
+            "Value is forward/backward-filled from an adjacent year's World Bank official figure "
+            "(no WB data published for this exact year)."
+        )
+
+    # General missing (non-2025/2026)
+    if cell.get("value") is None and yr < 2025:
+        parts.append(explain_missing(iso3, yr, ind_key))
+
+    # Country note
+    cn = _COUNTRY_LIMIT_NOTES.get(iso3)
+    if cn and cn not in " ".join(parts):
+        parts.append(cn)
+
+    # Indicator note
+    idn = _IND_LIMIT_NOTES.get(ind_key)
+    if idn:
+        parts.append(idn)
+
+    return " ".join(parts)
 
 
 def save_processed_json(
@@ -715,16 +823,25 @@ def save_processed_json(
                     continue  # shouldn't happen after assign_quality, but guard
 
                 records.append({
-                    "source_url":     src_url,
-                    "last_updated":   today_str,
-                    "country_code":   iso3,
-                    "country_name":   c_meta["name"],
-                    "indicator_code": ind_meta["wb_code"],
-                    "indicator_key":  ind_key,
-                    "year":           yr,
-                    "value":          cell["value"],  # null if missing
-                    "unit":           ind_meta["unit"],
-                    "data_quality":   cell.get("data_quality", "available"),
+                    # ── Core identity ────────────────────────────────────────
+                    "source_url":      src_url,
+                    "source":          "World Bank Open Data API",
+                    "last_updated":    today_str,
+                    "fetched_at":      ts,           # full ISO timestamp
+                    "country_code":    iso3,         # ISO 3166-1 alpha-3
+                    "country_name":    c_meta["name"],
+                    "region_group":    c_meta["region"],
+                    "indicator_code":  ind_meta["wb_code"],
+                    "indicator_key":   ind_key,
+                    "indicator_name":  ind_meta["label"],
+                    "year":            yr,
+                    "value":           cell["value"],   # null if missing_official
+                    "unit":            ind_meta["unit"],
+                    "frequency":       "annual",
+                    # ── Quality & provenance ─────────────────────────────────
+                    "data_quality":    cell.get("data_quality", "missing"),
+                    "value_type":      _cell_value_type(cell),
+                    "limitation_note": _record_limitation_note(iso3, ind_key, yr, cell),
                 })
 
     output = {

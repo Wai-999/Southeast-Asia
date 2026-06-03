@@ -1,0 +1,108 @@
+{
+  "validated_at": "2026-06-02T21:44:47",
+  "data_file": "pipeline/data/processed/worldbank_indicators.json",
+  "generated_at": "2026-06-02T21:44:42",
+  "total_records": 1632,
+  "passed": true,
+  "n_pass": 19,
+  "n_fail": 0,
+  "n_warn": 0,
+  "errors": [],
+  "checks": [
+    {
+      "check": "File exists",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Valid JSON",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Has 'meta' key",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Has 'indicators' key",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Has 'records' key",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Total records",
+      "result": "PASS",
+      "detail": "1,632"
+    },
+    {
+      "check": "All 17 countries present",
+      "result": "PASS",
+      "detail": "17 found"
+    },
+    {
+      "check": "All 8 indicators present",
+      "result": "PASS",
+      "detail": "8 found"
+    },
+    {
+      "check": "All years 2015–2026 present",
+      "result": "PASS",
+      "detail": "2015–2026"
+    },
+    {
+      "check": "No duplicate rows",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All required fields present on every record",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "source_url non-empty on all records",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "value_type valid on all records",
+      "result": "PASS",
+      "detail": "allowed: {'missing_official', 'official_actual'}"
+    },
+    {
+      "check": "data_quality valid on all records",
+      "result": "PASS",
+      "detail": "allowed: {'old_data', 'missing', 'estimated', 'available'}"
+    },
+    {
+      "check": "No forecast_estimate values in worldbank_indicators.json",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2025/2026 null rows correctly labeled missing_official",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "2025/2026 rows are not forward-filled (no fake values)",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "All values within plausible ranges",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Coverage stats",
+      "result": "PASS",
+      "detail": "available=1246 (76%)  estimated=6  missing=371  official_actual=1261  missing_official=371"
+    }
+  ]
+}

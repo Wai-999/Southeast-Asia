@@ -53,17 +53,39 @@ const _raw = require("../../pipeline/data/processed/worldbank_indicators.json") 
 
 export type WbDataQuality = "available" | "estimated" | "old_data" | "missing";
 
+/**
+ * value_type distinguishes the provenance of each data point:
+ *   official_actual   — confirmed value from the World Bank Open Data API
+ *   missing_official  — WB returned null; no official figure published yet
+ *   forecast_estimate — IMF WEO or other published forecast (only in combined_indicators.json)
+ *   sample            — development placeholder (never in production data)
+ */
+export type WbValueType =
+  | "official_actual"
+  | "missing_official"
+  | "forecast_estimate"
+  | "sample";
+
 export interface WbRecord {
-  source_url:     string;
-  last_updated:   string;
-  country_code:   string;   // ISO3
-  country_name:   string;
-  indicator_code: string;   // WB code, e.g. "NY.GDP.MKTP.KD.ZG"
-  indicator_key:  string;   // camelCase, e.g. "gdpGrowth"
-  year:           number;
-  value:          number | null;
-  unit:           string;
-  data_quality:   WbDataQuality;
+  // ── Core identity ────────────────────────────────────────────────────────
+  source_url:      string;
+  source?:         string;          // "World Bank Open Data API"
+  last_updated:    string;
+  fetched_at?:     string;          // ISO timestamp of the pipeline run
+  country_code:    string;          // ISO3 e.g. "THA"
+  country_name:    string;
+  region_group?:   string;          // e.g. "Southeast Asia"
+  indicator_code:  string;          // WB indicator code e.g. "NY.GDP.MKTP.KD.ZG"
+  indicator_key:   string;          // camelCase key e.g. "gdpGrowth"
+  indicator_name?: string;          // Human-readable label e.g. "GDP Growth Rate"
+  year:            number;
+  value:           number | null;
+  unit:            string;
+  frequency?:      string;          // "annual"
+  // ── Quality & provenance ────────────────────────────────────────────────
+  data_quality:    WbDataQuality;
+  value_type?:     WbValueType;     // provenance badge (new field in v2)
+  limitation_note?: string;         // plain-English caveat for this specific record
 }
 
 export interface WbIndicatorMeta {
@@ -144,26 +166,38 @@ export const WB_SOURCE_META: SourceMeta = {
 
 /**
  * Per-record source metadata — downgrades confidence for estimated / old data.
+ * Respects the new value_type field when present.
  * Pass to IndicatorCard's `source` prop for accurate quality signalling.
  */
 export function getWbRecordSourceMeta(record: WbRecord): SourceMeta {
+  const vt = getValueType(record);
+
   const conf: SourceConfidence =
-    record.data_quality === "available" ? "high"
-    : record.data_quality === "estimated" ? "medium"
-    : "low";
+    vt === "official_actual" && record.data_quality === "available" ? "high" :
+    vt === "official_actual" && record.data_quality === "old_data"  ? "medium" :
+    vt === "official_actual" && record.data_quality === "estimated" ? "medium" :
+    vt === "forecast_estimate"                                       ? "medium" :
+    "low";
+
+  // Use the pipeline-generated limitation_note if present; otherwise derive one
+  const limitNote: string =
+    record.limitation_note
+      ? record.limitation_note
+      : vt === "forecast_estimate"
+      ? "This is an IMF/WB published forecast, NOT a confirmed World Bank official figure. " +
+        "Forecasts are revised twice yearly and should not be treated as historical actuals."
+      : record.data_quality === "estimated"
+      ? "This value is forward/backward-filled from an adjacent year's World Bank official figure."
+      : record.data_quality === "old_data"
+      ? "This indicator has not been updated recently. The value may be 2+ years old."
+      : WB_SOURCE_BASE.limitation_note;
 
   return {
     ...WB_SOURCE_BASE,
-    fetched_at:      record.last_updated ?? _raw.meta.generated_at,
+    fetched_at:      record.fetched_at ?? record.last_updated ?? _raw.meta.generated_at,
     source_url:      record.source_url ?? WB_SOURCE_BASE.source_url,
     confidence:      conf,
-    limitation_note:
-      record.data_quality === "estimated"
-        ? "This value is a World Bank estimate, not an official measured figure. " +
-          "Treat with wider uncertainty margin."
-        : record.data_quality === "old_data"
-        ? "This indicator has not been updated recently. The value may be 3+ years old."
-        : WB_SOURCE_BASE.limitation_note,
+    limitation_note: limitNote,
   };
 }
 
@@ -236,7 +270,15 @@ export function getWbHistory(
 
 /**
  * Get the most recent non-missing value for a country-indicator.
- * Prefers real data ("available") over estimated. Returns null if no data.
+ *
+ * Preference order (descending priority):
+ *   1. official_actual  AND data_quality = available   (best)
+ *   2. official_actual  AND data_quality = old_data
+ *   3. official_actual  AND data_quality = estimated   (forward-filled from WB data)
+ *   4. forecast_estimate (IMF/WB published forecast)
+ *   5. Any non-null record
+ *
+ * Returns null if no data exists at all.
  */
 export function getWbLatest(
   iso3:         string,
@@ -250,11 +292,21 @@ export function getWbLatest(
     )
     .sort((a, b) => b.year - a.year);  // newest first
 
-  // Prefer real (non-estimated) data
-  const realRec = recs.find(r => r.data_quality !== "estimated");
-  const best = realRec ?? recs[0];
+  if (recs.length === 0) return null;
 
-  if (!best) return null;
+  // Score by provenance: official_actual > forecast_estimate
+  const scored = recs.map(r => {
+    const vt = getValueType(r);
+    const score =
+      vt === "official_actual"   && r.data_quality === "available"  ? 4 :
+      vt === "official_actual"   && r.data_quality === "old_data"   ? 3 :
+      vt === "official_actual"   && r.data_quality === "estimated"  ? 2 :
+      vt === "forecast_estimate"                                     ? 1 : 0;
+    return { r, score };
+  });
+  scored.sort((a, b) => b.score - a.score || b.r.year - a.r.year);
+
+  const best = scored[0].r;
   return {
     value:   best.value as number,
     year:    best.year,
@@ -315,6 +367,62 @@ export const QUALITY_DOT: Record<WbDataQuality, string> = {
   old_data:   "bg-slate-400",
   missing:    "bg-red-400",
 };
+
+
+// ── Value-type (provenance) badge helpers ─────────────────────────────────────
+//
+// Use these to render the badge next to any indicator value:
+//   Official  = official_actual   (emerald / confirmed WB data)
+//   Estimate  = forecast_estimate (amber   / IMF/WB forecast)
+//   Missing   = missing_official  (slate   / no data published yet)
+//   Sample    = sample            (purple  / dev placeholder)
+//
+// Example usage in a component:
+//   <span className={VALUE_TYPE_COLOR[record.value_type ?? "missing_official"]}>
+//     {VALUE_TYPE_LABEL[record.value_type ?? "missing_official"]}
+//   </span>
+
+export const VALUE_TYPE_LABEL: Record<WbValueType, string> = {
+  official_actual:   "Official",
+  missing_official:  "No official data",
+  forecast_estimate: "Estimate",
+  sample:            "Sample",
+};
+
+export const VALUE_TYPE_SHORT: Record<WbValueType, string> = {
+  official_actual:   "Official",
+  missing_official:  "—",
+  forecast_estimate: "Est.",
+  sample:            "Sample",
+};
+
+/** Tailwind bg + text classes for a chip/badge */
+export const VALUE_TYPE_COLOR: Record<WbValueType, string> = {
+  official_actual:   "bg-emerald-100 text-emerald-700 border-emerald-200",
+  missing_official:  "bg-slate-100   text-slate-500   border-slate-200",
+  forecast_estimate: "bg-amber-100   text-amber-700   border-amber-200",
+  sample:            "bg-purple-100  text-purple-700  border-purple-200",
+};
+
+/** Tailwind dot colour (for sparklines, pips, etc.) */
+export const VALUE_TYPE_DOT: Record<WbValueType, string> = {
+  official_actual:   "bg-emerald-500",
+  missing_official:  "bg-slate-400",
+  forecast_estimate: "bg-amber-400",
+  sample:            "bg-purple-400",
+};
+
+/**
+ * Get the value_type for a given record.
+ * Falls back to deriving from data_quality if value_type field is missing
+ * (for backward compatibility with older pipeline output that lacked this field).
+ */
+export function getValueType(record: WbRecord): WbValueType {
+  if (record.value_type) return record.value_type;
+  // Fallback: derive from data_quality (older pipeline output)
+  if (record.value === null) return "missing_official";
+  return "official_actual";
+}
 
 
 // ── Indicator display helpers ──────────────────────────────────────────────────
