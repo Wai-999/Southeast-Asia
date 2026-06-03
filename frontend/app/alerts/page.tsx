@@ -235,6 +235,7 @@ export default function AlertsPage() {
               conditions={a.conditionsMet}
               confidence={a.confidence}
               sourcesCount={a.sourceSignals.sourcesCount}
+              relatedNews={a.relatedNews}
             />
           ))}
         </div>

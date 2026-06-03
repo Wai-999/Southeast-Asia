@@ -126,6 +126,32 @@ TRADE_BASELINE: dict[str, float] = {
     "PHL": 1.5, "KHM": 1.0, "MMR": 1.0, "LAO": 1.0, "BRN": 0.5,
 }
 
+# ── World Bank indicator keys used by each alert type ───────────────────────
+ALERT_TYPE_INDICATORS: dict[str, list[str]] = {
+    "export_stress":          ["exports"],
+    "import_shock":           ["imports"],
+    "inflation_pressure":     ["inflation", "gdpGrowth"],
+    "political_risk_rising":  ["gdpGrowth", "fdiPctGdp"],
+    "trade_dependency_risk":  ["exports", "imports", "fdiPctGdp"],
+    "trade_news_pressure":    ["exports", "imports"],
+    "regional_spillover":     ["gdpGrowth"],
+    "fdi_weakness":           ["fdiPctGdp", "gdpGrowth"],
+    "growth_slowdown":        ["gdpGrowth", "exports"],
+}
+
+# ── GDELT categories most relevant to each alert type ───────────────────────
+ALERT_TYPE_CATEGORIES: dict[str, set[str]] = {
+    "export_stress":          {"trade", "tariff", "economy"},
+    "import_shock":           {"trade", "tariff"},
+    "inflation_pressure":     {"economy", "policy", "central_bank"},
+    "political_risk_rising":  {"conflict", "politics", "election", "border"},
+    "trade_dependency_risk":  {"trade", "tariff", "economy"},
+    "trade_news_pressure":    {"trade", "tariff"},
+    "regional_spillover":     {"trade", "economy", "politics", "conflict"},
+    "fdi_weakness":           {"economy", "policy", "politics"},
+    "growth_slowdown":        {"economy", "trade", "infrastructure"},
+}
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  SECTION 2 — DATA LOADING
@@ -339,6 +365,74 @@ def load_trade_flows(path: Path) -> dict[str, dict]:
         }
 
     return result
+
+
+def load_raw_articles_by_country(path: Path) -> dict[str, list[dict]]:
+    """
+    Load raw article records from news_signals.json, grouped by ISO3 country code.
+
+    Returns {iso3: [article_dict, ...]} where each article has:
+      title, url, date, category, tone, impact_score, source
+    """
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+
+    result: dict[str, list[dict]] = {iso3: [] for iso3 in SEA_REPORTERS}
+    for article in raw.get("articles", []):
+        iso3 = article.get("country_code")
+        if iso3 in SEA_REPORTERS:
+            result[iso3].append(article)
+    return result
+
+
+def pick_related_news(
+    articles: list[dict],
+    alert_type: str,
+    max_n: int = 3,
+) -> list[dict]:
+    """
+    Select the most relevant news articles for a given alert type.
+
+    Filters to articles whose category matches the alert type, then ranks by:
+      1. Impact score (descending — highest impact first)
+      2. Date (descending — most recent first)
+
+    Returns a list of compact article dicts with fields:
+      title, url, date, category, tone, impact_score, source
+    """
+    relevant_cats = ALERT_TYPE_CATEGORIES.get(alert_type, {"economy", "trade"})
+
+    # Filter to matching categories
+    relevant = [
+        a for a in articles
+        if a.get("category") in relevant_cats
+    ]
+
+    # Sort by (-impact_score, -date)
+    def _sort_key(a: dict) -> tuple:
+        impact = -(a.get("impact_score") or 0)
+        date_str = a.get("date") or "2000-01-01"
+        # Convert date string "YYYY-MM-DD" to negative int for descending sort
+        try:
+            date_num = -int(date_str.replace("-", ""))
+        except (ValueError, AttributeError):
+            date_num = 0
+        return (impact, date_num)
+
+    relevant.sort(key=_sort_key)
+
+    return [
+        {
+            "title":        (a.get("title") or "")[:120],
+            "url":          a.get("url", ""),
+            "date":         a.get("date", ""),
+            "category":     a.get("category", ""),
+            "tone":         round(float(a.get("tone") or 0.0), 3),
+            "impact_score": a.get("impact_score") or 0,
+            "source":       a.get("source", ""),
+        }
+        for a in relevant[:max_n]
+    ]
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -681,6 +775,152 @@ def check_growth_slowdown(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+#  SECTION 5B — NEW ALERT TYPE: TRADE NEWS PRESSURE
+#
+#  Fires when GDELT news signals show elevated trade/tariff article counts
+#  with negative sentiment — an early-warning that trade stress may be
+#  building before it shows up in official data.
+#
+#  This is a NEWS-FIRST signal: it should always use hedged language because
+#  it is based on media coverage, not confirmed official statistics.
+#
+#  Score components (0-100):
+#    A) Tariff/trade article count  0-40 pts  (vs per-country baseline)
+#    B) Negative article tone       0-30 pts  (trade_tone < threshold)
+#    C) High-impact articles        0-20 pts  (impact_score 4-5 articles present)
+#    D) Official trade data echo    0-10 pts  (exports or imports already declining)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def check_trade_news_pressure(
+    snap: CountrySnapshot,
+    news: dict,
+    trade: dict,
+) -> AlertResult:
+    conditions: list[str] = []
+    values: dict = {}
+    score = 0.0
+
+    trade_7d   = news.get("7d_trade", 0)
+    trade_tone = news.get("7d_trade_tone", 0.0)
+    pol_7d     = news.get("7d_political", 0)
+    total_7d   = news.get("7d_total", 0)
+    impact_wt  = news.get("impact_weighted_risk", 0.0)
+
+    values["trade_articles_7d"]    = trade_7d
+    values["trade_articles_tone"]  = round(trade_tone, 3)
+    values["impact_weighted_risk"] = round(impact_wt, 2)
+    values["total_articles_7d"]    = total_7d
+
+    country_trade_baseline = TRADE_BASELINE.get(snap.iso3, 1.0)
+
+    # A) Trade article count vs per-country baseline (0-40 pts)
+    if trade_7d > 0:
+        ratio = trade_7d / country_trade_baseline
+        pts_a = _clip((ratio - 1.0) / 3.0, 0, 1.0) * 40
+        score += pts_a
+        if pts_a >= 15:
+            conditions.append(
+                f"Trade/tariff news coverage elevated: {trade_7d} articles in last 7 days "
+                f"(baseline ≈ {country_trade_baseline:.1f}/week) — may suggest heightened market attention"
+            )
+        elif pts_a >= 5:
+            conditions.append(
+                f"Trade news activity above baseline: {trade_7d} articles (baseline ≈ {country_trade_baseline:.1f}/week)"
+            )
+
+    # B) Negative article tone (0-30 pts)
+    if trade_7d > 0 and trade_tone < NEGATIVE_TONE_THRESHOLD:
+        pts_b = _clip(-trade_tone - NEGATIVE_TONE_THRESHOLD, 0, 0.8) / 0.8 * 30
+        score += pts_b
+        if pts_b >= 10:
+            conditions.append(
+                f"Trade news sentiment negative (tone={trade_tone:.2f}) — "
+                f"could indicate market concern about trade conditions"
+            )
+
+    # C) High-impact article presence (0-20 pts)
+    if impact_wt > 0:
+        pts_c = _clip(impact_wt / 5.0, 0, 1.0) * 20
+        score += pts_c
+        if pts_c >= 8:
+            conditions.append(
+                f"High-impact trade articles detected (impact_weighted_risk={impact_wt:.1f}) — "
+                f"early warning signal for trade disruption"
+            )
+
+    # D) Official data echo — exports or imports already declining (0-10 pts)
+    exp_yoy = _yoy_pct(snap.exports_usd_b, snap.prev_exports_usd_b)
+    imp_yoy = _yoy_pct(snap.imports_usd_b, snap.prev_imports_usd_b)
+    data_echo = False
+    if exp_yoy is not None and exp_yoy < -5:
+        score += 10
+        data_echo = True
+        values["export_yoy_pct"] = round(exp_yoy, 1)
+        conditions.append(
+            f"Official data may support the signal: exports already declining {exp_yoy:.1f}% YoY "
+            f"(needs more data to confirm causal link)"
+        )
+    elif imp_yoy is not None and imp_yoy < -10:
+        score += 7
+        data_echo = True
+        values["import_yoy_pct"] = round(imp_yoy, 1)
+        conditions.append(
+            f"Possible pressure: imports declined {imp_yoy:.1f}% YoY — "
+            f"may suggest demand contraction or supply disruption"
+        )
+
+    score = _clip(score, 0, 100)
+
+    # ── Explanation (always hedged — this is a news-first signal) ────────────
+    name = snap.name
+    if trade_7d == 0:
+        expl = (
+            f"No trade/tariff news detected for {name} in the last 7 days. "
+            f"This early warning signal requires active news coverage to trigger. "
+            f"Needs more data to assess."
+        )
+    elif score >= 40 and trade_tone < NEGATIVE_TONE_THRESHOLD:
+        expl = (
+            f"GDELT news signals may suggest elevated trade stress for {name}: "
+            f"{trade_7d} trade/tariff articles in the last 7 days with negative average "
+            f"sentiment (tone={trade_tone:.2f}). This could indicate building market concern "
+            f"about trade conditions. Note: news signals are an early warning indicator — "
+            f"they should be cross-checked against official trade statistics before drawing conclusions."
+        )
+    elif trade_7d > country_trade_baseline * 1.5:
+        expl = (
+            f"Trade news activity for {name} is above baseline at {trade_7d} articles "
+            f"in the last 7 days. Elevated coverage could indicate market attention to "
+            f"trade-related risks, though it may also reflect routine economic reporting. "
+            f"Monitor over the coming weeks for confirmation."
+        )
+    else:
+        expl = (
+            f"Moderate trade news signal detected for {name}: {trade_7d} articles in the "
+            f"last 7 days. This is an early warning signal that warrants monitoring but "
+            f"does not yet constitute a confirmed risk. Needs more data."
+        )
+
+    if data_echo and exp_yoy is not None and exp_yoy < 0:
+        expl += (
+            f" Official export data also shows a {abs(exp_yoy):.1f}% YoY decline, "
+            f"which may provide partial corroboration for the news signal."
+        )
+
+    rec = (
+        "Track week-over-week trade news volume and tone trends. "
+        "Cross-check against monthly trade statistics from customs authorities. "
+        "Look for specific tariff announcements, sanctions, or bilateral trade disputes "
+        "that may be driving news coverage."
+    )
+
+    return _make_result(
+        "trade_news_pressure", "Trade News Pressure", "📰", "line", "trade_articles_7d",
+        snap, score, conditions, values, expl, rec,
+    )
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 #  SECTION 6 — CONFIDENCE SCORING
 #
 #  For each alert type, evaluate whether each of the 3 data sources independently
@@ -830,6 +1070,37 @@ def compute_confidence(
             f"Comtrade exports YoY: {exp_yoy:.1f}%" if exp_yoy is not None else "Comtrade: no export data",
         ]
 
+    elif alert_type == "trade_news_pressure":
+        # News-first signal: GDELT is the primary evidence
+        trade_news_7d = news.get("7d_trade", 0)
+        trade_tone    = news.get("7d_trade_tone", 0.0)
+        impact_wt     = news.get("impact_weighted_risk", 0.0)
+        t_baseline    = TRADE_BASELINE.get(snap.iso3, 1.0)
+
+        # Official data agrees if exports or imports already declining
+        official_agrees = (
+            (exp_yoy is not None and exp_yoy < -5) or
+            (imp_yoy is not None and imp_yoy < -10)
+        )
+        # News agrees if elevated AND negative tone (this IS the primary signal)
+        news_agrees     = (
+            trade_news_7d > t_baseline and
+            trade_tone < NEGATIVE_TONE_THRESHOLD
+        )
+        # Trade data agrees if high partner concentration or balance worsening
+        trade_agrees    = (
+            (trade.get("top_export_share_pct") or 0) > 30 or
+            impact_wt > 5
+        )
+        rationale_parts = [
+            f"WB exports/imports YoY: {exp_yoy:.1f}% / {imp_yoy:.1f}%"
+            if (exp_yoy is not None and imp_yoy is not None)
+            else "WB: limited trade data",
+            f"GDELT trade articles 7d: {trade_news_7d} (tone={trade_tone:.2f}, baseline={t_baseline:.1f})",
+            f"Comtrade top-partner share: {trade.get('top_export_share_pct',0):.0f}% export, "
+            f"impact_weight={impact_wt:.1f}",
+        ]
+
     else:
         # Fallback for any unrecognised type
         official_agrees = False
@@ -939,6 +1210,9 @@ def main() -> int:
     n_articles = sum(v.get("7d_total", 0) for v in news_by_country.values())
     ok(f"News signals: {n_articles} articles (last 7d)  |  {NEWS_FILE.name}")
 
+    raw_articles_by_country = load_raw_articles_by_country(NEWS_FILE)
+    ok(f"Raw articles: loaded per-country article lists for related_news enrichment")
+
     trade_by_country = load_trade_flows(TRADE_FILE)
     ok(f"Trade flows:  {len(trade_by_country)} countries  |  {TRADE_FILE.name}")
     print()
@@ -969,6 +1243,7 @@ def main() -> int:
             wb_entries[iso3]    = wb
             news_entries[iso3]  = news
             trade_entries[iso3] = trade
+            # raw articles stored in raw_articles_by_country already
 
             gdp_str = f"gdp={snap.gdp_growth:.1f}%"  if snap.gdp_growth  is not None else "gdp=n/a"
             cpi_str = f"cpi={snap.inflation:.1f}%"   if snap.inflation   is not None else "cpi=n/a"
@@ -992,8 +1267,8 @@ def main() -> int:
     info(f"  Regional average GDP growth: {regional_avg_growth:.2f}%")
     print()
 
-    # ── Step 4: Run all 8 alert checks ───────────────────────────────────────
-    section("Step 4 — Run 8-type pattern alert engine")
+    # ── Step 4: Run all 9 alert checks ───────────────────────────────────────
+    section("Step 4 — Run 9-type pattern alert engine")
 
     peer_map = {s.iso3: s for s in snapshots}
     all_results: list[dict] = []
@@ -1011,8 +1286,9 @@ def main() -> int:
         wb    = wb_entries[snap.iso3]
         news  = news_entries[snap.iso3]
         trade = trade_entries[snap.iso3]
+        raw_arts = raw_articles_by_country.get(snap.iso3, [])
 
-        # Run 6 existing checks + 2 new ones
+        # Run 6 existing checks + 2 new + 1 new trade_news_pressure
         check_results: list[AlertResult] = [
             check_export_stress(snap),
             check_import_shock(snap, trade, news),
@@ -1022,6 +1298,7 @@ def main() -> int:
             check_trade_dependency_risk(snap),
             check_regional_spillover(snap, peer_map),
             check_growth_slowdown(snap, regional_avg_growth, news),
+            check_trade_news_pressure(snap, news, trade),
         ]
 
         for result in check_results:
@@ -1041,6 +1318,9 @@ def main() -> int:
                 source_signals, conf_rationale,
             )
 
+            # Pick related news articles for this alert + country
+            related_news = pick_related_news(raw_arts, alert_type, max_n=3)
+
             # Convert to dict and enrich
             d = asdict(result)
             d["alert_type"]          = alert_type
@@ -1050,6 +1330,13 @@ def main() -> int:
             d["source_signals"]      = source_signals
             d["confidence_rationale"] = conf_rationale
             d["ai_explanation"]      = ai_expl
+            d["related_news"]        = related_news
+            d["related_indicators"]  = ALERT_TYPE_INDICATORS.get(alert_type, ["gdpGrowth"])
+            d["source_files_used"]   = [
+                str(WB_FILE.relative_to(SCRIPT_DIR)),
+                str(NEWS_FILE.relative_to(SCRIPT_DIR)),
+                str(TRADE_FILE.relative_to(SCRIPT_DIR)),
+            ]
             d["data_sources_used"]   = [
                 f"World Bank {snap.year}",
                 f"GDELT 7-day (as of {today.strftime('%Y-%m-%d')})",
@@ -1139,9 +1426,9 @@ def main() -> int:
             "min_score_filter":   args.min_score,
             "news_window_days":   7,
             "alert_types": [
-                "export_stress", "import_shock", "inflation_pressure",
-                "political_risk_rising", "trade_dependency_risk",
-                "regional_spillover", "fdi_weakness", "growth_slowdown",
+                "growth_slowdown", "export_stress", "import_shock",
+                "inflation_pressure", "political_risk_rising", "trade_news_pressure",
+                "trade_dependency_risk", "fdi_weakness", "regional_spillover",
             ],
             "confidence_methodology": (
                 "Each alert is independently verified against 3 data sources: "

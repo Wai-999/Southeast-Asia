@@ -9,6 +9,22 @@ import { getCountry } from "@/data/sample-data";
 import type { PatternAlert } from "@/data/sample-data";
 import type { SourceMeta, SourceConfidence } from "@/lib/source-meta";
 import { CONF_DOT, CONF_LABEL } from "@/lib/source-meta";
+import type { RelatedNewsItem } from "@/data/pattern-alerts";
+
+/** Tone → short sentiment label. */
+function toneSentiment(tone: number): { label: string; cls: string } {
+  if (tone < -0.3) return { label: "negative",  cls: "text-red-500"   };
+  if (tone < -0.1) return { label: "slightly −", cls: "text-amber-500" };
+  if (tone >  0.2) return { label: "positive",   cls: "text-emerald-600" };
+  return { label: "neutral", cls: "text-slate-400" };
+}
+
+/** Bullet colour for a news impact score. */
+function impactDot(score: number): string {
+  if (score >= 4) return "bg-red-500";
+  if (score >= 3) return "bg-amber-400";
+  return "bg-slate-300";
+}
 
 interface Props {
   alert:    PatternAlert;
@@ -21,6 +37,8 @@ interface Props {
   confidence?: SourceConfidence;
   /** Optional: how many of the 3 sources agreed */
   sourcesCount?: number;
+  /** Optional: up to 3 related GDELT news articles */
+  relatedNews?: RelatedNewsItem[];
 }
 
 function calcProgress(triggerValue: number, threshold: number): number {
@@ -30,7 +48,7 @@ function calcProgress(triggerValue: number, threshold: number): number {
 
 export default function AlertCard({
   alert, compact = false,
-  source, conditions, confidence, sourcesCount,
+  source, conditions, confidence, sourcesCount, relatedNews,
 }: Props) {
   const country    = getCountry(alert.countryId);
   const progress   = calcProgress(alert.triggerValue, alert.threshold);
@@ -137,6 +155,50 @@ export default function AlertCard({
 
       {compact && (
         <p className="text-[10px] text-slate-400">{alert.triggeredAt}</p>
+      )}
+
+      {/* ── Related news (up to 3 GDELT articles) ───────────────────── */}
+      {!compact && relatedNews && relatedNews.length > 0 && (
+        <div className="mt-3 pt-3 border-t border-slate-100">
+          <p className="text-[9px] font-semibold uppercase tracking-widest text-slate-400 mb-1.5">
+            Related News · GDELT
+          </p>
+          <ul className="space-y-1">
+            {relatedNews.map((item, i) => {
+              const sent = toneSentiment(item.tone);
+              return (
+                <li key={i} className="flex items-start gap-1.5">
+                  <span className={cn(
+                    "w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1",
+                    impactDot(item.impact_score),
+                  )} />
+                  <div className="min-w-0 flex-1">
+                    {item.url ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[10px] text-slate-700 hover:text-indigo-700 hover:underline line-clamp-1 font-medium"
+                      >
+                        {item.title || "(no title)"}
+                      </a>
+                    ) : (
+                      <span className="text-[10px] text-slate-700 line-clamp-1 font-medium">
+                        {item.title || "(no title)"}
+                      </span>
+                    )}
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      <span className="text-[9px] text-slate-400">{item.date}</span>
+                      <span className={cn("text-[9px] font-medium", sent.cls)}>
+                        {sent.label}
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       )}
 
       {/* ── Source details ───────────────────────────────────────────── */}

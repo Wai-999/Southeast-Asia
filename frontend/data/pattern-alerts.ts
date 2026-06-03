@@ -32,6 +32,17 @@ interface SourceSignals {
   sources_count:  number;
 }
 
+/** A single related GDELT news article attached to an alert. */
+export interface RelatedNewsItem {
+  title:        string;
+  url:          string;
+  date:         string;
+  category:     string;
+  tone:         number;
+  impact_score: number;
+  source:       string;
+}
+
 interface RawAlert {
   alert_id:             string;
   alert_type:           string;
@@ -57,6 +68,12 @@ interface RawAlert {
   confidence_rationale: string;
   ai_explanation:       string;
   data_sources_used:    string[];
+  /** Up to 3 GDELT articles relevant to this alert's type + country. */
+  related_news:         RelatedNewsItem[];
+  /** World Bank indicator keys this alert is based on. */
+  related_indicators:   string[];
+  /** Pipeline input files that contributed to this alert. */
+  source_files_used:    string[];
   generated_at:         string;
 }
 
@@ -78,6 +95,8 @@ interface PatternAlertsMeta {
   alert_types:           string[];
   confidence_methodology: string;
   refresh_note:          string;
+  /** Number of alert types (9 as of Phase 7D). */
+  alert_type_count?:     number;
 }
 
 interface PatternAlertsJson {
@@ -120,6 +139,12 @@ export interface EnrichedAlert extends PatternAlert {
   color:                string;
   /** Tailwind background colour class. */
   bgColor:              string;
+  /** Up to 3 GDELT articles relevant to this alert. */
+  relatedNews:          RelatedNewsItem[];
+  /** World Bank indicator keys this alert is derived from. */
+  relatedIndicators:    string[];
+  /** Source pipeline files used to generate this alert. */
+  sourceFilesUsed:      string[];
 }
 
 export type ConfidenceLevel = "high" | "medium" | "low";
@@ -201,6 +226,9 @@ function toEnrichedAlert(r: RawAlert): EnrichedAlert {
     metricToHighlight:   r.metric_to_highlight  ?? "",
     color:               r.color                ?? "#6B7280",
     bgColor:             r.bg_color             ?? "#F9FAFB",
+    relatedNews:         r.related_news         ?? [],
+    relatedIndicators:   r.related_indicators   ?? [],
+    sourceFilesUsed:     r.source_files_used    ?? [],
   };
 }
 
