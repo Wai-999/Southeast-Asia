@@ -1,139 +1,145 @@
 {
   "_meta": {
     "description": "UN Comtrade / IMF DOTS trade pipeline run log \u2014 SEA Dashboard",
-    "generated_at": "2026-06-02T10:52:35",
+    "generated_at": "2026-06-03T02:31:06",
     "pipeline": "pipeline/fetch_comtrade.py",
     "format": "last_run mirrors runs[-1]; runs keeps last 30 entries"
   },
   "last_run": {
-    "run_id": "20260602T105235",
-    "started_at": "2026-06-02T10:52:35",
-    "finished_at": "2026-06-02T10:52:35",
-    "elapsed_seconds": 0,
+    "run_id": "20260603T023106",
+    "started_at": "2026-06-03T02:29:04",
+    "finished_at": "2026-06-03T02:31:06",
+    "elapsed_seconds": 121.8,
     "status": "success",
-    "api_mode": "curated",
-    "reporters": 10,
+    "api_mode": "comtrade_free",
+    "reporters": 11,
     "partners": 7,
     "years": [
+      2019,
+      2020,
       2021,
       2022,
       2023
     ],
     "latest_year": 2023,
-    "annual_flow_rows": 420,
+    "annual_flow_rows": 558,
     "monthly_rows": 0,
-    "high_dependency_pairs": 1,
-    "high_dependency_list": [
-      {
-        "reporter": "LAO",
-        "partner": "CHN",
-        "share_pct": 49.0
-      }
-    ],
+    "high_dependency_pairs": 0,
+    "high_dependency_list": [],
     "errors": [],
     "by_reporter": {
       "THA": {
         "name": "Thailand",
-        "total_exports_usd_b": 241.4,
-        "total_imports_usd_b": 248.8,
-        "trade_balance_usd_b": -7.4,
+        "total_exports_usd_b": 59.377,
+        "total_imports_usd_b": 62.434,
+        "trade_balance_usd_b": -3.057,
         "top_export_partner": "USA",
         "top_import_partner": "CHN",
         "china_overall_risk": "low",
-        "china_partner_share_pct": 19.7
+        "china_partner_share_pct": 10.7
       },
       "VNM": {
         "name": "Vietnam",
-        "total_exports_usd_b": 354.7,
-        "total_imports_usd_b": 328.4,
-        "trade_balance_usd_b": 26.3,
+        "total_exports_usd_b": 353.078,
+        "total_imports_usd_b": 325.444,
+        "trade_balance_usd_b": 27.634,
         "top_export_partner": "USA",
         "top_import_partner": "CHN",
         "china_overall_risk": "medium",
-        "china_partner_share_pct": 26.2
+        "china_partner_share_pct": 25.2
       },
       "MMR": {
         "name": "Myanmar",
-        "total_exports_usd_b": 14.6,
-        "total_imports_usd_b": 13.8,
-        "trade_balance_usd_b": 0.8,
+        "total_exports_usd_b": 14.753,
+        "total_imports_usd_b": 16.44,
+        "trade_balance_usd_b": -1.687,
         "top_export_partner": "CHN",
         "top_import_partner": "CHN",
         "china_overall_risk": "medium",
-        "china_partner_share_pct": 37.3
+        "china_partner_share_pct": 27.3
       },
       "KHM": {
         "name": "Cambodia",
-        "total_exports_usd_b": 22.1,
-        "total_imports_usd_b": 26.5,
-        "trade_balance_usd_b": -4.4,
+        "total_exports_usd_b": 21.678,
+        "total_imports_usd_b": 24.411,
+        "trade_balance_usd_b": -2.733,
         "top_export_partner": "USA",
         "top_import_partner": "CHN",
         "china_overall_risk": "medium",
-        "china_partner_share_pct": 23.9
+        "china_partner_share_pct": 26.7
       },
       "LAO": {
         "name": "Laos",
-        "total_exports_usd_b": 8.1,
-        "total_imports_usd_b": 7.6,
-        "trade_balance_usd_b": 0.5,
+        "total_exports_usd_b": 6.042,
+        "total_imports_usd_b": 7.075,
+        "trade_balance_usd_b": -1.033,
         "top_export_partner": "CHN",
         "top_import_partner": "CHN",
-        "china_overall_risk": "high",
-        "china_partner_share_pct": 49.0
+        "china_overall_risk": "medium",
+        "china_partner_share_pct": 33.7
       },
       "MYS": {
         "name": "Malaysia",
-        "total_exports_usd_b": 305.8,
-        "total_imports_usd_b": 278.5,
-        "trade_balance_usd_b": 27.3,
+        "total_exports_usd_b": 312.605,
+        "total_imports_usd_b": 265.638,
+        "trade_balance_usd_b": 46.967,
+        "top_export_partner": "CHN",
+        "top_import_partner": "CHN",
+        "china_overall_risk": "low",
+        "china_partner_share_pct": 17.1
+      },
+      "SGP": {
+        "name": "Singapore",
+        "total_exports_usd_b": 475.349,
+        "total_imports_usd_b": 422.42,
+        "trade_balance_usd_b": 52.929,
+        "top_export_partner": "CHN",
+        "top_import_partner": "CHN",
+        "china_overall_risk": "low",
+        "china_partner_share_pct": 13.9
+      },
+      "IDN": {
+        "name": "Indonesia",
+        "total_exports_usd_b": 259.528,
+        "total_imports_usd_b": 223.107,
+        "trade_balance_usd_b": 36.421,
+        "top_export_partner": "CHN",
+        "top_import_partner": "CHN",
+        "china_overall_risk": "medium",
+        "china_partner_share_pct": 26.6
+      },
+      "PHL": {
+        "name": "Philippines",
+        "total_exports_usd_b": 72.923,
+        "total_imports_usd_b": 133.752,
+        "trade_balance_usd_b": -60.829,
+        "top_export_partner": "USA",
+        "top_import_partner": "CHN",
+        "china_overall_risk": "medium",
+        "china_partner_share_pct": 20.1
+      },
+      "BRN": {
+        "name": "Brunei",
+        "total_exports_usd_b": null,
+        "total_imports_usd_b": null,
+        "trade_balance_usd_b": null,
+        "top_export_partner": null,
+        "top_import_partner": null,
+        "china_overall_risk": null,
+        "china_partner_share_pct": null
+      },
+      "TLS": {
+        "name": "Timor-Leste",
+        "total_exports_usd_b": 0.164,
+        "total_imports_usd_b": 0.909,
+        "trade_balance_usd_b": -0.745,
         "top_export_partner": "CHN",
         "top_import_partner": "CHN",
         "china_overall_risk": "low",
         "china_partner_share_pct": 19.1
-      },
-      "SGP": {
-        "name": "Singapore",
-        "total_exports_usd_b": 443.8,
-        "total_imports_usd_b": 404.2,
-        "trade_balance_usd_b": 39.6,
-        "top_export_partner": "CHN",
-        "top_import_partner": "USA",
-        "china_overall_risk": "low",
-        "china_partner_share_pct": 16.5
-      },
-      "IDN": {
-        "name": "Indonesia",
-        "total_exports_usd_b": 258.8,
-        "total_imports_usd_b": 221.4,
-        "trade_balance_usd_b": 37.4,
-        "top_export_partner": "CHN",
-        "top_import_partner": "CHN",
-        "china_overall_risk": "medium",
-        "china_partner_share_pct": 25.4
-      },
-      "PHL": {
-        "name": "Philippines",
-        "total_exports_usd_b": 73.5,
-        "total_imports_usd_b": 121.8,
-        "trade_balance_usd_b": -48.3,
-        "top_export_partner": "JPN",
-        "top_import_partner": "CHN",
-        "china_overall_risk": "low",
-        "china_partner_share_pct": 16.4
-      },
-      "BRN": {
-        "name": "Brunei",
-        "total_exports_usd_b": 12.5,
-        "total_imports_usd_b": 4.8,
-        "trade_balance_usd_b": 7.7,
-        "top_export_partner": "JPN",
-        "top_import_partner": "CHN",
-        "china_overall_risk": "low",
-        "china_partner_share_pct": 11.6
       }
     },
-    "data_label": "OFFICIAL TRADE STATISTICS \u2014 bilateral goods trade, annual. Source: UN Comtrade / IMF DOTS. Data lag: 1-2 years. Not real-time.",
+    "data_label": "OFFICIAL TRADE STATISTICS \u2014 bilateral goods trade, annual. Source: UN Comtrade / IMF DOTS. Data lag: 1\u20132 years. Not real-time.",
     "note": "Annual trade data. Monthly available via UN Comtrade Plus API (set COMTRADE_SUBSCRIPTION_KEY in .env). Dependency risk: partner_share = bilateral_trade / total_trade. >40% = high, 20-40% = medium, <20% = low."
   },
   "runs": [
@@ -266,6 +272,143 @@
         }
       },
       "data_label": "OFFICIAL TRADE STATISTICS \u2014 bilateral goods trade, annual. Source: UN Comtrade / IMF DOTS. Data lag: 1-2 years. Not real-time.",
+      "note": "Annual trade data. Monthly available via UN Comtrade Plus API (set COMTRADE_SUBSCRIPTION_KEY in .env). Dependency risk: partner_share = bilateral_trade / total_trade. >40% = high, 20-40% = medium, <20% = low."
+    },
+    {
+      "run_id": "20260603T023106",
+      "started_at": "2026-06-03T02:29:04",
+      "finished_at": "2026-06-03T02:31:06",
+      "elapsed_seconds": 121.8,
+      "status": "success",
+      "api_mode": "comtrade_free",
+      "reporters": 11,
+      "partners": 7,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "latest_year": 2023,
+      "annual_flow_rows": 558,
+      "monthly_rows": 0,
+      "high_dependency_pairs": 0,
+      "high_dependency_list": [],
+      "errors": [],
+      "by_reporter": {
+        "THA": {
+          "name": "Thailand",
+          "total_exports_usd_b": 59.377,
+          "total_imports_usd_b": 62.434,
+          "trade_balance_usd_b": -3.057,
+          "top_export_partner": "USA",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "low",
+          "china_partner_share_pct": 10.7
+        },
+        "VNM": {
+          "name": "Vietnam",
+          "total_exports_usd_b": 353.078,
+          "total_imports_usd_b": 325.444,
+          "trade_balance_usd_b": 27.634,
+          "top_export_partner": "USA",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 25.2
+        },
+        "MMR": {
+          "name": "Myanmar",
+          "total_exports_usd_b": 14.753,
+          "total_imports_usd_b": 16.44,
+          "trade_balance_usd_b": -1.687,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 27.3
+        },
+        "KHM": {
+          "name": "Cambodia",
+          "total_exports_usd_b": 21.678,
+          "total_imports_usd_b": 24.411,
+          "trade_balance_usd_b": -2.733,
+          "top_export_partner": "USA",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 26.7
+        },
+        "LAO": {
+          "name": "Laos",
+          "total_exports_usd_b": 6.042,
+          "total_imports_usd_b": 7.075,
+          "trade_balance_usd_b": -1.033,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 33.7
+        },
+        "MYS": {
+          "name": "Malaysia",
+          "total_exports_usd_b": 312.605,
+          "total_imports_usd_b": 265.638,
+          "trade_balance_usd_b": 46.967,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "low",
+          "china_partner_share_pct": 17.1
+        },
+        "SGP": {
+          "name": "Singapore",
+          "total_exports_usd_b": 475.349,
+          "total_imports_usd_b": 422.42,
+          "trade_balance_usd_b": 52.929,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "low",
+          "china_partner_share_pct": 13.9
+        },
+        "IDN": {
+          "name": "Indonesia",
+          "total_exports_usd_b": 259.528,
+          "total_imports_usd_b": 223.107,
+          "trade_balance_usd_b": 36.421,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 26.6
+        },
+        "PHL": {
+          "name": "Philippines",
+          "total_exports_usd_b": 72.923,
+          "total_imports_usd_b": 133.752,
+          "trade_balance_usd_b": -60.829,
+          "top_export_partner": "USA",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "medium",
+          "china_partner_share_pct": 20.1
+        },
+        "BRN": {
+          "name": "Brunei",
+          "total_exports_usd_b": null,
+          "total_imports_usd_b": null,
+          "trade_balance_usd_b": null,
+          "top_export_partner": null,
+          "top_import_partner": null,
+          "china_overall_risk": null,
+          "china_partner_share_pct": null
+        },
+        "TLS": {
+          "name": "Timor-Leste",
+          "total_exports_usd_b": 0.164,
+          "total_imports_usd_b": 0.909,
+          "trade_balance_usd_b": -0.745,
+          "top_export_partner": "CHN",
+          "top_import_partner": "CHN",
+          "china_overall_risk": "low",
+          "china_partner_share_pct": 19.1
+        }
+      },
+      "data_label": "OFFICIAL TRADE STATISTICS \u2014 bilateral goods trade, annual. Source: UN Comtrade / IMF DOTS. Data lag: 1\u20132 years. Not real-time.",
       "note": "Annual trade data. Monthly available via UN Comtrade Plus API (set COMTRADE_SUBSCRIPTION_KEY in .env). Dependency risk: partner_share = bilateral_trade / total_trade. >40% = high, 20-40% = medium, <20% = low."
     }
   ]

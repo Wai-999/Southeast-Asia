@@ -3,7 +3,7 @@
 /**
  * app/trade/page.tsx — Trade Relationships & Dependency Risk
  *
- * Shows bilateral trade data for 10 SEA countries against 7 key partners.
+ * Shows bilateral trade data for 11 SEA countries against 7 key partners.
  *
  * Sections:
  *  1. Dependency Risk Heatmap  — 10 × 7 color-coded matrix
@@ -114,7 +114,7 @@ export default function TradePage() {
             Trade Relationships &amp; Dependency Risk
           </h1>
           <p className="text-slate-500 text-sm mt-0.5">
-            10 SEA countries · 7 key partners ·{" "}
+            {TF_REPORTERS.length} SEA countries · 7 key partners ·{" "}
             {TF_DATA_STATUS === "live"
               ? <span className="text-emerald-600 font-medium">
                   {TF_META.source.split("/")[0].trim()}
@@ -320,8 +320,13 @@ export default function TradePage() {
             </table>
           </div>
 
-          <div className="px-5 py-3 bg-slate-50/50 border-t border-slate-100 text-[10px] text-slate-400">
-            Click any row to see the full country breakdown · {TF_META.dependency_formula}
+          <div className="px-5 py-3 bg-slate-50/50 border-t border-slate-100 flex flex-wrap items-center justify-between gap-y-1">
+            <span className="text-[10px] text-slate-400">
+              Click any row for full breakdown · {TF_META.dependency_formula}
+            </span>
+            <span className="text-[10px] text-amber-600">
+              ⚠ Brunei &amp; Timor-Leste: limited UN Comtrade coverage — data may be partial
+            </span>
           </div>
         </div>
       )}
@@ -349,6 +354,23 @@ export default function TradePage() {
               </button>
             ))}
           </div>
+
+          {/* Limited-data banner for Timor-Leste / Brunei */}
+          {(selectedReporter === "TLS" || selectedReporter === "BRN") && (
+            <div className="mb-5 px-4 py-3 bg-amber-50 border border-amber-200 rounded-xl flex items-start gap-2.5">
+              <span className="text-lg shrink-0">⚠</span>
+              <div>
+                <p className="text-xs font-semibold text-amber-800">
+                  Limited trade statistics — {selectedReporter === "TLS" ? "Timor-Leste" : "Brunei"}
+                </p>
+                <p className="text-xs text-amber-600 mt-0.5">
+                  {selectedReporter === "TLS"
+                    ? "Timor-Leste has limited statistical capacity. UN Comtrade coverage may be sparse or absent for some years and partners. Data shown should be treated as partial and indicative only."
+                    : "Brunei has partial UN Comtrade coverage. Some year-partner combinations may be missing. Data shown should be cross-checked against official Brunei DEPS statistics."}
+                </p>
+              </div>
+            </div>
+          )}
 
           {dep && reporterMeta ? (
             <>
@@ -530,7 +552,7 @@ export default function TradePage() {
         <div>
           <div className="card-p mb-6">
             <h2 className="font-semibold text-slate-900 mb-1">
-              Trade Balance — 10 SEA Countries ({selectedYear})
+              Trade Balance — {TF_REPORTERS.length} SEA Countries ({selectedYear})
             </h2>
             <p className="text-xs text-slate-400 mb-4">
               Exports (FOB) − Imports (CIF) · Positive = Surplus · Negative = Deficit

@@ -98,13 +98,13 @@ NEWS_FILE = PROC_DIR / "news_signals.json"
 TRADE_FILE = PROC_DIR / "trade_flows.json"
 OUT_FILE  = PROC_DIR / "pattern_alerts.json"
 
-SEA_REPORTERS: set[str] = {"THA", "VNM", "MMR", "KHM", "LAO", "MYS", "SGP", "IDN", "PHL", "BRN"}
+SEA_REPORTERS: set[str] = {"THA", "VNM", "MMR", "KHM", "LAO", "MYS", "SGP", "IDN", "PHL", "BRN", "TLS"}
 
 SEA_NAMES: dict[str, str] = {
     "THA": "Thailand",    "VNM": "Vietnam",     "MMR": "Myanmar",
     "KHM": "Cambodia",    "LAO": "Laos",         "MYS": "Malaysia",
     "SGP": "Singapore",   "IDN": "Indonesia",    "PHL": "Philippines",
-    "BRN": "Brunei",
+    "BRN": "Brunei",      "TLS": "Timor-Leste",
 }
 
 # Categories that signal political risk in GDELT articles
@@ -120,10 +120,12 @@ NEGATIVE_TONE_THRESHOLD = -0.20
 POLITICAL_BASELINE: dict[str, float] = {
     "MMR": 4.0, "THA": 2.5, "PHL": 2.0, "IDN": 1.5, "KHM": 1.5,
     "VNM": 1.0, "MYS": 1.0, "LAO": 0.5, "SGP": 0.5, "BRN": 0.3,
+    "TLS": 0.5,   # ASEAN candidate; limited press coverage in GDELT
 }
 TRADE_BASELINE: dict[str, float] = {
     "SGP": 3.0, "MYS": 2.0, "VNM": 2.0, "THA": 2.0, "IDN": 1.5,
     "PHL": 1.5, "KHM": 1.0, "MMR": 1.0, "LAO": 1.0, "BRN": 0.5,
+    "TLS": 0.2,   # Timor-Leste: minimal trade news expected
 }
 
 # ── World Bank indicator keys used by each alert type ───────────────────────

@@ -172,16 +172,17 @@ export interface TfCountry {
 }
 
 export const TF_REPORTERS: TfCountry[] = [
-  { code: "THA", name: "Thailand",    flag: "🇹🇭" },
-  { code: "VNM", name: "Vietnam",     flag: "🇻🇳" },
-  { code: "MMR", name: "Myanmar",     flag: "🇲🇲" },
-  { code: "KHM", name: "Cambodia",    flag: "🇰🇭" },
-  { code: "LAO", name: "Laos",        flag: "🇱🇦" },
-  { code: "MYS", name: "Malaysia",    flag: "🇲🇾" },
-  { code: "SGP", name: "Singapore",   flag: "🇸🇬" },
-  { code: "IDN", name: "Indonesia",   flag: "🇮🇩" },
-  { code: "PHL", name: "Philippines", flag: "🇵🇭" },
-  { code: "BRN", name: "Brunei",      flag: "🇧🇳" },
+  { code: "THA", name: "Thailand",     flag: "🇹🇭" },
+  { code: "VNM", name: "Vietnam",      flag: "🇻🇳" },
+  { code: "MMR", name: "Myanmar",      flag: "🇲🇲" },
+  { code: "KHM", name: "Cambodia",     flag: "🇰🇭" },
+  { code: "LAO", name: "Laos",         flag: "🇱🇦" },
+  { code: "MYS", name: "Malaysia",     flag: "🇲🇾" },
+  { code: "SGP", name: "Singapore",    flag: "🇸🇬" },
+  { code: "IDN", name: "Indonesia",    flag: "🇮🇩" },
+  { code: "PHL", name: "Philippines",  flag: "🇵🇭" },
+  { code: "BRN", name: "Brunei",       flag: "🇧🇳" },
+  { code: "TLS", name: "Timor-Leste",  flag: "🇹🇱" },
 ];
 
 export const TF_PARTNERS: TfCountry[] = [
@@ -195,7 +196,11 @@ export const TF_PARTNERS: TfCountry[] = [
 ];
 
 // Combined lookup
-const _allCountries = [...TF_REPORTERS, ...TF_PARTNERS, { code:"WLD", name:"World (Total)", flag:"🌐" }];
+const _allCountries = [
+  ...TF_REPORTERS,
+  ...TF_PARTNERS,
+  { code:"WLD", name:"World (Total)", flag:"🌐" },
+];
 export function getTfCountry(code: string): TfCountry | undefined {
   return _allCountries.find(c => c.code === code);
 }

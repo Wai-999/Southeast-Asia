@@ -58,11 +58,12 @@ OUTPUT FILES
 USAGE
 ──────
     cd pipeline
-    python fetch_comtrade.py                    # all 10 reporters, latest years
+    python fetch_comtrade.py                    # all 11 reporters, latest years
     python fetch_comtrade.py --years 2021,2022,2023
     python fetch_comtrade.py --year 2023
     python fetch_comtrade.py --monthly 2023     # fetch monthly breakdown too
     python fetch_comtrade.py --reporter THA     # single country test
+    python fetch_comtrade.py --reporter TLS     # Timor-Leste (limited coverage)
     python fetch_comtrade.py --refresh          # bypass cache
     python fetch_comtrade.py --dry-run          # print URLs, no fetch
 
@@ -76,6 +77,8 @@ LIMITATIONS
        individual EU members instead.
     6. FOB vs CIF: Exports are FOB; Imports are CIF (~5-10% higher).
        This affects trade balance calculation.
+    7. Timor-Leste: very limited statistical capacity. UN Comtrade coverage is
+       sparse. Dependency data should be treated as partial/indicative only.
 
 ==============================================================================
 """
@@ -147,6 +150,13 @@ REPORTERS: dict[str, dict] = {
     "IDN": {"name": "Indonesia",    "flag": "🇮🇩", "comtrade_num": "360", "imf_iso2": "ID"},
     "PHL": {"name": "Philippines",  "flag": "🇵🇭", "comtrade_num": "608", "imf_iso2": "PH"},
     "BRN": {"name": "Brunei",       "flag": "🇧🇳", "comtrade_num": "096", "imf_iso2": "BN"},
+    "TLS": {
+        "name": "Timor-Leste",
+        "flag": "🇹🇱",
+        "comtrade_num": "626",
+        "imf_iso2": "TL",
+        "note": "Limited UN Comtrade coverage. Data may be sparse or unavailable for some years. Treat as partial/indicative.",
+    },
 }
 
 PARTNERS: dict[str, dict] = {
@@ -1001,6 +1011,7 @@ def save_processed_json(
                 "Exports: FOB. Imports: CIF (~5-10% higher). Affects trade balance.",
                 "Myanmar post-2021: sparse data, use with caution.",
                 "Brunei: partial coverage.",
+                "Timor-Leste: very limited statistical capacity; data may be sparse or unavailable.",
                 "EU: available in Comtrade mode. IMF DOTS uses U2 (Euro Area) as proxy.",
                 "Dependency risk uses combined (export+import) share against total bilateral trade.",
             ],
