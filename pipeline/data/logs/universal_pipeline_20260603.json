@@ -1,0 +1,131 @@
+{
+  "run_at": "2026-06-03T21:36:51.412713Z",
+  "mode": "full",
+  "steps_run": [
+    "registries",
+    "wb",
+    "wb_ext",
+    "imf",
+    "adb",
+    "asean",
+    "comtrade",
+    "tourism",
+    "energy",
+    "technology",
+    "environment",
+    "nso",
+    "cb",
+    "ministries",
+    "infra",
+    "press",
+    "normalize",
+    "merge",
+    "validate",
+    "freshness"
+  ],
+  "total_secs": 573.8,
+  "steps_passed": 20,
+  "steps_failed": 0,
+  "step_results": {
+    "registries": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.0
+    },
+    "wb": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 8.7
+    },
+    "wb_ext": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 78.5
+    },
+    "imf": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.2
+    },
+    "adb": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 3.3
+    },
+    "asean": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 5.6
+    },
+    "comtrade": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 202.3
+    },
+    "tourism": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 2.3
+    },
+    "energy": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 5.6
+    },
+    "technology": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 93.2
+    },
+    "environment": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 28.8
+    },
+    "nso": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 50.4
+    },
+    "cb": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 48.7
+    },
+    "ministries": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 5.1
+    },
+    "infra": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 31.8
+    },
+    "press": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 9.1
+    },
+    "normalize": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.1
+    },
+    "merge": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.1
+    },
+    "validate": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.0
+    },
+    "freshness": {
+      "status": "pass",
+      "exit_code": 0,
+      "duration_secs": 0.0
+    }
+  }
+}

@@ -72,12 +72,13 @@ ALL_WB2 = ";".join(WB_CODES.keys())
 # Extended WB indicators beyond the core 8
 EXTENDED_INDICATORS = {
     # Governance (WGI) – annual
+    # WGI data lives in WB source 3 under GOV_WGI_* series codes (not the legacy GE.EST etc.)
     "governance": {
-        "GE.EST":  {"sector": "politics_policy",   "code": "GOVERNANCE_EFFECTIVENESS", "name": "Government Effectiveness (WGI)",    "unit": "Score -2.5/2.5"},
-        "RL.EST":  {"sector": "politics_policy",   "code": "RULE_OF_LAW",              "name": "Rule of Law (WGI)",                 "unit": "Score -2.5/2.5"},
-        "PV.EST":  {"sector": "security_conflict", "code": "POLITICAL_STABILITY",      "name": "Political Stability (WGI)",         "unit": "Score -2.5/2.5"},
-        "CC.EST":  {"sector": "security_conflict", "code": "CORRUPTION_PERCEPTION",    "name": "Control of Corruption (WGI)",       "unit": "Score -2.5/2.5"},
-        "VA.EST":  {"sector": "politics_policy",   "code": "VOICE_ACCOUNTABILITY",     "name": "Voice and Accountability (WGI)",    "unit": "Score -2.5/2.5"},
+        "GOV_WGI_GE.EST": {"sector": "politics_policy",   "code": "GOVERNANCE_EFFECTIVENESS", "name": "Government Effectiveness (WGI)",    "unit": "Score -2.5/2.5"},
+        "GOV_WGI_RL.EST": {"sector": "politics_policy",   "code": "RULE_OF_LAW",              "name": "Rule of Law (WGI)",                 "unit": "Score -2.5/2.5"},
+        "GOV_WGI_PV.EST": {"sector": "security_conflict", "code": "POLITICAL_STABILITY",      "name": "Political Stability (WGI)",         "unit": "Score -2.5/2.5"},
+        "GOV_WGI_CC.EST": {"sector": "security_conflict", "code": "CORRUPTION_PERCEPTION",    "name": "Control of Corruption (WGI)",       "unit": "Score -2.5/2.5"},
+        "GOV_WGI_VA.EST": {"sector": "politics_policy",   "code": "VOICE_ACCOUNTABILITY",     "name": "Voice and Accountability (WGI)",    "unit": "Score -2.5/2.5"},
     },
     # Social
     "social": {
@@ -129,11 +130,10 @@ MAX_RETRIES   = 3
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
-def _fetch_wb(wb_code: str, start: int, end: int, source: int | None = None) -> list:
+def _fetch_wb(wb_code: str, start: int, end: int) -> list:
     per_page = max(1000, len(WB_CODES) * (end - start + 2))
-    src_param = f"&source={source}" if source else ""
     url = (f"{WB_BASE}/country/{ALL_WB2}/indicator/{wb_code}"
-           f"?format=json&per_page={per_page}&date={start}:{end}{src_param}")
+           f"?format=json&per_page={per_page}&date={start}:{end}")
     for attempt in range(MAX_RETRIES):
         try:
             data = _get(url, timeout=45)
@@ -237,8 +237,7 @@ def main():
         print(f"\n  ── {cat_name.upper()} ─────────────────────────", flush=True)
         for wb_code, meta in indicators.items():
             print(f"  ▸ {wb_code:30s} {meta['name'][:35]}", flush=True)
-            wgi_source = 3 if cat_name == "governance" else None
-            raw = _fetch_wb(wb_code, START_YEAR, END_YEAR, source=wgi_source)
+            raw = _fetch_wb(wb_code, START_YEAR, END_YEAR)
             if not raw:
                 errors.append(f"{wb_code}: fetch failed")
                 print(f"    ✗ No data returned", flush=True)

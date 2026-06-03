@@ -1,6 +1,6 @@
 {
-  "validated_at": "2026-06-03T21:05:03.914203Z",
-  "row_count": 4701,
+  "validated_at": "2026-06-03T21:36:51.367997Z",
+  "row_count": 6173,
   "checks_total": 15,
   "checks_passed": 15,
   "checks_failed": 0,
@@ -51,7 +51,7 @@
     {
       "check_id": "C08_SECTORS",
       "status": "PASS",
-      "message": "At least 10 sectors represented (found 11)",
+      "message": "At least 10 sectors represented (found 16)",
       "detail": ""
     },
     {
@@ -94,7 +94,7 @@
       "check_id": "C15_WB_2025_REALISTIC",
       "status": "PASS",
       "message": "WB 2025 official_actual count is realistic (< 50 rows)",
-      "detail": "Found 16 WB 2025 official_actual rows"
+      "detail": "Found 38 WB 2025 official_actual rows"
     }
   ],
   "failed_checks": []
