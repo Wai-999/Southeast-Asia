@@ -129,10 +129,11 @@ MAX_RETRIES   = 3
 
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
-def _fetch_wb(wb_code: str, start: int, end: int) -> list:
+def _fetch_wb(wb_code: str, start: int, end: int, source: int | None = None) -> list:
     per_page = max(1000, len(WB_CODES) * (end - start + 2))
+    src_param = f"&source={source}" if source else ""
     url = (f"{WB_BASE}/country/{ALL_WB2}/indicator/{wb_code}"
-           f"?format=json&per_page={per_page}&date={start}:{end}")
+           f"?format=json&per_page={per_page}&date={start}:{end}{src_param}")
     for attempt in range(MAX_RETRIES):
         try:
             data = _get(url, timeout=45)
@@ -236,7 +237,8 @@ def main():
         print(f"\n  ── {cat_name.upper()} ─────────────────────────", flush=True)
         for wb_code, meta in indicators.items():
             print(f"  ▸ {wb_code:30s} {meta['name'][:35]}", flush=True)
-            raw = _fetch_wb(wb_code, START_YEAR, END_YEAR)
+            wgi_source = 3 if cat_name == "governance" else None
+            raw = _fetch_wb(wb_code, START_YEAR, END_YEAR, source=wgi_source)
             if not raw:
                 errors.append(f"{wb_code}: fetch failed")
                 print(f"    ✗ No data returned", flush=True)
