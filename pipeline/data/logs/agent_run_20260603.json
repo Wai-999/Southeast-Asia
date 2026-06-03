@@ -1,50 +1,209 @@
 {
-  "run_at": "2026-06-03T16:12:07.464876Z",
+  "run_at": "2026-06-03T16:24:57.070104Z",
   "mode": "api_only",
   "dry_run": false,
-  "rows_fetched": 4447,
+  "rows_fetched": 22100,
   "merge_stats": {
-    "added": 272,
-    "updated": 546,
-    "skipped": 3616,
+    "added": 17204,
+    "updated": 102,
+    "skipped": 4781,
     "protected": 13
   },
   "before_rows": 3279,
-  "after_rows": 3551,
+  "after_rows": 20755,
   "fetch_log": [
     {
-      "source": "WB core cache",
+      "source": "WB cache (worldbank_indicators.json)",
       "rows": 1632,
       "non_null": 1261
     },
     {
-      "source": "WB technology/governance",
-      "rows": 0,
+      "source": "World Bank API (extended)",
+      "batch": 1,
+      "codes": [
+        "NY.GDP.PCAP.CD",
+        "NY.GDP.MKTP.PP.CD",
+        "BN.CAB.XOKA.GD.ZS",
+        "NY.GNS.ICTR.ZS",
+        "NE.GDI.TOTL.ZS",
+        "NE.CON.PRVT.ZS",
+        "NV.SRV.TOTL.ZS",
+        "NV.IND.TOTL.ZS"
+      ],
+      "rows": 1632,
       "non_null": 0
     },
     {
-      "source": "WB energy/environment",
-      "rows": 680,
-      "non_null": 362
+      "source": "World Bank API (extended)",
+      "batch": 2,
+      "codes": [
+        "BX.TRF.PWKR.DT.GD.ZS",
+        "BX.TRF.PWKR.CD.DT",
+        "FP.CPI.TOTL",
+        "NY.GDP.DEFL.KD.ZG",
+        "SL.UEM.1524.ZS",
+        "SL.TLF.CACT.ZS",
+        "SL.TLF.TOTL.IN",
+        "SL.AGR.EMPL.ZS"
+      ],
+      "rows": 1632,
+      "non_null": 0
     },
     {
-      "source": "WB tourism",
-      "rows": 272,
-      "non_null": 56
+      "source": "World Bank API (extended)",
+      "batch": 3,
+      "codes": [
+        "SL.SRV.EMPL.ZS",
+        "SL.IND.EMPL.ZS",
+        "NE.TRD.GNFS.ZS",
+        "BX.GSR.NFSV.CD",
+        "BM.GSR.NFSV.CD",
+        "BX.KLT.DINV.CD.WD",
+        "BM.KLT.DINV.CD.WD",
+        "NE.GDI.FTOT.ZS"
+      ],
+      "rows": 1632,
+      "non_null": 0
     },
     {
-      "source": "ASEANstats",
-      "rows": 352,
-      "non_null": 194
+      "source": "World Bank API (extended)",
+      "batch": 4,
+      "codes": [
+        "PA.NUS.FCRF",
+        "FR.INR.LEND",
+        "FR.INR.DPST",
+        "FR.INR.RINR",
+        "FM.LBL.BMNY.ZG",
+        "FM.LBL.BMNY.GD.ZS",
+        "FS.AST.PRVT.GD.ZS",
+        "FI.RES.TOTL.CD"
+      ],
+      "rows": 1632,
+      "non_null": 0
     },
     {
-      "source": "WB infrastructure",
-      "rows": 15,
-      "non_null": 15
+      "source": "World Bank API (extended)",
+      "batch": 5,
+      "codes": [
+        "FB.AST.NPER.ZS",
+        "CM.MKT.LCAP.GD.ZS",
+        "GC.BAL.CASH.GD.ZS",
+        "GC.DOD.TOTL.GD.ZS",
+        "DT.DOD.DECT.GD.ZS",
+        "GC.REV.TOTL.GD.ZS",
+        "GC.XPN.TOTL.GD.ZS",
+        "GC.TAX.TOTL.GD.ZS"
+      ],
+      "rows": 1632,
+      "non_null": 0
     },
     {
-      "source": "WB agriculture/social",
-      "rows": 0,
+      "source": "World Bank API (extended)",
+      "batch": 6,
+      "codes": [
+        "MS.MIL.XPND.GD.ZS",
+        "DT.TDS.DECT.GN.ZS",
+        "ST.INT.ARVL",
+        "ST.INT.RCPT.CD",
+        "NV.IND.MANF.ZS",
+        "NV.IND.MANF.CD",
+        "TX.VAL.TECH.MF.ZS",
+        "TX.VAL.TECH.CD"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 7,
+      "codes": [
+        "NV.AGR.TOTL.ZS",
+        "AG.LND.ARBL.ZS",
+        "AG.CON.FERT.ZS",
+        "EG.FEC.RNEW.ZS",
+        "EG.ELC.ACCS.ZS",
+        "EG.EGY.PRIM.PP.KD",
+        "EN.ATM.CO2E.PC",
+        "EN.ATM.CO2E.PP.GD"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 8,
+      "codes": [
+        "EG.IMP.CONS.ZS",
+        "IT.NET.USER.ZS",
+        "IT.CEL.SETS.P2",
+        "IT.NET.BBND.P2",
+        "GB.XPD.RSDV.GD.ZS",
+        "SP.POP.SCIE.RD.P6",
+        "LP.LPI.OVRL.XQ",
+        "SP.URB.TOTL.IN.ZS"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 9,
+      "codes": [
+        "SP.URB.GROW",
+        "IS.ROD.DNST.K2",
+        "IS.SHP.GOOD.TU",
+        "IS.AIR.PSGR",
+        "IC.BUS.DFRN.XQ",
+        "AG.LND.FRST.ZS",
+        "EN.ATM.CO2E.KT",
+        "EN.ATM.METH.KT.CE"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 10,
+      "codes": [
+        "EN.ATM.PM25.MC.M3",
+        "SH.H2O.BASW.ZS",
+        "SH.STA.BASS.ZS",
+        "GE.EST",
+        "RL.EST",
+        "VA.EST",
+        "RQ.EST",
+        "PV.EST"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 11,
+      "codes": [
+        "CC.EST",
+        "SP.POP.GROW",
+        "SI.POV.LMIC",
+        "SI.POV.UMIC",
+        "SP.DYN.LE00.IN",
+        "SP.DYN.IMRT.IN",
+        "SH.STA.MMRT",
+        "SE.XPD.TOTL.GD.ZS"
+      ],
+      "rows": 1632,
+      "non_null": 0
+    },
+    {
+      "source": "World Bank API (extended)",
+      "batch": 12,
+      "codes": [
+        "SE.SEC.ENRR",
+        "SE.TER.ENRR",
+        "SH.XPD.CHEX.GD.ZS",
+        "SI.POV.GINI",
+        "FX.OWN.SELF.IN"
+      ],
+      "rows": 1020,
       "non_null": 0
     },
     {

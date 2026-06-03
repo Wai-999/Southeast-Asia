@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T16:12:07.460606Z",
-  "total_rows_input": 3551,
+  "generated_at": "2026-06-03T16:24:57.059467Z",
+  "total_rows_input": 20755,
   "countries_covered": 17,
   "sectors_covered": 17,
   "overall_coverage_pct": 38.9,
@@ -21,7 +21,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -49,7 +50,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -79,7 +81,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -106,9 +108,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -120,8 +122,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 3,
-            "missing_official": 13
+            "missing_official": 21,
+            "official_actual": 3
           },
           "status": "stale"
         },
@@ -159,8 +161,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -199,8 +201,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -242,7 +244,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -263,7 +265,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -291,7 +294,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -321,7 +325,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -348,9 +352,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -362,8 +366,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -401,8 +405,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -441,8 +445,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -484,7 +488,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -505,7 +509,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -533,7 +538,7 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "missing_official": 1
+            "missing_official": 13
           },
           "status": "recent"
         },
@@ -562,7 +567,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -589,9 +594,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -603,8 +608,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 3,
-            "missing_official": 13
+            "missing_official": 21,
+            "official_actual": 3
           },
           "status": "stale"
         },
@@ -642,8 +647,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -682,8 +687,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -725,7 +730,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -746,7 +751,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -774,7 +780,7 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "missing_official": 1
+            "missing_official": 13
           },
           "status": "recent"
         },
@@ -804,7 +810,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -831,9 +837,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -845,8 +851,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -884,8 +890,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -924,8 +930,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -967,7 +973,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -988,7 +994,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -1016,7 +1023,7 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "missing_official": 1
+            "missing_official": 13
           },
           "status": "recent"
         },
@@ -1046,7 +1053,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -1073,9 +1080,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -1087,8 +1094,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -1126,8 +1133,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 9,
-            "missing_official": 7
+            "missing_official": 27,
+            "official_actual": 9
           },
           "status": "stale"
         },
@@ -1166,8 +1173,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -1209,7 +1216,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -1230,7 +1237,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -1258,7 +1266,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -1288,7 +1297,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -1315,9 +1324,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -1329,8 +1338,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -1368,8 +1377,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -1408,8 +1417,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -1451,7 +1460,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -1472,7 +1481,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -1500,7 +1510,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -1530,7 +1541,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -1557,9 +1568,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -1573,8 +1584,8 @@
             "TOURISM_RECEIPTS_USD"
           ],
           "value_type_summary": {
-            "official_actual": 2,
-            "missing_official": 14
+            "missing_official": 22,
+            "official_actual": 2
           },
           "status": "stale"
         },
@@ -1612,8 +1623,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -1652,8 +1663,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -1695,7 +1706,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -1716,7 +1727,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -1744,7 +1756,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -1774,7 +1787,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -1801,9 +1814,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -1815,8 +1828,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -1854,8 +1867,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -1894,8 +1907,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -1937,7 +1950,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -1958,7 +1971,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -1986,7 +2000,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -2016,7 +2031,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -2043,9 +2058,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -2057,8 +2072,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -2096,8 +2111,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -2136,8 +2151,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -2179,7 +2194,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -2200,7 +2215,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -2228,7 +2244,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -2258,7 +2275,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -2285,9 +2302,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -2301,8 +2318,8 @@
             "TOURISM_RECEIPTS_USD"
           ],
           "value_type_summary": {
-            "official_actual": 2,
-            "missing_official": 14
+            "missing_official": 22,
+            "official_actual": 2
           },
           "status": "stale"
         },
@@ -2341,7 +2358,7 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "missing_official": 11,
+            "missing_official": 31,
             "official_actual": 5
           },
           "status": "stale"
@@ -2381,8 +2398,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -2424,7 +2441,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -2444,7 +2461,7 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "missing_official": 8,
+            "missing_official": 12,
             "official_actual": 18,
             "forecast_estimate": 6
           },
@@ -2502,7 +2519,7 @@
             "FDI_INFLOWS_USD"
           ],
           "value_type_summary": {
-            "missing_official": 6,
+            "missing_official": 18,
             "official_actual": 6
           },
           "status": "lagging"
@@ -2530,9 +2547,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -2546,8 +2563,8 @@
             "TOURISM_RECEIPTS_USD"
           ],
           "value_type_summary": {
-            "official_actual": 1,
-            "missing_official": 15
+            "missing_official": 23,
+            "official_actual": 1
           },
           "status": "stale"
         },
@@ -2585,8 +2602,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 9,
-            "missing_official": 7
+            "missing_official": 27,
+            "official_actual": 9
           },
           "status": "stale"
         },
@@ -2625,8 +2642,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -2687,7 +2704,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -2715,7 +2733,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -2745,7 +2764,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -2772,9 +2791,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -2788,8 +2807,8 @@
             "TOURISM_RECEIPTS_USD"
           ],
           "value_type_summary": {
-            "official_actual": 2,
-            "missing_official": 14
+            "missing_official": 22,
+            "official_actual": 2
           },
           "status": "stale"
         },
@@ -2827,8 +2846,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -2867,8 +2886,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -2910,7 +2929,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -2931,7 +2950,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -2959,7 +2979,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -2989,7 +3010,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -3016,9 +3037,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -3030,8 +3051,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -3069,8 +3090,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -3109,8 +3130,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -3152,7 +3173,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -3173,7 +3194,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -3201,7 +3223,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -3231,7 +3254,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -3258,9 +3281,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -3272,8 +3295,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -3311,8 +3334,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -3351,8 +3374,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -3394,7 +3417,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -3415,7 +3438,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -3443,7 +3467,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -3473,7 +3498,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -3500,9 +3525,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -3514,8 +3539,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 3,
-            "missing_official": 13
+            "missing_official": 21,
+            "official_actual": 3
           },
           "status": "stale"
         },
@@ -3553,8 +3578,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -3593,8 +3618,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -3636,7 +3661,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -3657,7 +3682,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -3685,7 +3711,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -3715,7 +3742,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -3742,9 +3769,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -3756,8 +3783,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -3795,8 +3822,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -3835,8 +3862,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -3878,7 +3905,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
@@ -3899,7 +3926,8 @@
           "missing_indicators": [],
           "value_type_summary": {
             "official_actual": 26,
-            "forecast_estimate": 6
+            "forecast_estimate": 6,
+            "missing_official": 4
           },
           "status": "lagging"
         },
@@ -3927,7 +3955,8 @@
           ],
           "value_type_summary": {
             "official_actual": 11,
-            "forecast_estimate": 1
+            "forecast_estimate": 1,
+            "missing_official": 12
           },
           "status": "recent"
         },
@@ -3957,7 +3986,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 14
           },
           "status": "lagging"
         },
@@ -3984,9 +4013,9 @@
             "GOVT_REVENUE_GDP"
           ],
           "value_type_summary": {
+            "missing_official": 20,
             "official_actual": 12,
-            "forecast_estimate": 4,
-            "missing_official": 8
+            "forecast_estimate": 4
           },
           "status": "lagging"
         },
@@ -3998,8 +4027,8 @@
           "coverage_score": 100.0,
           "missing_indicators": [],
           "value_type_summary": {
-            "official_actual": 4,
-            "missing_official": 12
+            "missing_official": 20,
+            "official_actual": 4
           },
           "status": "stale"
         },
@@ -4037,8 +4066,8 @@
             "CO2_PER_CAPITA"
           ],
           "value_type_summary": {
-            "official_actual": 8,
-            "missing_official": 8
+            "missing_official": 28,
+            "official_actual": 8
           },
           "status": "stale"
         },
@@ -4077,8 +4106,8 @@
             "CO2_TOTAL"
           ],
           "value_type_summary": {
-            "official_actual": 5,
-            "missing_official": 3
+            "missing_official": 7,
+            "official_actual": 5
           },
           "status": "stale"
         },
@@ -4120,7 +4149,7 @@
           ],
           "value_type_summary": {
             "official_actual": 10,
-            "missing_official": 2
+            "missing_official": 26
           },
           "status": "lagging"
         }
