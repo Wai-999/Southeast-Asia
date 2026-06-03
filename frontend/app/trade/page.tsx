@@ -117,7 +117,7 @@ export default function TradePage() {
             {TF_REPORTERS.length} SEA countries · 7 key partners ·{" "}
             {TF_DATA_STATUS === "live"
               ? <span className="text-emerald-600 font-medium">
-                  {TF_META.source.split("/")[0].trim()}
+                  {(TF_META?.source ?? "").split("/")[0].trim()}
                 </span>
               : <span className="text-amber-600">sample data</span>
             }
