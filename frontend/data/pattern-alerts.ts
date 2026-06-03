@@ -75,6 +75,17 @@ interface RawAlert {
   /** Pipeline input files that contributed to this alert. */
   source_files_used:    string[];
   generated_at:         string;
+  /** ISO timestamp when this specific alert object was created. */
+  created_at:           string;
+  /** Human-readable alias for values_used — raw numbers that triggered the alert. */
+  supporting_data:      Record<string, unknown>;
+  /**
+   * Composed limitation note: universal signal disclaimer + confidence hedge +
+   * alert-type data-lag note + country-specific coverage caveat (if any).
+   * Uses "may suggest", "could indicate", "early warning signal", "needs more data".
+   * Never says "will", "guaranteed", or "confirmed impact".
+   */
+  limitation_note:      string;
 }
 
 interface PatternAlertsMeta {
@@ -145,6 +156,15 @@ export interface EnrichedAlert extends PatternAlert {
   relatedIndicators:    string[];
   /** Source pipeline files used to generate this alert. */
   sourceFilesUsed:      string[];
+  /** ISO timestamp when this specific alert was created by the pipeline. */
+  createdAt:            string;
+  /** Raw indicator values that triggered this alert (human-readable alias for values_used). */
+  supportingData:       Record<string, unknown>;
+  /**
+   * Limitation note: explains data lags, source gaps, and hedged confidence.
+   * Always uses careful language: "may suggest", "early warning signal", "needs more data".
+   */
+  limitationNote:       string;
 }
 
 export type ConfidenceLevel = "high" | "medium" | "low";
@@ -229,6 +249,9 @@ function toEnrichedAlert(r: RawAlert): EnrichedAlert {
     relatedNews:         r.related_news         ?? [],
     relatedIndicators:   r.related_indicators   ?? [],
     sourceFilesUsed:     r.source_files_used    ?? [],
+    createdAt:           r.created_at           ?? r.generated_at ?? "",
+    supportingData:      r.supporting_data      ?? r.values_used  ?? {},
+    limitationNote:      r.limitation_note      ?? "",
   };
 }
 

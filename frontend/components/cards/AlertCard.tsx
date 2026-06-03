@@ -39,6 +39,12 @@ interface Props {
   sourcesCount?: number;
   /** Optional: up to 3 related GDELT news articles */
   relatedNews?: RelatedNewsItem[];
+  /**
+   * Optional: hedged limitation note (from EnrichedAlert.limitationNote).
+   * Uses careful language: "may suggest", "early warning signal", "needs more data".
+   * Never rendered in compact mode.
+   */
+  limitationNote?: string;
 }
 
 function calcProgress(triggerValue: number, threshold: number): number {
@@ -48,7 +54,7 @@ function calcProgress(triggerValue: number, threshold: number): number {
 
 export default function AlertCard({
   alert, compact = false,
-  source, conditions, confidence, sourcesCount, relatedNews,
+  source, conditions, confidence, sourcesCount, relatedNews, limitationNote,
 }: Props) {
   const country    = getCountry(alert.countryId);
   const progress   = calcProgress(alert.triggerValue, alert.threshold);
@@ -210,6 +216,21 @@ export default function AlertCard({
               {sourcesCount}/3 sources agree
             </span>
           )}
+        </div>
+      )}
+
+      {/* ── Limitation note ──────────────────────────────────────────── */}
+      {/* Only shown in full (non-compact) mode. Uses hedged language:   */}
+      {/* "may suggest", "early warning signal", "needs more data".      */}
+      {/* Never says "will happen", "guaranteed", or "confirmed impact". */}
+      {!compact && limitationNote && (
+        <div className="mt-2.5 pt-2.5 border-t border-slate-100">
+          <p className="text-[9px] font-semibold uppercase tracking-widest text-slate-400 mb-1">
+            ⚠ Signal Limitation
+          </p>
+          <p className="text-[10px] text-slate-400 leading-relaxed italic">
+            {limitationNote}
+          </p>
         </div>
       )}
     </div>

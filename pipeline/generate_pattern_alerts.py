@@ -155,6 +155,73 @@ ALERT_TYPE_CATEGORIES: dict[str, set[str]] = {
 }
 
 
+# ── Per-country data-quality notes ──────────────────────────────────────────
+# These are appended to limitation_note when a country has known sparse coverage.
+_COUNTRY_DATA_NOTES: dict[str, str] = {
+    "MMR": "Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024.",
+    "TLS": "Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated.",
+    "LAO": "Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates.",
+    "BRN": "Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution.",
+}
+
+# ── Alert-type specific limitation notes ─────────────────────────────────────
+_TYPE_LIMITATION_NOTES: dict[str, str] = {
+    "growth_slowdown":       "World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate.",
+    "export_stress":         "World Bank trade data has a 1–2 year lag; recent export shifts may not yet be captured.",
+    "import_shock":          "World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected.",
+    "inflation_pressure":    "Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured.",
+    "political_risk_rising": "GDELT monitors primarily English-language media; political events in local-language press may be underrepresented.",
+    "trade_news_pressure":   "GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only.",
+    "trade_dependency_risk": "Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly.",
+    "fdi_weakness":          "World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly.",
+    "regional_spillover":    "Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal.",
+}
+
+# ── Confidence-level notes ────────────────────────────────────────────────────
+_CONFIDENCE_NOTES: dict[str, str] = {
+    "high":   "Three independent sources agree: treat as a credible signal worth monitoring.",
+    "medium": "Two of three data sources support this alert. Cross-check with additional data before acting.",
+    "low":    "Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only.",
+}
+
+
+def _build_limitation_note(alert_type: str, iso3: str, confidence: str) -> str:
+    """
+    Compose a limitation_note string for one alert.
+
+    Always includes:
+      • The general signal-vs-confirmed-impact disclaimer.
+      • A confidence-level hedge.
+      • An alert-type-specific data lag or methodology note.
+      • A country-specific coverage note if applicable.
+
+    Careful wording: uses "may suggest", "could indicate", "early warning signal",
+    "needs more data" — never "will", "guaranteed", "confirmed impact".
+    """
+    parts: list[str] = []
+
+    # 1. Universal disclaimer
+    parts.append(
+        "This alert is a real-time signal that may suggest a developing pattern, "
+        "not a confirmed economic impact. Do not treat as a forecast or policy recommendation."
+    )
+
+    # 2. Confidence hedge
+    parts.append(_CONFIDENCE_NOTES.get(confidence, _CONFIDENCE_NOTES["low"]))
+
+    # 3. Alert-type data note
+    type_note = _TYPE_LIMITATION_NOTES.get(alert_type)
+    if type_note:
+        parts.append(type_note)
+
+    # 4. Country-specific coverage note (if applicable)
+    country_note = _COUNTRY_DATA_NOTES.get(iso3)
+    if country_note:
+        parts.append(country_note)
+
+    return " ".join(parts)
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 #  SECTION 2 — DATA LOADING
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1345,6 +1412,21 @@ def main() -> int:
                 f"UN Comtrade {trade.get('latest_year', snap.year)}",
             ]
             d["generated_at"]        = today.isoformat(timespec="seconds")
+
+            # ── Fields required by Phase 7D spec ────────────────────────────
+            # created_at: ISO timestamp when this specific alert was generated
+            d["created_at"]          = today.isoformat(timespec="seconds")
+
+            # supporting_data: human-readable alias for values_used; surfaces
+            # the raw numbers that triggered this alert in the dashboard.
+            d["supporting_data"]     = d.get("values_used", {})
+
+            # limitation_note: composed hedged disclaimer — always present.
+            # Uses "may suggest", "could indicate", "early warning signal",
+            # "needs more data" — never "will", "guaranteed", "confirmed impact".
+            d["limitation_note"]     = _build_limitation_note(
+                alert_type, snap.iso3, confidence
+            )
 
             all_results.append(d)
 

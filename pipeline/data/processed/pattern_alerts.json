@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T19:50:50",
+    "generated_at": "2026-06-02T21:04:36",
     "script": "generate_pattern_alerts.py",
     "data_sources": {
       "official_data": "World Bank Open Data  (worldbank_indicators.json)",
@@ -106,7 +106,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "fdi_current_usd_b": 5.989589,
+        "fdi_prev_usd_b": 11.242563,
+        "fdi_yoy_pct": -46.7,
+        "total_risk_news_count": 0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "trade_news_pressure_TLS_2023",
@@ -160,7 +168,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.49,
+        "impact_weighted_risk": 5.0,
+        "total_articles_7d": 2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
     },
     {
       "alert_id": "trade_news_pressure_BRN_2024",
@@ -224,7 +240,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.34,
+        "impact_weighted_risk": 4.0,
+        "total_articles_7d": 2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
     },
     {
       "alert_id": "fdi_weakness_MMR_2024",
@@ -289,7 +313,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "fdi_current_usd_b": 1.478792,
+        "fdi_prev_usd_b": 2.277151,
+        "fdi_yoy_pct": -35.1,
+        "total_risk_news_count": 6
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_news_pressure_MMR_2024",
@@ -343,7 +375,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 1,
+        "trade_articles_tone": -0.55,
+        "impact_weighted_risk": 18,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "inflation_pressure_LAO_2024",
@@ -415,7 +455,14 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "inflation_pct": 23.1,
+        "inflation_change_pp": -8.1,
+        "real_gdp_growth_pct": -19.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "trade_news_pressure_LAO_2024",
@@ -479,7 +526,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.463,
+        "impact_weighted_risk": 6.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "trade_dependency_risk_TLS_2023",
@@ -544,7 +599,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 46.3,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 14.2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
     },
     {
       "alert_id": "trade_dependency_risk_LAO_2024",
@@ -618,7 +681,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 38.2,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 29.8
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "growth_slowdown_MMR_2024",
@@ -684,7 +755,17 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "gdp_growth_pct": -0.97,
+        "regional_avg_growth_pct": 4.3,
+        "gdp_growth_prev_pct": 0.96,
+        "gdp_deceleration_pp": 1.93,
+        "economy_news_7d": 5,
+        "economy_news_tone": -0.372
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_dependency_risk_KHM_2024",
@@ -749,7 +830,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 41.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 44.2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_dependency_risk_THA_2024",
@@ -831,7 +920,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 56.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 20.7
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_IDN_2024",
@@ -904,7 +1001,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.077,
+        "impact_weighted_risk": 9.0,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_news_pressure_THA_2024",
@@ -977,7 +1082,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 4,
+        "trade_articles_tone": 0.098,
+        "impact_weighted_risk": 16,
+        "total_articles_7d": 6
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "import_shock_IDN_2024",
@@ -1053,7 +1166,20 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "imports_current_b": 284.7,
+        "imports_prev_b": 268.5,
+        "imports_yoy_pct": 6.0,
+        "import_export_divergence_pp": 2.2,
+        "trade_balance_b": 36.4,
+        "prev_trade_balance_b": 54.3,
+        "balance_change_b": -17.8,
+        "trade_news_7d": 3,
+        "trade_news_tone": 0.077
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
     },
     {
       "alert_id": "trade_dependency_risk_MMR_2024",
@@ -1117,7 +1243,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 23.2,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 31.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_dependency_risk_IDN_2024",
@@ -1199,7 +1333,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 25.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 28.4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_VNM_2024",
@@ -1272,7 +1414,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.057,
+        "impact_weighted_risk": 10.0,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_news_pressure_PHL_2024",
@@ -1335,7 +1485,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": -0.045,
+        "impact_weighted_risk": 10,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "political_risk_rising_MMR_2024",
@@ -1416,7 +1574,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "conflict_protest_news": 3,
+        "political_risk_news": 3,
+        "conflict_baseline": 18.0,
+        "gdp_growth_pct": -0.972046
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_news_pressure_KHM_2024",
@@ -1479,7 +1645,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 1,
+        "trade_articles_tone": 0.44,
+        "impact_weighted_risk": 8,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_dependency_risk_MYS_2024",
@@ -1552,7 +1726,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 13.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 21.3
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_MYS_2024",
@@ -1615,7 +1797,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.025,
+        "impact_weighted_risk": 7.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_dependency_risk_SGP_2024",
@@ -1688,7 +1878,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 13.8,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 13.9
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_SGP_2024",
@@ -1751,7 +1949,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.33,
+        "impact_weighted_risk": 5.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     }
   ],
   "all_results": [
@@ -1823,7 +2029,16 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "export_yoy_pct": -1.6,
+        "trade_balance_usd_b": 2.4,
+        "prev_trade_balance_usd_b": 2.5,
+        "exports_current": 11.393732,
+        "exports_prev": 11.578413
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; recent export shifts may not yet be captured. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
     },
     {
       "alert_id": "trade_news_pressure_BRN_2024",
@@ -1887,7 +2102,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.34,
+        "impact_weighted_risk": 4.0,
+        "total_articles_7d": 2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
     },
     {
       "alert_id": "import_shock_IDN_2024",
@@ -1963,7 +2186,20 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "imports_current_b": 284.7,
+        "imports_prev_b": 268.5,
+        "imports_yoy_pct": 6.0,
+        "import_export_divergence_pp": 2.2,
+        "trade_balance_b": 36.4,
+        "prev_trade_balance_b": 54.3,
+        "balance_change_b": -17.8,
+        "trade_news_7d": 3,
+        "trade_news_tone": 0.077
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
     },
     {
       "alert_id": "trade_dependency_risk_IDN_2024",
@@ -2045,7 +2281,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 25.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 28.4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_IDN_2024",
@@ -2118,7 +2362,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.077,
+        "impact_weighted_risk": 9.0,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "import_shock_KHM_2024",
@@ -2188,7 +2440,22 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "imports_current_b": 33.4,
+        "imports_prev_b": 28.5,
+        "imports_yoy_pct": 17.2,
+        "import_export_divergence_pp": 0.4,
+        "trade_balance_b": -2.7,
+        "prev_trade_balance_b": -9.4,
+        "balance_change_b": 6.6,
+        "top_import_partner": "CHN",
+        "top_import_share_pct": 44.2,
+        "trade_news_7d": 1,
+        "trade_news_tone": 0.44
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
     },
     {
       "alert_id": "trade_dependency_risk_KHM_2024",
@@ -2253,7 +2520,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 41.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 44.2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "regional_spillover_KHM_2024",
@@ -2323,7 +2598,14 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_VNM_stress": 0.0,
+        "neighbour_LAO_stress": 30.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal."
     },
     {
       "alert_id": "trade_news_pressure_KHM_2024",
@@ -2386,7 +2668,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 1,
+        "trade_articles_tone": 0.44,
+        "impact_weighted_risk": 8,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "inflation_pressure_LAO_2024",
@@ -2458,7 +2748,14 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "inflation_pct": 23.1,
+        "inflation_change_pp": -8.1,
+        "real_gdp_growth_pct": -19.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "fdi_weakness_LAO_2024",
@@ -2532,7 +2829,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "fdi_current_usd_b": 5.989589,
+        "fdi_prev_usd_b": 11.242563,
+        "fdi_yoy_pct": -46.7,
+        "total_risk_news_count": 0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "trade_dependency_risk_LAO_2024",
@@ -2606,7 +2911,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 38.2,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 29.8
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "regional_spillover_LAO_2024",
@@ -2677,7 +2990,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_VNM_stress": 0.0,
+        "neighbour_KHM_stress": 0.0,
+        "neighbour_MMR_stress": 28.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "trade_news_pressure_LAO_2024",
@@ -2741,7 +3062,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.463,
+        "impact_weighted_risk": 6.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
     },
     {
       "alert_id": "import_shock_MMR_2024",
@@ -2792,7 +3121,16 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_balance_b": -1.7,
+        "prev_trade_balance_b": -0.3,
+        "balance_change_b": -1.4,
+        "trade_news_7d": 1,
+        "trade_news_tone": -0.55
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "inflation_pressure_MMR_2024",
@@ -2855,7 +3193,14 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "inflation_pct": 8.8,
+        "inflation_change_pp": 0.0,
+        "real_gdp_growth_pct": -9.8
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "political_risk_rising_MMR_2024",
@@ -2936,7 +3281,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "conflict_protest_news": 3,
+        "political_risk_news": 3,
+        "conflict_baseline": 18.0,
+        "gdp_growth_pct": -0.972046
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "fdi_weakness_MMR_2024",
@@ -3001,7 +3354,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "fdi_current_usd_b": 1.478792,
+        "fdi_prev_usd_b": 2.277151,
+        "fdi_yoy_pct": -35.1,
+        "total_risk_news_count": 6
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_dependency_risk_MMR_2024",
@@ -3065,7 +3426,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 23.2,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 31.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "regional_spillover_MMR_2024",
@@ -3143,7 +3512,13 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "neighbour_THA_stress": 0.0,
+        "neighbour_LAO_stress": 30.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "growth_slowdown_MMR_2024",
@@ -3209,7 +3584,17 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "gdp_growth_pct": -0.97,
+        "regional_avg_growth_pct": 4.3,
+        "gdp_growth_prev_pct": 0.96,
+        "gdp_deceleration_pp": 1.93,
+        "economy_news_7d": 5,
+        "economy_news_tone": -0.372
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "trade_news_pressure_MMR_2024",
@@ -3263,7 +3648,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 1,
+        "trade_articles_tone": -0.55,
+        "impact_weighted_risk": 18,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
     },
     {
       "alert_id": "import_shock_MYS_2024",
@@ -3330,7 +3723,20 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "imports_current_b": 278.8,
+        "imports_prev_b": 255.6,
+        "imports_yoy_pct": 9.1,
+        "import_export_divergence_pp": -0.6,
+        "trade_balance_b": 47.0,
+        "prev_trade_balance_b": 58.2,
+        "balance_change_b": -11.3,
+        "trade_news_7d": 2,
+        "trade_news_tone": 0.025
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
     },
     {
       "alert_id": "trade_dependency_risk_MYS_2024",
@@ -3403,7 +3809,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 13.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 21.3
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_MYS_2024",
@@ -3466,7 +3880,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.025,
+        "impact_weighted_risk": 7.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_news_pressure_PHL_2024",
@@ -3529,7 +3951,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": -0.045,
+        "impact_weighted_risk": 10,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_dependency_risk_SGP_2024",
@@ -3602,7 +4032,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 13.8,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 13.9
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "trade_news_pressure_SGP_2024",
@@ -3665,7 +4103,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.33,
+        "impact_weighted_risk": 5.0,
+        "total_articles_7d": 4
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_dependency_risk_THA_2024",
@@ -3747,7 +4193,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 56.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 20.7
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "regional_spillover_THA_2024",
@@ -3828,7 +4282,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "neighbour_MMR_stress": 28.0,
+        "neighbour_LAO_stress": 30.0,
+        "neighbour_KHM_stress": 0.0,
+        "neighbour_MYS_stress": 0.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal."
     },
     {
       "alert_id": "trade_news_pressure_THA_2024",
@@ -3901,7 +4363,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 4,
+        "trade_articles_tone": 0.098,
+        "impact_weighted_risk": 16,
+        "total_articles_7d": 6
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     },
     {
       "alert_id": "trade_dependency_risk_TLS_2023",
@@ -3966,7 +4436,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 46.3,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 14.2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
     },
     {
       "alert_id": "trade_news_pressure_TLS_2023",
@@ -4020,7 +4498,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 2,
+        "trade_articles_tone": 0.49,
+        "impact_weighted_risk": 5.0,
+        "total_articles_7d": 2
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
     },
     {
       "alert_id": "trade_dependency_risk_VNM_2024",
@@ -4100,7 +4586,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 27.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 34.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
     },
     {
       "alert_id": "regional_spillover_VNM_2024",
@@ -4169,7 +4663,13 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "neighbour_LAO_stress": 30.0,
+        "neighbour_KHM_stress": 0.0
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Spillover effects typically materialise over 6–18 months after the initial shock. This is an early warning signal."
     },
     {
       "alert_id": "trade_news_pressure_VNM_2024",
@@ -4242,7 +4742,15 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:50:50"
+      "generated_at": "2026-06-02T21:04:36",
+      "created_at": "2026-06-02T21:04:36",
+      "supporting_data": {
+        "trade_articles_7d": 3,
+        "trade_articles_tone": 0.057,
+        "impact_weighted_risk": 10.0,
+        "total_articles_7d": 5
+      },
+      "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
     }
   ],
   "by_country": {
@@ -4319,7 +4827,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -4391,7 +4907,14 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -4455,7 +4978,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.463,
+          "impact_weighted_risk": 6.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -4529,7 +5060,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       }
     ],
     "TLS": [
@@ -4585,7 +5124,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.49,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -4650,7 +5197,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 14.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       }
     ],
     "BRN": [
@@ -4716,7 +5271,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.34,
+          "impact_weighted_risk": 4.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
       }
     ],
     "MMR": [
@@ -4783,7 +5346,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -4837,7 +5408,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": -0.55,
+          "impact_weighted_risk": 18,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -4903,7 +5482,17 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -4967,7 +5556,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -5048,7 +5645,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       }
     ],
     "KHM": [
@@ -5115,7 +5720,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -5178,7 +5791,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": 0.44,
+          "impact_weighted_risk": 8,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "THA": [
@@ -5262,7 +5883,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -5335,7 +5964,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 4,
+          "trade_articles_tone": 0.098,
+          "impact_weighted_risk": 16,
+          "total_articles_7d": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "IDN": [
@@ -5410,7 +6047,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.077,
+          "impact_weighted_risk": 9.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -5486,7 +6131,20 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "imports_current_b": 284.7,
+          "imports_prev_b": 268.5,
+          "imports_yoy_pct": 6.0,
+          "import_export_divergence_pp": 2.2,
+          "trade_balance_b": 36.4,
+          "prev_trade_balance_b": 54.3,
+          "balance_change_b": -17.8,
+          "trade_news_7d": 3,
+          "trade_news_tone": 0.077
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -5568,7 +6226,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       }
     ],
     "VNM": [
@@ -5643,7 +6309,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.057,
+          "impact_weighted_risk": 10.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "PHL": [
@@ -5708,7 +6382,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": -0.045,
+          "impact_weighted_risk": 10,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "MYS": [
@@ -5783,7 +6465,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 21.3
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -5846,7 +6536,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.025,
+          "impact_weighted_risk": 7.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "SGP": [
@@ -5921,7 +6619,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -5984,7 +6690,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.33,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ]
   },
@@ -6062,7 +6776,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "fdi_weakness_MMR_2024",
@@ -6127,7 +6849,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       }
     ],
     "trade_news_pressure": [
@@ -6183,7 +6913,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.49,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -6247,7 +6985,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.34,
+          "impact_weighted_risk": 4.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -6301,7 +7047,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": -0.55,
+          "impact_weighted_risk": 18,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -6365,7 +7119,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.463,
+          "impact_weighted_risk": 6.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -6438,7 +7200,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.077,
+          "impact_weighted_risk": 9.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -6511,7 +7281,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 4,
+          "trade_articles_tone": 0.098,
+          "impact_weighted_risk": 16,
+          "total_articles_7d": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -6584,7 +7362,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.057,
+          "impact_weighted_risk": 10.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -6647,7 +7433,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": -0.045,
+          "impact_weighted_risk": 10,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -6710,7 +7504,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": 0.44,
+          "impact_weighted_risk": 8,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -6773,7 +7575,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.025,
+          "impact_weighted_risk": 7.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -6836,7 +7646,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.33,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ],
     "inflation_pressure": [
@@ -6910,7 +7728,14 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       }
     ],
     "trade_dependency_risk": [
@@ -6977,7 +7802,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 14.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -7051,7 +7884,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -7116,7 +7957,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_dependency_risk_THA_2024",
@@ -7198,7 +8047,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -7262,7 +8119,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -7344,7 +8209,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -7417,7 +8290,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 21.3
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -7490,7 +8371,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       }
     ],
     "growth_slowdown": [
@@ -7558,7 +8447,17 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       }
     ],
     "import_shock": [
@@ -7636,7 +8535,20 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "imports_current_b": 284.7,
+          "imports_prev_b": 268.5,
+          "imports_yoy_pct": 6.0,
+          "import_export_divergence_pp": 2.2,
+          "trade_balance_b": 36.4,
+          "prev_trade_balance_b": 54.3,
+          "balance_change_b": -17.8,
+          "trade_news_7d": 3,
+          "trade_news_tone": 0.077
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
       }
     ],
     "political_risk_rising": [
@@ -7719,7 +8631,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       }
     ]
   },
@@ -7797,7 +8717,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       }
     ],
     "warning": [
@@ -7853,7 +8781,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.49,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -7917,7 +8853,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.34,
+          "impact_weighted_risk": 4.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
       },
       {
         "alert_id": "fdi_weakness_MMR_2024",
@@ -7982,7 +8926,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -8036,7 +8988,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": -0.55,
+          "impact_weighted_risk": 18,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -8108,7 +9068,14 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -8172,7 +9139,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.463,
+          "impact_weighted_risk": 6.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -8237,7 +9212,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 14.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -8311,7 +9294,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -8377,7 +9368,17 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -8442,7 +9443,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       }
     ],
     "info": [
@@ -8526,7 +9535,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -8599,7 +9616,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.077,
+          "impact_weighted_risk": 9.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -8672,7 +9697,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 4,
+          "trade_articles_tone": 0.098,
+          "impact_weighted_risk": 16,
+          "total_articles_7d": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -8748,7 +9781,20 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "imports_current_b": 284.7,
+          "imports_prev_b": 268.5,
+          "imports_yoy_pct": 6.0,
+          "import_export_divergence_pp": 2.2,
+          "trade_balance_b": 36.4,
+          "prev_trade_balance_b": 54.3,
+          "balance_change_b": -17.8,
+          "trade_news_7d": 3,
+          "trade_news_tone": 0.077
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -8812,7 +9858,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -8894,7 +9948,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -8967,7 +10029,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.057,
+          "impact_weighted_risk": 10.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -9030,7 +10100,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": -0.045,
+          "impact_weighted_risk": 10,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -9111,7 +10189,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -9174,7 +10260,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": 0.44,
+          "impact_weighted_risk": 8,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -9247,7 +10341,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 21.3
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -9310,7 +10412,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.025,
+          "impact_weighted_risk": 7.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -9383,7 +10493,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -9446,7 +10564,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.33,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ]
   },
@@ -9524,7 +10650,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -9605,7 +10739,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -0.972046
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Three independent sources agree: treat as a credible signal worth monitoring. GDELT monitors primarily English-language media; political events in local-language press may be underrepresented. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       }
     ],
     "medium": [
@@ -9672,7 +10814,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 1.478792,
+          "fdi_prev_usd_b": 2.277151,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -9737,7 +10887,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 46.3,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 14.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -9803,7 +10961,17 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "gdp_growth_pct": -0.97,
+          "regional_avg_growth_pct": 4.3,
+          "gdp_growth_prev_pct": 0.96,
+          "gdp_deceleration_pp": 1.93,
+          "economy_news_7d": 5,
+          "economy_news_tone": -0.372
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. World Bank GDP data typically has a 1–2 year publication lag; the most recent year may be an estimate. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_THA_2024",
@@ -9885,7 +11053,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Two of three data sources support this alert. Cross-check with additional data before acting. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       }
     ],
     "low": [
@@ -9961,7 +11137,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "fdi_current_usd_b": 5.989589,
+          "fdi_prev_usd_b": 11.242563,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank FDI data has a 1–2 year publication lag; current investment conditions may differ significantly. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_news_pressure_TLS_2023",
@@ -10015,7 +11199,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.49,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Timor-Leste has limited World Bank statistical coverage; many indicator values are missing or estimated."
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -10079,7 +11271,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.34,
+          "impact_weighted_risk": 4.0,
+          "total_articles_7d": 2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Brunei has limited UN Comtrade coverage; trade figures should be treated with extra caution."
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -10133,7 +11333,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": -0.55,
+          "impact_weighted_risk": 18,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -10205,7 +11413,14 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "inflation_pct": 23.1,
+          "inflation_change_pp": -8.1,
+          "real_gdp_growth_pct": -19.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Inflation figures may lag current conditions by 1–2 years; rapidly changing prices may not be captured. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -10269,7 +11484,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.463,
+          "impact_weighted_risk": 6.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only. Laos data is sparse for some indicators due to limited reporting capacity; values may be estimates."
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -10334,7 +11557,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -10407,7 +11638,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.077,
+          "impact_weighted_risk": 9.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -10480,7 +11719,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 4,
+          "trade_articles_tone": 0.098,
+          "impact_weighted_risk": 16,
+          "total_articles_7d": 6
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -10556,7 +11803,20 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "imports_current_b": 284.7,
+          "imports_prev_b": 268.5,
+          "imports_yoy_pct": 6.0,
+          "import_export_divergence_pp": 2.2,
+          "trade_balance_b": 36.4,
+          "prev_trade_balance_b": 54.3,
+          "balance_change_b": -17.8,
+          "trade_news_7d": 3,
+          "trade_news_tone": 0.077
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. World Bank trade data has a 1–2 year lag; sudden import changes may not yet be reflected."
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -10620,7 +11880,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly. Myanmar data is limited after the 2021 military coup; World Bank series have significant gaps for 2022–2024."
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -10702,7 +11970,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -10775,7 +12051,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 3,
+          "trade_articles_tone": 0.057,
+          "impact_weighted_risk": 10.0,
+          "total_articles_7d": 5
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -10838,7 +12122,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": -0.045,
+          "impact_weighted_risk": 10,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -10901,7 +12193,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 1,
+          "trade_articles_tone": 0.44,
+          "impact_weighted_risk": 8,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -10974,7 +12274,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 21.3
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -11037,7 +12345,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.025,
+          "impact_weighted_risk": 7.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -11110,7 +12426,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. Dependency scores are based on the most recent Comtrade year available; bilateral trade shares shift slowly."
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -11173,7 +12497,15 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:50:50"
+        "generated_at": "2026-06-02T21:04:36",
+        "created_at": "2026-06-02T21:04:36",
+        "supporting_data": {
+          "trade_articles_7d": 2,
+          "trade_articles_tone": 0.33,
+          "impact_weighted_risk": 5.0,
+          "total_articles_7d": 4
+        },
+        "limitation_note": "This alert is a real-time signal that may suggest a developing pattern, not a confirmed economic impact. Do not treat as a forecast or policy recommendation. Only one data source indicates this risk. Needs more data to confirm. Treat as a weak early warning signal only. GDELT article counts reflect media coverage intensity, not confirmed trade disruption. Early warning signal only."
       }
     ]
   }
