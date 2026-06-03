@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T21:04:36",
+    "generated_at": "2026-06-02T21:33:25",
     "script": "generate_pattern_alerts.py",
     "data_sources": {
       "official_data": "World Bank Open Data  (worldbank_indicators.json)",
@@ -106,8 +106,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "fdi_current_usd_b": 5.989589,
         "fdi_prev_usd_b": 11.242563,
@@ -168,8 +168,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.49,
@@ -240,8 +240,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.34,
@@ -313,8 +313,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "fdi_current_usd_b": 1.478792,
         "fdi_prev_usd_b": 2.277151,
@@ -375,8 +375,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 1,
         "trade_articles_tone": -0.55,
@@ -455,8 +455,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "inflation_pct": 23.1,
         "inflation_change_pp": -8.1,
@@ -526,8 +526,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.463,
@@ -599,8 +599,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 46.3,
@@ -681,8 +681,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 38.2,
@@ -755,8 +755,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "gdp_growth_pct": -0.97,
         "regional_avg_growth_pct": 4.3,
@@ -830,8 +830,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "USA",
         "top_export_partner_share": 41.5,
@@ -920,8 +920,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "USA",
         "top_export_partner_share": 56.1,
@@ -1001,8 +1001,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.077,
@@ -1082,8 +1082,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 4,
         "trade_articles_tone": 0.098,
@@ -1166,8 +1166,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "imports_current_b": 284.7,
         "imports_prev_b": 268.5,
@@ -1243,8 +1243,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 23.2,
@@ -1333,8 +1333,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 25.1,
@@ -1414,8 +1414,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.057,
@@ -1485,8 +1485,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": -0.045,
@@ -1574,8 +1574,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "conflict_protest_news": 3,
         "political_risk_news": 3,
@@ -1645,8 +1645,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 1,
         "trade_articles_tone": 0.44,
@@ -1726,8 +1726,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 13.5,
@@ -1797,8 +1797,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.025,
@@ -1878,8 +1878,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 13.8,
@@ -1949,8 +1949,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.33,
@@ -2029,8 +2029,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "export_yoy_pct": -1.6,
         "trade_balance_usd_b": 2.4,
@@ -2102,8 +2102,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.34,
@@ -2186,8 +2186,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "imports_current_b": 284.7,
         "imports_prev_b": 268.5,
@@ -2281,8 +2281,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 25.1,
@@ -2362,8 +2362,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.077,
@@ -2440,8 +2440,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "imports_current_b": 33.4,
         "imports_prev_b": 28.5,
@@ -2520,8 +2520,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "USA",
         "top_export_partner_share": 41.5,
@@ -2598,8 +2598,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "neighbour_THA_stress": 0.0,
         "neighbour_VNM_stress": 0.0,
@@ -2668,8 +2668,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 1,
         "trade_articles_tone": 0.44,
@@ -2748,8 +2748,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "inflation_pct": 23.1,
         "inflation_change_pp": -8.1,
@@ -2829,8 +2829,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "fdi_current_usd_b": 5.989589,
         "fdi_prev_usd_b": 11.242563,
@@ -2911,8 +2911,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 38.2,
@@ -2990,8 +2990,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "neighbour_THA_stress": 0.0,
         "neighbour_VNM_stress": 0.0,
@@ -3062,8 +3062,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.463,
@@ -3121,8 +3121,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_balance_b": -1.7,
         "prev_trade_balance_b": -0.3,
@@ -3193,8 +3193,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "inflation_pct": 8.8,
         "inflation_change_pp": 0.0,
@@ -3281,8 +3281,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "conflict_protest_news": 3,
         "political_risk_news": 3,
@@ -3354,8 +3354,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "fdi_current_usd_b": 1.478792,
         "fdi_prev_usd_b": 2.277151,
@@ -3426,8 +3426,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 23.2,
@@ -3512,8 +3512,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "neighbour_THA_stress": 0.0,
         "neighbour_LAO_stress": 30.0
@@ -3584,8 +3584,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "gdp_growth_pct": -0.97,
         "regional_avg_growth_pct": 4.3,
@@ -3648,8 +3648,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 1,
         "trade_articles_tone": -0.55,
@@ -3723,8 +3723,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "imports_current_b": 278.8,
         "imports_prev_b": 255.6,
@@ -3809,8 +3809,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 13.5,
@@ -3880,8 +3880,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.025,
@@ -3951,8 +3951,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": -0.045,
@@ -4032,8 +4032,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 13.8,
@@ -4103,8 +4103,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.33,
@@ -4193,8 +4193,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "USA",
         "top_export_partner_share": 56.1,
@@ -4282,8 +4282,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "neighbour_MMR_stress": 28.0,
         "neighbour_LAO_stress": 30.0,
@@ -4363,8 +4363,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 4,
         "trade_articles_tone": 0.098,
@@ -4436,8 +4436,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "CHN",
         "top_export_partner_share": 46.3,
@@ -4498,8 +4498,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 2,
         "trade_articles_tone": 0.49,
@@ -4586,8 +4586,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "top_export_partner": "USA",
         "top_export_partner_share": 27.5,
@@ -4663,8 +4663,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "neighbour_LAO_stress": 30.0,
         "neighbour_KHM_stress": 0.0
@@ -4742,8 +4742,8 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T21:04:36",
-      "created_at": "2026-06-02T21:04:36",
+      "generated_at": "2026-06-02T21:33:25",
+      "created_at": "2026-06-02T21:33:25",
       "supporting_data": {
         "trade_articles_7d": 3,
         "trade_articles_tone": 0.057,
@@ -4827,8 +4827,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 5.989589,
           "fdi_prev_usd_b": 11.242563,
@@ -4907,8 +4907,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "inflation_pct": 23.1,
           "inflation_change_pp": -8.1,
@@ -4978,8 +4978,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.463,
@@ -5060,8 +5060,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 38.2,
@@ -5124,8 +5124,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.49,
@@ -5197,8 +5197,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 46.3,
@@ -5271,8 +5271,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.34,
@@ -5346,8 +5346,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 1.478792,
           "fdi_prev_usd_b": 2.277151,
@@ -5408,8 +5408,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": -0.55,
@@ -5482,8 +5482,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "gdp_growth_pct": -0.97,
           "regional_avg_growth_pct": 4.3,
@@ -5556,8 +5556,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 23.2,
@@ -5645,8 +5645,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "conflict_protest_news": 3,
           "political_risk_news": 3,
@@ -5720,8 +5720,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 41.5,
@@ -5791,8 +5791,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": 0.44,
@@ -5883,8 +5883,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 56.1,
@@ -5964,8 +5964,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 4,
           "trade_articles_tone": 0.098,
@@ -6047,8 +6047,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.077,
@@ -6131,8 +6131,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "imports_current_b": 284.7,
           "imports_prev_b": 268.5,
@@ -6226,8 +6226,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 25.1,
@@ -6309,8 +6309,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.057,
@@ -6382,8 +6382,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": -0.045,
@@ -6465,8 +6465,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.5,
@@ -6536,8 +6536,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.025,
@@ -6619,8 +6619,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.8,
@@ -6690,8 +6690,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.33,
@@ -6776,8 +6776,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 5.989589,
           "fdi_prev_usd_b": 11.242563,
@@ -6849,8 +6849,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 1.478792,
           "fdi_prev_usd_b": 2.277151,
@@ -6913,8 +6913,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.49,
@@ -6985,8 +6985,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.34,
@@ -7047,8 +7047,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": -0.55,
@@ -7119,8 +7119,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.463,
@@ -7200,8 +7200,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.077,
@@ -7281,8 +7281,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 4,
           "trade_articles_tone": 0.098,
@@ -7362,8 +7362,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.057,
@@ -7433,8 +7433,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": -0.045,
@@ -7504,8 +7504,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": 0.44,
@@ -7575,8 +7575,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.025,
@@ -7646,8 +7646,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.33,
@@ -7728,8 +7728,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "inflation_pct": 23.1,
           "inflation_change_pp": -8.1,
@@ -7802,8 +7802,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 46.3,
@@ -7884,8 +7884,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 38.2,
@@ -7957,8 +7957,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 41.5,
@@ -8047,8 +8047,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 56.1,
@@ -8119,8 +8119,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 23.2,
@@ -8209,8 +8209,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 25.1,
@@ -8290,8 +8290,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.5,
@@ -8371,8 +8371,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.8,
@@ -8447,8 +8447,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "gdp_growth_pct": -0.97,
           "regional_avg_growth_pct": 4.3,
@@ -8535,8 +8535,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "imports_current_b": 284.7,
           "imports_prev_b": 268.5,
@@ -8631,8 +8631,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "conflict_protest_news": 3,
           "political_risk_news": 3,
@@ -8717,8 +8717,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 5.989589,
           "fdi_prev_usd_b": 11.242563,
@@ -8781,8 +8781,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.49,
@@ -8853,8 +8853,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.34,
@@ -8926,8 +8926,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 1.478792,
           "fdi_prev_usd_b": 2.277151,
@@ -8988,8 +8988,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": -0.55,
@@ -9068,8 +9068,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "inflation_pct": 23.1,
           "inflation_change_pp": -8.1,
@@ -9139,8 +9139,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.463,
@@ -9212,8 +9212,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 46.3,
@@ -9294,8 +9294,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 38.2,
@@ -9368,8 +9368,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "gdp_growth_pct": -0.97,
           "regional_avg_growth_pct": 4.3,
@@ -9443,8 +9443,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 41.5,
@@ -9535,8 +9535,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 56.1,
@@ -9616,8 +9616,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.077,
@@ -9697,8 +9697,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 4,
           "trade_articles_tone": 0.098,
@@ -9781,8 +9781,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "imports_current_b": 284.7,
           "imports_prev_b": 268.5,
@@ -9858,8 +9858,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 23.2,
@@ -9948,8 +9948,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 25.1,
@@ -10029,8 +10029,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.057,
@@ -10100,8 +10100,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": -0.045,
@@ -10189,8 +10189,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "conflict_protest_news": 3,
           "political_risk_news": 3,
@@ -10260,8 +10260,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": 0.44,
@@ -10341,8 +10341,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.5,
@@ -10412,8 +10412,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.025,
@@ -10493,8 +10493,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.8,
@@ -10564,8 +10564,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.33,
@@ -10650,8 +10650,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 38.2,
@@ -10739,8 +10739,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "conflict_protest_news": 3,
           "political_risk_news": 3,
@@ -10814,8 +10814,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 1.478792,
           "fdi_prev_usd_b": 2.277151,
@@ -10887,8 +10887,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 46.3,
@@ -10961,8 +10961,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "gdp_growth_pct": -0.97,
           "regional_avg_growth_pct": 4.3,
@@ -11053,8 +11053,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 56.1,
@@ -11137,8 +11137,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "fdi_current_usd_b": 5.989589,
           "fdi_prev_usd_b": 11.242563,
@@ -11199,8 +11199,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.49,
@@ -11271,8 +11271,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.34,
@@ -11333,8 +11333,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": -0.55,
@@ -11413,8 +11413,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "inflation_pct": 23.1,
           "inflation_change_pp": -8.1,
@@ -11484,8 +11484,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.463,
@@ -11557,8 +11557,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "USA",
           "top_export_partner_share": 41.5,
@@ -11638,8 +11638,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.077,
@@ -11719,8 +11719,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 4,
           "trade_articles_tone": 0.098,
@@ -11803,8 +11803,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "imports_current_b": 284.7,
           "imports_prev_b": 268.5,
@@ -11880,8 +11880,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 23.2,
@@ -11970,8 +11970,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 25.1,
@@ -12051,8 +12051,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 3,
           "trade_articles_tone": 0.057,
@@ -12122,8 +12122,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": -0.045,
@@ -12193,8 +12193,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 1,
           "trade_articles_tone": 0.44,
@@ -12274,8 +12274,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.5,
@@ -12345,8 +12345,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.025,
@@ -12426,8 +12426,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "top_export_partner": "CHN",
           "top_export_partner_share": 13.8,
@@ -12497,8 +12497,8 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T21:04:36",
-        "created_at": "2026-06-02T21:04:36",
+        "generated_at": "2026-06-02T21:33:25",
+        "created_at": "2026-06-02T21:33:25",
         "supporting_data": {
           "trade_articles_7d": 2,
           "trade_articles_tone": 0.33,

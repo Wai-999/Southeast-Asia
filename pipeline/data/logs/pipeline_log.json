@@ -5,11 +5,11 @@
     "format": "last_run mirrors runs[-1]; runs keeps last 30 entries"
   },
   "last_run": {
-    "run_id": "20260602194049",
-    "started_at": "2026-06-02T19:40:49",
-    "finished_at": "2026-06-02T19:50:50",
-    "elapsed_seconds": 600.4,
-    "status": "partial",
+    "run_id": "20260602211855",
+    "started_at": "2026-06-02T21:18:55",
+    "finished_at": "2026-06-02T21:33:25",
+    "elapsed_seconds": 869.7,
+    "status": "success",
     "mode": "no-comtrade",
     "dry_run": false,
     "steps": {
@@ -19,24 +19,24 @@
         "seconds": 0.2
       },
       "gdelt": {
-        "status": "fail",
-        "note": "timed out after 10 min",
-        "seconds": 600.0
+        "status": "ok",
+        "note": "news_signals.json  52 KB",
+        "seconds": 869.3
+      },
+      "alerts": {
+        "status": "ok",
+        "note": "pattern_alerts.json  640 KB",
+        "seconds": 0.1
       },
       "comtrade": {
         "status": "skip",
         "note": "--no-comtrade",
         "seconds": 0.0
-      },
-      "alerts": {
-        "status": "ok",
-        "note": "pattern_alerts.json  531 KB",
-        "seconds": 0.1
       }
     },
     "summary": {
       "worldbank_updated": true,
-      "gdelt_updated": false,
+      "gdelt_updated": true,
       "comtrade_updated": false,
       "alerts_generated": true,
       "total_countries_updated": 17,
@@ -83,6 +83,96 @@
       "summary": {
         "worldbank_updated": true,
         "gdelt_updated": false,
+        "comtrade_updated": false,
+        "alerts_generated": true,
+        "total_countries_updated": 17,
+        "total_news_items": 72,
+        "total_alerts": 25,
+        "alert_critical": 1,
+        "alert_warnings": 10,
+        "wb_records": 1360,
+        "trade_reporters": 11,
+        "trade_flows": 465
+      }
+    },
+    {
+      "run_id": "20260602194713",
+      "started_at": "2026-06-02T19:47:13",
+      "finished_at": "2026-06-02T19:57:14",
+      "elapsed_seconds": 600.4,
+      "status": "partial",
+      "mode": "no-comtrade",
+      "dry_run": false,
+      "steps": {
+        "worldbank": {
+          "status": "ok",
+          "note": "worldbank_indicators.json  632 KB",
+          "seconds": 0.2
+        },
+        "gdelt": {
+          "status": "fail",
+          "note": "timed out after 10 min",
+          "seconds": 600.0
+        },
+        "comtrade": {
+          "status": "skip",
+          "note": "--no-comtrade",
+          "seconds": 0.0
+        },
+        "alerts": {
+          "status": "ok",
+          "note": "pattern_alerts.json  531 KB",
+          "seconds": 0.1
+        }
+      },
+      "summary": {
+        "worldbank_updated": true,
+        "gdelt_updated": false,
+        "comtrade_updated": false,
+        "alerts_generated": true,
+        "total_countries_updated": 17,
+        "total_news_items": 72,
+        "total_alerts": 25,
+        "alert_critical": 1,
+        "alert_warnings": 10,
+        "wb_records": 1360,
+        "trade_reporters": 11,
+        "trade_flows": 465
+      }
+    },
+    {
+      "run_id": "20260602211855",
+      "started_at": "2026-06-02T21:18:55",
+      "finished_at": "2026-06-02T21:33:25",
+      "elapsed_seconds": 869.7,
+      "status": "success",
+      "mode": "no-comtrade",
+      "dry_run": false,
+      "steps": {
+        "worldbank": {
+          "status": "ok",
+          "note": "worldbank_indicators.json  632 KB",
+          "seconds": 0.2
+        },
+        "gdelt": {
+          "status": "ok",
+          "note": "news_signals.json  52 KB",
+          "seconds": 869.3
+        },
+        "alerts": {
+          "status": "ok",
+          "note": "pattern_alerts.json  640 KB",
+          "seconds": 0.1
+        },
+        "comtrade": {
+          "status": "skip",
+          "note": "--no-comtrade",
+          "seconds": 0.0
+        }
+      },
+      "summary": {
+        "worldbank_updated": true,
+        "gdelt_updated": true,
         "comtrade_updated": false,
         "alerts_generated": true,
         "total_countries_updated": 17,
