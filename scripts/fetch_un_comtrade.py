@@ -81,6 +81,13 @@ REPORTERS = {
     "PHL": 608,  "BRN":  96,  "TLS": 626,
 }
 
+REPORTER_NAMES = {
+    "THA": "Thailand",    "VNM": "Vietnam",     "MMR": "Myanmar",
+    "KHM": "Cambodia",    "LAO": "Laos",         "MYS": "Malaysia",
+    "SGP": "Singapore",   "IDN": "Indonesia",    "PHL": "Philippines",
+    "BRN": "Brunei",      "TLS": "Timor-Leste",
+}
+
 # Partner countries
 PARTNERS = {
     "CHN": 156,
@@ -190,6 +197,7 @@ def _parse_flows(raw: dict | None, reporter_iso3: str, partner_iso3: str, year: 
     def add_row(ind_code, ind_name, val, unit="USD billion"):
         rows.append({
             "country_code":    reporter_iso3,
+            "country_name":    REPORTER_NAMES.get(reporter_iso3, reporter_iso3),
             "sector":          "trade",
             "indicator_code":  ind_code,
             "indicator_name":  ind_name,
@@ -268,6 +276,7 @@ def _compute_dependency_scores(all_rows: list[dict]) -> list[dict]:
                     level = "high" if dep >= 40 else ("medium" if dep >= 20 else "low")
                     dep_rows.append({
                         "country_code":    iso3,
+                        "country_name":    REPORTER_NAMES.get(iso3, iso3),
                         "sector":          "trade",
                         "indicator_code":  f"TRADE_DEPENDENCY_{partner}",
                         "indicator_name":  f"{PARTNER_NAMES[partner]} Trade Dependency",
@@ -291,6 +300,60 @@ def _compute_dependency_scores(all_rows: list[dict]) -> list[dict]:
                                           f"Computed from bilateral + total trade flows.",
                     })
     return dep_rows
+
+
+def _compute_top_partner(all_rows: list[dict]) -> list[dict]:
+    """
+    For each country × year, find the partner with highest bilateral trade share.
+    Emits TOP_TRADE_PARTNER rows (value = dependency %, limitation_note = partner name).
+    """
+    top_rows = []
+    ts = ts_now()
+
+    # Group dependency scores by country/year/partner
+    by_cy = {}
+    for r in all_rows:
+        code = r.get("indicator_code", "")
+        if not code.startswith("TRADE_DEPENDENCY_"):
+            continue
+        partner = code.replace("TRADE_DEPENDENCY_", "")
+        key = (r["country_code"], r["year"])
+        by_cy.setdefault(key, {})[partner] = r["value"]
+
+    for (iso3, year), partner_deps in by_cy.items():
+        if not partner_deps:
+            continue
+        top_partner = max(partner_deps, key=lambda p: partner_deps[p] or 0)
+        top_val     = partner_deps[top_partner]
+        if top_val is None:
+            continue
+        level = "high" if top_val >= 40 else ("medium" if top_val >= 20 else "low")
+        top_rows.append({
+            "country_code":    iso3,
+            "country_name":    REPORTER_NAMES.get(iso3, iso3),
+            "sector":          "trade",
+            "indicator_code":  "TOP_TRADE_PARTNER_SHARE",
+            "indicator_name":  "Top Trade Partner Share",
+            "period":          str(year),
+            "year":            year,
+            "quarter":         None,
+            "month":           None,
+            "value":           top_val,
+            "unit":            "% of total trade",
+            "frequency":       "annual",
+            "source":          "Computed from UN Comtrade",
+            "source_type":     "computed",
+            "source_url":      BASE_URL,
+            "fetched_at":      ts,
+            "released_at":     None,
+            "value_type":      "official_actual",
+            "data_quality":    "available",
+            "confidence":      "high",
+            "extraction_method": "computed",
+            "limitation_note": f"Top partner: {PARTNER_NAMES.get(top_partner, top_partner)} "
+                               f"({top_val:.1f}%, {level} dependency)",
+        })
+    return top_rows
 
 
 def main():
@@ -333,8 +396,8 @@ def main():
             print(f"{len(rows)} rows", flush=True)
             time.sleep(REQUEST_DELAY)
 
-            # 2. Fetch bilateral flows for key partners
-            for partner_iso3, partner_code in list(PARTNERS.items())[:4]:  # CHN, USA, JPN, IND
+            # 2. Fetch bilateral flows for all 7 key partners
+            for partner_iso3, partner_code in PARTNERS.items():
                 if partner_iso3 == "ALL":
                     continue
                 print(f"    {year}: → {partner_iso3}...", end=" ", flush=True)
@@ -355,11 +418,16 @@ def main():
         all_rows.extend(country_rows)
         print(f"  ✓ {iso3}: {len(country_rows)} rows total", flush=True)
 
-    # Compute dependency scores
+    # Compute dependency scores + top-partner rows
     print("\n  ▸ Computing trade dependency scores...", flush=True)
     dep_rows = _compute_dependency_scores(all_rows)
     all_rows.extend(dep_rows)
     print(f"    ✓ {len(dep_rows)} dependency rows", flush=True)
+
+    print("  ▸ Computing top-partner relationships...", flush=True)
+    top_rows = _compute_top_partner(all_rows)
+    all_rows.extend(top_rows)
+    print(f"    ✓ {len(top_rows)} top-partner rows", flush=True)
 
     out_file = PROC_DIR / "comtrade_normalized.json"
     result = {
@@ -374,13 +442,22 @@ def main():
         "records":    all_rows,
     }
     out_file.write_text(json.dumps(result, indent=2))
+    # Also write trade_flows.json alias (used by dashboard trade charts)
+    (PROC_DIR / "trade_flows.json").write_text(json.dumps(result, indent=2))
 
     print(f"\n{'─'*60}")
     print(f"  ✓ Total rows  : {len(all_rows)}")
     print(f"  ✓ Non-null    : {result['non_null']}")
+    if dep_rows:
+        print(f"  ✓ Dep scores  : {len(dep_rows)}")
+    if top_rows:
+        print(f"  ✓ Top-partner : {len(top_rows)}")
     if errors:
-        print(f"  ⚠ Errors     : {len(errors)}")
-    print(f"  📄 Output: {out_file.relative_to(PROJECT_ROOT)}\n")
+        print(f"  ⚠ Errors      : {len(errors)}")
+        for e in errors[:5]:
+            print(f"    · {e}")
+    print(f"  📄 {out_file.relative_to(PROJECT_ROOT)}")
+    print(f"  📄 pipeline/data/processed/trade_flows.json\n")
     return 0
 
 
