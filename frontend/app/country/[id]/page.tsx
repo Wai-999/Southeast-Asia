@@ -20,7 +20,7 @@ import CompareBarChart from "@/components/charts/CompareBarChart";
 import {
   COUNTRIES, CURRENT_INDICATORS, HISTORICAL,
   NEWS_EVENTS, PATTERN_ALERTS, getYoYChange,
-} from "@/data/sample-data";
+} from "@/data/live-data";
 import WorldBankNote from "@/components/ui/WorldBankNote";
 import {
   WB_INDICATOR_KEYS, WB_INDICATORS, WB_INDICATOR_LABELS, WB_INDICATOR_UNITS,

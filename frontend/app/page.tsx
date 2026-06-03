@@ -13,7 +13,8 @@ import CompareBarChart from "@/components/charts/CompareBarChart";
 import {
   COUNTRIES, CURRENT_INDICATORS, PATTERN_ALERTS,
   NEWS_EVENTS, getCompareData, getCountry,
-} from "@/data/sample-data";
+  DATA_STATUS_LABEL, DATA_IS_LIVE,
+} from "@/data/live-data";
 import WorldBankNote from "@/components/ui/WorldBankNote";
 
 export default function OverviewPage() {
@@ -47,12 +48,12 @@ export default function OverviewPage() {
             Regional Overview
           </h1>
           <p className="text-slate-500 text-sm mt-0.5">
-            SEA Change Intelligence Dashboard · 5 countries · Dec 2024
+            SEA Change Intelligence Dashboard · 5 countries · 2015–2024
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-emerald-500" />
-          <span className="text-xs text-slate-400">Sample data · All indicators current</span>
+          <span className={`w-2 h-2 rounded-full ${DATA_IS_LIVE ? "bg-emerald-500" : "bg-amber-400"}`} />
+          <span className="text-xs text-slate-400">{DATA_STATUS_LABEL}</span>
         </div>
       </div>
 

@@ -15,7 +15,7 @@ import {
   COUNTRIES, CURRENT_INDICATORS,
   METRIC_LABELS, METRIC_UNITS, METRIC_DESC, METRIC_HIGHER_IS_WORSE,
   getCompareData, type MetricKey,
-} from "@/data/sample-data";
+} from "@/data/live-data";
 import CountryFilter, { type FilterMode } from "@/components/ui/CountryFilter";
 import { getIso3ForMode } from "@/data/countries";
 import WorldBankNote from "@/components/ui/WorldBankNote";
