@@ -157,8 +157,13 @@ def run_step(step_id: str) -> tuple[int, float]:
         print(f"  ⚠ Script not found: {script}")
         return 1, time.time() - t0
 
+    # Per-step extra args
+    extra_args: list[str] = []
+    if step_id == "comtrade":
+        extra_args = ["--all-years"]  # always fetch full 2019–present history
+
     result = subprocess.run(
-        [sys.executable, str(script)],
+        [sys.executable, str(script)] + extra_args,
         cwd=str(PROJECT_ROOT),
         capture_output=False,
     )
