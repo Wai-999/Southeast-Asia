@@ -100,9 +100,13 @@ Get a key at: https://console.anthropic.com
 │
 ├── pipeline/                  Data pipeline scripts
 │   ├── fetch_worldbank.py     World Bank economic indicators (free, no key)
-│   ├── fetch_gdelt.py         GDELT news signals (free, no key)
-│   ├── fetch_comtrade.py      IMF DOTS trade data (free, no key)
-│   └── pattern_engine.py      Rule-based alert detection (8 alert types)
+│   ├── fetch_gdelt_news.py    GDELT 2.0 news signals (free, no key)
+│   ├── fetch_comtrade.py      UN Comtrade trade flows (free mode + API key)
+│   ├── generate_pattern_alerts.py  9-type pattern alerts with confidence
+│   └── pattern_engine.py      Rule-based alert engine (CountrySnapshot)
+│
+├── scripts/
+│   └── run_pipeline.py        Master pipeline runner — python scripts/run_pipeline.py
 │
 └── database/
     ├── schema.sql             PostgreSQL schema
@@ -142,19 +146,80 @@ NEXT_PUBLIC_API_URL=http://localhost:8000   # backend URL (default)
 
 ---
 
-## Data Pipeline (Optional)
+## Data Pipeline
 
-Not required for MVP. These scripts fetch real data and save CSV files.
+Real data is fetched from three free APIs and saved as JSON files that the
+Next.js frontend reads at build time. No database required.
+
+### Quick start (from project root)
 
 ```bash
-cd pipeline
+# Install Python dependencies
 pip install httpx python-dotenv
 
-python fetch_worldbank.py          # World Bank indicators
-python fetch_gdelt.py --days 7     # GDELT news signals
-python fetch_comtrade.py           # IMF DOTS trade data
-python pattern_engine.py           # run alert detection
+# Run the full 4-step pipeline
+python scripts/run_pipeline.py
 ```
+
+That command runs all four steps in order and prints a summary:
+
+```
+  World Bank updated  :  ✓ yes   (17 countries, 1360 records)
+  GDELT updated       :  ✓ yes   (72 articles, 17 countries)
+  Comtrade updated    :  ✓ yes   (11 reporters, 465 flows)
+  Alerts generated    :  ✓ yes   (25 alerts — 1 critical, 10 warnings)
+
+  Total countries updated  :  17
+  Total news items         :  72
+  Total alerts             :  25
+```
+
+### Pipeline commands
+
+| Command | What it does |
+|---|---|
+| `python scripts/run_pipeline.py` | Full pipeline (all 4 steps) |
+| `python scripts/run_pipeline.py --no-comtrade` | Skip trade fetch (faster, for news-only runs) |
+| `python scripts/run_pipeline.py --dry-run` | Print plan without running anything |
+| `python scripts/run_pipeline.py --refresh` | Bypass cache, force fresh API calls |
+
+### What each step does
+
+| Step | Script | Output file | Update frequency |
+|---|---|---|---|
+| 1 | `pipeline/fetch_worldbank.py` | `worldbank_indicators.json` | Weekly |
+| 2 | `pipeline/fetch_gdelt_news.py` | `news_signals.json` | Every 6 hours |
+| 3 | `pipeline/fetch_comtrade.py` | `trade_flows.json` | Monthly |
+| 4 | `pipeline/generate_pattern_alerts.py` | `pattern_alerts.json` | After any fetch |
+
+All output files go to `pipeline/data/processed/`.  
+Run logs go to `pipeline/data/logs/pipeline_log.json`.
+
+### API keys
+
+| Key | Required | Where to get |
+|---|---|---|
+| `COMTRADE_SUBSCRIPTION_KEY` | Optional (free mode works without it) | https://comtradeplus.un.org |
+| `ANTHROPIC_API_KEY` | Optional (enables live AI explanations) | https://console.anthropic.com |
+
+Add keys to a `.env` file in the project root (copy from `.env.example`).  
+The pipeline runs in free/no-key mode automatically if keys are absent.
+
+### Recommended cron schedule
+
+```bash
+# Refresh news every 6 hours (fast — skips Comtrade):
+0 */6 * * *   cd /path/to/project && python scripts/run_pipeline.py --no-comtrade
+
+# Full refresh every Monday at 4am (includes Comtrade):
+0 4 * * 1     cd /path/to/project && python scripts/run_pipeline.py
+```
+
+### Resilience
+
+- A failed step is logged and the pipeline continues — existing output files are never deleted.  
+- Exit code `0` = all steps succeeded, `1` = at least one step failed.  
+- Individual steps can be re-run manually (e.g. `python pipeline/fetch_gdelt_news.py`).
 
 ---
 
@@ -213,7 +278,7 @@ pip install fastapi uvicorn python-dotenv anthropic
 
 ## Next Steps After MVP
 
-1. **Real data** — run `pipeline/fetch_worldbank.py`, replace sample-data.ts
+1. **Real data** — run `python scripts/run_pipeline.py`, frontend reads live JSON automatically
 2. **Live AI** — add `ANTHROPIC_API_KEY` to `backend/.env`
 3. **Database** — set up PostgreSQL, run `database/schema.sql`, switch to full backend
 4. **Deploy** — Render Blueprint (`render.yaml`) for frontend + MVP backend
@@ -377,11 +442,11 @@ npm run dev
 
 **Step 5 — Run the data pipeline (first time)**
 ```bash
-cd ..                              # back to project root
-source backend/.venv/bin/activate
-pip install -r pipeline/requirements.txt
-python pipeline/run_daily.py
-# Fetches World Bank indicators, exchange rates, and news headlines
+# From the project root (not inside pipeline/)
+pip install httpx python-dotenv
+python scripts/run_pipeline.py
+# Fetches World Bank indicators, GDELT news, Comtrade trade flows, generates alerts
+# Runs in free/no-key mode automatically — no API keys required
 ```
 
 ---
@@ -417,21 +482,24 @@ Once the backend is running, visit `http://localhost:8000/docs` for the interact
 
 ---
 
-## Running the Daily Pipeline
+## Running the Pipeline
 
-Add a cron job to run the pipeline automatically:
+Run the full pipeline at any time:
 
 ```bash
-# Edit crontab
-crontab -e
-
-# Add this line (runs at 6am daily):
-0 6 * * * cd /path/to/sea-change-dashboard && /path/to/.venv/bin/python pipeline/run_daily.py >> logs/pipeline.log 2>&1
+python scripts/run_pipeline.py
 ```
 
-Or run it manually any time:
+Add a cron job to run it automatically:
+
 ```bash
-python pipeline/run_daily.py
+crontab -e
+
+# GDELT news every 6 hours (fast — skips Comtrade):
+0 */6 * * *  cd /path/to/sea-change-dashboard && python scripts/run_pipeline.py --no-comtrade
+
+# Full refresh every Monday at 4am:
+0 4 * * 1   cd /path/to/sea-change-dashboard && python scripts/run_pipeline.py
 ```
 
 ---

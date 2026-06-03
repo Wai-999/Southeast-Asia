@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T19:31:13",
+    "generated_at": "2026-06-02T19:50:50",
     "script": "generate_pattern_alerts.py",
     "data_sources": {
       "official_data": "World Bank Open Data  (worldbank_indicators.json)",
@@ -106,7 +106,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_TLS_2023",
@@ -160,7 +160,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_BRN_2024",
@@ -224,7 +224,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "fdi_weakness_MMR_2024",
@@ -289,7 +289,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_MMR_2024",
@@ -343,7 +343,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "inflation_pressure_LAO_2024",
@@ -415,7 +415,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_LAO_2024",
@@ -479,7 +479,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_TLS_2023",
@@ -544,7 +544,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_LAO_2024",
@@ -618,7 +618,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "growth_slowdown_MMR_2024",
@@ -684,7 +684,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_KHM_2024",
@@ -749,7 +749,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_THA_2024",
@@ -831,7 +831,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_IDN_2024",
@@ -904,7 +904,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_THA_2024",
@@ -977,7 +977,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "import_shock_IDN_2024",
@@ -1053,7 +1053,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_MMR_2024",
@@ -1117,7 +1117,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_IDN_2024",
@@ -1199,7 +1199,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_VNM_2024",
@@ -1272,7 +1272,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_PHL_2024",
@@ -1335,7 +1335,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "political_risk_rising_MMR_2024",
@@ -1416,7 +1416,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_KHM_2024",
@@ -1479,7 +1479,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_MYS_2024",
@@ -1552,7 +1552,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_MYS_2024",
@@ -1615,7 +1615,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_SGP_2024",
@@ -1688,7 +1688,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_SGP_2024",
@@ -1751,7 +1751,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     }
   ],
   "all_results": [
@@ -1823,7 +1823,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_BRN_2024",
@@ -1887,7 +1887,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2024"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "import_shock_IDN_2024",
@@ -1963,7 +1963,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_IDN_2024",
@@ -2045,7 +2045,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_IDN_2024",
@@ -2118,7 +2118,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "import_shock_KHM_2024",
@@ -2188,7 +2188,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_KHM_2024",
@@ -2253,7 +2253,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "regional_spillover_KHM_2024",
@@ -2323,7 +2323,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_KHM_2024",
@@ -2386,7 +2386,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "inflation_pressure_LAO_2024",
@@ -2458,7 +2458,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "fdi_weakness_LAO_2024",
@@ -2532,7 +2532,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_LAO_2024",
@@ -2606,7 +2606,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "regional_spillover_LAO_2024",
@@ -2677,7 +2677,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_LAO_2024",
@@ -2741,7 +2741,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "import_shock_MMR_2024",
@@ -2792,7 +2792,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "inflation_pressure_MMR_2024",
@@ -2855,7 +2855,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "political_risk_rising_MMR_2024",
@@ -2936,7 +2936,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "fdi_weakness_MMR_2024",
@@ -3001,7 +3001,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_MMR_2024",
@@ -3065,7 +3065,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "regional_spillover_MMR_2024",
@@ -3143,7 +3143,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "growth_slowdown_MMR_2024",
@@ -3209,7 +3209,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_MMR_2024",
@@ -3263,7 +3263,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "import_shock_MYS_2024",
@@ -3330,7 +3330,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_MYS_2024",
@@ -3403,7 +3403,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_MYS_2024",
@@ -3466,7 +3466,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_PHL_2024",
@@ -3529,7 +3529,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_SGP_2024",
@@ -3602,7 +3602,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_SGP_2024",
@@ -3665,7 +3665,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_THA_2024",
@@ -3747,7 +3747,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "regional_spillover_THA_2024",
@@ -3828,7 +3828,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_THA_2024",
@@ -3901,7 +3901,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_TLS_2023",
@@ -3966,7 +3966,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_TLS_2023",
@@ -4020,7 +4020,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_dependency_risk_VNM_2024",
@@ -4100,7 +4100,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "regional_spillover_VNM_2024",
@@ -4169,7 +4169,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     },
     {
       "alert_id": "trade_news_pressure_VNM_2024",
@@ -4242,7 +4242,7 @@
         "GDELT 7-day (as of 2026-06-02)",
         "UN Comtrade 2023"
       ],
-      "generated_at": "2026-06-02T19:31:13"
+      "generated_at": "2026-06-02T19:50:50"
     }
   ],
   "by_country": {
@@ -4319,7 +4319,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -4391,7 +4391,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -4455,7 +4455,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -4529,7 +4529,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "TLS": [
@@ -4585,7 +4585,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -4650,7 +4650,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "BRN": [
@@ -4716,7 +4716,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "MMR": [
@@ -4783,7 +4783,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -4837,7 +4837,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -4903,7 +4903,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -4967,7 +4967,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -5048,7 +5048,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "KHM": [
@@ -5115,7 +5115,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -5178,7 +5178,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "THA": [
@@ -5262,7 +5262,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -5335,7 +5335,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "IDN": [
@@ -5410,7 +5410,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -5486,7 +5486,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -5568,7 +5568,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "VNM": [
@@ -5643,7 +5643,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "PHL": [
@@ -5708,7 +5708,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "MYS": [
@@ -5783,7 +5783,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -5846,7 +5846,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "SGP": [
@@ -5921,7 +5921,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -5984,7 +5984,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ]
   },
@@ -6062,7 +6062,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "fdi_weakness_MMR_2024",
@@ -6127,7 +6127,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "trade_news_pressure": [
@@ -6183,7 +6183,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -6247,7 +6247,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -6301,7 +6301,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -6365,7 +6365,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -6438,7 +6438,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -6511,7 +6511,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -6584,7 +6584,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -6647,7 +6647,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -6710,7 +6710,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -6773,7 +6773,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -6836,7 +6836,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "inflation_pressure": [
@@ -6910,7 +6910,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "trade_dependency_risk": [
@@ -6977,7 +6977,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -7051,7 +7051,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -7116,7 +7116,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_THA_2024",
@@ -7198,7 +7198,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -7262,7 +7262,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -7344,7 +7344,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -7417,7 +7417,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -7490,7 +7490,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "growth_slowdown": [
@@ -7558,7 +7558,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "import_shock": [
@@ -7636,7 +7636,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "political_risk_rising": [
@@ -7719,7 +7719,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ]
   },
@@ -7797,7 +7797,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "warning": [
@@ -7853,7 +7853,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -7917,7 +7917,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "fdi_weakness_MMR_2024",
@@ -7982,7 +7982,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -8036,7 +8036,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -8108,7 +8108,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -8172,7 +8172,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -8237,7 +8237,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_LAO_2024",
@@ -8311,7 +8311,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -8377,7 +8377,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -8442,7 +8442,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "info": [
@@ -8526,7 +8526,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -8599,7 +8599,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -8672,7 +8672,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -8748,7 +8748,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -8812,7 +8812,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -8894,7 +8894,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -8967,7 +8967,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -9030,7 +9030,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -9111,7 +9111,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -9174,7 +9174,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -9247,7 +9247,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -9310,7 +9310,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -9383,7 +9383,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -9446,7 +9446,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ]
   },
@@ -9524,7 +9524,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "political_risk_rising_MMR_2024",
@@ -9605,7 +9605,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "medium": [
@@ -9672,7 +9672,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_TLS_2023",
@@ -9737,7 +9737,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "growth_slowdown_MMR_2024",
@@ -9803,7 +9803,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_THA_2024",
@@ -9885,7 +9885,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ],
     "low": [
@@ -9961,7 +9961,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_TLS_2023",
@@ -10015,7 +10015,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_BRN_2024",
@@ -10079,7 +10079,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2024"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MMR_2024",
@@ -10133,7 +10133,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "inflation_pressure_LAO_2024",
@@ -10205,7 +10205,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_LAO_2024",
@@ -10269,7 +10269,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_KHM_2024",
@@ -10334,7 +10334,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_IDN_2024",
@@ -10407,7 +10407,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_THA_2024",
@@ -10480,7 +10480,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "import_shock_IDN_2024",
@@ -10556,7 +10556,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MMR_2024",
@@ -10620,7 +10620,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_IDN_2024",
@@ -10702,7 +10702,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_VNM_2024",
@@ -10775,7 +10775,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_PHL_2024",
@@ -10838,7 +10838,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_KHM_2024",
@@ -10901,7 +10901,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_MYS_2024",
@@ -10974,7 +10974,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_MYS_2024",
@@ -11037,7 +11037,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_dependency_risk_SGP_2024",
@@ -11110,7 +11110,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       },
       {
         "alert_id": "trade_news_pressure_SGP_2024",
@@ -11173,7 +11173,7 @@
           "GDELT 7-day (as of 2026-06-02)",
           "UN Comtrade 2023"
         ],
-        "generated_at": "2026-06-02T19:31:13"
+        "generated_at": "2026-06-02T19:50:50"
       }
     ]
   }
