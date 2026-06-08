@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-06-08T03:57:21",
+    "generated_at": "2026-06-08T08:48:44",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
-    "fetched_at": "2026-06-02T10:03:49",
+    "fetched_at": "2026-06-08T08:47:43",
     "total_checks": 80,
-    "triggered_alerts": 10,
-    "critical": 2,
-    "warnings": 3,
-    "info_count": 5,
+    "triggered_alerts": 11,
+    "critical": 1,
+    "warnings": 4,
+    "info_count": 6,
     "countries_checked": 10,
     "min_score_filter": 20.0,
     "alert_types": [
@@ -25,44 +25,12 @@
   },
   "alerts": [
     {
-      "alert_id": "trade_dependency_risk_LAO_2024",
-      "alert_type": "trade_dependency_risk",
-      "alert_label": "Trade Dependency Risk",
-      "country_iso3": "LAO",
-      "country_name": "Laos",
-      "year": 2024,
-      "triggered": true,
-      "score": 73.2,
-      "severity": "critical",
-      "conditions_met": [
-        "47% of exports go to CHN (over-reliance threshold: 30%)",
-        "51% of imports sourced from CHN (over-reliance threshold: 35%)",
-        "CHN is both largest export market and import source — bilateral lock-in risk"
-      ],
-      "values_used": {
-        "top_export_partner": "CHN",
-        "top_export_partner_share": 46.9,
-        "top_import_partner": "CHN",
-        "top_import_partner_share": 51.3
-      },
-      "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
-      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-      "color": "#DC2626",
-      "bg_color": "#FEF2F2",
-      "icon": "🔗",
-      "severity_class": "sev-critical",
-      "chart_hint": "bar",
-      "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
-      "source_url": "data/processed/indicators_dashboard.json"
-    },
-    {
-      "alert_id": "investment_slowdown_LAO_2024",
+      "alert_id": "investment_slowdown_LAO_2025",
       "alert_type": "investment_slowdown",
       "alert_label": "Investment Slowdown",
       "country_iso3": "LAO",
       "country_name": "Laos",
-      "year": 2024,
+      "year": 2025,
       "triggered": true,
       "score": 66.4,
       "severity": "critical",
@@ -85,16 +53,16 @@
       "severity_class": "sev-critical",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
-      "alert_id": "investment_slowdown_MMR_2024",
+      "alert_id": "investment_slowdown_MMR_2025",
       "alert_type": "investment_slowdown",
       "alert_label": "Investment Slowdown",
       "country_iso3": "MMR",
       "country_name": "Myanmar",
-      "year": 2024,
+      "year": 2025,
       "triggered": true,
       "score": 53.4,
       "severity": "warning",
@@ -117,47 +85,16 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
-      "alert_id": "trade_dependency_risk_MMR_2024",
-      "alert_type": "trade_dependency_risk",
-      "alert_label": "Trade Dependency Risk",
-      "country_iso3": "MMR",
-      "country_name": "Myanmar",
-      "year": 2024,
-      "triggered": true,
-      "score": 50.2,
-      "severity": "warning",
-      "conditions_met": [
-        "47% of imports sourced from CHN (over-reliance threshold: 35%)",
-        "CHN is both largest export market and import source — bilateral lock-in risk"
-      ],
-      "values_used": {
-        "top_export_partner": "CHN",
-        "top_export_partner_share": 28.1,
-        "top_import_partner": "CHN",
-        "top_import_partner_share": 47.1
-      },
-      "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
-      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-      "color": "#D97706",
-      "bg_color": "#FFFBEB",
-      "icon": "🔗",
-      "severity_class": "sev-warning",
-      "chart_hint": "bar",
-      "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
-      "source_url": "data/processed/indicators_dashboard.json"
-    },
-    {
-      "alert_id": "inflation_pressure_LAO_2024",
+      "alert_id": "inflation_pressure_LAO_2025",
       "alert_type": "inflation_pressure",
       "alert_label": "Inflation Pressure",
       "country_iso3": "LAO",
       "country_name": "Laos",
-      "year": 2024,
+      "year": 2025,
       "triggered": true,
       "score": 47.2,
       "severity": "warning",
@@ -178,27 +115,149 @@
       "severity_class": "sev-warning",
       "chart_hint": "line",
       "metric_to_highlight": "inflation_pct",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
-      "alert_id": "trade_dependency_risk_IDN_2024",
+      "alert_id": "trade_dependency_risk_LAO_2025",
       "alert_type": "trade_dependency_risk",
       "alert_label": "Trade Dependency Risk",
-      "country_iso3": "IDN",
-      "country_name": "Indonesia",
-      "year": 2024,
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2025,
       "triggered": true,
-      "score": 26.5,
+      "score": 43.0,
+      "severity": "warning",
+      "conditions_met": [
+        "38% of exports go to CHN (over-reliance threshold: 30%)",
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 38.2,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 29.8
+      },
+      "explanation": "Laos shows high trade concentration: 38% of Laos's exports go to CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔗",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "generated_at": "2026-06-08T08:48:44",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "trade_dependency_risk_KHM_2025",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "KHM",
+      "country_name": "Cambodia",
+      "year": 2025,
+      "triggered": true,
+      "score": 40.7,
+      "severity": "warning",
+      "conditions_met": [
+        "42% of exports go to USA (over-reliance threshold: 30%)",
+        "44% of imports sourced from CHN (over-reliance threshold: 35%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 41.5,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 44.2
+      },
+      "explanation": "Cambodia shows high trade concentration: 42% of Cambodia's exports go to USA. 44% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "🔗",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "generated_at": "2026-06-08T08:48:44",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "trade_dependency_risk_THA_2025",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "THA",
+      "country_name": "Thailand",
+      "year": 2025,
+      "triggered": true,
+      "score": 36.1,
+      "severity": "info",
+      "conditions_met": [
+        "56% of exports go to USA (over-reliance threshold: 30%)"
+      ],
+      "values_used": {
+        "top_export_partner": "USA",
+        "top_export_partner_share": 56.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 20.7
+      },
+      "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "generated_at": "2026-06-08T08:48:44",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "trade_dependency_risk_MMR_2025",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2025,
+      "triggered": true,
+      "score": 29.2,
       "severity": "info",
       "conditions_met": [
         "CHN is both largest export market and import source — bilateral lock-in risk"
       ],
       "values_used": {
         "top_export_partner": "CHN",
-        "top_export_partner_share": 21.3,
+        "top_export_partner_share": 23.2,
         "top_import_partner": "CHN",
-        "top_import_partner_share": 30.2
+        "top_import_partner_share": 31.0
+      },
+      "explanation": "Trade concentration for Myanmar is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "generated_at": "2026-06-08T08:48:44",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "trade_dependency_risk_IDN_2025",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "IDN",
+      "country_name": "Indonesia",
+      "year": 2025,
+      "triggered": true,
+      "score": 28.5,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 25.1,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 28.4
       },
       "explanation": "Trade concentration for Indonesia is within normal bounds.",
       "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -208,16 +267,16 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
-      "alert_id": "political_instability_MMR_2024",
+      "alert_id": "political_instability_MMR_2025",
       "alert_type": "political_instability",
       "alert_label": "Political Instability Rising",
       "country_iso3": "MMR",
       "country_name": "Myanmar",
-      "year": 2024,
+      "year": 2025,
       "triggered": true,
       "score": 23.0,
       "severity": "info",
@@ -238,77 +297,16 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "conflict_protest_news_count",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
-      "alert_id": "trade_dependency_risk_VNM_2024",
-      "alert_type": "trade_dependency_risk",
-      "alert_label": "Trade Dependency Risk",
-      "country_iso3": "VNM",
-      "country_name": "Vietnam",
-      "year": 2024,
-      "triggered": true,
-      "score": 22.0,
-      "severity": "info",
-      "conditions_met": [
-        "31% of exports go to USA (over-reliance threshold: 30%)",
-        "36% of imports sourced from CHN (over-reliance threshold: 35%)"
-      ],
-      "values_used": {
-        "top_export_partner": "USA",
-        "top_export_partner_share": 30.9,
-        "top_import_partner": "CHN",
-        "top_import_partner_share": 36.1
-      },
-      "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-      "color": "#2563EB",
-      "bg_color": "#EFF6FF",
-      "icon": "🔗",
-      "severity_class": "sev-info",
-      "chart_hint": "bar",
-      "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
-      "source_url": "data/processed/indicators_dashboard.json"
-    },
-    {
-      "alert_id": "trade_dependency_risk_KHM_2024",
-      "alert_type": "trade_dependency_risk",
-      "alert_label": "Trade Dependency Risk",
-      "country_iso3": "KHM",
-      "country_name": "Cambodia",
-      "year": 2024,
-      "triggered": true,
-      "score": 20.1,
-      "severity": "info",
-      "conditions_met": [
-        "37% of imports sourced from CHN (over-reliance threshold: 35%)"
-      ],
-      "values_used": {
-        "top_export_partner": "USA",
-        "top_export_partner_share": 28.1,
-        "top_import_partner": "CHN",
-        "top_import_partner_share": 37.0
-      },
-      "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-      "color": "#2563EB",
-      "bg_color": "#EFF6FF",
-      "icon": "🔗",
-      "severity_class": "sev-info",
-      "chart_hint": "bar",
-      "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
-      "source_url": "data/processed/indicators_dashboard.json"
-    },
-    {
-      "alert_id": "trade_dependency_risk_MYS_2024",
+      "alert_id": "trade_dependency_risk_MYS_2025",
       "alert_type": "trade_dependency_risk",
       "alert_label": "Trade Dependency Risk",
       "country_iso3": "MYS",
       "country_name": "Malaysia",
-      "year": 2024,
+      "year": 2025,
       "triggered": true,
       "score": 20.0,
       "severity": "info",
@@ -317,9 +315,9 @@
       ],
       "values_used": {
         "top_export_partner": "CHN",
-        "top_export_partner_share": 16.1,
+        "top_export_partner_share": 13.5,
         "top_import_partner": "CHN",
-        "top_import_partner_share": 22.4
+        "top_import_partner_share": 21.3
       },
       "explanation": "Trade concentration for Malaysia is within normal bounds.",
       "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -329,51 +327,49 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-06-08T03:57:21",
+      "generated_at": "2026-06-08T08:48:44",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "trade_dependency_risk_SGP_2025",
+      "alert_type": "trade_dependency_risk",
+      "alert_label": "Trade Dependency Risk",
+      "country_iso3": "SGP",
+      "country_name": "Singapore",
+      "year": 2025,
+      "triggered": true,
+      "score": 20.0,
+      "severity": "info",
+      "conditions_met": [
+        "CHN is both largest export market and import source — bilateral lock-in risk"
+      ],
+      "values_used": {
+        "top_export_partner": "CHN",
+        "top_export_partner_share": 13.8,
+        "top_import_partner": "CHN",
+        "top_import_partner_share": 13.9
+      },
+      "explanation": "Trade concentration for Singapore is within normal bounds.",
+      "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "🔗",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "top_export_partner_share",
+      "generated_at": "2026-06-08T08:48:44",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
   "by_country": {
     "LAO": [
       {
-        "alert_id": "trade_dependency_risk_LAO_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "LAO",
-        "country_name": "Laos",
-        "year": 2024,
-        "triggered": true,
-        "score": 73.2,
-        "severity": "critical",
-        "conditions_met": [
-          "47% of exports go to CHN (over-reliance threshold: 30%)",
-          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 46.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 51.3
-        },
-        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#DC2626",
-        "bg_color": "#FEF2F2",
-        "icon": "🔗",
-        "severity_class": "sev-critical",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "investment_slowdown_LAO_2024",
+        "alert_id": "investment_slowdown_LAO_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 66.4,
         "severity": "critical",
@@ -396,16 +392,16 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_id": "inflation_pressure_LAO_2025",
         "alert_type": "inflation_pressure",
         "alert_label": "Inflation Pressure",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 47.2,
         "severity": "warning",
@@ -426,18 +422,49 @@
         "severity_class": "sev-warning",
         "chart_hint": "line",
         "metric_to_highlight": "inflation_pct",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_LAO_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 43.0,
+        "severity": "warning",
+        "conditions_met": [
+          "38% of exports go to CHN (over-reliance threshold: 30%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "explanation": "Laos shows high trade concentration: 38% of Laos's exports go to CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "MMR": [
       {
-        "alert_id": "investment_slowdown_MMR_2024",
+        "alert_id": "investment_slowdown_MMR_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 53.4,
         "severity": "warning",
@@ -460,47 +487,46 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "trade_dependency_risk_MMR_2024",
+        "alert_id": "trade_dependency_risk_MMR_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
-        "score": 50.2,
-        "severity": "warning",
+        "score": 29.2,
+        "severity": "info",
         "conditions_met": [
-          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
           "CHN is both largest export market and import source — bilateral lock-in risk"
         ],
         "values_used": {
           "top_export_partner": "CHN",
-          "top_export_partner_share": 28.1,
+          "top_export_partner_share": 23.2,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 47.1
+          "top_import_partner_share": 31.0
         },
-        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "explanation": "Trade concentration for Myanmar is within normal bounds.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#D97706",
-        "bg_color": "#FFFBEB",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
         "icon": "🔗",
-        "severity_class": "sev-warning",
+        "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "political_instability_MMR_2024",
+        "alert_id": "political_instability_MMR_2025",
         "alert_type": "political_instability",
         "alert_label": "Political Instability Rising",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 23.0,
         "severity": "info",
@@ -521,195 +547,32 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ],
-    "IDN": [
-      {
-        "alert_id": "trade_dependency_risk_IDN_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "IDN",
-        "country_name": "Indonesia",
-        "year": 2024,
-        "triggered": true,
-        "score": 26.5,
-        "severity": "info",
-        "conditions_met": [
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 21.3,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 30.2
-        },
-        "explanation": "Trade concentration for Indonesia is within normal bounds.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ],
-    "VNM": [
-      {
-        "alert_id": "trade_dependency_risk_VNM_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "VNM",
-        "country_name": "Vietnam",
-        "year": 2024,
-        "triggered": true,
-        "score": 22.0,
-        "severity": "info",
-        "conditions_met": [
-          "31% of exports go to USA (over-reliance threshold: 30%)",
-          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
-        ],
-        "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 30.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 36.1
-        },
-        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "KHM": [
       {
-        "alert_id": "trade_dependency_risk_KHM_2024",
+        "alert_id": "trade_dependency_risk_KHM_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
         "country_iso3": "KHM",
         "country_name": "Cambodia",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
-        "score": 20.1,
-        "severity": "info",
+        "score": 40.7,
+        "severity": "warning",
         "conditions_met": [
-          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
+          "42% of exports go to USA (over-reliance threshold: 30%)",
+          "44% of imports sourced from CHN (over-reliance threshold: 35%)"
         ],
         "values_used": {
           "top_export_partner": "USA",
-          "top_export_partner_share": 28.1,
+          "top_export_partner_share": 41.5,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 37.0
+          "top_import_partner_share": 44.2
         },
-        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ],
-    "MYS": [
-      {
-        "alert_id": "trade_dependency_risk_MYS_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "MYS",
-        "country_name": "Malaysia",
-        "year": 2024,
-        "triggered": true,
-        "score": 20.0,
-        "severity": "info",
-        "conditions_met": [
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 16.1,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 22.4
-        },
-        "explanation": "Trade concentration for Malaysia is within normal bounds.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ]
-  },
-  "by_type": {
-    "trade_dependency_risk": [
-      {
-        "alert_id": "trade_dependency_risk_LAO_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "LAO",
-        "country_name": "Laos",
-        "year": 2024,
-        "triggered": true,
-        "score": 73.2,
-        "severity": "critical",
-        "conditions_met": [
-          "47% of exports go to CHN (over-reliance threshold: 30%)",
-          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 46.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 51.3
-        },
-        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#DC2626",
-        "bg_color": "#FEF2F2",
-        "icon": "🔗",
-        "severity_class": "sev-critical",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "trade_dependency_risk_MMR_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "MMR",
-        "country_name": "Myanmar",
-        "year": 2024,
-        "triggered": true,
-        "score": 50.2,
-        "severity": "warning",
-        "conditions_met": [
-          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 28.1,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 47.1
-        },
-        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
+        "explanation": "Cambodia shows high trade concentration: 42% of Cambodia's exports go to USA. 44% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
         "color": "#D97706",
         "bg_color": "#FFFBEB",
@@ -717,27 +580,61 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
-      },
+      }
+    ],
+    "THA": [
       {
-        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_id": "trade_dependency_risk_THA_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "THA",
+        "country_name": "Thailand",
+        "year": 2025,
+        "triggered": true,
+        "score": 36.1,
+        "severity": "info",
+        "conditions_met": [
+          "56% of exports go to USA (over-reliance threshold: 30%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
+    "IDN": [
+      {
+        "alert_id": "trade_dependency_risk_IDN_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
         "country_iso3": "IDN",
         "country_name": "Indonesia",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
-        "score": 26.5,
+        "score": 28.5,
         "severity": "info",
         "conditions_met": [
           "CHN is both largest export market and import source — bilateral lock-in risk"
         ],
         "values_used": {
           "top_export_partner": "CHN",
-          "top_export_partner_share": 21.3,
+          "top_export_partner_share": 25.1,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 30.2
+          "top_import_partner_share": 28.4
         },
         "explanation": "Trade concentration for Indonesia is within normal bounds.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -747,77 +644,18 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
-      },
+      }
+    ],
+    "MYS": [
       {
-        "alert_id": "trade_dependency_risk_VNM_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "VNM",
-        "country_name": "Vietnam",
-        "year": 2024,
-        "triggered": true,
-        "score": 22.0,
-        "severity": "info",
-        "conditions_met": [
-          "31% of exports go to USA (over-reliance threshold: 30%)",
-          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
-        ],
-        "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 30.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 36.1
-        },
-        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "trade_dependency_risk_KHM_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "KHM",
-        "country_name": "Cambodia",
-        "year": 2024,
-        "triggered": true,
-        "score": 20.1,
-        "severity": "info",
-        "conditions_met": [
-          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
-        ],
-        "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 28.1,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 37.0
-        },
-        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_id": "trade_dependency_risk_MYS_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
         "country_iso3": "MYS",
         "country_name": "Malaysia",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 20.0,
         "severity": "info",
@@ -826,9 +664,9 @@
         ],
         "values_used": {
           "top_export_partner": "CHN",
-          "top_export_partner_share": 16.1,
+          "top_export_partner_share": 13.5,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 22.4
+          "top_import_partner_share": 21.3
         },
         "explanation": "Trade concentration for Malaysia is within normal bounds.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -838,18 +676,52 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
+    "SGP": [
+      {
+        "alert_id": "trade_dependency_risk_SGP_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "SGP",
+        "country_name": "Singapore",
+        "year": 2025,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "explanation": "Trade concentration for Singapore is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ]
+  },
+  "by_type": {
     "investment_slowdown": [
       {
-        "alert_id": "investment_slowdown_LAO_2024",
+        "alert_id": "investment_slowdown_LAO_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 66.4,
         "severity": "critical",
@@ -872,16 +744,16 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "investment_slowdown_MMR_2024",
+        "alert_id": "investment_slowdown_MMR_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 53.4,
         "severity": "warning",
@@ -904,18 +776,18 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "inflation_pressure": [
       {
-        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_id": "inflation_pressure_LAO_2025",
         "alert_type": "inflation_pressure",
         "alert_label": "Inflation Pressure",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 47.2,
         "severity": "warning",
@@ -936,18 +808,232 @@
         "severity_class": "sev-warning",
         "chart_hint": "line",
         "metric_to_highlight": "inflation_pct",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
+    "trade_dependency_risk": [
+      {
+        "alert_id": "trade_dependency_risk_LAO_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 43.0,
+        "severity": "warning",
+        "conditions_met": [
+          "38% of exports go to CHN (over-reliance threshold: 30%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "explanation": "Laos shows high trade concentration: 38% of Laos's exports go to CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_KHM_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2025,
+        "triggered": true,
+        "score": 40.7,
+        "severity": "warning",
+        "conditions_met": [
+          "42% of exports go to USA (over-reliance threshold: 30%)",
+          "44% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "explanation": "Cambodia shows high trade concentration: 42% of Cambodia's exports go to USA. 44% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_THA_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "THA",
+        "country_name": "Thailand",
+        "year": 2025,
+        "triggered": true,
+        "score": 36.1,
+        "severity": "info",
+        "conditions_met": [
+          "56% of exports go to USA (over-reliance threshold: 30%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 29.2,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "explanation": "Trade concentration for Myanmar is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_IDN_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2025,
+        "triggered": true,
+        "score": 28.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
+        },
+        "explanation": "Trade concentration for Indonesia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MYS_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MYS",
+        "country_name": "Malaysia",
+        "year": 2025,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 21.3
+        },
+        "explanation": "Trade concentration for Malaysia is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_SGP_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "SGP",
+        "country_name": "Singapore",
+        "year": 2025,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "explanation": "Trade concentration for Singapore is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "political_instability": [
       {
-        "alert_id": "political_instability_MMR_2024",
+        "alert_id": "political_instability_MMR_2025",
         "alert_type": "political_instability",
         "alert_label": "Political Instability Rising",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 23.0,
         "severity": "info",
@@ -968,7 +1054,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -976,44 +1062,12 @@
   "by_severity": {
     "critical": [
       {
-        "alert_id": "trade_dependency_risk_LAO_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "LAO",
-        "country_name": "Laos",
-        "year": 2024,
-        "triggered": true,
-        "score": 73.2,
-        "severity": "critical",
-        "conditions_met": [
-          "47% of exports go to CHN (over-reliance threshold: 30%)",
-          "51% of imports sourced from CHN (over-reliance threshold: 35%)",
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 46.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 51.3
-        },
-        "explanation": "Laos shows high trade concentration: 47% of Laos's exports go to CHN. 51% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#DC2626",
-        "bg_color": "#FEF2F2",
-        "icon": "🔗",
-        "severity_class": "sev-critical",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "investment_slowdown_LAO_2024",
+        "alert_id": "investment_slowdown_LAO_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 66.4,
         "severity": "critical",
@@ -1036,18 +1090,18 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "warning": [
       {
-        "alert_id": "investment_slowdown_MMR_2024",
+        "alert_id": "investment_slowdown_MMR_2025",
         "alert_type": "investment_slowdown",
         "alert_label": "Investment Slowdown",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 53.4,
         "severity": "warning",
@@ -1070,47 +1124,16 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "trade_dependency_risk_MMR_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "MMR",
-        "country_name": "Myanmar",
-        "year": 2024,
-        "triggered": true,
-        "score": 50.2,
-        "severity": "warning",
-        "conditions_met": [
-          "47% of imports sourced from CHN (over-reliance threshold: 35%)",
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 28.1,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 47.1
-        },
-        "explanation": "Myanmar shows high trade concentration: 47% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Myanmar's trade ledger amplifies geopolitical exposure.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#D97706",
-        "bg_color": "#FFFBEB",
-        "icon": "🔗",
-        "severity_class": "sev-warning",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "inflation_pressure_LAO_2024",
+        "alert_id": "inflation_pressure_LAO_2025",
         "alert_type": "inflation_pressure",
         "alert_label": "Inflation Pressure",
         "country_iso3": "LAO",
         "country_name": "Laos",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 47.2,
         "severity": "warning",
@@ -1131,29 +1154,151 @@
         "severity_class": "sev-warning",
         "chart_hint": "line",
         "metric_to_highlight": "inflation_pct",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_LAO_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 43.0,
+        "severity": "warning",
+        "conditions_met": [
+          "38% of exports go to CHN (over-reliance threshold: 30%)",
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 38.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 29.8
+        },
+        "explanation": "Laos shows high trade concentration: 38% of Laos's exports go to CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner. The fact that CHN dominates both sides of Laos's trade ledger amplifies geopolitical exposure.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_KHM_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "KHM",
+        "country_name": "Cambodia",
+        "year": 2025,
+        "triggered": true,
+        "score": 40.7,
+        "severity": "warning",
+        "conditions_met": [
+          "42% of exports go to USA (over-reliance threshold: 30%)",
+          "44% of imports sourced from CHN (over-reliance threshold: 35%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 41.5,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 44.2
+        },
+        "explanation": "Cambodia shows high trade concentration: 42% of Cambodia's exports go to USA. 44% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "🔗",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
     "info": [
       {
-        "alert_id": "trade_dependency_risk_IDN_2024",
+        "alert_id": "trade_dependency_risk_THA_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
-        "country_iso3": "IDN",
-        "country_name": "Indonesia",
-        "year": 2024,
+        "country_iso3": "THA",
+        "country_name": "Thailand",
+        "year": 2025,
         "triggered": true,
-        "score": 26.5,
+        "score": 36.1,
+        "severity": "info",
+        "conditions_met": [
+          "56% of exports go to USA (over-reliance threshold: 30%)"
+        ],
+        "values_used": {
+          "top_export_partner": "USA",
+          "top_export_partner_share": 56.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 20.7
+        },
+        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 29.2,
         "severity": "info",
         "conditions_met": [
           "CHN is both largest export market and import source — bilateral lock-in risk"
         ],
         "values_used": {
           "top_export_partner": "CHN",
-          "top_export_partner_share": 21.3,
+          "top_export_partner_share": 23.2,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 30.2
+          "top_import_partner_share": 31.0
+        },
+        "explanation": "Trade concentration for Myanmar is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_IDN_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "IDN",
+        "country_name": "Indonesia",
+        "year": 2025,
+        "triggered": true,
+        "score": 28.5,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 25.1,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 28.4
         },
         "explanation": "Trade concentration for Indonesia is within normal bounds.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -1163,16 +1308,16 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "political_instability_MMR_2024",
+        "alert_id": "political_instability_MMR_2025",
         "alert_type": "political_instability",
         "alert_label": "Political Instability Rising",
         "country_iso3": "MMR",
         "country_name": "Myanmar",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 23.0,
         "severity": "info",
@@ -1193,77 +1338,16 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
-        "alert_id": "trade_dependency_risk_VNM_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "VNM",
-        "country_name": "Vietnam",
-        "year": 2024,
-        "triggered": true,
-        "score": 22.0,
-        "severity": "info",
-        "conditions_met": [
-          "31% of exports go to USA (over-reliance threshold: 30%)",
-          "36% of imports sourced from CHN (over-reliance threshold: 35%)"
-        ],
-        "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 30.9,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 36.1
-        },
-        "explanation": "Vietnam shows high trade concentration: 31% of Vietnam's exports go to USA. 36% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "trade_dependency_risk_KHM_2024",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "KHM",
-        "country_name": "Cambodia",
-        "year": 2024,
-        "triggered": true,
-        "score": 20.1,
-        "severity": "info",
-        "conditions_met": [
-          "37% of imports sourced from CHN (over-reliance threshold: 35%)"
-        ],
-        "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 28.1,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 37.0
-        },
-        "explanation": "Cambodia shows high trade concentration: 37% of imports are sourced from CHN. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "trade_dependency_risk_MYS_2024",
+        "alert_id": "trade_dependency_risk_MYS_2025",
         "alert_type": "trade_dependency_risk",
         "alert_label": "Trade Dependency Risk",
         "country_iso3": "MYS",
         "country_name": "Malaysia",
-        "year": 2024,
+        "year": 2025,
         "triggered": true,
         "score": 20.0,
         "severity": "info",
@@ -1272,9 +1356,9 @@
         ],
         "values_used": {
           "top_export_partner": "CHN",
-          "top_export_partner_share": 16.1,
+          "top_export_partner_share": 13.5,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 22.4
+          "top_import_partner_share": 21.3
         },
         "explanation": "Trade concentration for Malaysia is within normal bounds.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
@@ -1284,7 +1368,37 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-06-08T03:57:21",
+        "generated_at": "2026-06-08T08:48:44",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_SGP_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "SGP",
+        "country_name": "Singapore",
+        "year": 2025,
+        "triggered": true,
+        "score": 20.0,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 13.8,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 13.9
+        },
+        "explanation": "Trade concentration for Singapore is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-06-08T08:48:44",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
