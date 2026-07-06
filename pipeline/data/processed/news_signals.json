@@ -13,7 +13,7 @@
     "categories": 13,
     "data_status": "live",
     "refresh_note": "Run 'cd pipeline && python fetch_gdelt_news.py' to load real-time data. Sample covers 2026-05-26 – 2026-06-02.",
-    "rate_limited_at": "2026-07-05T19:29:23",
+    "rate_limited_at": "2026-07-06T03:09:23",
     "rate_limit_note": "Last live refresh was blocked by GDELT rate-limit. Dashboard is showing previously fetched data."
   },
   "source_tracking": {
