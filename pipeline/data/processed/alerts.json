@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-07T20:11:19",
+    "generated_at": "2026-07-08T02:38:46",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
     "fetched_at": "2026-07-06T08:20:53",
@@ -52,7 +52,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -83,7 +83,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -113,7 +113,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -143,7 +143,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -173,7 +173,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -203,7 +203,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "conflict_protest_news_count",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -233,7 +233,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -263,7 +263,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-07T20:11:19",
+      "generated_at": "2026-07-08T02:38:46",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
@@ -297,7 +297,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -330,7 +330,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -362,7 +362,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -394,7 +394,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -424,7 +424,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -456,7 +456,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -488,7 +488,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -520,7 +520,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -555,7 +555,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -586,7 +586,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -616,7 +616,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -646,7 +646,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -676,7 +676,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -706,7 +706,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -736,7 +736,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -768,7 +768,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -804,7 +804,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -835,7 +835,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -867,7 +867,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -897,7 +897,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -927,7 +927,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -957,7 +957,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -987,7 +987,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1017,7 +1017,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-07T20:11:19",
+        "generated_at": "2026-07-08T02:38:46",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
