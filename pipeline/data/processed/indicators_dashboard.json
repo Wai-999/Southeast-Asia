@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-07-06T08:21:14",
+    "generated_at": "2026-07-13T06:52:36",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
-    "fetched_at": "2026-07-06T08:20:53",
+    "fetched_at": "2026-07-13T06:52:09",
     "wb_data_status": "live",
     "countries": 17,
     "sea_countries": 11,
@@ -28,7 +28,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -52,52 +52,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": -0.1336,
+          "prev_value": 0.3983,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 0.781,
-          "prev_value": 0.781,
-          "trend": "flat",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.7017,
+          "prev_value": 1.9975,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 410.5316,
+          "prev_value": 368.8368,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 388.1292,
+          "prev_value": 349.6713,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -227,67 +227,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 0.597,
+            "value": -0.8981,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 0.688,
+            "value": 0.1862,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 0.83,
+            "value": 0.6644,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 0.765,
+            "value": 1.0668,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 0.716,
+            "value": 0.7055,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 1.099,
+            "value": -0.8461,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 1.215,
+            "value": 1.231,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 0.94,
+            "value": 6.0759,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 0.733,
+            "value": 1.2291,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 0.781,
+            "value": 0.3983,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 0.781,
+            "value": -0.1336,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 2.2247,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.8434,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.8155,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.7128,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.0173,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.8583,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.0411,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.3916,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.9975,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.7017,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 271.4235,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 277.2485,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 304.266,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 328.5698,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 323.7689,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 256.8352,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 295.6399,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 323.8545,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 338.714,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 368.8368,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 410.5316,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 229.5534,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 221.169,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 247.4303,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 283.8014,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 272.9165,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 231.7455,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 297.1036,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 334.491,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 327.1597,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 349.6713,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 388.1292,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -466,7 +629,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -490,52 +653,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.31,
+          "prev_value": 3.6211,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 1.523,
-          "prev_value": 1.602,
-          "trend": "down",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.2345,
+          "prev_value": 4.2646,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 505.6612,
+          "prev_value": 429.4841,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 473.997,
+          "prev_value": 398.7741,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -665,67 +828,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 1.848,
+            "value": 0.6312,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 1.848,
+            "value": 2.6682,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 1.874,
+            "value": 3.5203,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 1.161,
+            "value": 3.5396,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 1.681,
+            "value": 2.7958,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 2.103,
+            "value": 3.2209,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 2.383,
+            "value": 1.8347,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 1.57,
+            "value": 3.1565,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 1.645,
+            "value": 3.2529,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 1.602,
+            "value": 3.6211,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 1.523,
+            "value": 3.31,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 4.9319,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.9009,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 5.0115,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.9983,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 4.8211,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 4.5584,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.2731,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.3295,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.2646,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.2345,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 174.474,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 190.5269,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 230.0418,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 261.8026,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 284.7374,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 292.4799,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 343.9373,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 386.2411,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 376.268,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 429.4841,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 505.6612,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 172.2454,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 183.3152,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 222.8815,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 248.8309,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 265.9763,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 273.356,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 340.1825,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 370.9988,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 339.4911,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 398.7741,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 473.997,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -904,7 +1230,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 62.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -928,32 +1254,32 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 8.8251,
+          "prev_value": 8.8251,
+          "trend": "flat",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2021,
+          "data_quality": "estimated",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 3.047,
-          "prev_value": 2.887,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.4788,
+          "prev_value": 2.2772,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
@@ -1103,65 +1429,96 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 0.766,
+            "value": 9.4542,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2016,
+            "value": 6.9288,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2017,
+            "value": 4.5725,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2018,
+            "value": 6.8723,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2019,
+            "value": 8.8251,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2020,
+            "value": 8.8251,
+            "data_quality": "estimated"
+          },
+          {
+            "year": 2021,
+            "value": 8.8251,
+            "data_quality": "estimated"
+          }
+        ],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 6.8512,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 1.058,
+            "value": 5.1788,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 1.356,
+            "value": 7.2734,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 0.767,
+            "value": 2.6056,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 0.407,
+            "value": 2.3121,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 1.476,
+            "value": 2.4139,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 4.34,
+            "value": 3.1149,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.063,
+            "value": 1.9895,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 2.977,
+            "value": 2.2772,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 2.887,
-            "data_quality": "available"
-          },
-          {
-            "year": 2025,
-            "value": 3.047,
+            "value": 1.4788,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
         "exports": [],
         "imports": [],
         "population": [
@@ -1342,7 +1699,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -1366,52 +1723,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.3513,
+          "prev_value": 0.808,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 0.263,
-          "prev_value": 0.254,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 9.4809,
+          "prev_value": 9.351,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 35.1931,
+          "prev_value": 33.0789,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 34.5762,
+          "prev_value": 33.4126,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -1541,67 +1898,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 0.393,
+            "value": 1.2239,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 0.716,
+            "value": 3.0191,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 0.141,
+            "value": 2.9126,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 0.129,
+            "value": 2.4591,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 0.119,
+            "value": 1.9426,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 0.172,
+            "value": 2.9403,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 0.396,
+            "value": 2.9207,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 0.245,
+            "value": 5.3437,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 0.256,
+            "value": 2.1275,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 0.254,
+            "value": 0.808,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 0.263,
+            "value": 2.3513,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 7.5403,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 9.3232,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 9.4976,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 9.6924,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 9.985,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 10.4102,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 9.4685,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 8.9483,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 9.351,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 9.4809,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 13.533,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 14.9863,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 16.5273,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 18.3865,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 20.3409,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 20.8636,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 26.6217,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 28.8789,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 28.3194,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 33.0789,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 35.1931,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 15.986,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 17.5997,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 19.0387,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 20.8707,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 22.1175,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 21.6511,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 27.1581,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 29.4626,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 28.4979,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 33.4126,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 34.5762,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -1780,7 +2300,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -1804,52 +2324,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 7.7423,
+          "prev_value": 23.1306,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 1.187,
-          "prev_value": 1.174,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.9896,
+          "prev_value": 11.2426,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.2845,
+          "prev_value": 5.2845,
+          "trend": "flat",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2018,
+          "data_quality": "estimated",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 6.6645,
+          "prev_value": 6.6645,
+          "trend": "flat",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2018,
+          "data_quality": "estimated",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -1979,67 +2499,160 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 2.006,
+            "value": 1.2774,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 2.634,
+            "value": 1.5969,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 3.268,
+            "value": 0.8255,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 2.897,
+            "value": 2.0404,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 2.531,
+            "value": 3.3226,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 2.349,
+            "value": 5.1041,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 2.08,
+            "value": 3.7556,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 1.209,
+            "value": 22.9562,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 1.186,
+            "value": 31.2301,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 1.174,
+            "value": 23.1306,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 1.187,
+            "value": 7.7423,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 7.4708,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 5.8777,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 9.878,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 7.4856,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 4.0315,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 5.0981,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.6934,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.6951,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 11.2426,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.9896,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 4.8981,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2016,
+            "value": 5.2845,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2017,
+            "value": 5.2845,
+            "data_quality": "estimated"
+          },
+          {
+            "year": 2018,
+            "value": 5.2845,
+            "data_quality": "estimated"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 7.4795,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2016,
+            "value": 6.6645,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2017,
+            "value": 6.6645,
+            "data_quality": "estimated"
+          },
+          {
+            "year": 2018,
+            "value": 6.6645,
+            "data_quality": "estimated"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -2218,7 +2831,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -2242,52 +2855,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.3806,
+          "prev_value": 1.8341,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 3.764,
-          "prev_value": 3.846,
-          "trend": "down",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.6931,
+          "prev_value": 1.9799,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 335.105,
+          "prev_value": 301.2213,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 308.9495,
+          "prev_value": 278.7605,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -2417,67 +3030,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 3.1,
+            "value": 2.1044,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 3.44,
+            "value": 2.0906,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 3.41,
+            "value": 3.8712,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 3.3,
+            "value": 0.8847,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 3.33,
+            "value": 0.6629,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 4.54,
+            "value": -1.1387,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 4.64,
+            "value": 2.4771,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.93,
+            "value": 3.3787,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 3.858,
+            "value": 2.4889,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 3.846,
+            "value": 1.8341,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 3.764,
+            "value": 1.3806,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 3.2709,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.4713,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.9358,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.3146,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.507,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.2028,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.4163,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.6849,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.9799,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.6931,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 209.2873,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 201.1651,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 223.4138,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 245.9676,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 238.3799,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 207.7985,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 264.0155,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 313.2456,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 274.6811,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 301.2213,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 335.105,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 186.6033,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 181.1259,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 201.4964,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 221.9025,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 210.893,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 186.3104,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 236.9904,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 283.9186,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 255.6257,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 278.7605,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 308.9495,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -2656,7 +3432,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -2680,52 +3456,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.903,
+          "prev_value": 2.3895,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 2.818,
-          "prev_value": 2.737,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 23.5787,
+          "prev_value": 24.6071,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1073.9909,
+          "prev_value": 1000.5637,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 860.2396,
+          "prev_value": 794.2572,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -2855,67 +3631,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 3.79,
+            "value": -0.522,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 4.08,
+            "value": -0.5298,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 4.2,
+            "value": 0.5768,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 3.613,
+            "value": 0.4388,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 3.1,
+            "value": 0.5678,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 4.1,
+            "value": -0.1721,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 4.64,
+            "value": 2.3161,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.591,
+            "value": 6.131,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 3.444,
+            "value": 4.8337,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 2.737,
+            "value": 2.3895,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 2.818,
+            "value": 0.903,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 22.6542,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 20.3059,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 29.5741,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 22.7862,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 28.1758,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 22.5844,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 32.2625,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 28.0306,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 24.6071,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 23.5787,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 549.422,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 525.3918,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 589.5083,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 671.7133,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 666.3026,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 636.3522,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 799.1134,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 951.422,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 922.3253,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1000.5637,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1073.9909,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 465.3451,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 441.1804,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 497.9804,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 559.4533,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 555.6359,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 526.4906,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 641.2604,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 746.8812,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 732.3763,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 794.2572,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 860.2396,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -3094,7 +4033,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -3118,52 +4057,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.9133,
+          "prev_value": 2.1815,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 3.237,
-          "prev_value": 3.301,
-          "trend": "down",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.7386,
+          "prev_value": 1.5712,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 330.2794,
+          "prev_value": 311.51,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 297.0023,
+          "prev_value": 286.2459,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -3293,67 +4232,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 4.514,
+            "value": 6.3631,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 4.301,
+            "value": 3.5258,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 3.783,
+            "value": 3.8088,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 4.387,
+            "value": 3.1983,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 3.59,
+            "value": 3.0306,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 4.255,
+            "value": 1.9198,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 3.827,
+            "value": 1.5601,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.462,
+            "value": 4.2095,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 3.308,
+            "value": 3.6694,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 3.301,
+            "value": 2.1815,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 3.237,
+            "value": 1.9133,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 2.2976,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.4874,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.0195,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.8143,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.2334,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.8106,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.7879,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.8726,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.5712,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.7386,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 182.1583,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 177.886,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 204.9245,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 218.9056,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 208.0578,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 183.5466,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 254.1095,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 323.2182,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 299.0318,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 311.51,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 330.2794,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 178.8637,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 170.835,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 194.7773,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 230.0456,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 213.0346,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 165.6468,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 222.9238,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 276.5068,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 269.4605,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 286.2459,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 297.0023,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -3532,7 +4634,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -3556,52 +4658,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.6587,
+          "prev_value": 3.2126,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 2.235,
-          "prev_value": 2.202,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.0357,
+          "prev_value": 2.0421,
+          "trend": "flat",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 129.323,
+          "prev_value": 118.8202,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 196.0194,
+          "prev_value": 185.2539,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -3731,67 +4833,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 3.068,
+            "value": 0.6742,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 2.695,
+            "value": 1.2537,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 2.552,
+            "value": 2.8532,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 2.338,
+            "value": 5.3093,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 2.237,
+            "value": 2.3921,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 2.522,
+            "value": 2.3932,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 3.398,
+            "value": 3.9272,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 2.598,
+            "value": 5.8212,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 2.2,
+            "value": 5.978,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 2.202,
+            "value": 3.2126,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 2.235,
+            "value": 1.6587,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 1.8402,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.5985,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.1224,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.8683,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.3012,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.8859,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.0408,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.3475,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.0421,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.0357,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 83.378,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 84.9874,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 97.0736,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 104.7934,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 106.9535,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 91.1716,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 101.4855,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 114.7854,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 116.4178,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 118.8202,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 129.323,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 97.859,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 111.8478,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 126.8464,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 145.4995,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 152.4587,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 119.2575,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 148.6993,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 178.0865,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 178.2449,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 185.2539,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 196.0194,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -3970,7 +5235,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -3994,52 +5259,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": -0.303,
+          "prev_value": -0.3887,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 5.277,
-          "prev_value": 5.18,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.1894,
+          "prev_value": -0.3705,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 10.7586,
+          "prev_value": 11.3937,
+          "trend": "down",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 7.8223,
+          "prev_value": 8.9463,
+          "trend": "down",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -4169,67 +5434,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 7.703,
+            "value": -0.4883,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 8.537,
+            "value": -0.2787,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 9.316,
+            "value": -1.2605,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 8.7,
+            "value": 1.0251,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 6.6,
+            "value": -0.3905,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 7.409,
+            "value": 1.9403,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 4.905,
+            "value": 1.7334,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 5.191,
+            "value": 3.6822,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 5.296,
+            "value": 0.3571,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 5.18,
+            "value": -0.3887,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 5.277,
+            "value": -0.303,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 1.3247,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": -1.3206,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.8582,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.8049,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.7712,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 4.7106,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.4741,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": -1.7395,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": -0.3705,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.1894,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 6.7513,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 5.652,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.0123,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 7.0457,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 7.8049,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 6.8861,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 11.2289,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 14.4111,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 11.5784,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 11.3937,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 10.7586,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 4.8725,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.3027,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.3181,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 5.6933,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.8105,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 6.3553,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 9.3779,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 10.1064,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 9.0812,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 8.9463,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 7.8223,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -4400,7 +5828,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -4424,52 +5852,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.0596,
+          "prev_value": 0.2181,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 4.615,
-          "prev_value": 4.59,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.2277,
+          "prev_value": 0.281,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4108.4706,
+          "prev_value": 3828.874,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3292.2809,
+          "prev_value": 3280.1702,
+          "trend": "flat",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -4599,67 +6027,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 4.65,
+            "value": 1.437,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 4.56,
+            "value": 2.0,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 4.47,
+            "value": 1.5931,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 4.31,
+            "value": 2.0748,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 4.56,
+            "value": 2.8992,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 5.0,
+            "value": 2.4194,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 4.55,
+            "value": 0.981,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 4.98,
+            "value": 1.9736,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 4.67,
+            "value": 0.2348,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 4.59,
+            "value": 0.2181,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 4.615,
+            "value": 0.0596,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 2.1496,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.5254,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.3247,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.6636,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.2855,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.6877,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.8903,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.0384,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.281,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.2277,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 2362.0971,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2199.9749,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2424.2161,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2655.6092,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2641.1884,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2739.7851,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3537.5103,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3705.0705,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3544.8711,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3828.874,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4108.4706,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 2003.2607,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1944.4905,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2208.5189,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2564.1219,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2521.0365,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2409.6504,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3132.1162,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3166.0161,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3167.5026,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3280.1702,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3292.2809,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -4727,7 +6318,7 @@
       "region": "North America",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -4751,52 +6342,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.9495,
+          "prev_value": 4.1163,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 4.198,
-          "prev_value": 4.022,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.0139,
+          "prev_value": 1.3014,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3215.368,
+          "prev_value": 3073.36,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4113.828,
+          "prev_value": 3859.856,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -4926,67 +6517,215 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 5.28,
+            "value": 0.1186,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 4.869,
+            "value": 1.2616,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 4.355,
+            "value": 2.1301,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 3.896,
+            "value": 2.4426,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 3.669,
+            "value": 1.8122,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 8.055,
+            "value": 1.2336,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 5.349,
+            "value": 4.6979,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.65,
+            "value": 8.0028,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 3.638,
+            "value": 4.1163,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 4.022,
-            "data_quality": "available"
-          },
-          {
-            "year": 2025,
-            "value": 4.198,
+            "value": 2.9495,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 2.7955,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.5227,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.9418,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.0395,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.467,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.6412,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.0145,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.6001,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.3014,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.0139,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 2270.622,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2235.558,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2388.26,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2538.089,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2539.391,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2163.837,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2568.697,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3036.43,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3073.36,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3215.368,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 2794.942,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2738.83,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2931.589,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3131.166,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3116.681,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2782.391,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3417.93,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3974.319,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3859.856,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4113.828,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -5054,7 +6793,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -5078,52 +6817,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.1725,
+          "prev_value": 2.7385,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 2.451,
-          "prev_value": 2.5,
-          "trend": "down",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.4505,
+          "prev_value": 0.4563,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 920.96,
+          "prev_value": 923.4201,
+          "trend": "flat",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 958.3818,
+          "prev_value": 988.1608,
+          "trend": "down",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -5253,67 +6992,220 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 3.385,
+            "value": 0.7953,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 3.132,
+            "value": -0.1273,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 2.822,
+            "value": 0.4842,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 2.467,
+            "value": 0.9891,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 2.351,
+            "value": 0.4688,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 2.809,
+            "value": -0.025,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 2.808,
+            "value": -0.2334,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 2.614,
+            "value": 2.4977,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 2.6,
+            "value": 3.2681,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 2.5,
+            "value": 2.7385,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 2.451,
+            "value": 3.1725,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 0.1158,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.8014,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.3732,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.4906,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.7618,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.2061,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 0.6703,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.0826,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.4563,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.4505,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 775.0312,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 803.4706,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 867.3732,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 923.1929,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 893.7611,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 785.0576,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 912.5517,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 918.4122,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 923.4201,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 920.96,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 799.6718,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 763.1748,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 829.9483,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 922.2285,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 908.591,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 798.6451,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 938.7557,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1076.978,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 988.1608,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 958.3818,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -5381,7 +7273,7 @@
       "region": "South Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -5405,52 +7297,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.3988,
+          "prev_value": 4.953,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 4.219,
-          "prev_value": 4.173,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.7216,
+          "prev_value": 0.8023,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 880.7408,
+          "prev_value": 829.7852,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 949.6602,
+          "prev_value": 897.0559,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -5580,67 +7472,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 7.629,
+            "value": 4.907,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 7.611,
+            "value": 4.9482,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 7.626,
+            "value": 3.3282,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 7.652,
+            "value": 3.9388,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 6.51,
+            "value": 3.7295,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 7.859,
+            "value": 6.6234,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 6.38,
+            "value": 5.1314,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 4.822,
+            "value": 6.699,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 4.172,
+            "value": 5.6491,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 4.173,
+            "value": 4.953,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 4.219,
+            "value": 2.3988,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 2.0921,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.9374,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.5073,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.5582,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.7848,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.4062,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.4122,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.5367,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.8023,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.7216,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 416.7879,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 439.6426,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 498.2588,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 538.6352,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 529.2451,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 499.7285,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 677.7693,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 781.2908,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 782.6206,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 829.7852,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 880.7408,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 465.0976,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 480.1691,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 582.018,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 640.3008,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 602.3151,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 510.2447,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 760.9029,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 866.361,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 839.1024,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 897.0559,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 949.6602,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -5708,7 +7763,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -5732,52 +7787,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.1231,
+          "prev_value": 2.3217,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 2.683,
-          "prev_value": 2.784,
-          "trend": "down",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.6859,
+          "prev_value": 1.0322,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 856.8557,
+          "prev_value": 831.8892,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 760.1573,
+          "prev_value": 755.4862,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -5907,67 +7962,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 3.546,
+            "value": 0.7063,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 3.65,
+            "value": 0.9717,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 3.653,
+            "value": 1.9443,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 3.824,
+            "value": 1.4758,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 3.746,
+            "value": 0.383,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 3.931,
+            "value": 0.5373,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 3.639,
+            "value": 2.4983,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 2.857,
+            "value": 5.0895,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 2.675,
+            "value": 3.5975,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 2.784,
+            "value": 2.3217,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 2.683,
+            "value": 2.1231,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 0.2666,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.7665,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.0474,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.6678,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.5502,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.5026,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.1358,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.3919,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.0322,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.6859,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 630.5865,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 601.8614,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 664.3925,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 719.7101,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 648.6106,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 603.7134,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 764.0832,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 815.019,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 762.2991,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 831.8892,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 856.8557,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 529.7976,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 501.9604,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 587.3372,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 643.1429,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 602.4602,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 539.4367,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 698.6013,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 814.9367,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 755.1975,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 755.4862,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 760.1573,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,
@@ -6035,7 +8253,7 @@
       "region": "Oceania",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 87.5,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -6059,52 +8277,52 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.874,
+          "prev_value": 3.1666,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": 4.09,
-          "prev_value": 3.942,
-          "trend": "up",
+          "value": null,
+          "prev_value": null,
+          "trend": "unknown",
           "unit": "%",
-          "year": 2025,
-          "data_quality": "available",
+          "year": null,
+          "data_quality": "missing",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.0576,
+          "prev_value": 2.0361,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
         },
         "exports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 418.0556,
+          "prev_value": 432.6057,
+          "trend": "down",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Exports",
           "higher_is": "good"
         },
         "imports": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 407.4906,
+          "prev_value": 395.7492,
+          "trend": "up",
           "unit": "USD Billion",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Imports",
           "higher_is": "neutral"
         },
@@ -6234,67 +8452,230 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
-        "unemployment": [
+        "inflation": [
           {
             "year": 2015,
-            "value": 6.055,
+            "value": 1.5084,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": 5.711,
+            "value": 1.277,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": 5.592,
+            "value": 1.9486,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 5.345,
+            "value": 1.9114,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": 5.143,
+            "value": 1.6108,
             "data_quality": "available"
           },
           {
             "year": 2020,
-            "value": 6.394,
+            "value": 0.8469,
             "data_quality": "available"
           },
           {
             "year": 2021,
-            "value": 5.022,
+            "value": 2.8639,
             "data_quality": "available"
           },
           {
             "year": 2022,
-            "value": 3.728,
+            "value": 6.5941,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 3.668,
+            "value": 5.597,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 3.942,
+            "value": 3.1666,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 4.09,
+            "value": 2.874,
             "data_quality": "available"
           }
         ],
-        "fdiPctGdp": [],
-        "exports": [],
-        "imports": [],
+        "unemployment": [],
+        "fdiPctGdp": [
+          {
+            "year": 2015,
+            "value": 3.4561,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.5466,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.6216,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.2345,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.7708,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.3483,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.0154,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.0522,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.0361,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.0576,
+            "data_quality": "available"
+          }
+        ],
+        "exports": [
+          {
+            "year": 2015,
+            "value": 271.1528,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 232.663,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 281.774,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 312.6058,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 336.4776,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 319.1746,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 343.3642,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 431.7327,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 463.117,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 432.6057,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 418.0556,
+            "data_quality": "available"
+          }
+        ],
+        "imports": [
+          {
+            "year": 2015,
+            "value": 291.8504,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 261.8273,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 277.6713,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 311.8617,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 306.7868,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 274.1543,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 284.039,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 343.0782,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 387.5331,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 395.7492,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 407.4906,
+            "data_quality": "available"
+          }
+        ],
         "population": [
           {
             "year": 2015,

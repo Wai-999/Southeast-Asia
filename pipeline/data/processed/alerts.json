@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T02:41:24",
+    "generated_at": "2026-07-13T06:52:36",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
-    "fetched_at": "2026-07-06T08:20:53",
+    "fetched_at": "2026-07-13T06:52:09",
     "total_checks": 80,
-    "triggered_alerts": 8,
-    "critical": 0,
-    "warnings": 2,
+    "triggered_alerts": 10,
+    "critical": 1,
+    "warnings": 3,
     "info_count": 6,
     "countries_checked": 10,
     "min_score_filter": 20.0,
@@ -24,6 +24,70 @@
     "refresh_note": "Run 'python run_pipeline.py' to refresh all data and regenerate alerts."
   },
   "alerts": [
+    {
+      "alert_id": "investment_slowdown_LAO_2025",
+      "alert_type": "investment_slowdown",
+      "alert_label": "Investment Slowdown",
+      "country_iso3": "LAO",
+      "country_name": "Laos",
+      "year": 2025,
+      "triggered": true,
+      "score": 66.4,
+      "severity": "critical",
+      "conditions_met": [
+        "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 5.9896,
+        "fdi_prev_usd_b": 11.2426,
+        "fdi_yoy_pct": -46.7,
+        "total_risk_news_count": 0
+      },
+      "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#DC2626",
+      "bg_color": "#FEF2F2",
+      "icon": "📊",
+      "severity_class": "sev-critical",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "generated_at": "2026-07-13T06:52:36",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "investment_slowdown_MMR_2025",
+      "alert_type": "investment_slowdown",
+      "alert_label": "Investment Slowdown",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2025,
+      "triggered": true,
+      "score": 53.4,
+      "severity": "warning",
+      "conditions_met": [
+        "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+        "FDI has declined significantly over the period",
+        "FDI decline is accelerating"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 1.4788,
+        "fdi_prev_usd_b": 2.2772,
+        "fdi_yoy_pct": -35.1,
+        "total_risk_news_count": 6
+      },
+      "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
+      "icon": "📊",
+      "severity_class": "sev-warning",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "generated_at": "2026-07-13T06:52:36",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
     {
       "alert_id": "trade_dependency_risk_LAO_2025",
       "alert_type": "trade_dependency_risk",
@@ -52,7 +116,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -83,7 +147,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -113,7 +177,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -143,7 +207,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -173,7 +237,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -203,7 +267,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "conflict_protest_news_count",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -233,7 +297,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -263,12 +327,44 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-13T02:41:24",
+      "generated_at": "2026-07-13T06:52:36",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
   "by_country": {
     "LAO": [
+      {
+        "alert_id": "investment_slowdown_LAO_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.9896,
+          "fdi_prev_usd_b": 11.2426,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
       {
         "alert_id": "trade_dependency_risk_LAO_2025",
         "alert_type": "trade_dependency_risk",
@@ -297,7 +393,101 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
+    "MMR": [
+      {
+        "alert_id": "investment_slowdown_MMR_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.4788,
+          "fdi_prev_usd_b": 2.2772,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "trade_dependency_risk_MMR_2025",
+        "alert_type": "trade_dependency_risk",
+        "alert_label": "Trade Dependency Risk",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 29.2,
+        "severity": "info",
+        "conditions_met": [
+          "CHN is both largest export market and import source — bilateral lock-in risk"
+        ],
+        "values_used": {
+          "top_export_partner": "CHN",
+          "top_export_partner_share": 23.2,
+          "top_import_partner": "CHN",
+          "top_import_partner_share": 31.0
+        },
+        "explanation": "Trade concentration for Myanmar is within normal bounds.",
+        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "🔗",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "top_export_partner_share",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "political_instability_MMR_2025",
+        "alert_type": "political_instability",
+        "alert_label": "Political Instability Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-2.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -2.0118
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -330,7 +520,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -362,69 +552,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
-        "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ],
-    "MMR": [
-      {
-        "alert_id": "trade_dependency_risk_MMR_2025",
-        "alert_type": "trade_dependency_risk",
-        "alert_label": "Trade Dependency Risk",
-        "country_iso3": "MMR",
-        "country_name": "Myanmar",
-        "year": 2025,
-        "triggered": true,
-        "score": 29.2,
-        "severity": "info",
-        "conditions_met": [
-          "CHN is both largest export market and import source — bilateral lock-in risk"
-        ],
-        "values_used": {
-          "top_export_partner": "CHN",
-          "top_export_partner_share": 23.2,
-          "top_import_partner": "CHN",
-          "top_import_partner_share": 31.0
-        },
-        "explanation": "Trade concentration for Myanmar is within normal bounds.",
-        "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "🔗",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
-        "source_url": "data/processed/indicators_dashboard.json"
-      },
-      {
-        "alert_id": "political_instability_MMR_2025",
-        "alert_type": "political_instability",
-        "alert_label": "Political Instability Rising",
-        "country_iso3": "MMR",
-        "country_name": "Myanmar",
-        "year": 2025,
-        "triggered": true,
-        "score": 23.0,
-        "severity": "info",
-        "conditions_met": [
-          "Economic contraction (-2.0% GDP) amplifies instability risk"
-        ],
-        "values_used": {
-          "conflict_protest_news": 3,
-          "political_risk_news": 3,
-          "conflict_baseline": 18.0,
-          "gdp_growth_pct": -2.0118
-        },
-        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
-        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
-        "icon": "⚡",
-        "severity_class": "sev-info",
-        "chart_hint": "bar",
-        "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -456,7 +584,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -488,7 +616,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -520,12 +648,78 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
   },
   "by_type": {
+    "investment_slowdown": [
+      {
+        "alert_id": "investment_slowdown_LAO_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.9896,
+          "fdi_prev_usd_b": 11.2426,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "investment_slowdown_MMR_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.4788,
+          "fdi_prev_usd_b": 2.2772,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
     "trade_dependency_risk": [
       {
         "alert_id": "trade_dependency_risk_LAO_2025",
@@ -555,7 +749,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -586,7 +780,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -616,7 +810,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -646,7 +840,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -676,7 +870,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -706,7 +900,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -736,7 +930,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -768,14 +962,79 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
   },
   "by_severity": {
-    "critical": [],
+    "critical": [
+      {
+        "alert_id": "investment_slowdown_LAO_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "LAO",
+        "country_name": "Laos",
+        "year": 2025,
+        "triggered": true,
+        "score": 66.4,
+        "severity": "critical",
+        "conditions_met": [
+          "FDI fell 46.7% YoY ($11.24B → $5.99B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 5.9896,
+          "fdi_prev_usd_b": 11.2426,
+          "fdi_yoy_pct": -46.7,
+          "total_risk_news_count": 0
+        },
+        "explanation": "FDI into Laos declined 46.7% year-over-year to $5.99B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#DC2626",
+        "bg_color": "#FEF2F2",
+        "icon": "📊",
+        "severity_class": "sev-critical",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
     "warning": [
+      {
+        "alert_id": "investment_slowdown_MMR_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 53.4,
+        "severity": "warning",
+        "conditions_met": [
+          "FDI fell 35.1% YoY ($2.28B → $1.48B)",
+          "FDI has declined significantly over the period",
+          "FDI decline is accelerating"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.4788,
+          "fdi_prev_usd_b": 2.2772,
+          "fdi_yoy_pct": -35.1,
+          "total_risk_news_count": 6
+        },
+        "explanation": "FDI into Myanmar declined 35.1% year-over-year to $1.48B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
+        "icon": "📊",
+        "severity_class": "sev-warning",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-13T06:52:36",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
       {
         "alert_id": "trade_dependency_risk_LAO_2025",
         "alert_type": "trade_dependency_risk",
@@ -804,7 +1063,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -835,7 +1094,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -867,7 +1126,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -897,7 +1156,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -927,7 +1186,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -957,7 +1216,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -987,7 +1246,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1017,7 +1276,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-13T02:41:24",
+        "generated_at": "2026-07-13T06:52:36",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
