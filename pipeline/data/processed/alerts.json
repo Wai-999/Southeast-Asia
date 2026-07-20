@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T02:56:49",
+    "generated_at": "2026-07-20T06:41:25",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
-    "fetched_at": "2026-07-13T06:52:09",
+    "fetched_at": "2026-07-20T06:39:19",
     "total_checks": 80,
-    "triggered_alerts": 10,
+    "triggered_alerts": 11,
     "critical": 1,
     "warnings": 3,
-    "info_count": 6,
+    "info_count": 7,
     "countries_checked": 10,
     "min_score_filter": 20.0,
     "alert_types": [
@@ -53,7 +53,7 @@
       "severity_class": "sev-critical",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -85,7 +85,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -116,7 +116,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -147,7 +147,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -177,7 +177,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -207,7 +207,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -237,7 +237,38 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "investment_slowdown_PHL_2025",
+      "alert_type": "investment_slowdown",
+      "alert_label": "Investment Slowdown",
+      "country_iso3": "PHL",
+      "country_name": "Philippines",
+      "year": 2025,
+      "triggered": true,
+      "score": 28.2,
+      "severity": "info",
+      "conditions_met": [
+        "FDI fell 21.4% YoY ($2.04B → $1.60B)",
+        "FDI has declined significantly over the period"
+      ],
+      "values_used": {
+        "fdi_current_usd_b": 1.5996,
+        "fdi_prev_usd_b": 2.0357,
+        "fdi_yoy_pct": -21.4,
+        "total_risk_news_count": 2
+      },
+      "explanation": "FDI into Philippines declined 21.4% year-over-year to $1.60B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+      "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "📊",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "fdi_usd_b",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -267,7 +298,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "conflict_protest_news_count",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -297,7 +328,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -327,7 +358,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-07-20T02:56:49",
+      "generated_at": "2026-07-20T06:41:25",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
@@ -362,7 +393,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -393,7 +424,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -427,7 +458,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -457,7 +488,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -487,7 +518,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -520,7 +551,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -552,7 +583,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -584,7 +615,40 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
+    "PHL": [
+      {
+        "alert_id": "investment_slowdown_PHL_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "PHL",
+        "country_name": "Philippines",
+        "year": 2025,
+        "triggered": true,
+        "score": 28.2,
+        "severity": "info",
+        "conditions_met": [
+          "FDI fell 21.4% YoY ($2.04B → $1.60B)",
+          "FDI has declined significantly over the period"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.5996,
+          "fdi_prev_usd_b": 2.0357,
+          "fdi_yoy_pct": -21.4,
+          "total_risk_news_count": 2
+        },
+        "explanation": "FDI into Philippines declined 21.4% year-over-year to $1.60B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "📊",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -616,7 +680,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -648,7 +712,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -684,7 +748,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -716,7 +780,38 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "investment_slowdown_PHL_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "PHL",
+        "country_name": "Philippines",
+        "year": 2025,
+        "triggered": true,
+        "score": 28.2,
+        "severity": "info",
+        "conditions_met": [
+          "FDI fell 21.4% YoY ($2.04B → $1.60B)",
+          "FDI has declined significantly over the period"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.5996,
+          "fdi_prev_usd_b": 2.0357,
+          "fdi_yoy_pct": -21.4,
+          "total_risk_news_count": 2
+        },
+        "explanation": "FDI into Philippines declined 21.4% year-over-year to $1.60B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "📊",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -749,7 +844,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -780,7 +875,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -810,7 +905,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -840,7 +935,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -870,7 +965,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -900,7 +995,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -930,7 +1025,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -962,7 +1057,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -998,7 +1093,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1032,7 +1127,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1063,7 +1158,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1094,7 +1189,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1126,7 +1221,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1156,7 +1251,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1186,7 +1281,38 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "investment_slowdown_PHL_2025",
+        "alert_type": "investment_slowdown",
+        "alert_label": "Investment Slowdown",
+        "country_iso3": "PHL",
+        "country_name": "Philippines",
+        "year": 2025,
+        "triggered": true,
+        "score": 28.2,
+        "severity": "info",
+        "conditions_met": [
+          "FDI fell 21.4% YoY ($2.04B → $1.60B)",
+          "FDI has declined significantly over the period"
+        ],
+        "values_used": {
+          "fdi_current_usd_b": 1.5996,
+          "fdi_prev_usd_b": 2.0357,
+          "fdi_yoy_pct": -21.4,
+          "total_risk_news_count": 2
+        },
+        "explanation": "FDI into Philippines declined 21.4% year-over-year to $1.60B, consistent with investor concern over deteriorating macroeconomic conditions. ",
+        "recommendation": "Track major investment announcements and project cancellations. Monitor Free Economic Zone occupancy rates and SEZ application pipeline.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "📊",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "fdi_usd_b",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1216,7 +1342,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1246,7 +1372,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1276,7 +1402,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-07-20T02:56:49",
+        "generated_at": "2026-07-20T06:41:25",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T06:52:36",
+    "generated_at": "2026-07-20T06:41:25",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
-    "fetched_at": "2026-07-13T06:52:09",
+    "fetched_at": "2026-07-20T06:39:19",
     "wb_data_status": "live",
     "countries": 17,
     "sea_countries": 11,
@@ -28,7 +28,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -62,21 +62,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.781,
+          "prev_value": 0.781,
+          "trend": "flat",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 2.7017,
-          "prev_value": 1.9975,
+          "value": 3.2652,
+          "prev_value": 2.7017,
           "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -284,7 +284,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 0.597,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.688,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.83,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.765,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.716,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.099,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.215,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 0.94,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.733,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.781,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.781,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -334,6 +390,11 @@
           {
             "year": 2024,
             "value": 2.7017,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.2652,
             "data_quality": "available"
           }
         ],
@@ -629,7 +690,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -663,12 +724,12 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.523,
+          "prev_value": 1.602,
+          "trend": "down",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
@@ -885,7 +946,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 1.848,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.848,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.874,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.161,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.681,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.103,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.383,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.57,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.645,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.602,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.523,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -1230,7 +1347,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 62.5,
+      "data_completeness_pct": 75.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -1264,12 +1381,12 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.047,
+          "prev_value": 2.887,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
@@ -1466,7 +1583,63 @@
             "data_quality": "estimated"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 0.766,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.058,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.356,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.767,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.407,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.476,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.34,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.063,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.977,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.887,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.047,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -1699,7 +1872,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -1733,21 +1906,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.263,
+          "prev_value": 0.254,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 9.4809,
-          "prev_value": 9.351,
+          "value": 9.9461,
+          "prev_value": 9.4809,
           "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -1955,7 +2128,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 0.393,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.716,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.141,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.129,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.119,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.172,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 0.396,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 0.245,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.256,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.254,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.263,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -2005,6 +2234,11 @@
           {
             "year": 2024,
             "value": 9.4809,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 9.9461,
             "data_quality": "available"
           }
         ],
@@ -2300,7 +2534,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -2334,12 +2568,12 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.187,
+          "prev_value": 1.174,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
@@ -2556,7 +2790,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 2.006,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.634,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.268,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.897,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.531,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.349,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.08,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.209,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.186,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.174,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.187,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -2831,7 +3121,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -2865,12 +3155,12 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.764,
+          "prev_value": 3.846,
+          "trend": "down",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
@@ -3087,7 +3377,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 3.1,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.44,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.41,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.3,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.33,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 4.54,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.64,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.93,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.858,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.846,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.764,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -3432,7 +3778,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -3466,21 +3812,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.818,
+          "prev_value": 2.737,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 23.5787,
-          "prev_value": 24.6071,
-          "trend": "down",
+          "value": 26.3447,
+          "prev_value": 23.5787,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -3688,7 +4034,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 3.79,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.08,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.2,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.613,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.1,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 4.1,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.64,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.591,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.444,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.737,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.818,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -3738,6 +4140,11 @@
           {
             "year": 2024,
             "value": 23.5787,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 26.3447,
             "data_quality": "available"
           }
         ],
@@ -4033,7 +4440,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -4067,21 +4474,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.237,
+          "prev_value": 3.301,
+          "trend": "down",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.7386,
-          "prev_value": 1.5712,
-          "trend": "up",
+          "value": 1.5414,
+          "prev_value": 1.7386,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -4289,7 +4696,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 4.514,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.301,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.783,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.387,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.59,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 4.255,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.827,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.462,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.308,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.301,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.237,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -4339,6 +4802,11 @@
           {
             "year": 2024,
             "value": 1.7386,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.5414,
             "data_quality": "available"
           }
         ],
@@ -4634,7 +5102,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -4668,21 +5136,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.235,
+          "prev_value": 2.202,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 2.0357,
-          "prev_value": 2.0421,
-          "trend": "flat",
+          "value": 1.5996,
+          "prev_value": 2.0357,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -4890,7 +5358,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 3.068,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.695,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.552,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.338,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.237,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.522,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.398,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.598,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.2,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.202,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.235,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -4940,6 +5464,11 @@
           {
             "year": 2024,
             "value": 2.0357,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.5996,
             "data_quality": "available"
           }
         ],
@@ -5235,7 +5764,7 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -5269,21 +5798,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.277,
+          "prev_value": 5.18,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.1894,
-          "prev_value": -0.3705,
+          "value": 0.4112,
+          "prev_value": 0.1894,
           "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -5491,7 +6020,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 7.703,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 8.537,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 9.316,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 8.7,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.6,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 7.409,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.905,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.191,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.296,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.18,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 5.277,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -5541,6 +6126,11 @@
           {
             "year": 2024,
             "value": 0.1894,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.4112,
             "data_quality": "available"
           }
         ],
@@ -5828,7 +6418,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -5862,21 +6452,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.615,
+          "prev_value": 4.59,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.2277,
-          "prev_value": 0.281,
-          "trend": "down",
+          "value": 0.4102,
+          "prev_value": 0.2277,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -6084,7 +6674,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 4.65,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.56,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.47,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.31,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 4.56,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 5.0,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.55,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.98,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.67,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.59,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.615,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -6134,6 +6780,11 @@
           {
             "year": 2024,
             "value": 0.2277,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.4102,
             "data_quality": "available"
           }
         ],
@@ -6318,7 +6969,7 @@
       "region": "North America",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -6352,21 +7003,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.198,
+          "prev_value": 4.022,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.0139,
-          "prev_value": 1.3014,
-          "trend": "down",
+          "value": 1.3017,
+          "prev_value": 1.0139,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -6569,7 +7220,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 5.28,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.869,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.355,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.896,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.669,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 8.055,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.349,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.65,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.638,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.022,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.198,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -6619,6 +7326,11 @@
           {
             "year": 2024,
             "value": 1.0139,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.3017,
             "data_quality": "available"
           }
         ],
@@ -6793,7 +7505,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -6827,21 +7539,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.451,
+          "prev_value": 2.5,
+          "trend": "down",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.4505,
-          "prev_value": 0.4563,
-          "trend": "down",
+          "value": 1.0328,
+          "prev_value": 0.4505,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -7049,7 +7761,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 3.385,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.132,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.822,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.467,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.351,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.809,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.808,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.614,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.6,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.5,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.451,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -7099,6 +7867,11 @@
           {
             "year": 2024,
             "value": 0.4505,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.0328,
             "data_quality": "available"
           }
         ],
@@ -7273,7 +8046,7 @@
       "region": "South Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -7307,21 +8080,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.219,
+          "prev_value": 4.173,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.7216,
-          "prev_value": 0.8023,
-          "trend": "down",
+          "value": 0.9883,
+          "prev_value": 0.7216,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -7529,7 +8302,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 7.629,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 7.611,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 7.626,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 7.652,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.51,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 7.859,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 6.38,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.822,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.172,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.173,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.219,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -7579,6 +8408,11 @@
           {
             "year": 2024,
             "value": 0.7216,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.9883,
             "data_quality": "available"
           }
         ],
@@ -7763,7 +8597,7 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -7797,21 +8631,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.683,
+          "prev_value": 2.784,
+          "trend": "down",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.6859,
-          "prev_value": 1.0322,
-          "trend": "down",
+          "value": 0.8441,
+          "prev_value": 0.6859,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -8019,7 +8853,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 3.546,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.65,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.653,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.824,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.746,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 3.931,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.639,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.857,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.675,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.784,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.683,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -8069,6 +8959,11 @@
           {
             "year": 2024,
             "value": 0.6859,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.8441,
             "data_quality": "available"
           }
         ],
@@ -8253,7 +9148,7 @@
       "region": "Oceania",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 87.5,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
@@ -8287,21 +9182,21 @@
           "higher_is": "bad"
         },
         "unemployment": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.09,
+          "prev_value": 3.942,
+          "trend": "up",
           "unit": "%",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Unemployment",
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 3.0576,
-          "prev_value": 2.0361,
-          "trend": "up",
+          "value": 2.0306,
+          "prev_value": 3.0576,
+          "trend": "down",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -8509,7 +9404,63 @@
             "data_quality": "available"
           }
         ],
-        "unemployment": [],
+        "unemployment": [
+          {
+            "year": 2015,
+            "value": 6.055,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 5.711,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 5.592,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 5.345,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 5.143,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 6.394,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.022,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.728,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.668,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.942,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.09,
+            "data_quality": "available"
+          }
+        ],
         "fdiPctGdp": [
           {
             "year": 2015,
@@ -8559,6 +9510,11 @@
           {
             "year": 2024,
             "value": 3.0576,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.0306,
             "data_quality": "available"
           }
         ],
