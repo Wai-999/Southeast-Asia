@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-10T01:42:15",
+    "generated_at": "2026-08-10T05:20:11",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
-    "fetched_at": "2026-08-03T06:57:31",
+    "fetched_at": "2026-08-10T05:16:51",
     "total_checks": 80,
-    "triggered_alerts": 10,
+    "triggered_alerts": 11,
     "critical": 1,
-    "warnings": 3,
+    "warnings": 4,
     "info_count": 6,
     "countries_checked": 10,
     "min_score_filter": 20.0,
@@ -53,7 +53,7 @@
       "severity_class": "sev-critical",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -85,7 +85,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -116,7 +116,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -147,7 +147,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -158,26 +158,26 @@
       "country_name": "Thailand",
       "year": 2025,
       "triggered": true,
-      "score": 36.1,
-      "severity": "info",
+      "score": 40.0,
+      "severity": "warning",
       "conditions_met": [
-        "56% of exports go to USA (over-reliance threshold: 30%)"
+        "124% of exports go to KOR (over-reliance threshold: 30%)"
       ],
       "values_used": {
-        "top_export_partner": "USA",
-        "top_export_partner_share": 56.1,
+        "top_export_partner": "KOR",
+        "top_export_partner_share": 124.0,
         "top_import_partner": "CHN",
-        "top_import_partner_share": 20.7
+        "top_import_partner_share": 2.5
       },
-      "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+      "explanation": "Thailand shows high trade concentration: 124% of Thailand's exports go to KOR. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
       "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-      "color": "#2563EB",
-      "bg_color": "#EFF6FF",
+      "color": "#D97706",
+      "bg_color": "#FFFBEB",
       "icon": "🔗",
-      "severity_class": "sev-info",
+      "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -207,7 +207,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -237,7 +237,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -268,7 +268,37 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
+      "source_url": "data/processed/indicators_dashboard.json"
+    },
+    {
+      "alert_id": "political_instability_MMR_2025",
+      "alert_type": "political_instability",
+      "alert_label": "Political Instability Rising",
+      "country_iso3": "MMR",
+      "country_name": "Myanmar",
+      "year": 2025,
+      "triggered": true,
+      "score": 23.0,
+      "severity": "info",
+      "conditions_met": [
+        "Economic contraction (-2.0% GDP) amplifies instability risk"
+      ],
+      "values_used": {
+        "conflict_protest_news": 3,
+        "political_risk_news": 3,
+        "conflict_baseline": 18.0,
+        "gdp_growth_pct": -2.0118
+      },
+      "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+      "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+      "color": "#2563EB",
+      "bg_color": "#EFF6FF",
+      "icon": "⚡",
+      "severity_class": "sev-info",
+      "chart_hint": "bar",
+      "metric_to_highlight": "conflict_protest_news_count",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -298,7 +328,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -328,7 +358,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-08-10T01:42:15",
+      "generated_at": "2026-08-10T05:20:11",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
@@ -363,7 +393,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -394,7 +424,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -428,7 +458,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -458,7 +488,37 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "political_instability_MMR_2025",
+        "alert_type": "political_instability",
+        "alert_label": "Political Instability Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-2.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -2.0118
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -491,7 +551,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -504,26 +564,26 @@
         "country_name": "Thailand",
         "year": 2025,
         "triggered": true,
-        "score": 36.1,
-        "severity": "info",
+        "score": 40.0,
+        "severity": "warning",
         "conditions_met": [
-          "56% of exports go to USA (over-reliance threshold: 30%)"
+          "124% of exports go to KOR (over-reliance threshold: 30%)"
         ],
         "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 56.1,
+          "top_export_partner": "KOR",
+          "top_export_partner_share": 124.0,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 20.7
+          "top_import_partner_share": 2.5
         },
-        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "explanation": "Thailand shows high trade concentration: 124% of Thailand's exports go to KOR. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
         "icon": "🔗",
-        "severity_class": "sev-info",
+        "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -555,7 +615,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -588,7 +648,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -620,7 +680,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -652,7 +712,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -688,7 +748,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -720,7 +780,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -751,7 +811,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -784,7 +844,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -815,7 +875,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -826,26 +886,26 @@
         "country_name": "Thailand",
         "year": 2025,
         "triggered": true,
-        "score": 36.1,
-        "severity": "info",
+        "score": 40.0,
+        "severity": "warning",
         "conditions_met": [
-          "56% of exports go to USA (over-reliance threshold: 30%)"
+          "124% of exports go to KOR (over-reliance threshold: 30%)"
         ],
         "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 56.1,
+          "top_export_partner": "KOR",
+          "top_export_partner_share": 124.0,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 20.7
+          "top_import_partner_share": 2.5
         },
-        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "explanation": "Thailand shows high trade concentration: 124% of Thailand's exports go to KOR. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
         "icon": "🔗",
-        "severity_class": "sev-info",
+        "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -875,7 +935,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -905,7 +965,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -935,7 +995,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -965,7 +1025,39 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
+        "source_url": "data/processed/indicators_dashboard.json"
+      }
+    ],
+    "political_instability": [
+      {
+        "alert_id": "political_instability_MMR_2025",
+        "alert_type": "political_instability",
+        "alert_label": "Political Instability Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-2.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -2.0118
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -1001,7 +1093,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1035,7 +1127,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1066,7 +1158,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1097,11 +1189,9 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
-      }
-    ],
-    "info": [
+      },
       {
         "alert_id": "trade_dependency_risk_THA_2025",
         "alert_type": "trade_dependency_risk",
@@ -1110,28 +1200,30 @@
         "country_name": "Thailand",
         "year": 2025,
         "triggered": true,
-        "score": 36.1,
-        "severity": "info",
+        "score": 40.0,
+        "severity": "warning",
         "conditions_met": [
-          "56% of exports go to USA (over-reliance threshold: 30%)"
+          "124% of exports go to KOR (over-reliance threshold: 30%)"
         ],
         "values_used": {
-          "top_export_partner": "USA",
-          "top_export_partner_share": 56.1,
+          "top_export_partner": "KOR",
+          "top_export_partner_share": 124.0,
           "top_import_partner": "CHN",
-          "top_import_partner_share": 20.7
+          "top_import_partner_share": 2.5
         },
-        "explanation": "Thailand shows high trade concentration: 56% of Thailand's exports go to USA. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
+        "explanation": "Thailand shows high trade concentration: 124% of Thailand's exports go to KOR. This creates vulnerability to policy changes, sanctions, or economic slowdowns in the dominant partner.",
         "recommendation": "Track diversification trends over 3-5 years. Watch for new FTA negotiations that may shift partner concentration.",
-        "color": "#2563EB",
-        "bg_color": "#EFF6FF",
+        "color": "#D97706",
+        "bg_color": "#FFFBEB",
         "icon": "🔗",
-        "severity_class": "sev-info",
+        "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
-      },
+      }
+    ],
+    "info": [
       {
         "alert_id": "trade_dependency_risk_MMR_2025",
         "alert_type": "trade_dependency_risk",
@@ -1159,7 +1251,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1189,7 +1281,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1220,7 +1312,37 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
+        "source_url": "data/processed/indicators_dashboard.json"
+      },
+      {
+        "alert_id": "political_instability_MMR_2025",
+        "alert_type": "political_instability",
+        "alert_label": "Political Instability Rising",
+        "country_iso3": "MMR",
+        "country_name": "Myanmar",
+        "year": 2025,
+        "triggered": true,
+        "score": 23.0,
+        "severity": "info",
+        "conditions_met": [
+          "Economic contraction (-2.0% GDP) amplifies instability risk"
+        ],
+        "values_used": {
+          "conflict_protest_news": 3,
+          "political_risk_news": 3,
+          "conflict_baseline": 18.0,
+          "gdp_growth_pct": -2.0118
+        },
+        "explanation": "Myanmar is showing a modest spike in conflict and protest-related news (3 articles vs baseline of 18). With GDP growth at -2.0%, the economy has limited buffer to absorb political disruption. Note: Myanmar's baseline is already elevated post-coup; spikes above this indicate further escalation.",
+        "recommendation": "Cross-reference with specific event categories (election, coup, protest). Check whether economic zones or export corridors are in affected regions.",
+        "color": "#2563EB",
+        "bg_color": "#EFF6FF",
+        "icon": "⚡",
+        "severity_class": "sev-info",
+        "chart_hint": "bar",
+        "metric_to_highlight": "conflict_protest_news_count",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1250,7 +1372,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1280,7 +1402,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-08-10T01:42:15",
+        "generated_at": "2026-08-10T05:20:11",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
