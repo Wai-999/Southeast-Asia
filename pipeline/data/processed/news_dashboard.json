@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-24T12:56:45",
+    "generated_at": "2026-08-24T18:52:02",
     "script": "process_news.py",
     "source_url": "data/processed/news_signals.json",
     "fetched_at": "2026-06-02T10:00:00",
