@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T04:42:24",
+    "generated_at": "2026-08-24T04:39:14",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
-    "fetched_at": "2026-08-17T04:42:05",
+    "fetched_at": "2026-08-24T04:35:18",
     "wb_data_status": "live",
     "countries": 17,
     "sea_countries": 11,
@@ -28,16 +28,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.4425,
+          "prev_value": 2.9486,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -52,12 +52,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": -0.1336,
+          "prev_value": 0.3983,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -113,7 +113,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 3.134,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.4352,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.1777,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.2229,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.1146,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -6.0931,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.5586,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.6378,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.2488,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.9486,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.4425,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -171,7 +227,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": -0.8981,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.1862,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.6644,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.0668,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.7055,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.8461,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.231,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 6.0759,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.2291,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.3983,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": -0.1336,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -578,16 +690,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 8.0188,
+          "prev_value": 7.0396,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -602,12 +714,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.31,
+          "prev_value": 3.6211,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -663,7 +775,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 6.9872,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 6.69,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.9402,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 7.465,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 7.3593,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.8654,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.5537,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 8.5375,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.9787,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 7.0396,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 8.0188,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -721,7 +889,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 0.6312,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.6682,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.5203,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.5396,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.7958,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 3.2209,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.8347,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.1565,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.2529,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.6211,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.31,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -1123,16 +1347,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 50.0,
+      "data_completeness_pct": 75.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": -2.0118,
+          "prev_value": -0.972,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -1147,12 +1371,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 8.8251,
+          "prev_value": 8.8251,
+          "trend": "flat",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2021,
+          "data_quality": "estimated",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -1208,7 +1432,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 6.9928,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 5.8625,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.1361,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 6.2689,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.5791,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -9.0483,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": -12.0164,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.0375,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.9584,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": -0.972,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": -2.0118,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -1266,7 +1546,43 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 9.4542,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2016,
+            "value": 6.9288,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2017,
+            "value": 4.5725,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2018,
+            "value": 6.8723,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2019,
+            "value": 8.8251,
+            "data_quality": "old_data"
+          },
+          {
+            "year": 2020,
+            "value": 8.8251,
+            "data_quality": "estimated"
+          },
+          {
+            "year": 2021,
+            "value": 8.8251,
+            "data_quality": "estimated"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -1556,16 +1872,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.3493,
+          "prev_value": 6.0158,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -1580,12 +1896,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.3513,
+          "prev_value": 0.808,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -1641,7 +1957,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 7.207,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 7.9055,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 8.075,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 8.7762,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 7.937,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -3.5557,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.0898,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.1299,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.0073,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 6.0158,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 5.3493,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -1699,7 +2071,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 1.2239,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.0191,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.9126,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.4591,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.9426,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.9403,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.9207,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.3437,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.1275,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.808,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.3513,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -2106,16 +2534,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.5376,
+          "prev_value": 4.1302,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -2130,12 +2558,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 7.7423,
+          "prev_value": 23.1306,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -2191,7 +2619,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 7.2701,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 7.0228,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.8925,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 6.248,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 5.4577,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.503,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.5284,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.7074,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.7457,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.1302,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.5376,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -2249,7 +2733,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 1.2774,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.5969,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.8255,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.0404,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.3226,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 5.1041,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.7556,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 22.9562,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 31.2301,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 23.1306,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 7.7423,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -2581,16 +3121,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.1713,
+          "prev_value": 5.1055,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -2605,12 +3145,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.3806,
+          "prev_value": 1.8341,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -2666,7 +3206,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 5.0915,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.4498,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 5.8127,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 4.8431,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 4.4132,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -5.4568,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.3154,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 9.0317,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.5371,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.1055,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 5.1713,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -2724,7 +3320,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 2.1044,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.0906,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.8712,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.8847,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.6629,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -1.1387,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.4771,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.3787,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.4889,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.8341,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.3806,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -3126,16 +3778,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.0259,
+          "prev_value": 5.3435,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -3150,12 +3802,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.903,
+          "prev_value": 2.3895,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -3211,7 +3863,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 2.9768,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.911,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 4.3268,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.1866,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.1588,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -3.6108,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 10.1411,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.0103,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.4503,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.3435,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 5.0259,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -3269,7 +3977,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": -0.522,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": -0.5298,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.5768,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.4388,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.5678,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.1721,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.3161,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 6.131,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.8337,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.3895,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.903,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -3676,16 +4440,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 5.1081,
+          "prev_value": 5.0326,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -3700,12 +4464,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.9133,
+          "prev_value": 2.1815,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -3761,7 +4525,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 4.8763,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 5.0331,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 5.0698,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 5.1743,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 5.0193,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -2.0655,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.7029,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.3072,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.0488,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.0326,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 5.1081,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -3819,7 +4639,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 6.3631,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.5258,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.8088,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.1983,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.0306,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.9198,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.5601,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.2095,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.6694,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.1815,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.9133,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -4226,16 +5102,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.4024,
+          "prev_value": 5.7147,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -4250,12 +5126,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.6587,
+          "prev_value": 3.2126,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -4311,7 +5187,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 6.3483,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 7.1495,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.931,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 6.3415,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.1185,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -9.5183,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.7147,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 7.581,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.519,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 5.7147,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.4024,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -4369,7 +5301,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 0.6742,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.2537,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.8532,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 5.3093,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.3921,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.3932,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.9272,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.8212,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.978,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.2126,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.6587,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -4776,16 +5764,16 @@
       "region": "Southeast Asia",
       "is_sea": true,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.6696,
+          "prev_value": 4.0525,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -4800,12 +5788,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": -0.303,
+          "prev_value": -0.3887,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -4861,7 +5849,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": -0.3924,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": -2.4779,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.3287,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.0524,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.8688,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.1336,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": -1.5908,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": -1.6283,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.1276,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.0525,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.6696,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -4919,7 +5963,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": -0.4883,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": -0.2787,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": -1.2605,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.0251,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": -0.3905,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.9403,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 1.7334,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.6822,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.3571,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": -0.3887,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": -0.303,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -5318,16 +6418,16 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 4.9599,
+          "prev_value": 4.9583,
+          "trend": "flat",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -5342,12 +6442,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 0.0596,
+          "prev_value": 0.2181,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -5403,7 +6503,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 6.9816,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 6.7737,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.8912,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 6.7578,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 6.0674,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.3395,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 8.5704,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 3.1339,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.416,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.9583,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.9599,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -5461,7 +6617,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 1.437,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.0,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.5931,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.0748,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.8992,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 2.4194,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 0.981,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.9736,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.2348,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 0.2181,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 0.0596,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -5757,16 +6969,16 @@
       "region": "North America",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.1614,
+          "prev_value": 2.7932,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -5781,12 +6993,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.9495,
+          "prev_value": 4.1163,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2024,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -5842,7 +7054,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 2.9455,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.8195,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.4576,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.9665,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.5838,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -2.0814,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 6.152,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.5242,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 2.9344,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.7932,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.1614,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -5900,7 +7168,58 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 0.1186,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.2616,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.1301,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.4426,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.8122,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 1.2336,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.6979,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 8.0028,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 4.1163,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.9495,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -6186,16 +7505,16 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.1931,
+          "prev_value": -0.2401,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -6210,12 +7529,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 3.1725,
+          "prev_value": 2.7385,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -6271,7 +7590,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 1.8,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.705,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.6235,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.8341,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": -0.3085,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -4.2833,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 3.5642,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 1.3316,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 0.7208,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": -0.2401,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.1931,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -6329,7 +7704,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 0.7953,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": -0.1273,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 0.4842,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 0.9891,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.4688,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.025,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": -0.2334,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.4977,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.2681,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.7385,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 3.1725,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -6615,16 +8046,16 @@
       "region": "South Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 7.5667,
+          "prev_value": 7.0993,
+          "trend": "up",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -6639,12 +8070,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.3988,
+          "prev_value": 4.953,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -6700,7 +8131,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 7.9963,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 8.2563,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 6.7954,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 6.4539,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.8714,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -5.7777,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 9.6896,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 7.6094,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 7.2102,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 7.0993,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 7.5667,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -6758,7 +8245,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 4.907,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 4.9482,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.3282,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.9388,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 3.7295,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 6.6234,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 5.1314,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 6.699,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.6491,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 4.953,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.3988,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -7054,16 +8597,16 @@
       "region": "East Asia",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.007,
+          "prev_value": 2.0036,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -7078,12 +8621,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.1231,
+          "prev_value": 2.3217,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -7139,7 +8682,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 2.9203,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 3.1715,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 3.4332,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 3.1761,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.3138,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.7002,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 4.613,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 2.7276,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 1.583,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.0036,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.007,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -7197,7 +8796,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 0.7063,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 0.9717,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.9443,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.4758,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 0.383,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.5373,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.4983,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 5.0895,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.5975,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 2.3217,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.1231,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,
@@ -7493,16 +9148,16 @@
       "region": "Oceania",
       "is_sea": false,
       "latest_year": 2025,
-      "data_completeness_pct": 75.0,
+      "data_completeness_pct": 100.0,
       "missing_indicators": [],
       "indicators": {
         "gdpGrowth": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 1.3504,
+          "prev_value": 1.3734,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "GDP Growth Rate",
           "higher_is": "good"
         },
@@ -7517,12 +9172,12 @@
           "higher_is": "good"
         },
         "inflation": {
-          "value": null,
-          "prev_value": null,
-          "trend": "unknown",
+          "value": 2.874,
+          "prev_value": 3.1666,
+          "trend": "down",
           "unit": "% YoY",
-          "year": null,
-          "data_quality": "missing",
+          "year": 2025,
+          "data_quality": "available",
           "label": "Inflation (CPI)",
           "higher_is": "bad"
         },
@@ -7578,7 +9233,63 @@
         }
       },
       "history": {
-        "gdpGrowth": [],
+        "gdpGrowth": [
+          {
+            "year": 2015,
+            "value": 2.1643,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 2.7556,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 2.2933,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 2.8742,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 2.194,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": -0.1335,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.0069,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 4.253,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 3.5838,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 1.3734,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.3504,
+            "data_quality": "available"
+          }
+        ],
         "gdpNominal": [
           {
             "year": 2015,
@@ -7636,7 +9347,63 @@
             "data_quality": "available"
           }
         ],
-        "inflation": [],
+        "inflation": [
+          {
+            "year": 2015,
+            "value": 1.5084,
+            "data_quality": "available"
+          },
+          {
+            "year": 2016,
+            "value": 1.277,
+            "data_quality": "available"
+          },
+          {
+            "year": 2017,
+            "value": 1.9486,
+            "data_quality": "available"
+          },
+          {
+            "year": 2018,
+            "value": 1.9114,
+            "data_quality": "available"
+          },
+          {
+            "year": 2019,
+            "value": 1.6108,
+            "data_quality": "available"
+          },
+          {
+            "year": 2020,
+            "value": 0.8469,
+            "data_quality": "available"
+          },
+          {
+            "year": 2021,
+            "value": 2.8639,
+            "data_quality": "available"
+          },
+          {
+            "year": 2022,
+            "value": 6.5941,
+            "data_quality": "available"
+          },
+          {
+            "year": 2023,
+            "value": 5.597,
+            "data_quality": "available"
+          },
+          {
+            "year": 2024,
+            "value": 3.1666,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 2.874,
+            "data_quality": "available"
+          }
+        ],
         "unemployment": [
           {
             "year": 2015,

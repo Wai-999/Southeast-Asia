@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T04:35:20",
+    "generated_at": "2026-08-24T04:38:46",
     "source": "IMF Direction of Trade Statistics (DOTS) \u2014 goods trade, USD millions",
     "api_mode": "comtrade_free",
     "reporters": 11,
@@ -41,7 +41,7 @@
       "value_usd_b": 0.531,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -57,7 +57,7 @@
       "value_usd_b": 1.436,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.9
     },
     {
@@ -73,7 +73,7 @@
       "value_usd_b": 5.754,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 31.8
     },
     {
@@ -89,7 +89,7 @@
       "value_usd_b": 0.028,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -105,7 +105,7 @@
       "value_usd_b": 0.835,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.6
     },
     {
@@ -121,7 +121,7 @@
       "value_usd_b": 1.012,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.8
     },
     {
@@ -137,7 +137,7 @@
       "value_usd_b": 1.14,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.7
     },
     {
@@ -153,7 +153,7 @@
       "value_usd_b": 0.134,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.9
     },
     {
@@ -169,7 +169,7 @@
       "value_usd_b": 0.213,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -185,7 +185,7 @@
       "value_usd_b": 4.414,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.8
     },
     {
@@ -201,7 +201,7 @@
       "value_usd_b": 1.672,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.8
     },
     {
@@ -217,7 +217,7 @@
       "value_usd_b": 0.094,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -233,7 +233,7 @@
       "value_usd_b": 0.03,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.5
     },
     {
@@ -249,7 +249,7 @@
       "value_usd_b": 0.007,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.1
     },
     {
@@ -265,7 +265,7 @@
       "value_usd_b": 0.005,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.1
     },
     {
@@ -281,7 +281,7 @@
       "value_usd_b": 23.342,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.7
     },
     {
@@ -297,7 +297,7 @@
       "value_usd_b": 6.867,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -313,7 +313,7 @@
       "value_usd_b": 34.021,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.2
     },
     {
@@ -329,7 +329,7 @@
       "value_usd_b": 15.932,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -345,7 +345,7 @@
       "value_usd_b": 8.263,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.4
     },
     {
@@ -361,7 +361,7 @@
       "value_usd_b": 7.234,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.3
     },
     {
@@ -377,7 +377,7 @@
       "value_usd_b": 2.329,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -393,7 +393,7 @@
       "value_usd_b": 16.003,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.5
     },
     {
@@ -409,7 +409,7 @@
       "value_usd_b": 17.874,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.7
     },
     {
@@ -425,7 +425,7 @@
       "value_usd_b": 27.962,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.7
     },
     {
@@ -441,7 +441,7 @@
       "value_usd_b": 3.241,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.6
     },
     {
@@ -457,7 +457,7 @@
       "value_usd_b": 9.814,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.8
     },
     {
@@ -473,7 +473,7 @@
       "value_usd_b": 0.398,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -489,7 +489,7 @@
       "value_usd_b": 10.675,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.1
     },
     {
@@ -505,7 +505,7 @@
       "value_usd_b": 11.574,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.3
     },
     {
@@ -521,7 +521,7 @@
       "value_usd_b": 0.021,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.9
     },
     {
@@ -537,7 +537,7 @@
       "value_usd_b": 0.0,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.0
     },
     {
@@ -553,7 +553,7 @@
       "value_usd_b": 0.004,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.8
     },
     {
@@ -569,7 +569,7 @@
       "value_usd_b": 0.002,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -585,7 +585,7 @@
       "value_usd_b": 0.02,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.2
     },
     {
@@ -601,7 +601,7 @@
       "value_usd_b": 34.401,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.8
     },
     {
@@ -617,7 +617,7 @@
       "value_usd_b": 11.295,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -633,7 +633,7 @@
       "value_usd_b": 51.619,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.2
     },
     {
@@ -649,7 +649,7 @@
       "value_usd_b": 17.633,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.5
     },
     {
@@ -665,7 +665,7 @@
       "value_usd_b": 15.21,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.9
     },
     {
@@ -681,7 +681,7 @@
       "value_usd_b": 3.495,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -697,7 +697,7 @@
       "value_usd_b": 41.434,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.7
     },
     {
@@ -713,7 +713,7 @@
       "value_usd_b": 20.427,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.7
     },
     {
@@ -729,7 +729,7 @@
       "value_usd_b": 19.729,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.5
     },
     {
@@ -745,7 +745,7 @@
       "value_usd_b": 61.404,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.2
     },
     {
@@ -761,7 +761,7 @@
       "value_usd_b": 1.361,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.3
     },
     {
@@ -777,7 +777,7 @@
       "value_usd_b": 0.184,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -793,7 +793,7 @@
       "value_usd_b": 3.869,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 12.3
     },
     {
@@ -809,7 +809,7 @@
       "value_usd_b": 2.525,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.0
     },
     {
@@ -825,7 +825,7 @@
       "value_usd_b": 1.188,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.8
     },
     {
@@ -841,7 +841,7 @@
       "value_usd_b": 0.502,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.7
     },
     {
@@ -857,7 +857,7 @@
       "value_usd_b": 0.347,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.9
     },
     {
@@ -873,7 +873,7 @@
       "value_usd_b": 6.447,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 34.6
     },
     {
@@ -889,7 +889,7 @@
       "value_usd_b": 0.451,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.4
     },
     {
@@ -905,7 +905,7 @@
       "value_usd_b": 0.116,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -921,7 +921,7 @@
       "value_usd_b": 0.888,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.4
     },
     {
@@ -937,7 +937,7 @@
       "value_usd_b": 7.586,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 37.4
     },
     {
@@ -953,7 +953,7 @@
       "value_usd_b": 0.073,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -969,7 +969,7 @@
       "value_usd_b": 0.673,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.3
     },
     {
@@ -985,7 +985,7 @@
       "value_usd_b": 0.318,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -1001,7 +1001,7 @@
       "value_usd_b": 1.681,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.0
     },
     {
@@ -1017,7 +1017,7 @@
       "value_usd_b": 0.052,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.9
     },
     {
@@ -1033,7 +1033,7 @@
       "value_usd_b": 0.118,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.0
     },
     {
@@ -1049,7 +1049,7 @@
       "value_usd_b": 0.071,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -1065,7 +1065,7 @@
       "value_usd_b": 0.078,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -1081,7 +1081,7 @@
       "value_usd_b": 0.869,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.1
     },
     {
@@ -1097,7 +1097,7 @@
       "value_usd_b": 1.241,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.3
     },
     {
@@ -1113,7 +1113,7 @@
       "value_usd_b": 5.389,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 31.8
     },
     {
@@ -1129,7 +1129,7 @@
       "value_usd_b": 0.438,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.6
     },
     {
@@ -1145,7 +1145,7 @@
       "value_usd_b": 0.03,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -1161,7 +1161,7 @@
       "value_usd_b": 5.333,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 30.1
     },
     {
@@ -1177,7 +1177,7 @@
       "value_usd_b": 1.089,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.1
     },
     {
@@ -1193,7 +1193,7 @@
       "value_usd_b": 0.185,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -1209,7 +1209,7 @@
       "value_usd_b": 0.134,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.8
     },
     {
@@ -1225,7 +1225,7 @@
       "value_usd_b": 1.062,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.0
     },
     {
@@ -1241,7 +1241,7 @@
       "value_usd_b": 1.466,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.8
     },
     {
@@ -1257,7 +1257,7 @@
       "value_usd_b": 0.085,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.7
     },
     {
@@ -1273,7 +1273,7 @@
       "value_usd_b": 0.011,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -1289,7 +1289,7 @@
       "value_usd_b": 0.032,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -1305,7 +1305,7 @@
       "value_usd_b": 0.089,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.7
     },
     {
@@ -1321,7 +1321,7 @@
       "value_usd_b": 6.508,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -1337,7 +1337,7 @@
       "value_usd_b": 2.506,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.5
     },
     {
@@ -1353,7 +1353,7 @@
       "value_usd_b": 13.665,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.4
     },
     {
@@ -1369,7 +1369,7 @@
       "value_usd_b": 18.669,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.4
     },
     {
@@ -1385,7 +1385,7 @@
       "value_usd_b": 31.782,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 19.5
     },
     {
@@ -1401,7 +1401,7 @@
       "value_usd_b": 8.258,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.5
     },
     {
@@ -1417,7 +1417,7 @@
       "value_usd_b": 25.984,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.1
     },
     {
@@ -1433,7 +1433,7 @@
       "value_usd_b": 5.795,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.5
     },
     {
@@ -1449,7 +1449,7 @@
       "value_usd_b": 14.883,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.4
     },
     {
@@ -1465,7 +1465,7 @@
       "value_usd_b": 37.879,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.2
     },
     {
@@ -1481,7 +1481,7 @@
       "value_usd_b": 10.026,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.4
     },
     {
@@ -1497,7 +1497,7 @@
       "value_usd_b": 0.362,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -1513,7 +1513,7 @@
       "value_usd_b": 9.83,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.1
     },
     {
@@ -1529,7 +1529,7 @@
       "value_usd_b": 2.855,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.4
     },
     {
@@ -1545,7 +1545,7 @@
       "value_usd_b": 10.034,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.4
     },
     {
@@ -1561,7 +1561,7 @@
       "value_usd_b": 0.001,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -1577,7 +1577,7 @@
       "value_usd_b": 0.001,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -1593,7 +1593,7 @@
       "value_usd_b": 0.027,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.8
     },
     {
@@ -1609,7 +1609,7 @@
       "value_usd_b": 0.071,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.4
     },
     {
@@ -1625,7 +1625,7 @@
       "value_usd_b": 0.004,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -1641,7 +1641,7 @@
       "value_usd_b": 3.622,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -1657,7 +1657,7 @@
       "value_usd_b": 19.269,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.8
     },
     {
@@ -1673,7 +1673,7 @@
       "value_usd_b": 19.125,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.8
     },
     {
@@ -1689,7 +1689,7 @@
       "value_usd_b": 48.88,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.4
     },
     {
@@ -1705,7 +1705,7 @@
       "value_usd_b": 77.072,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 27.4
     },
     {
@@ -1721,7 +1721,7 @@
       "value_usd_b": 8.55,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.3
     },
     {
@@ -1737,7 +1737,7 @@
       "value_usd_b": 51.339,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.7
     },
     {
@@ -1753,7 +1753,7 @@
       "value_usd_b": 17.86,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.8
     },
     {
@@ -1769,7 +1769,7 @@
       "value_usd_b": 16.753,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.5
     },
     {
@@ -1785,7 +1785,7 @@
       "value_usd_b": 40.226,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.8
     },
     {
@@ -1801,7 +1801,7 @@
       "value_usd_b": 0.468,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 12.7
     },
     {
@@ -1817,7 +1817,7 @@
       "value_usd_b": 0.016,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -1833,7 +1833,7 @@
       "value_usd_b": 0.161,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.4
     },
     {
@@ -1849,7 +1849,7 @@
       "value_usd_b": 2.205,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 60.0
     },
     {
@@ -1865,7 +1865,7 @@
       "value_usd_b": 0.195,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.3
     },
     {
@@ -1881,7 +1881,7 @@
       "value_usd_b": 0.14,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.8
     },
     {
@@ -1897,7 +1897,7 @@
       "value_usd_b": 0.564,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.1
     },
     {
@@ -1913,7 +1913,7 @@
       "value_usd_b": 0.398,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.2
     },
     {
@@ -1929,7 +1929,7 @@
       "value_usd_b": 6.528,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 36.3
     },
     {
@@ -1945,7 +1945,7 @@
       "value_usd_b": 0.552,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.1
     },
     {
@@ -1961,7 +1961,7 @@
       "value_usd_b": 0.252,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -1977,7 +1977,7 @@
       "value_usd_b": 0.08,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -1993,7 +1993,7 @@
       "value_usd_b": 0.549,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -2009,7 +2009,7 @@
       "value_usd_b": 7.098,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 37.1
     },
     {
@@ -2025,7 +2025,7 @@
       "value_usd_b": 0.652,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.4
     },
     {
@@ -2041,7 +2041,7 @@
       "value_usd_b": 0.056,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -2057,7 +2057,7 @@
       "value_usd_b": 0.177,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.5
     },
     {
@@ -2073,7 +2073,7 @@
       "value_usd_b": 0.124,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.5
     },
     {
@@ -2089,7 +2089,7 @@
       "value_usd_b": 1.295,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 25.8
     },
     {
@@ -2105,7 +2105,7 @@
       "value_usd_b": 0.082,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -2121,7 +2121,7 @@
       "value_usd_b": 10.672,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.5
     },
     {
@@ -2137,7 +2137,7 @@
       "value_usd_b": 39.635,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.0
     },
     {
@@ -2153,7 +2153,7 @@
       "value_usd_b": 8.642,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.1
     },
     {
@@ -2169,7 +2169,7 @@
       "value_usd_b": 4.647,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.3
     },
     {
@@ -2185,7 +2185,7 @@
       "value_usd_b": 6.849,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.8
     },
     {
@@ -2201,7 +2201,7 @@
       "value_usd_b": 14.65,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.7
     },
     {
@@ -2217,7 +2217,7 @@
       "value_usd_b": 16.594,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.7
     },
     {
@@ -2233,7 +2233,7 @@
       "value_usd_b": 4.683,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.5
     },
     {
@@ -2249,7 +2249,7 @@
       "value_usd_b": 40.965,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 21.5
     },
     {
@@ -2265,7 +2265,7 @@
       "value_usd_b": 10.953,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.8
     },
     {
@@ -2281,7 +2281,7 @@
       "value_usd_b": 7.243,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.6
     },
     {
@@ -2297,7 +2297,7 @@
       "value_usd_b": 9.219,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.7
     },
     {
@@ -2313,7 +2313,7 @@
       "value_usd_b": 7.404,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.8
     },
     {
@@ -2329,7 +2329,7 @@
       "value_usd_b": 0.874,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.9
     },
     {
@@ -2345,7 +2345,7 @@
       "value_usd_b": 22.01,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.2
     },
     {
@@ -2361,7 +2361,7 @@
       "value_usd_b": 0.011,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.2
     },
     {
@@ -2377,7 +2377,7 @@
       "value_usd_b": 0.003,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -2393,7 +2393,7 @@
       "value_usd_b": 0.078,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.7
     },
     {
@@ -2409,7 +2409,7 @@
       "value_usd_b": 0.008,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -2425,7 +2425,7 @@
       "value_usd_b": 0.012,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.4
     },
     {
@@ -2441,7 +2441,7 @@
       "value_usd_b": 46.862,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.9
     },
     {
@@ -2457,7 +2457,7 @@
       "value_usd_b": 4.677,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -2473,7 +2473,7 @@
       "value_usd_b": 20.277,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.8
     },
     {
@@ -2489,7 +2489,7 @@
       "value_usd_b": 13.764,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.3
     },
     {
@@ -2505,7 +2505,7 @@
       "value_usd_b": 84.198,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 32.2
     },
     {
@@ -2521,7 +2521,7 @@
       "value_usd_b": 4.718,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -2537,7 +2537,7 @@
       "value_usd_b": 47.368,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.4
     },
     {
@@ -2553,7 +2553,7 @@
       "value_usd_b": 18.108,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.5
     },
     {
@@ -2569,7 +2569,7 @@
       "value_usd_b": 15.545,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.7
     },
     {
@@ -2585,7 +2585,7 @@
       "value_usd_b": 35.154,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.7
     },
     {
@@ -2601,7 +2601,7 @@
       "value_usd_b": 7.259,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.4
     },
     {
@@ -2617,7 +2617,7 @@
       "value_usd_b": 3.309,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.4
     },
     {
@@ -2633,7 +2633,7 @@
       "value_usd_b": 26.109,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 19.3
     },
     {
@@ -2649,7 +2649,7 @@
       "value_usd_b": 3.091,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.3
     },
     {
@@ -2665,7 +2665,7 @@
       "value_usd_b": 7.672,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.7
     },
     {
@@ -2681,7 +2681,7 @@
       "value_usd_b": 1.074,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.3
     },
     {
@@ -2697,7 +2697,7 @@
       "value_usd_b": 1.252,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.4
     },
     {
@@ -2713,7 +2713,7 @@
       "value_usd_b": 7.374,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 43.5
     },
     {
@@ -2729,7 +2729,7 @@
       "value_usd_b": 0.2,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -2745,7 +2745,7 @@
       "value_usd_b": 0.189,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -2761,7 +2761,7 @@
       "value_usd_b": 0.593,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.9
     },
     {
@@ -2777,7 +2777,7 @@
       "value_usd_b": 4.479,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.6
     },
     {
@@ -2793,7 +2793,7 @@
       "value_usd_b": 0.296,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.0
     },
     {
@@ -2809,7 +2809,7 @@
       "value_usd_b": 0.908,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.0
     },
     {
@@ -2825,7 +2825,7 @@
       "value_usd_b": 0.029,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -2841,7 +2841,7 @@
       "value_usd_b": 17.873,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.7
     },
     {
@@ -2857,7 +2857,7 @@
       "value_usd_b": 53.773,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.2
     },
     {
@@ -2873,7 +2873,7 @@
       "value_usd_b": 8.982,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.9
     },
     {
@@ -2889,7 +2889,7 @@
       "value_usd_b": 3.224,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -2905,7 +2905,7 @@
       "value_usd_b": 25.839,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.2
     },
     {
@@ -2921,7 +2921,7 @@
       "value_usd_b": 0.348,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.9
     },
     {
@@ -2937,7 +2937,7 @@
       "value_usd_b": 2.248,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 31.4
     },
     {
@@ -2953,7 +2953,7 @@
       "value_usd_b": 0.083,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -2969,7 +2969,7 @@
       "value_usd_b": 0.011,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -2985,7 +2985,7 @@
       "value_usd_b": 0.067,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.9
     },
     {
@@ -3001,7 +3001,7 @@
       "value_usd_b": 9.087,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -3017,7 +3017,7 @@
       "value_usd_b": 46.352,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.5
     },
     {
@@ -3033,7 +3033,7 @@
       "value_usd_b": 34.366,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.5
     },
     {
@@ -3049,7 +3049,7 @@
       "value_usd_b": 8.482,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.8
     },
     {
@@ -3065,7 +3065,7 @@
       "value_usd_b": 18.167,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.1
     },
     {
@@ -3081,7 +3081,7 @@
       "value_usd_b": 11.859,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.9
     },
     {
@@ -3097,7 +3097,7 @@
       "value_usd_b": 2.574,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.4
     },
     {
@@ -3113,7 +3113,7 @@
       "value_usd_b": 11.531,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.5
     },
     {
@@ -3129,7 +3129,7 @@
       "value_usd_b": 0.531,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.7
     },
     {
@@ -3145,7 +3145,7 @@
       "value_usd_b": 10.722,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.4
     },
     {
@@ -3161,7 +3161,7 @@
       "value_usd_b": 0.12,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 26.2
     },
     {
@@ -3177,7 +3177,7 @@
       "value_usd_b": 0.043,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.4
     },
     {
@@ -3193,7 +3193,7 @@
       "value_usd_b": 0.109,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.8
     },
     {
@@ -3209,7 +3209,7 @@
       "value_usd_b": 0.009,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.0
     },
     {
@@ -3225,7 +3225,7 @@
       "value_usd_b": 0.001,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -3241,7 +3241,7 @@
       "value_usd_b": 18.339,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -3257,7 +3257,7 @@
       "value_usd_b": 13.027,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -3273,7 +3273,7 @@
       "value_usd_b": 39.283,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.6
     },
     {
@@ -3289,7 +3289,7 @@
       "value_usd_b": 19.684,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.3
     },
     {
@@ -3305,7 +3305,7 @@
       "value_usd_b": 67.689,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.8
     },
     {
@@ -3321,7 +3321,7 @@
       "value_usd_b": 4.455,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -3337,7 +3337,7 @@
       "value_usd_b": 20.118,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.0
     },
     {
@@ -3353,7 +3353,7 @@
       "value_usd_b": 96.328,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.7
     },
     {
@@ -3369,7 +3369,7 @@
       "value_usd_b": 55.923,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.7
     },
     {
@@ -3385,7 +3385,7 @@
       "value_usd_b": 21.934,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.5
     },
     {
@@ -3401,7 +3401,7 @@
       "value_usd_b": 1.46,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.2
     },
     {
@@ -3417,7 +3417,7 @@
       "value_usd_b": 27.801,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 308.5
     },
     {
@@ -3433,7 +3433,7 @@
       "value_usd_b": 0.091,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -3449,7 +3449,7 @@
       "value_usd_b": 0.017,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -3465,7 +3465,7 @@
       "value_usd_b": 22.074,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 244.9
     },
     {
@@ -3481,7 +3481,7 @@
       "value_usd_b": 0.117,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.5
     },
     {
@@ -3497,7 +3497,7 @@
       "value_usd_b": 0.533,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.1
     },
     {
@@ -3513,7 +3513,7 @@
       "value_usd_b": 0.301,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -3529,7 +3529,7 @@
       "value_usd_b": 0.628,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.5
     },
     {
@@ -3545,7 +3545,7 @@
       "value_usd_b": 9.206,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 36.5
     },
     {
@@ -3561,7 +3561,7 @@
       "value_usd_b": 0.3,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.1
     },
     {
@@ -3577,7 +3577,7 @@
       "value_usd_b": 0.141,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -3593,7 +3593,7 @@
       "value_usd_b": 0.304,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.1
     },
     {
@@ -3609,7 +3609,7 @@
       "value_usd_b": 0.206,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -3625,7 +3625,7 @@
       "value_usd_b": 4.206,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.4
     },
     {
@@ -3641,7 +3641,7 @@
       "value_usd_b": 9.427,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.8
     },
     {
@@ -3657,7 +3657,7 @@
       "value_usd_b": 14.644,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.5
     },
     {
@@ -3673,7 +3673,7 @@
       "value_usd_b": 9.425,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.8
     },
     {
@@ -3689,7 +3689,7 @@
       "value_usd_b": 56.259,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.7
     },
     {
@@ -3705,7 +3705,7 @@
       "value_usd_b": 11.309,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.8
     },
     {
@@ -3721,7 +3721,7 @@
       "value_usd_b": 0.1,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.7
     },
     {
@@ -3737,7 +3737,7 @@
       "value_usd_b": 1.329,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 22.6
     },
     {
@@ -3753,7 +3753,7 @@
       "value_usd_b": 0.174,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -3769,7 +3769,7 @@
       "value_usd_b": 0.063,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -3785,7 +3785,7 @@
       "value_usd_b": 0.266,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.5
     },
     {
@@ -3801,7 +3801,7 @@
       "value_usd_b": 5.445,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.3
     },
     {
@@ -3817,7 +3817,7 @@
       "value_usd_b": 55.27,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.2
     },
     {
@@ -3833,7 +3833,7 @@
       "value_usd_b": 12.074,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.1
     },
     {
@@ -3849,7 +3849,7 @@
       "value_usd_b": 18.08,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.6
     },
     {
@@ -3865,7 +3865,7 @@
       "value_usd_b": 17.791,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.5
     },
     {
@@ -3881,7 +3881,7 @@
       "value_usd_b": 9.63,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.7
     },
     {
@@ -3897,7 +3897,7 @@
       "value_usd_b": 11.832,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.5
     },
     {
@@ -3913,7 +3913,7 @@
       "value_usd_b": 8.278,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.7
     },
     {
@@ -3929,7 +3929,7 @@
       "value_usd_b": 28.21,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 22.7
     },
     {
@@ -3945,7 +3945,7 @@
       "value_usd_b": 1.749,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -3961,7 +3961,7 @@
       "value_usd_b": 0.007,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -3977,7 +3977,7 @@
       "value_usd_b": 0.001,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -3993,7 +3993,7 @@
       "value_usd_b": 0.011,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.0
     },
     {
@@ -4009,7 +4009,7 @@
       "value_usd_b": 0.073,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.5
     },
     {
@@ -4025,7 +4025,7 @@
       "value_usd_b": 0.013,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.4
     },
     {
@@ -4041,7 +4041,7 @@
       "value_usd_b": 7.235,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -4057,7 +4057,7 @@
       "value_usd_b": 21.788,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.4
     },
     {
@@ -4073,7 +4073,7 @@
       "value_usd_b": 54.57,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.4
     },
     {
@@ -4089,7 +4089,7 @@
       "value_usd_b": 22.178,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.5
     },
     {
@@ -4105,7 +4105,7 @@
       "value_usd_b": 40.543,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.0
     },
     {
@@ -4121,7 +4121,7 @@
       "value_usd_b": 22.602,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.8
     },
     {
@@ -4137,7 +4137,7 @@
       "value_usd_b": 15.179,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.6
     },
     {
@@ -4153,7 +4153,7 @@
       "value_usd_b": 56.112,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.0
     },
     {
@@ -4169,7 +4169,7 @@
       "value_usd_b": 109.851,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 33.2
     },
     {
@@ -4185,7 +4185,7 @@
       "value_usd_b": 7.948,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.4
     },
     {
@@ -4201,7 +4201,7 @@
       "value_usd_b": 0.23,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.4
     },
     {
@@ -4217,7 +4217,7 @@
       "value_usd_b": 1.714,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -4233,7 +4233,7 @@
       "value_usd_b": 33.703,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 59.3
     },
     {
@@ -4249,7 +4249,7 @@
       "value_usd_b": 7.288,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 12.8
     },
     {
@@ -4265,7 +4265,7 @@
       "value_usd_b": 6.277,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.0
     },
     {
@@ -4281,7 +4281,7 @@
       "value_usd_b": 3.687,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 21.6
     },
     {
@@ -4297,7 +4297,7 @@
       "value_usd_b": 1.212,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.1
     },
     {
@@ -4313,7 +4313,7 @@
       "value_usd_b": 0.032,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -4329,7 +4329,7 @@
       "value_usd_b": 0.34,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.0
     },
     {
@@ -4345,7 +4345,7 @@
       "value_usd_b": 0.761,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.5
     },
     {
@@ -4361,7 +4361,7 @@
       "value_usd_b": 1.241,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.0
     },
     {
@@ -4377,7 +4377,7 @@
       "value_usd_b": 1.173,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.7
     },
     {
@@ -4393,7 +4393,7 @@
       "value_usd_b": 8.971,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 43.6
     },
     {
@@ -4409,7 +4409,7 @@
       "value_usd_b": 0.234,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -4425,7 +4425,7 @@
       "value_usd_b": 0.379,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -4441,7 +4441,7 @@
       "value_usd_b": 65.93,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 22.6
     },
     {
@@ -4457,7 +4457,7 @@
       "value_usd_b": 28.235,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.7
     },
     {
@@ -4473,7 +4473,7 @@
       "value_usd_b": 12.809,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.4
     },
     {
@@ -4489,7 +4489,7 @@
       "value_usd_b": 24.853,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.5
     },
     {
@@ -4505,7 +4505,7 @@
       "value_usd_b": 3.466,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -4521,7 +4521,7 @@
       "value_usd_b": 38.025,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.8
     },
     {
@@ -4537,7 +4537,7 @@
       "value_usd_b": 22.417,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.4
     },
     {
@@ -4553,7 +4553,7 @@
       "value_usd_b": 12.476,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.5
     },
     {
@@ -4569,7 +4569,7 @@
       "value_usd_b": 10.927,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.1
     },
     {
@@ -4585,7 +4585,7 @@
       "value_usd_b": 47.843,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.6
     },
     {
@@ -4601,7 +4601,7 @@
       "value_usd_b": 0.395,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.1
     },
     {
@@ -4617,7 +4617,7 @@
       "value_usd_b": 0.132,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -4633,7 +4633,7 @@
       "value_usd_b": 0.021,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -4649,7 +4649,7 @@
       "value_usd_b": 0.112,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -4665,7 +4665,7 @@
       "value_usd_b": 2.446,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 25.6
     },
     {
@@ -4681,7 +4681,7 @@
       "value_usd_b": 0.008,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.7
     },
     {
@@ -4697,7 +4697,7 @@
       "value_usd_b": 0.123,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 26.1
     },
     {
@@ -4713,7 +4713,7 @@
       "value_usd_b": 0.097,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 20.6
     },
     {
@@ -4729,7 +4729,7 @@
       "value_usd_b": 0.1,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 21.2
     },
     {
@@ -4745,7 +4745,7 @@
       "value_usd_b": 0.014,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -4761,7 +4761,7 @@
       "value_usd_b": 11.094,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.1
     },
     {
@@ -4777,7 +4777,7 @@
       "value_usd_b": 0.557,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.7
     },
     {
@@ -4793,7 +4793,7 @@
       "value_usd_b": 3.127,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -4809,7 +4809,7 @@
       "value_usd_b": 10.966,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.9
     },
     {
@@ -4825,7 +4825,7 @@
       "value_usd_b": 12.477,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.8
     },
     {
@@ -4841,7 +4841,7 @@
       "value_usd_b": 24.265,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.5
     },
     {
@@ -4857,7 +4857,7 @@
       "value_usd_b": 24.228,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.5
     },
     {
@@ -4873,7 +4873,7 @@
       "value_usd_b": 57.678,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.6
     },
     {
@@ -4889,7 +4889,7 @@
       "value_usd_b": 5.517,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.5
     },
     {
@@ -4905,7 +4905,7 @@
       "value_usd_b": 109.46,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.5
     },
     {
@@ -4921,7 +4921,7 @@
       "value_usd_b": 45.306,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.8
     },
     {
@@ -4937,7 +4937,7 @@
       "value_usd_b": 63.969,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 12.4
     },
     {
@@ -4953,7 +4953,7 @@
       "value_usd_b": 16.59,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.2
     },
     {
@@ -4969,7 +4969,7 @@
       "value_usd_b": 20.791,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -4985,56 +4985,8 @@
       "value_usd_b": 20.838,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
-    },
-    {
-      "reporter_code": "THA",
-      "reporter_name": "Thailand",
-      "partner_code": "CHN",
-      "partner_name": "China",
-      "year": 2022,
-      "month": null,
-      "period_label": "2022",
-      "flow_code": "X",
-      "flow_label": "Export",
-      "value_usd_b": 21.877,
-      "source": "comtrade_free",
-      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 46.0
-    },
-    {
-      "reporter_code": "THA",
-      "reporter_name": "Thailand",
-      "partner_code": "36",
-      "partner_name": "36",
-      "year": 2022,
-      "month": null,
-      "period_label": "2022",
-      "flow_code": "X",
-      "flow_label": "Export",
-      "value_usd_b": 0.023,
-      "source": "comtrade_free",
-      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 0.0
-    },
-    {
-      "reporter_code": "THA",
-      "reporter_name": "Thailand",
-      "partner_code": "USA",
-      "partner_name": "United States",
-      "year": 2022,
-      "month": null,
-      "period_label": "2022",
-      "flow_code": "X",
-      "flow_label": "Export",
-      "value_usd_b": 0.264,
-      "source": "comtrade_free",
-      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 0.6
     },
     {
       "reporter_code": "THA",
@@ -5046,11 +4998,11 @@
       "period_label": "2022",
       "flow_code": "X",
       "flow_label": "Export",
-      "value_usd_b": 24.656,
+      "value_usd_b": 0.312,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 51.8
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 2.6
     },
     {
       "reporter_code": "THA",
@@ -5062,11 +5014,59 @@
       "period_label": "2022",
       "flow_code": "X",
       "flow_label": "Export",
-      "value_usd_b": 0.091,
+      "value_usd_b": 0.128,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 0.2
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 1.1
+    },
+    {
+      "reporter_code": "THA",
+      "reporter_name": "Thailand",
+      "partner_code": "CHN",
+      "partner_name": "China",
+      "year": 2022,
+      "month": null,
+      "period_label": "2022",
+      "flow_code": "X",
+      "flow_label": "Export",
+      "value_usd_b": 2.706,
+      "source": "comtrade_free",
+      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 22.5
+    },
+    {
+      "reporter_code": "THA",
+      "reporter_name": "Thailand",
+      "partner_code": "36",
+      "partner_name": "36",
+      "year": 2022,
+      "month": null,
+      "period_label": "2022",
+      "flow_code": "X",
+      "flow_label": "Export",
+      "value_usd_b": 0.188,
+      "source": "comtrade_free",
+      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 1.6
+    },
+    {
+      "reporter_code": "THA",
+      "reporter_name": "Thailand",
+      "partner_code": "USA",
+      "partner_name": "United States",
+      "year": 2022,
+      "month": null,
+      "period_label": "2022",
+      "flow_code": "X",
+      "flow_label": "Export",
+      "value_usd_b": 2.699,
+      "source": "comtrade_free",
+      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 22.5
     },
     {
       "reporter_code": "MMR",
@@ -5081,7 +5081,7 @@
       "value_usd_b": 5.587,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 32.1
     },
     {
@@ -5097,7 +5097,7 @@
       "value_usd_b": 0.099,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.6
     },
     {
@@ -5113,7 +5113,7 @@
       "value_usd_b": 0.277,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -5129,7 +5129,7 @@
       "value_usd_b": 0.171,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -5145,7 +5145,7 @@
       "value_usd_b": 0.274,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -5161,7 +5161,7 @@
       "value_usd_b": 0.313,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -5177,7 +5177,7 @@
       "value_usd_b": 10.446,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 34.9
     },
     {
@@ -5193,7 +5193,7 @@
       "value_usd_b": 0.775,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.6
     },
     {
@@ -5209,7 +5209,7 @@
       "value_usd_b": 0.545,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -5225,7 +5225,7 @@
       "value_usd_b": 0.145,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.5
     },
     {
@@ -5241,7 +5241,7 @@
       "value_usd_b": 9.863,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.1
     },
     {
@@ -5257,7 +5257,7 @@
       "value_usd_b": 17.203,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.2
     },
     {
@@ -5273,7 +5273,7 @@
       "value_usd_b": 11.722,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.9
     },
     {
@@ -5289,7 +5289,7 @@
       "value_usd_b": 68.042,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.6
     },
     {
@@ -5305,7 +5305,7 @@
       "value_usd_b": 11.684,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.9
     },
     {
@@ -5321,7 +5321,7 @@
       "value_usd_b": 9.233,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.1
     },
     {
@@ -5337,7 +5337,7 @@
       "value_usd_b": 62.674,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 21.3
     },
     {
@@ -5353,7 +5353,7 @@
       "value_usd_b": 13.429,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.6
     },
     {
@@ -5369,7 +5369,7 @@
       "value_usd_b": 22.83,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.8
     },
     {
@@ -5385,7 +5385,7 @@
       "value_usd_b": 18.876,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.4
     },
     {
@@ -5401,7 +5401,7 @@
       "value_usd_b": 0.074,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -5417,7 +5417,7 @@
       "value_usd_b": 0.344,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.5
     },
     {
@@ -5433,7 +5433,7 @@
       "value_usd_b": 0.073,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -5449,7 +5449,7 @@
       "value_usd_b": 1.834,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 24.1
     },
     {
@@ -5465,7 +5465,7 @@
       "value_usd_b": 0.168,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.2
     },
     {
@@ -5481,7 +5481,7 @@
       "value_usd_b": 0.01,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -5497,7 +5497,7 @@
       "value_usd_b": 0.138,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.8
     },
     {
@@ -5513,7 +5513,7 @@
       "value_usd_b": 0.025,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.7
     },
     {
@@ -5529,7 +5529,7 @@
       "value_usd_b": 0.048,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.1
     },
     {
@@ -5545,7 +5545,7 @@
       "value_usd_b": 0.007,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.8
     },
     {
@@ -5561,7 +5561,7 @@
       "value_usd_b": 29.796,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 20.4
     },
     {
@@ -5577,7 +5577,7 @@
       "value_usd_b": 13.086,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.0
     },
     {
@@ -5593,7 +5593,7 @@
       "value_usd_b": 3.131,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.1
     },
     {
@@ -5609,7 +5609,7 @@
       "value_usd_b": 9.691,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -5625,7 +5625,7 @@
       "value_usd_b": 12.73,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.7
     },
     {
@@ -5641,7 +5641,7 @@
       "value_usd_b": 10.113,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.8
     },
     {
@@ -5657,7 +5657,7 @@
       "value_usd_b": 23.312,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.5
     },
     {
@@ -5673,7 +5673,7 @@
       "value_usd_b": 117.651,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 32.8
     },
     {
@@ -5689,7 +5689,7 @@
       "value_usd_b": 62.051,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.3
     },
     {
@@ -5705,7 +5705,7 @@
       "value_usd_b": 14.477,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -5721,7 +5721,7 @@
       "value_usd_b": 30.625,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.4
     },
     {
@@ -5737,7 +5737,7 @@
       "value_usd_b": 62.984,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.2
     },
     {
@@ -5753,7 +5753,7 @@
       "value_usd_b": 51.577,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 10.8
     },
     {
@@ -5769,7 +5769,7 @@
       "value_usd_b": 8.549,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -5785,40 +5785,8 @@
       "value_usd_b": 26.715,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.6
-    },
-    {
-      "reporter_code": "THA",
-      "reporter_name": "Thailand",
-      "partner_code": "CHN",
-      "partner_name": "China",
-      "year": 2022,
-      "month": null,
-      "period_label": "2022",
-      "flow_code": "M",
-      "flow_label": "Import",
-      "value_usd_b": 59.515,
-      "source": "comtrade_free",
-      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 19.8
-    },
-    {
-      "reporter_code": "THA",
-      "reporter_name": "Thailand",
-      "partner_code": "USA",
-      "partner_name": "United States",
-      "year": 2022,
-      "month": null,
-      "period_label": "2022",
-      "flow_code": "M",
-      "flow_label": "Import",
-      "value_usd_b": 10.317,
-      "source": "comtrade_free",
-      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 3.4
     },
     {
       "reporter_code": "THA",
@@ -5830,11 +5798,11 @@
       "period_label": "2022",
       "flow_code": "M",
       "flow_label": "Import",
-      "value_usd_b": 0.055,
+      "value_usd_b": 0.53,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 0.0
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 0.9
     },
     {
       "reporter_code": "THA",
@@ -5849,8 +5817,24 @@
       "value_usd_b": 34.477,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 11.5
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 56.3
+    },
+    {
+      "reporter_code": "THA",
+      "reporter_name": "Thailand",
+      "partner_code": "USA",
+      "partner_name": "United States",
+      "year": 2022,
+      "month": null,
+      "period_label": "2022",
+      "flow_code": "M",
+      "flow_label": "Import",
+      "value_usd_b": 7.082,
+      "source": "comtrade_free",
+      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 11.6
     },
     {
       "reporter_code": "THA",
@@ -5862,11 +5846,27 @@
       "period_label": "2022",
       "flow_code": "M",
       "flow_label": "Import",
-      "value_usd_b": 0.13,
+      "value_usd_b": 0.268,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
-      "share_of_world_pct": 0.0
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 0.4
+    },
+    {
+      "reporter_code": "THA",
+      "reporter_name": "Thailand",
+      "partner_code": "CHN",
+      "partner_name": "China",
+      "year": 2022,
+      "month": null,
+      "period_label": "2022",
+      "flow_code": "M",
+      "flow_label": "Import",
+      "value_usd_b": 50.941,
+      "source": "comtrade_free",
+      "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+      "last_updated": "2026-08-24",
+      "share_of_world_pct": 83.1
     },
     {
       "reporter_code": "KHM",
@@ -5881,7 +5881,7 @@
       "value_usd_b": 8.996,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 41.5
     },
     {
@@ -5897,7 +5897,7 @@
       "value_usd_b": 0.281,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.3
     },
     {
@@ -5913,7 +5913,7 @@
       "value_usd_b": 1.178,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.4
     },
     {
@@ -5929,7 +5929,7 @@
       "value_usd_b": 1.515,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.0
     },
     {
@@ -5945,7 +5945,7 @@
       "value_usd_b": 0.371,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.7
     },
     {
@@ -5961,7 +5961,7 @@
       "value_usd_b": 0.588,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -5977,7 +5977,7 @@
       "value_usd_b": 3.428,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.2
     },
     {
@@ -5993,7 +5993,7 @@
       "value_usd_b": 0.404,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.7
     },
     {
@@ -6009,7 +6009,7 @@
       "value_usd_b": 0.028,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -6025,7 +6025,7 @@
       "value_usd_b": 1.2,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.1
     },
     {
@@ -6041,7 +6041,7 @@
       "value_usd_b": 20.788,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.0
     },
     {
@@ -6057,7 +6057,7 @@
       "value_usd_b": 23.31,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.0
     },
     {
@@ -6073,7 +6073,7 @@
       "value_usd_b": 3.177,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -6089,7 +6089,7 @@
       "value_usd_b": 65.037,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 25.1
     },
     {
@@ -6105,7 +6105,7 @@
       "value_usd_b": 10.305,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.0
     },
     {
@@ -6121,7 +6121,7 @@
       "value_usd_b": 35.455,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 11.3
     },
     {
@@ -6137,7 +6137,7 @@
       "value_usd_b": 10.942,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.5
     },
     {
@@ -6153,7 +6153,7 @@
       "value_usd_b": 42.145,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.5
     },
     {
@@ -6169,7 +6169,7 @@
       "value_usd_b": 18.791,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.0
     },
     {
@@ -6185,7 +6185,7 @@
       "value_usd_b": 12.252,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.9
     },
     {
@@ -6201,7 +6201,7 @@
       "value_usd_b": 0.347,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.7
     },
     {
@@ -6217,7 +6217,7 @@
       "value_usd_b": 2.31,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 38.2
     },
     {
@@ -6233,7 +6233,7 @@
       "value_usd_b": 0.098,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -6249,7 +6249,7 @@
       "value_usd_b": 0.013,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.2
     },
     {
@@ -6265,7 +6265,7 @@
       "value_usd_b": 0.099,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -6281,7 +6281,7 @@
       "value_usd_b": 10.456,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.2
     },
     {
@@ -6297,7 +6297,7 @@
       "value_usd_b": 10.925,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.8
     },
     {
@@ -6313,7 +6313,7 @@
       "value_usd_b": 3.534,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.8
     },
     {
@@ -6329,7 +6329,7 @@
       "value_usd_b": 11.565,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 15.7
     },
     {
@@ -6345,7 +6345,7 @@
       "value_usd_b": 0.562,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.8
     },
     {
@@ -6361,7 +6361,7 @@
       "value_usd_b": 0.003,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.8
     },
     {
@@ -6377,7 +6377,7 @@
       "value_usd_b": 0.0,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.0
     },
     {
@@ -6393,7 +6393,7 @@
       "value_usd_b": 0.076,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 46.3
     },
     {
@@ -6409,7 +6409,7 @@
       "value_usd_b": 0.028,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.1
     },
     {
@@ -6425,7 +6425,7 @@
       "value_usd_b": 0.005,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -6441,7 +6441,7 @@
       "value_usd_b": 5.268,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.5
     },
     {
@@ -6457,7 +6457,7 @@
       "value_usd_b": 60.574,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 17.2
     },
     {
@@ -6473,7 +6473,7 @@
       "value_usd_b": 97.072,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 27.5
     },
     {
@@ -6489,7 +6489,7 @@
       "value_usd_b": 23.314,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -6505,7 +6505,7 @@
       "value_usd_b": 23.448,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -6521,7 +6521,7 @@
       "value_usd_b": 15.128,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.2
     },
     {
@@ -6537,7 +6537,7 @@
       "value_usd_b": 20.649,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.3
     },
     {
@@ -6553,7 +6553,7 @@
       "value_usd_b": 44.923,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 9.5
     },
     {
@@ -6569,7 +6569,7 @@
       "value_usd_b": 19.346,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.1
     },
     {
@@ -6585,7 +6585,7 @@
       "value_usd_b": 65.585,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.8
     },
     {
@@ -6601,7 +6601,7 @@
       "value_usd_b": 4.892,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 124.0
     },
     {
@@ -6617,7 +6617,7 @@
       "value_usd_b": 12.215,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 309.7
     },
     {
@@ -6633,7 +6633,7 @@
       "value_usd_b": 0.087,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.2
     },
     {
@@ -6649,7 +6649,7 @@
       "value_usd_b": 1.942,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 49.2
     },
     {
@@ -6665,7 +6665,7 @@
       "value_usd_b": 0.338,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.6
     },
     {
@@ -6681,7 +6681,7 @@
       "value_usd_b": 0.131,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.5
     },
     {
@@ -6697,7 +6697,7 @@
       "value_usd_b": 0.47,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.9
     },
     {
@@ -6713,7 +6713,7 @@
       "value_usd_b": 0.254,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -6729,7 +6729,7 @@
       "value_usd_b": 0.625,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.6
     },
     {
@@ -6745,7 +6745,7 @@
       "value_usd_b": 10.779,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 44.2
     },
     {
@@ -6761,7 +6761,7 @@
       "value_usd_b": 0.199,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.2
     },
     {
@@ -6777,7 +6777,7 @@
       "value_usd_b": 5.091,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 31.0
     },
     {
@@ -6793,7 +6793,7 @@
       "value_usd_b": 0.553,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.4
     },
     {
@@ -6809,7 +6809,7 @@
       "value_usd_b": 0.175,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -6825,7 +6825,7 @@
       "value_usd_b": 0.136,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.8
     },
     {
@@ -6841,7 +6841,7 @@
       "value_usd_b": 10.555,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.7
     },
     {
@@ -6857,7 +6857,7 @@
       "value_usd_b": 9.303,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.2
     },
     {
@@ -6873,7 +6873,7 @@
       "value_usd_b": 63.387,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 28.4
     },
     {
@@ -6889,7 +6889,7 @@
       "value_usd_b": 11.359,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.1
     },
     {
@@ -6905,7 +6905,7 @@
       "value_usd_b": 16.542,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.4
     },
     {
@@ -6921,7 +6921,7 @@
       "value_usd_b": 7.616,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -6937,7 +6937,7 @@
       "value_usd_b": 19.528,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 7.4
     },
     {
@@ -6953,7 +6953,7 @@
       "value_usd_b": 15.556,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.9
     },
     {
@@ -6969,7 +6969,7 @@
       "value_usd_b": 12.096,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.6
     },
     {
@@ -6985,7 +6985,7 @@
       "value_usd_b": 56.709,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 21.3
     },
     {
@@ -7001,7 +7001,7 @@
       "value_usd_b": 0.081,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.1
     },
     {
@@ -7017,7 +7017,7 @@
       "value_usd_b": 2.109,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 29.8
     },
     {
@@ -7033,7 +7033,7 @@
       "value_usd_b": 0.149,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.1
     },
     {
@@ -7049,7 +7049,7 @@
       "value_usd_b": 0.072,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.0
     },
     {
@@ -7065,7 +7065,7 @@
       "value_usd_b": 0.204,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.9
     },
     {
@@ -7081,7 +7081,7 @@
       "value_usd_b": 8.891,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -7097,7 +7097,7 @@
       "value_usd_b": 30.943,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 23.1
     },
     {
@@ -7113,7 +7113,7 @@
       "value_usd_b": 3.96,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 3.0
     },
     {
@@ -7129,7 +7129,7 @@
       "value_usd_b": 9.116,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.8
     },
     {
@@ -7145,7 +7145,7 @@
       "value_usd_b": 10.95,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 8.2
     },
     {
@@ -7161,7 +7161,7 @@
       "value_usd_b": 0.013,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.4
     },
     {
@@ -7177,7 +7177,7 @@
       "value_usd_b": 0.129,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 14.2
     },
     {
@@ -7193,7 +7193,7 @@
       "value_usd_b": 0.003,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.3
     },
     {
@@ -7209,7 +7209,7 @@
       "value_usd_b": 0.021,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.3
     },
     {
@@ -7225,7 +7225,7 @@
       "value_usd_b": 0.06,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -7241,7 +7241,7 @@
       "value_usd_b": 110.655,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 34.0
     },
     {
@@ -7257,7 +7257,7 @@
       "value_usd_b": 21.613,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.6
     },
     {
@@ -7273,7 +7273,7 @@
       "value_usd_b": 52.386,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 16.1
     },
     {
@@ -7289,7 +7289,7 @@
       "value_usd_b": 8.559,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.6
     },
     {
@@ -7305,7 +7305,7 @@
       "value_usd_b": 13.827,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 4.2
     },
     {
@@ -7321,7 +7321,7 @@
       "value_usd_b": 52.063,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 12.3
     },
     {
@@ -7337,7 +7337,7 @@
       "value_usd_b": 6.896,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 1.6
     },
     {
@@ -7353,7 +7353,7 @@
       "value_usd_b": 58.788,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 13.9
     },
     {
@@ -7369,7 +7369,7 @@
       "value_usd_b": 21.194,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 5.0
     },
     {
@@ -7385,7 +7385,7 @@
       "value_usd_b": 25.66,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 6.1
     },
     {
@@ -7401,7 +7401,7 @@
       "value_usd_b": 0.151,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.1
     },
     {
@@ -7417,7 +7417,7 @@
       "value_usd_b": 7.278,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.5
     },
     {
@@ -7433,7 +7433,7 @@
       "value_usd_b": 6.602,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 2.3
     },
     {
@@ -7449,7 +7449,7 @@
       "value_usd_b": 0.087,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.0
     },
     {
@@ -7465,7 +7465,7 @@
       "value_usd_b": 0.267,
       "source": "comtrade_free",
       "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
-      "last_updated": "2026-08-17",
+      "last_updated": "2026-08-24",
       "share_of_world_pct": 0.1
     }
   ],
@@ -11628,55 +11628,55 @@
         }
       },
       "2022": {
-        "total_exports_usd_b": 47.582,
-        "total_imports_usd_b": 301.02,
-        "trade_balance_usd_b": -253.438,
-        "top_export_partner": "JPN",
-        "top_export_share_pct": 51.8,
+        "total_exports_usd_b": 12.018,
+        "total_imports_usd_b": 61.29,
+        "trade_balance_usd_b": -49.272,
+        "top_export_partner": "CHN",
+        "top_export_share_pct": 22.5,
         "top_import_partner": "CHN",
-        "top_import_share_pct": 19.8,
+        "top_import_share_pct": 83.1,
         "by_partner": {
           "CHN": {
-            "exports_usd_b": 21.877,
-            "imports_usd_b": 59.515,
-            "total_bilateral_usd_b": 81.392,
-            "partner_share": 0.2335,
-            "partner_share_pct": 23.3,
-            "export_share": 0.4598,
-            "export_share_pct": 46.0,
-            "import_share": 0.1977,
-            "import_share_pct": 19.8,
-            "dependency_risk": "medium",
-            "export_risk": "high",
-            "import_risk": "low"
+            "exports_usd_b": 2.706,
+            "imports_usd_b": 50.941,
+            "total_bilateral_usd_b": 53.647,
+            "partner_share": 0.7318,
+            "partner_share_pct": 73.2,
+            "export_share": 0.2252,
+            "export_share_pct": 22.5,
+            "import_share": 0.8311,
+            "import_share_pct": 83.1,
+            "dependency_risk": "high",
+            "export_risk": "medium",
+            "import_risk": "high"
           },
           "USA": {
-            "exports_usd_b": 0.264,
-            "imports_usd_b": 10.317,
-            "total_bilateral_usd_b": 10.581,
-            "partner_share": 0.0304,
-            "partner_share_pct": 3.0,
-            "export_share": 0.0055,
-            "export_share_pct": 0.6,
-            "import_share": 0.0343,
-            "import_share_pct": 3.4,
+            "exports_usd_b": 2.699,
+            "imports_usd_b": 7.082,
+            "total_bilateral_usd_b": 9.781,
+            "partner_share": 0.1334,
+            "partner_share_pct": 13.3,
+            "export_share": 0.2246,
+            "export_share_pct": 22.5,
+            "import_share": 0.1155,
+            "import_share_pct": 11.6,
             "dependency_risk": "low",
-            "export_risk": "low",
+            "export_risk": "medium",
             "import_risk": "low"
           },
           "JPN": {
-            "exports_usd_b": 24.656,
+            "exports_usd_b": 0.312,
             "imports_usd_b": 34.477,
-            "total_bilateral_usd_b": 59.133,
-            "partner_share": 0.1696,
-            "partner_share_pct": 17.0,
-            "export_share": 0.5182,
-            "export_share_pct": 51.8,
-            "import_share": 0.1145,
-            "import_share_pct": 11.5,
-            "dependency_risk": "low",
-            "export_risk": "high",
-            "import_risk": "low"
+            "total_bilateral_usd_b": 34.789,
+            "partner_share": 0.4746,
+            "partner_share_pct": 47.5,
+            "export_share": 0.026,
+            "export_share_pct": 2.6,
+            "import_share": 0.5625,
+            "import_share_pct": 56.3,
+            "dependency_risk": "high",
+            "export_risk": "low",
+            "import_risk": "high"
           },
           "IND": {
             "exports_usd_b": 0.0,
@@ -11693,15 +11693,15 @@
             "import_risk": "low"
           },
           "KOR": {
-            "exports_usd_b": 0.091,
-            "imports_usd_b": 0.13,
-            "total_bilateral_usd_b": 0.221,
-            "partner_share": 0.0006,
-            "partner_share_pct": 0.1,
-            "export_share": 0.0019,
-            "export_share_pct": 0.2,
-            "import_share": 0.0004,
-            "import_share_pct": 0.0,
+            "exports_usd_b": 0.128,
+            "imports_usd_b": 0.268,
+            "total_bilateral_usd_b": 0.396,
+            "partner_share": 0.0054,
+            "partner_share_pct": 0.5,
+            "export_share": 0.0107,
+            "export_share_pct": 1.1,
+            "import_share": 0.0044,
+            "import_share_pct": 0.4,
             "dependency_risk": "low",
             "export_risk": "low",
             "import_risk": "low"
@@ -13555,17 +13555,17 @@
       "reporter_code": "THA",
       "reporter_name": "Thailand",
       "year": 2022,
-      "total_exports_usd_b": 47.582,
-      "total_imports_usd_b": 301.02,
-      "trade_balance_usd_b": -253.438,
-      "top_export_partner": "JPN",
-      "top_export_share_pct": 51.8,
+      "total_exports_usd_b": 12.018,
+      "total_imports_usd_b": 61.29,
+      "trade_balance_usd_b": -49.272,
+      "top_export_partner": "CHN",
+      "top_export_share_pct": 22.5,
       "top_import_partner": "CHN",
-      "top_import_share_pct": 19.8,
-      "china_export_risk": "high",
-      "china_import_risk": "low",
-      "china_overall_risk": "medium",
-      "china_partner_share_pct": 23.3
+      "top_import_share_pct": 83.1,
+      "china_export_risk": "medium",
+      "china_import_risk": "high",
+      "china_overall_risk": "high",
+      "china_partner_share_pct": 73.2
     },
     {
       "reporter_code": "THA",
