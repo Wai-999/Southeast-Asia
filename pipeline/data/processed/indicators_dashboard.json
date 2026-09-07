@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-08-31T10:19:49",
+    "generated_at": "2026-09-07T08:48:25",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
-    "fetched_at": "2026-08-31T10:17:44",
+    "fetched_at": "2026-09-07T08:45:50",
     "wb_data_status": "live",
     "countries": 17,
     "sea_countries": 11,
