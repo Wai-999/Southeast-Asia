@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T20:14:43",
+    "generated_at": "2026-09-07T03:02:42",
     "script": "generate_alerts.py",
     "source_url": "data/processed/indicators_dashboard.json",
     "fetched_at": "2026-08-31T10:17:44",
@@ -53,7 +53,7 @@
       "severity_class": "sev-critical",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -85,7 +85,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -116,7 +116,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -147,7 +147,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -177,7 +177,7 @@
       "severity_class": "sev-warning",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -207,7 +207,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -237,7 +237,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -268,7 +268,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "fdi_usd_b",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -298,7 +298,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "conflict_protest_news_count",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -328,7 +328,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     },
     {
@@ -358,7 +358,7 @@
       "severity_class": "sev-info",
       "chart_hint": "bar",
       "metric_to_highlight": "top_export_partner_share",
-      "generated_at": "2026-09-06T20:14:43",
+      "generated_at": "2026-09-07T03:02:42",
       "source_url": "data/processed/indicators_dashboard.json"
     }
   ],
@@ -393,7 +393,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -424,7 +424,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -458,7 +458,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -488,7 +488,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -518,7 +518,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -551,7 +551,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -583,7 +583,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -615,7 +615,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -648,7 +648,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -680,7 +680,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -712,7 +712,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -748,7 +748,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -780,7 +780,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -811,7 +811,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -844,7 +844,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -875,7 +875,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -905,7 +905,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -935,7 +935,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -965,7 +965,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -995,7 +995,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1025,7 +1025,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1057,7 +1057,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
@@ -1093,7 +1093,7 @@
         "severity_class": "sev-critical",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1127,7 +1127,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1158,7 +1158,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1189,7 +1189,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1219,7 +1219,7 @@
         "severity_class": "sev-warning",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ],
@@ -1251,7 +1251,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1281,7 +1281,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1312,7 +1312,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "fdi_usd_b",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1342,7 +1342,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "conflict_protest_news_count",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1372,7 +1372,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       },
       {
@@ -1402,7 +1402,7 @@
         "severity_class": "sev-info",
         "chart_hint": "bar",
         "metric_to_highlight": "top_export_partner_share",
-        "generated_at": "2026-09-06T20:14:43",
+        "generated_at": "2026-09-07T03:02:42",
         "source_url": "data/processed/indicators_dashboard.json"
       }
     ]
