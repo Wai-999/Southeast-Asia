@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-10-05T11:01:05",
+    "generated_at": "2026-10-12T11:29:34",
     "script": "process_indicators.py",
     "source_url": "data/processed/worldbank_indicators.json",
-    "fetched_at": "2026-10-05T10:59:46",
+    "fetched_at": "2026-10-12T11:27:48",
     "wb_data_status": "live",
     "countries": 17,
     "sea_countries": 11,
@@ -72,7 +72,7 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 3.2652,
+          "value": 3.2106,
           "prev_value": 2.7017,
           "trend": "up",
           "unit": "% of GDP",
@@ -394,7 +394,7 @@
           },
           {
             "year": 2025,
-            "value": 3.2652,
+            "value": 3.2106,
             "data_quality": "available"
           }
         ],
@@ -734,11 +734,11 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 4.2345,
-          "prev_value": 4.2646,
-          "trend": "down",
+          "value": 4.2724,
+          "prev_value": 4.2345,
+          "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -1052,6 +1052,11 @@
           {
             "year": 2024,
             "value": 4.2345,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.2724,
             "data_quality": "available"
           }
         ],
@@ -1391,11 +1396,11 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.4788,
-          "prev_value": 2.2772,
+          "value": 1.3062,
+          "prev_value": 1.4788,
           "trend": "down",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -1690,6 +1695,11 @@
             "year": 2024,
             "value": 1.4788,
             "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 1.3062,
+            "data_quality": "available"
           }
         ],
         "exports": [],
@@ -1916,7 +1926,7 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 9.9461,
+          "value": 9.9478,
           "prev_value": 9.4809,
           "trend": "up",
           "unit": "% of GDP",
@@ -2238,7 +2248,7 @@
           },
           {
             "year": 2025,
-            "value": 9.9461,
+            "value": 9.9478,
             "data_quality": "available"
           }
         ],
@@ -2578,11 +2588,11 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 5.9896,
-          "prev_value": 11.2426,
+          "value": 7.6752,
+          "prev_value": 7.8978,
           "trend": "down",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -2895,7 +2905,12 @@
           },
           {
             "year": 2024,
-            "value": 5.9896,
+            "value": 7.8978,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 7.6752,
             "data_quality": "available"
           }
         ],
@@ -3165,11 +3180,11 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 3.6931,
-          "prev_value": 1.9799,
+          "value": 4.5784,
+          "prev_value": 4.198,
           "trend": "up",
           "unit": "% of GDP",
-          "year": 2024,
+          "year": 2025,
           "data_quality": "available",
           "label": "FDI (% of GDP)",
           "higher_is": "good"
@@ -3477,12 +3492,17 @@
           },
           {
             "year": 2023,
-            "value": 1.9799,
+            "value": 2.4135,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 3.6931,
+            "value": 4.198,
+            "data_quality": "available"
+          },
+          {
+            "year": 2025,
+            "value": 4.5784,
             "data_quality": "available"
           }
         ],
@@ -4484,7 +4504,7 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.5414,
+          "value": 1.5701,
           "prev_value": 1.7386,
           "trend": "down",
           "unit": "% of GDP",
@@ -4806,7 +4826,7 @@
           },
           {
             "year": 2025,
-            "value": 1.5414,
+            "value": 1.5701,
             "data_quality": "available"
           }
         ],
@@ -5146,7 +5166,7 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.5996,
+          "value": 1.6675,
           "prev_value": 2.0357,
           "trend": "down",
           "unit": "% of GDP",
@@ -5468,7 +5488,7 @@
           },
           {
             "year": 2025,
-            "value": 1.5996,
+            "value": 1.6675,
             "data_quality": "available"
           }
         ],
@@ -5966,27 +5986,27 @@
         "inflation": [
           {
             "year": 2015,
-            "value": -0.4883,
+            "value": -0.4151,
             "data_quality": "available"
           },
           {
             "year": 2016,
-            "value": -0.2787,
+            "value": -0.7391,
             "data_quality": "available"
           },
           {
             "year": 2017,
-            "value": -1.2605,
+            "value": -0.1713,
             "data_quality": "available"
           },
           {
             "year": 2018,
-            "value": 1.0251,
+            "value": 0.1505,
             "data_quality": "available"
           },
           {
             "year": 2019,
-            "value": -0.3905,
+            "value": -0.3714,
             "data_quality": "available"
           },
           {
@@ -7013,8 +7033,8 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 1.3017,
-          "prev_value": 1.0139,
+          "value": 0.9978,
+          "prev_value": 0.8485,
           "trend": "up",
           "unit": "% of GDP",
           "year": 2025,
@@ -7315,22 +7335,22 @@
           },
           {
             "year": 2022,
-            "value": 1.6001,
+            "value": 1.6343,
             "data_quality": "available"
           },
           {
             "year": 2023,
-            "value": 1.3014,
+            "value": 1.2574,
             "data_quality": "available"
           },
           {
             "year": 2024,
-            "value": 1.0139,
+            "value": 0.8485,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 1.3017,
+            "value": 0.9978,
             "data_quality": "available"
           }
         ],
@@ -8090,7 +8110,7 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 0.9883,
+          "value": 1.0311,
           "prev_value": 0.7216,
           "trend": "up",
           "unit": "% of GDP",
@@ -8412,7 +8432,7 @@
           },
           {
             "year": 2025,
-            "value": 0.9883,
+            "value": 1.0311,
             "data_quality": "available"
           }
         ],
@@ -9192,8 +9212,8 @@
           "higher_is": "bad"
         },
         "fdiPctGdp": {
-          "value": 2.0306,
-          "prev_value": 3.0576,
+          "value": 2.0816,
+          "prev_value": 3.0734,
           "trend": "down",
           "unit": "% of GDP",
           "year": 2025,
@@ -9509,12 +9529,12 @@
           },
           {
             "year": 2024,
-            "value": 3.0576,
+            "value": 3.0734,
             "data_quality": "available"
           },
           {
             "year": 2025,
-            "value": 2.0306,
+            "value": 2.0816,
             "data_quality": "available"
           }
         ],
